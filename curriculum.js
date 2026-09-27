@@ -2828,6 +2828,402 @@ sp:["Describe an invention using passive voice, then report what someone told yo
 ls:["Class mystery & invention quiz combining passive voice and deduction modals.","Sinf sirli voqea va ixtiro so'rovi, passive voice va xulosa modallarini birlashtirgan holda.",
 "In pairs, review: describe people/places with relative clauses and report a conversation.","Juftlikda takrorlang: odamlar/joylarni nisbiy gaplar bilan tasvirlang va suhbatni ko'chirib bering."]
 }
+,
+
+{d:71,w:15,wt:"Phrasal Verbs & Discussion",wtUz:"Frazal fe'llar va muhokama",
+t:"Common Phrasal Verbs",tu:"Keng tarqalgan frazal fe'llar",
+v:[
+["look for","qidirmoq","I am looking for my keys."],
+["look after","qaramoq","She looks after her little brother."],
+["give up","voz kechmoq","Never give up on your dreams."],
+["find out","bilib olmoq","I found out the truth."],
+["turn on","yoqmoq","Turn on the light, please."],
+["turn off","o'chirmoq","Turn off the TV before bed."],
+["run out of","tugab qolmoq","We ran out of milk."],
+["get on","chiqmoq","We got on the bus."],
+["get off","tushmoq","Get off at the next stop."],
+["pick up","olib ketmoq","I will pick you up at six."],
+["drop off","tashlab ketmoq","Can you drop me off at school?"],
+["carry on","davom ettirmoq","Please carry on with your work."],
+["bring up","tarbiyalamoq","She was brought up by her grandmother."],
+["come across","tasodifan uchratmoq","I came across an old photo."],
+["go on","davom etmoq","The lesson goes on for one hour."],
+["work out","hal bo'lmoq","Everything will work out fine."],
+["deal with","hal qilmoq","I can deal with this problem."],
+["look forward to","intiqlik bilan kutmoq","I look forward to seeing you."],
+["put off","kechiktirmoq","Don't put off your homework."],
+["take up","shug'ullana boshlamoq","She took up painting last year."]
+],
+dl:[
+["Malika","What are you looking for?","Nimani qidiryapsiz?"],
+["Aziz","I'm looking for my English book. Have you seen it?","Ingliz tili kitobimni qidiryapman. Uni ko'rdingizmi?"],
+["Malika","No, but I'll help you find it. Don't give up!","Yo'q, lekin men uni topishga yordam beraman. Voz kechmang!"],
+["Aziz","Thanks! I look forward to finishing my homework early today.","Rahmat! Men bugun uy vazifamni erta tugatishni intiqlik bilan kutyapman."]
+],
+g:["Phrasal Verbs: Verb + Preposition",
+"A phrasal verb is a verb + a small word (preposition/particle) that together create a new meaning: 'look' (qaramoq) + 'for' = 'look for' (qidirmoq) — a completely different meaning! Phrasal verbs are very common in everyday spoken English.",
+"Frazal fe'llar: fe'l + predlog",
+"Frazal fe'l — fe'l + kichik so'z (predlog/zarracha) birgalikda yangi ma'no hosil qiladi: 'look' (qaramoq) + 'for' = 'look for' (qidirmoq) — butunlay boshqa ma'no! Frazal fe'llar kundalik og'zaki ingliz tilida juda keng tarqalgan."],
+qz:[
+["'Qidirmoq' in English is ___.",["Look after","Look for","Look forward to","Look on"],1],
+["'Voz kechmoq' in English is ___.",["Give up","Get up","Take up","Put off"],0],
+["Choose the correct phrasal verb: 'Please ___ the light.'",["turn on","turn off","get on","carry on"],0],
+["'Kechiktirmoq' in English is ___.",["Put off","Pick up","Drop off","Work out"],0]
+],
+sp:["Talk about your day using at least 5 phrasal verbs.","Kuningiz haqida kamida 5 ta frazal fe'l bilan gapiring."],
+ls:["Phrasal verb charades: act out a phrasal verb, class guesses it.","Frazal fe'l pantomimasi: frazal fe'lni ijro eting, sinf topsin.",
+"In pairs, make sentences with 5 different phrasal verbs about your week.","Juftlikda haftangiz haqida 5 xil frazal fe'l bilan gap tuzing."]
+},
+
+{d:72,w:15,wt:"Phrasal Verbs & Discussion",wtUz:"Frazal fe'llar va muhokama",
+t:"Gerunds vs Infinitives",tu:"Gerund va infinitiv",
+v:[
+["enjoy","zavqlanmoq","I enjoy reading books."],
+["decide","qaror qilmoq","I decided to study medicine."],
+["avoid","qochmoq","I avoid eating too much sugar."],
+["consider","ko'rib chiqmoq","I am considering learning French."],
+["refuse","rad etmoq","He refused to help."],
+["offer","taklif qilmoq","She offered to help me."],
+["manage","uddalamoq","I managed to finish on time."],
+["afford","qurbi yetmoq","I can't afford to buy this."],
+["stop","to'xtatmoq","Stop talking, please."],
+["remember","eslamoq","Remember to bring your book."],
+["forget","unutmoq","Don't forget to call me."],
+["try","harakat qilmoq","Try to speak more English."],
+["mind","e'tiroz bildirmoq","Do you mind opening the window?"],
+["suggest","taklif qilmoq","I suggest studying every day."],
+["practice","mashq qilmoq","I practice speaking English daily."],
+["imagine","tasavvur qilmoq","Imagine living in space."],
+["keep","davom etmoq","Keep trying, don't give up."],
+["plan","rejalashtirmoq","I plan to travel next year."],
+["hope","umid qilmoq","I hope to see you soon."],
+["would like","xohlamoq","I would like to learn more."]
+],
+dl:[
+["Teacher","What do you enjoy doing in English class?","Ingliz tili darsida nimadan zavqlanasiz?"],
+["Student","I enjoy practicing speaking. I also want to improve my writing.","Men gapirishni mashq qilishdan zavqlanaman. Yozishimni ham yaxshilashni xohlayman."],
+["Teacher","Great! Do you plan to take an English exam?","Ajoyib! Ingliz tili imtihonini topshirishni rejalashtiryapsizmi?"],
+["Student","Yes, I hope to pass it next year.","Ha, kelasi yili uni topshirishga umid qilyapman."]
+],
+g:["Verb Patterns: -ing vs to + verb",
+"Some verbs are followed by -ing (gerund): enjoy, avoid, finish, practice, consider, mind: 'I enjoy reading.' Some verbs are followed by 'to + verb' (infinitive): want, decide, plan, hope, promise, refuse, manage: 'I want to learn.' There's no simple rule — you learn each verb's pattern through practice.",
+"Fe'l qoliplari: -ing va to + fe'l",
+"Ba'zi fe'llardan keyin -ing (gerund) keladi: enjoy, avoid, finish, practice, consider, mind. Ba'zilaridan keyin 'to + fe'l' (infinitive) keladi: want, decide, plan, hope, promise, refuse, manage. Oddiy qoida yo'q — mashq orqali o'rganasiz."],
+qz:[
+["Choose the correct sentence.",["I enjoy to read books.","I enjoy reading books.","I enjoy read books.","I enjoy reads books."],1],
+["Choose the correct sentence.",["I want learning English.","I want learn English.","I want to learn English.","I want learned English."],2],
+["'Qurbi yetmoq' in English is ___.",["Afford","Manage","Avoid","Refuse"],0],
+["'Rad etmoq' in English is ___.",["Offer","Refuse","Suggest","Consider"],1]
+],
+sp:["Say 3 things you enjoy doing and 3 things you want to do in the future.","Zavqlanadigan 3 ta ishingizni va kelajakda qilishni xohlagan 3 ta ishingizni ayting."],
+ls:["Verb pattern sort: teacher calls a verb, students shout '-ing' or 'to' and make a sentence.","Fe'l qolipi saralash: o'qituvchi fe'l aytadi, o'quvchilar '-ing' yoki 'to' deb qichqiradi va gap tuzadi.",
+"In pairs, share things you enjoy, want, and plan to do.","Juftlikda zavqlanadigan, xohlagan va rejalashtirgan ishlaringizni bir-biringizga ayting."]
+},
+
+{d:73,w:15,wt:"Phrasal Verbs & Discussion",wtUz:"Frazal fe'llar va muhokama",
+t:"Advantages & Disadvantages",tu:"Afzallik va kamchiliklar",
+v:[
+["advantage","afzallik","One advantage of this app is that it's free."],
+["disadvantage","kamchilik","A disadvantage is that it needs internet."],
+["benefit","foyda","Exercise has many benefits."],
+["drawback","kamchilik","Every technology has some drawbacks."],
+["on the one hand","bir tomondan","On the one hand, phones are useful."],
+["on the other hand","boshqa tomondan","On the other hand, they can be distracting."],
+["however","ammo","I like the city; however, it's very busy."],
+["although","garchi","Although it was raining, we went out."],
+["despite","-ga qaramay","Despite the rain, we had fun."],
+["in addition","bundan tashqari","In addition, it saves time."],
+["moreover","bundan tashqari","Moreover, it is cheaper."],
+["furthermore","yana","Furthermore, it's easy to use."],
+["for example","masalan","Many apps, for example WhatsApp, are free."],
+["such as","kabi","Sports such as football are popular."],
+["compare","solishtirmoq","Let's compare these two ideas."],
+["contrast","farqlamoq","In contrast, the other option is expensive."],
+["overall","umuman olganda","Overall, I think it's a good idea."],
+["in conclusion","xulosa qilib aytganda","In conclusion, technology helps us learn."],
+["both","ikkalasi ham","Both options have advantages."],
+["neither","hech qaysi","Neither option is perfect."]
+],
+dl:[
+["Teacher","What are the advantages and disadvantages of smartphones?","Smartfonlarning afzallik va kamchiliklari nima?"],
+["Student1","One advantage is that we can learn many things online.","Bir afzalligi shuki, biz onlayn ko'p narsalarni o'rganishimiz mumkin."],
+["Student2","However, a disadvantage is that people spend too much time on them.","Ammo, kamchiligi shuki, odamlar ularga juda ko'p vaqt sarflashadi."],
+["Teacher","Good points! Overall, it depends on how we use them.","Yaxshi fikrlar! Umuman olganda, bu ulardan qanday foydalanishimizga bog'liq."]
+],
+g:["Linking Words: however, although, in addition",
+"Linking words connect ideas and make your speech more advanced: 'however' and 'although' show contrast: 'It's expensive; however, it's good quality.' 'In addition' and 'moreover' add more information: 'It's cheap. In addition, it's easy to use.'",
+"Bog'lovchi so'zlar: however, although, in addition",
+"Bog'lovchi so'zlar fikrlarni bog'laydi va nutqingizni ilg'orroq qiladi: 'however' va 'although' qarama-qarshilikni ko'rsatadi. 'In addition' va 'moreover' qo'shimcha ma'lumot qo'shadi."],
+qz:[
+["'Afzallik' in English is ___.",["Disadvantage","Advantage","Drawback","Contrast"],1],
+["Choose the correct linking word for contrast.",["In addition","However","For example","Both"],1],
+["'Xulosa qilib aytganda' in English is ___.",["For example","In conclusion","Such as","Overall"],1],
+["Choose the correct sentence.",["Although it was raining, but we went out.","Although it was raining, we went out.","Despite it was raining, we went out.","Despite of raining, we went out."],1]
+],
+sp:["Discuss the advantages and disadvantages of learning English, using linking words.","Bog'lovchi so'zlar yordamida ingliz tilini o'rganishning afzallik va kamchiliklarini muhokama qiling."],
+ls:["Class debate: discuss pros and cons of a topic (phones in school, homework, social media).","Sinf bahsi: mavzuning afzallik va kamchiliklarini muhokama qiling.",
+"In pairs, list 2 advantages and 2 disadvantages of a topic you choose.","Juftlikda o'zingiz tanlagan mavzuning 2 ta afzalligi va 2 ta kamchiligini sanab bering."]
+},
+
+{d:74,w:15,wt:"Phrasal Verbs & Discussion",wtUz:"Frazal fe'llar va muhokama",
+t:"Complaints & Suggestions",tu:"Shikoyat va takliflar",
+v:[
+["complain","shikoyat qilmoq","I want to complain about the noise."],
+["problem","muammo","We have a problem with the Wi-Fi."],
+["issue","masala","There is an issue with my order."],
+["unfortunately","afsuski","Unfortunately, the shop is closed."],
+["I'm afraid","afsuski","I'm afraid this is not correct."],
+["excuse me, but","kechirasiz, lekin","Excuse me, but this seat is taken."],
+["I'm not happy with","men mamnun emasman","I'm not happy with this service."],
+["could you please","iltimos qila olasizmi","Could you please help me?"],
+["would you mind","e'tiroz bildirmaysizmi","Would you mind closing the door?"],
+["why don't you","nega qilmaysiz","Why don't you try again?"],
+["how about","-chi, qalay","How about trying a different method?"],
+["maybe you should","balki kerak","Maybe you should ask the teacher."],
+["it would be better if","agar bo'lsa yaxshi bo'lardi","It would be better if we started earlier."],
+["fix","tuzatmoq","Can you fix this problem?"],
+["resolve","hal qilmoq","We need to resolve this issue."],
+["inconvenience","noqulaylik","Sorry for the inconvenience."],
+["improve","yaxshilamoq","We should improve our service."],
+["polite","odobli","Always be polite when complaining."],
+["patient","sabrli","Please be patient, we will fix it."],
+["service","xizmat","The service here is excellent."]
+],
+dl:[
+["Malika","Excuse me, but I'm not happy with this product. It's broken.","Kechirasiz, lekin men bu mahsulotdan mamnun emasman. U buzilgan."],
+["Shopkeeper","I'm sorry for the inconvenience. Would you like a refund?","Noqulaylik uchun uzr so'rayman. Pulingizni qaytarib olishni xohlaysizmi?"],
+["Malika","Yes, please. Could you fix this issue quickly?","Ha, iltimos. Bu masalani tezda hal qila olasizmi?"],
+["Shopkeeper","Of course, I'll resolve it right away.","Albatta, hoziroq hal qilaman."]
+],
+g:["Polite Language for Complaints and Suggestions",
+"To complain politely, use 'I'm afraid...', 'Excuse me, but...', 'I'm not happy with...'. To suggest politely, use 'Why don't you...?', 'How about...?', 'Maybe you should...', 'It would be better if...'. Politeness matters even when something is wrong!",
+"Shikoyat va taklif uchun odobli til",
+"Odobli shikoyat qilish uchun 'I'm afraid...', 'Excuse me, but...' ishlatiladi. Odobli taklif berish uchun 'Why don't you...?', 'How about...?', 'Maybe you should...' ishlatiladi."],
+qz:[
+["Choose the polite way to complain.",["This is bad!","I'm not happy with this.","You are wrong!","Fix this now!"],1],
+["'Noqulaylik' in English is ___.",["Problem","Issue","Inconvenience","Complaint"],2],
+["Choose the polite way to suggest.",["Do this now.","Why don't you try again?","You must do it.","I order you to try again."],1],
+["'Hal qilmoq' in English is ___.",["Fix","Resolve","Improve","Both fix and resolve"],3]
+],
+sp:["Role-play politely complaining about a problem and suggesting a solution.","Muammo haqida odobli tarzda shikoyat qilish va yechim taklif qilishni ijro eting."],
+ls:["Complaint & solution role-play stations: pairs act out customer/shopkeeper scenarios.","Shikoyat va yechim rolli o'yin stansiyalari.",
+"In pairs, practice making 3 polite complaints and 3 polite suggestions.","Juftlikda 3 ta odobli shikoyat va 3 ta odobli taklifni mashq qiling."]
+},
+
+{d:75,w:15,wt:"Phrasal Verbs & Discussion",wtUz:"Frazal fe'llar va muhokama",rev:true,
+t:"Week 15 Review — Phrasal Verbs & Discussion Check",tu:"15-hafta Takrorlash — Frazal Fe'llar va Muhokama Tekshiruvi",
+qz:[
+["'Qidirmoq' in English is ___.",["Look after","Look for","Look forward to","Look on"],1],
+["Choose the correct sentence.",["I enjoy to read books.","I enjoy reading books.","I enjoy read books.","I enjoy reads books."],1],
+["'Afzallik' in English is ___.",["Disadvantage","Advantage","Drawback","Contrast"],1],
+["Choose the polite way to complain.",["This is bad!","I'm not happy with this.","You are wrong!","Fix this now!"],1],
+["'Voz kechmoq' in English is ___.",["Give up","Get up","Take up","Put off"],0],
+["Choose the correct sentence.",["I want learning English.","I want learn English.","I want to learn English.","I want learned English."],2],
+["Choose the correct linking word for contrast.",["In addition","However","For example","Both"],1],
+["'Hal qilmoq' in English is ___.",["Fix","Resolve","Improve","Both fix and resolve"],3]
+],
+sp:["Discuss a problem at school, suggest a solution, and give advantages/disadvantages of your idea.","Maktabdagi muammoni muhokama qiling, yechim taklif qiling va g'oyangizning afzallik/kamchiliklarini ayting."],
+ls:["Class problem-solving forum: groups present a school problem and their suggested solution.","Sinf muammoni hal qilish forumi.",
+"In pairs, review: use phrasal verbs and linking words to discuss your week.","Juftlikda takrorlang: haftangizni frazal fe'llar va bog'lovchi so'zlar bilan muhokama qiling."]
+}
+,
+
+{d:76,w:16,wt:"Culture, Environment & Careers",wtUz:"Madaniyat, atrof-muhit va kasblar",
+t:"Culture & Traditions",tu:"Madaniyat va an'analar",
+v:[
+["festival","bayram","Navruz is an important festival in Uzbekistan."],
+["national holiday","milliy bayram","Independence Day is a national holiday."],
+["wedding","to'y","We went to a traditional wedding."],
+["ceremony","marosim","The ceremony was very beautiful."],
+["costume","milliy kiyim","She wore a traditional costume."],
+["traditional food","milliy taom","Plov is a traditional Uzbek food."],
+["folklore","folklor","Uzbek folklore has many interesting stories."],
+["religion","din","Respecting different religions is important."],
+["respect","hurmat qilmoq","We should respect our elders."],
+["hospitality","mehmondo'stlik","Uzbek people are famous for their hospitality."],
+["generation","avlod","This tradition passes from generation to generation."],
+["heritage","meros","We should protect our cultural heritage."],
+["ritual","marosim","Tea drinking is an important ritual here."],
+["elder","katta yoshli","We listen to our elders."],
+["proverb","maqol","There is an old proverb about patience."],
+["custom","urf-odat","It's a custom to greet elders first."],
+["celebrate","nishonlamoq","We celebrate Navruz every spring."],
+["guest","mehmon","A guest is like family here."],
+["value","qadriyat","Family is an important value in our culture."],
+["identity","o'ziga xoslik","Language is part of our identity."]
+],
+dl:[
+["Malika","What is your favorite national holiday?","Sevimli milliy bayramingiz nima?"],
+["Aziz","I love Navruz. We celebrate it with traditional food and songs.","Menga Navruz yoqadi. Biz uni milliy taomlar va qo'shiqlar bilan nishonlaymiz."],
+["Malika","Uzbek people are famous for their hospitality, aren't they?","O'zbek xalqi mehmondo'stligi bilan mashhur, shunday emasmi?"],
+["Aziz","Yes, exactly. A guest is always treated like family here.","Ha, aynan shunday. Bu yerda mehmon doim oila a'zosidek kutib olinadi."]
+],
+g:["Question Tags: aren't they? isn't it?",
+"A question tag is a short question added to the end of a statement to check information or invite agreement: positive statement + negative tag: 'They are famous, aren't they?' negative statement + positive tag: 'You don't like it, do you?'",
+"Qo'shimcha savollar: aren't they? isn't it?",
+"Qo'shimcha savol — gap oxiriga qo'shiladigan qisqa savol: ijobiy gap + salbiy qo'shimcha: 'They are famous, aren't they?' salbiy gap + ijobiy qo'shimcha: 'You don't like it, do you?'"],
+qz:[
+["'Milliy bayram' in English is ___.",["Wedding","Ceremony","National holiday","Custom"],2],
+["Choose the correct question tag: 'You like plov, ___?'",["do you","don't you","are you","aren't you"],1],
+["'Mehmondo'stlik' in English is ___.",["Hospitality","Respect","Heritage","Identity"],0],
+["'Maqol' in English is ___.",["Proverb","Ritual","Custom","Folklore"],0]
+],
+sp:["Describe a traditional celebration or custom from your culture.","O'z madaniyatingizdan an'anaviy bayram yoki urf-odatni tasvirlab bering."],
+ls:["Culture show and tell: students bring/describe an object representing their culture.","Madaniyat namoyishi: o'quvchilar o'z madaniyatini ifodalovchi buyumni tasvirlaydi.",
+"In pairs, discuss your favorite national holiday and how you celebrate it.","Juftlikda sevimli milliy bayramingiz va uni qanday nishonlashingiz haqida gaplashing."]
+},
+
+{d:77,w:16,wt:"Culture, Environment & Careers",wtUz:"Madaniyat, atrof-muhit va kasblar",
+t:"Protecting the Environment",tu:"Atrof-muhitni himoya qilish",
+v:[
+["environment","atrof-muhit","We must protect the environment."],
+["pollution","ifloslanish","Air pollution is a big problem."],
+["recycle","qayta ishlamoq","We should recycle paper and plastic."],
+["reuse","qayta ishlatmoq","You can reuse this bag."],
+["reduce","kamaytirmoq","We should reduce plastic waste."],
+["waste","chiqindi","There's too much waste in the city."],
+["plastic","plastik","Plastic bags harm the environment."],
+["climate change","iqlim o'zgarishi","Climate change affects the whole world."],
+["global warming","global isish","Global warming melts the ice."],
+["protect","himoya qilmoq","We should protect wild animals."],
+["pollute","ifloslantirmoq","Factories pollute the river."],
+["endangered","yo'q bo'lish arafasidagi","Tigers are an endangered species."],
+["extinct","yo'q bo'lib ketgan","Dinosaurs are extinct."],
+["renewable energy","qayta tiklanadigan energiya","Solar power is renewable energy."],
+["solar power","quyosh energiyasi","Many houses use solar power now."],
+["save energy","energiyani tejash","Turn off lights to save energy."],
+["litter","chiqindi tashlamoq","Don't litter in the park."],
+["plant a tree","daraxt ekmoq","We planted a tree at school."],
+["eco-friendly","ekologik toza","This product is eco-friendly."],
+["natural resources","tabiiy resurslar","We must use natural resources wisely."]
+],
+dl:[
+["Teacher","What can we do to protect the environment?","Atrof-muhitni himoya qilish uchun nima qilishimiz mumkin?"],
+["Student1","We should recycle plastic and reduce waste.","Biz plastikni qayta ishlashimiz va chiqindilarni kamaytirishimiz kerak."],
+["Student2","We can also plant trees and save energy at home.","Shuningdek, daraxt ekishimiz va uyda energiyani tejashimiz mumkin."],
+["Teacher","Great ideas! Every small action helps.","Ajoyib g'oyalar! Har bir kichik harakat yordam beradi."]
+],
+g:["Should and Must: Giving Advice and Rules",
+"'Should' gives advice (not very strong): 'We should recycle more.' 'Must' shows a strong obligation or rule: 'We must protect endangered animals.' Negative: 'shouldn't' (bad idea), 'mustn't' (forbidden): 'We mustn't pollute rivers.'",
+"Should va Must: maslahat va qoidalar berish",
+"'Should' maslahat beradi: 'We should recycle more.' 'Must' kuchli majburiyat yoki qoidani bildiradi: 'We must protect endangered animals.' Inkor: 'shouldn't' (yomon fikr), 'mustn't' (taqiqlangan)."],
+qz:[
+["'Qayta ishlamoq' in English is ___.",["Reuse","Reduce","Recycle","Waste"],2],
+["Choose the correct sentence for a strong rule.",["We should protect endangered animals.","We must protect endangered animals.","We can protect endangered animals.","We recycle endangered animals."],1],
+["'Yo'q bo'lib ketgan' in English is ___.",["Endangered","Extinct","Polluted","Renewable"],1],
+["'Quyosh energiyasi' in English is ___.",["Renewable energy","Solar power","Natural resources","Global warming"],1]
+],
+sp:["Talk about 3 things people should do and 1 thing people mustn't do to protect the environment.","Atrof-muhitni himoya qilish uchun odamlar qilishi kerak bo'lgan 3 ta ish va qilmasligi kerak bo'lgan 1 ta ish haqida gapiring."],
+ls:["Class 'green pledge': each student promises one eco-friendly action.","Sinf 'yashil va'dasi': har bir o'quvchi bitta ekologik toza harakat qilishga va'da beradi.",
+"In pairs, discuss environmental problems in your city and possible solutions.","Juftlikda shahringizdagi ekologik muammolar va mumkin bo'lgan yechimlarni muhokama qiling."]
+},
+
+{d:78,w:16,wt:"Culture, Environment & Careers",wtUz:"Madaniyat, atrof-muhit va kasblar",
+t:"Healthy Lifestyle",tu:"Sog'lom turmush tarzi",
+v:[
+["healthy lifestyle","sog'lom turmush tarzi","A healthy lifestyle includes good food and exercise."],
+["exercise","jismoniy mashq","I exercise every morning."],
+["diet","ovqatlanish tartibi","She follows a healthy diet."],
+["balanced diet","muvozanatli ovqatlanish","A balanced diet includes fruit and vegetables."],
+["junk food","foydasiz ovqat","Junk food is not good for your health."],
+["fresh food","toza ovqat","Fresh food is healthier than processed food."],
+["vitamin","vitamin","Oranges have a lot of vitamin C."],
+["protein","protein","Meat and eggs contain protein."],
+["fitness","jismoniy tayyorgarlik","Fitness is important for a healthy body."],
+["gym","sport zali","He goes to the gym three times a week."],
+["jog","yengil yugurish","I jog in the park every morning."],
+["stretch","cho'zilish mashqi","Always stretch before exercise."],
+["sleep well","yaxshi uxlamoq","You need to sleep well every night."],
+["stress","stress","Too much stress is bad for your health."],
+["habit","odat","Brushing your teeth is a good habit."],
+["quit","tashlamoq","He quit eating junk food."],
+["addiction","qaramlik","Phone addiction is common among teenagers."],
+["screen time","ekran vaqti","Try to reduce your screen time."],
+["well-being","farovonlik","Exercise improves your mental well-being."],
+["routine","kundalik tartib","A healthy routine includes exercise and good sleep."]
+],
+dl:[
+["Malika","Do you have a healthy lifestyle?","Sizda sog'lom turmush tarzi bormi?"],
+["Aziz","I try to. I exercise every morning and eat a balanced diet.","Harakat qilaman. Men har kuni ertalab mashq qilaman va muvozanatli ovqatlanaman."],
+["Malika","That's great! I should reduce my screen time and sleep better.","Ajoyib! Men ekran vaqtimni kamaytirishim va yaxshiroq uxlashim kerak."],
+["Aziz","Yes, good sleep and less stress really help.","Ha, yaxshi uxlash va kam stress haqiqatan yordam beradi."]
+],
+g:["Health Advice: should / shouldn't",
+"We give health advice with 'should' (good idea) and 'shouldn't' (bad idea): 'You should exercise every day.' 'You shouldn't eat too much junk food.' This is softer than 'must/mustn't', which is for rules, not advice.",
+"Sog'liq maslahati: should / shouldn't",
+"Sog'liq bo'yicha maslahat berishda 'should' (yaxshi fikr) va 'shouldn't' (yomon fikr) ishlatiladi. Bu 'must/mustn't' dan yumshoqroq, chunki u qoida emas, maslahat uchun."],
+qz:[
+["'Muvozanatli ovqatlanish' in English is ___.",["Junk food","Balanced diet","Fresh food","Fitness"],1],
+["Choose the correct health advice.",["You should sleeping more.","You should sleep more.","You should to sleep more.","You should slept more."],1],
+["'Qaramlik' in English is ___.",["Habit","Addiction","Stress","Well-being"],1],
+["'Ekran vaqti' in English is ___.",["Screen time","Fitness","Routine","Habit"],0]
+],
+sp:["Give 3 pieces of health advice to a friend using should/shouldn't.","Do'stingizga should/shouldn't yordamida 3 ta sog'liq bo'yicha maslahat bering."],
+ls:["Health habit survey: ask classmates about their sleep, exercise, and screen time habits.","Sog'liq odatlari so'rovi: sinfdoshlaringizdan so'rang.",
+"In pairs, create a healthy daily routine together.","Juftlikda birgalikda sog'lom kundalik tartib tuzing."]
+},
+
+{d:79,w:16,wt:"Culture, Environment & Careers",wtUz:"Madaniyat, atrof-muhit va kasblar",
+t:"Jobs & Future Careers",tu:"Kasblar va kelajak karyerasi",
+v:[
+["career","karyera","She has a successful career in medicine."],
+["profession","kasb","Teaching is a noble profession."],
+["job interview","ish suhbati","I have a job interview tomorrow."],
+["CV","rezyume","Send your CV to the company."],
+["qualification","malaka","You need good qualifications for this job."],
+["skill","ko'nikma","Communication is an important skill."],
+["responsibility","mas'uliyat","A teacher has a lot of responsibility."],
+["salary","maosh","The salary for this job is good."],
+["employer","ish beruvchi","My employer is very kind."],
+["employee","xodim","She is a hardworking employee."],
+["apply for a job","ishga ariza bermoq","I want to apply for this job."],
+["part-time job","to'liq bo'lmagan ish","He has a part-time job after school."],
+["full-time job","to'liq stavka ish","She has a full-time job at a hospital."],
+["internship","amaliyot","I did an internship last summer."],
+["promotion","lavozim ko'tarilishi","He got a promotion last month."],
+["workplace","ish joyi","My workplace is very friendly."],
+["colleague","hamkasb","My colleagues are helpful."],
+["deadline","muddat","We must finish before the deadline."],
+["teamwork","jamoaviy ish","Teamwork is important in every job."],
+["achieve success","muvaffaqiyatga erishmoq","Hard work helps you achieve success."]
+],
+dl:[
+["Interviewer","Why do you want this job?","Nega bu ishni xohlaysiz?"],
+["Aziz","I have good communication skills and I enjoy teamwork.","Menda yaxshi muloqot ko'nikmalari bor va men jamoaviy ishni yoqtiraman."],
+["Interviewer","What are your qualifications?","Sizning malakangiz qanday?"],
+["Aziz","I graduated with good grades and did an internship last year.","Men yaxshi baholar bilan bitirganman va o'tgan yili amaliyot o'tganman."]
+],
+g:["Used to: Past Habits That Have Changed",
+"'Used to + verb' describes a past habit or state that is no longer true: 'I used to want to be a doctor, but now I want to be an engineer.' 'She used to work at a shop.' Negative: 'didn't use to'.",
+"Used to: o'zgargan o'tmish odatlari",
+"'Used to + fe'l' endi to'g'ri bo'lmagan o'tmish odati yoki holatini tasvirlaydi: 'I used to want to be a doctor, but now I want to be an engineer.' Inkor: 'didn't use to'."],
+qz:[
+["'Ish suhbati' in English is ___.",["CV","Job interview","Promotion","Deadline"],1],
+["Choose the correct sentence about a changed past habit.",["I use to want to be a doctor.","I used to want to be a doctor.","I am used to want to be a doctor.","I was use to want to be a doctor."],1],
+["'Jamoaviy ish' in English is ___.",["Colleague","Workplace","Teamwork","Responsibility"],2],
+["'Malaka' in English is ___.",["Skill","Qualification","Experience","Salary"],1]
+],
+sp:["Talk about your dream career, what qualifications you need, and what you used to want to be as a child.","Orzu qilgan karyerangiz, qanday malaka kerakligi va bolaligingizda kim bo'lishni xohlaganingiz haqida gapiring."],
+ls:["Mini job interview role-play: pairs take turns being interviewer and candidate.","Kichik ish suhbati rolli o'yini.",
+"In pairs, discuss what you used to want to be and what you want to be now.","Juftlikda avval kim bo'lishni xohlaganingiz va hozir kim bo'lishni xohlashingiz haqida gaplashing."]
+},
+
+{d:80,w:16,wt:"Culture, Environment & Careers",wtUz:"Madaniyat, atrof-muhit va kasblar",rev:true,
+t:"Week 16 Review — Culture, Environment & Careers Check",tu:"16-hafta Takrorlash — Madaniyat, Atrof-muhit va Kasblar Tekshiruvi",
+qz:[
+["'Milliy bayram' in English is ___.",["Wedding","Ceremony","National holiday","Custom"],2],
+["'Qayta ishlamoq' in English is ___.",["Reuse","Reduce","Recycle","Waste"],2],
+["'Muvozanatli ovqatlanish' in English is ___.",["Junk food","Balanced diet","Fresh food","Fitness"],1],
+["'Ish suhbati' in English is ___.",["CV","Job interview","Promotion","Deadline"],1],
+["Choose the correct question tag: 'You like plov, ___?'",["do you","don't you","are you","aren't you"],1],
+["Choose the correct sentence for a strong rule.",["We should protect endangered animals.","We must protect endangered animals.","We can protect endangered animals.","We recycle endangered animals."],1],
+["Choose the correct sentence about a changed past habit.",["I use to want to be a doctor.","I used to want to be a doctor.","I am used to want to be a doctor.","I was use to want to be a doctor."],1],
+["'Qaramlik' in English is ___.",["Habit","Addiction","Stress","Well-being"],1]
+],
+sp:["Talk about a tradition you value, one environmental action you take, and your dream career.","Qadrlaydigan an'anangiz, qiladigan bitta ekologik harakatingiz va orzu kasbingiz haqida gapiring."],
+ls:["Class trivia: culture, environment, and careers mixed quiz relay.","Sinf bilim bellashuvi: aralash so'rov.",
+"In pairs, review: discuss traditions, environment, and career plans.","Juftlikda takrorlang: an'analar, atrof-muhit va karyera rejalarini muhokama qiling."]
+}
 
 ];
 
