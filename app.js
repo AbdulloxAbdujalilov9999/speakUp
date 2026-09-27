@@ -2342,10 +2342,14 @@ function renderGrammarUnit(unitId){
     <section class="panel">
       <div class="panel-head"><h2>${tr("Explanation")}</h2></div>
       ${(() => {
-        const g = gramC(u);
-        if (uiEn() || !g || !g.explain) return u.explain.map(p => `<p class="grammar-explain">${escapeHtml(p)}</p>`).join("");
-        return g.explain.map(p => `<p class="grammar-explain">${escapeHtml(p)}</p>`).join("")
-          + `<details class="voice-info"><summary>${tr("English original")}</summary>${u.explain.map(p => `<p class="grammar-explain">${escapeHtml(p)}</p>`).join("")}</details>`;
+        // u.explain is [[en,uz], ...] — baked-in Uzbek, no content-uz.js side-channel needed.
+        // Same EN/UZ lead-swap convention as renderGrammarTab and titleParts.
+        const uzLeads = !uiEn();
+        return u.explain.map(([en, uz]) => {
+          const main = uzLeads ? uz : en;
+          const shadow = uzLeads ? en : uz;
+          return `<p class="grammar-explain">${escapeHtml(main)}</p>` + (state.settings.showUz ? `<p class="grammar-explain-shadow">${escapeHtml(shadow)}</p>` : "");
+        }).join("");
       })()}
     </section>
 
@@ -2368,7 +2372,8 @@ function renderGrammarUnit(unitId){
       <div class="mistake-box">
         <p class="mistake-line wrong">✗ ${escapeHtml(u.mistakeWrong)}</p>
         <p class="mistake-line right">✓ ${escapeHtml(u.mistakeRight)}</p>
-        <p class="mistake-why">${escapeHtml((!uiEn() && gramC(u) && gramC(u).why) ? gramC(u).why : u.mistakeWhy)}</p>
+        <p class="mistake-why">${escapeHtml(uiEn() ? u.mistakeWhy : u.mistakeWhyUz)}</p>
+        ${state.settings.showUz && !uiEn() ? `<p class="grammar-explain-shadow">${escapeHtml(u.mistakeWhy)}</p>` : ""}
       </div>
     </section>
 

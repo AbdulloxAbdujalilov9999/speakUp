@@ -485,14 +485,15 @@ const CONTENT = {
 "Culture, Environment & Careers": { uz:"Madaniyat, atrof-muhit va kasblar" },
 "Advanced Speaking Skills": { uz:"Ilg'or nutq ko'nikmalari" },
 "Fluency & Final Preparation": { uz:"Ravonlik va yakuniy tayyorgarlik" },
-"Foundations": { uz:"Asoslar" },
-"Tenses": { uz:"Zamonlar" },
-"Questions & Negatives": { uz:"Savol va inkor" },
-"Modals": { uz:"Modal fe'llar" },
+"Foundations": { uz:"Boshlang'ich" },
+"Commands & Ability": { uz:"Buyruq va qobiliyat" },
+"Existence & Quantity": { uz:"Mavjudlik va miqdor" },
+"Present Tenses": { uz:"Hozirgi zamon" },
 "Prepositions & Connectors": { uz:"Predloglar va bog'lovchilar" },
-"Numbers & Comparison": { uz:"Sonlar va solishtirish" },
-"Advanced Grammar": { uz:"Ilg'or grammatika" },
-"Speech & Style": { uz:"Nutq va uslub" },
+"Adjectives & Comparison": { uz:"Sifat va solishtirish" },
+"Past Tenses": { uz:"O'tgan zamon" },
+"Modals & Future": { uz:"Modal va kelajak" },
+"Advanced": { uz:"Ilg'or" },
 };
 
 function t(key, vars, lang){
