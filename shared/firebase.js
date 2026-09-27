@@ -34,7 +34,7 @@ const nativePersistence = platform === "android" ? indexedDBLocalPersistence : p
 // the redirect URI is registered on the OAuth web client) and use a
 // full-page redirect rather than a popup. Other hosts (localhost, previews,
 // the admin site) keep the plain popup on the default auth domain.
-const PROXIED_AUTH_HOSTS = ["speakup-webapp.vercel.app"];
+const PROXIED_AUTH_HOSTS = ["speak-upvercel.vercel.app"];
 export const usesRedirectSignIn = !nativePersistence &&
   typeof location !== "undefined" && PROXIED_AUTH_HOSTS.includes(location.hostname);
 
