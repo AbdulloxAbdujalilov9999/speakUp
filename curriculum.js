@@ -187,6 +187,169 @@ sp:["Introduce yourself fully: say hello, your name, count from 1 to 10, and nam
 ls:["Quick class quiz: call out a number or object, students respond fast in English.","Tezkor sinf so'rovi: son yoki buyumni ayting, o'quvchilar tezda ingliz tilida javob beradi.",
 "In pairs, review the week: greet each other, name objects, count, and give commands.","Juftlikda haftani takrorlang: bir-biringizni salomlang, buyumlarni nomlang, sanang va buyruq bering."]
 }
+,
+
+{d:6,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",
+t:"Pronouns & The Verb 'To Be'",tu:"Olmoshlar va 'To Be' fe'li",
+v:[
+["I","men","I am a student."],
+["you","siz","You are my friend."],
+["he","u (erkak)","He is a boy."],
+["she","u (ayol)","She is a girl."],
+["it","u (narsa)","It is a book."],
+["we","biz","We are students."],
+["they","ular","They are teachers."],
+["am","(bo'lmoq)","I am happy."],
+["is","(bo'lmoq)","She is kind."],
+["are","(bo'lmoq)","You are smart."],
+["boy","o'g'il bola","He is a boy."],
+["girl","qiz bola","She is a girl."],
+["teacher","o'qituvchi","She is a teacher."],
+["student","o'quvchi","I am a student."],
+["friend","do'st","You are my friend."]
+],
+dl:[
+["Teacher","Who is this?","Bu kim?"],
+["Student","This is my friend. He is a student.","Bu mening do'stim. U o'quvchi."],
+["Teacher","Are you a teacher?","Siz o'qituvchimisiz?"],
+["Student","No, I am a student.","Yo'q, men o'quvchiman."]
+],
+g:["The Verb 'To Be' — am / is / are",
+"Now let's learn the real grammar behind sentences like 'This is a cat': the verb 'to be'. Use 'am' with I, 'is' with he/she/it, 'are' with you/we/they: I am a student. He is a boy. They are teachers.",
+"'To Be' fe'li — am / is / are",
+"Endi 'This is a cat' kabi gaplar ortidagi haqiqiy grammatikani o'rganamiz: 'to be' fe'li. I bilan 'am', he/she/it bilan 'is', you/we/they bilan 'are' ishlatiladi: I am a student. He is a boy. They are teachers."],
+qz:[
+["Choose the correct word: 'She ___ a teacher.'",["am","is","are","be"],1],
+["Choose the correct word: 'They ___ students.'",["am","is","are","be"],2],
+["Choose the correct word: 'I ___ a student.'",["am","is","are","be"],0],
+["'U (erkak) o'quvchi' in English is ___.",["She is a student.","He is a student.","They are a student.","I am a student."],1]
+],
+sp:["Introduce yourself and 2 friends using I am / He is / She is.","O'zingiz va 2 ta do'stingizni 'I am / He is / She is' bilan tanishtiring."],
+ls:["Point at classmates and say 'He is...' or 'She is...' with their name.","Sinfdoshlaringizga ishora qilib, ismini aytib 'He is...' yoki 'She is...' deng.",
+"In pairs, describe 3 people in the room using am/is/are.","Juftlikda xonadagi 3 kishini am/is/are yordamida tasvirlang."]
+},
+
+{d:7,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",
+t:"This / That / These / Those",tu:"This / That / These / Those",
+v:[
+["this","bu (yaqin)","This is a table."],
+["that","ana u (uzoq)","That is a chair."],
+["these","bular (yaqin)","These are windows."],
+["those","analar (uzoq)","Those are doors."],
+["table","stol","This is a table."],
+["chair","stul","That is a chair."],
+["window","deraza","These are windows."],
+["door","eshik","Those are doors."],
+["shoe","poyabzal","This is my shoe."],
+["shoes","poyabzallar","These are my shoes."]
+],
+dl:[
+["Teacher","Is this a table?","Bu stolmi?"],
+["Student","Yes, this is a table.","Ha, bu stol."],
+["Teacher","Are those chairs?","Analar stullarmi?"],
+["Student","Yes, those are chairs.","Ha, analar stullar."]
+],
+g:["This / That / These / Those",
+"Use 'this' (near, one) and 'these' (near, many): This is a table. These are windows. Use 'that' (far, one) and 'those' (far, many): That is a chair. Those are doors.",
+"This / That / These / Those",
+"Yaqindagi bitta narsa uchun 'this', yaqindagi bir nechta narsa uchun 'these' ishlatiladi: This is a table. These are windows. Uzoqdagi bitta narsa uchun 'that', uzoqdagi bir nechta narsa uchun 'those' ishlatiladi: That is a chair. Those are doors."],
+qz:[
+["Choose the word for one thing near you.",["That","This","These","Those"],1],
+["Choose the word for many things far away.",["This","That","These","Those"],3],
+["Choose the correct sentence.",["This are my shoes.","These are my shoes.","This is my shoes.","These is my shoes."],1],
+["'Ana u stul' in English is ___.",["This is a chair.","That is a chair.","These are chairs.","Those are chairs."],1]
+],
+sp:["Point to 3 things near you and 3 things far away, using this/that/these/those.","Yaqiningizdagi 3 ta va uzoqdagi 3 ta narsaga ishora qiling, this/that/these/those yordamida ayting."],
+ls:["Classroom scavenger hunt: point and say 'This is a...' or 'That is a...' for objects.","Sinfda buyum qidirish: buyumlarga ishora qilib 'This is a...' yoki 'That is a...' deng.",
+"In pairs, ask 'Is this a...?' and 'Are those...?' about classroom objects.","Juftlikda sinf buyumlari haqida 'Is this a...?' va 'Are those...?' deb so'rang."]
+},
+
+{d:8,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",
+t:"There is / There are",tu:"There is / There are",
+v:[
+["there is","bor (birlik)","There is a lamp on the table."],
+["there are","bor (ko'plik)","There are two windows."],
+["room","xona","There is a nice room."],
+["wall","devor","There is a picture on the wall."],
+["picture","surat","There is a picture on the wall."],
+["lamp","chiroq","There is a lamp on the desk."],
+["shelf","tokcha","There is a shelf in my room."],
+["two","ikki","There are two windows."],
+["three","uch","There are three chairs."],
+["four","to'rt","There are four books."]
+],
+dl:[
+["Teacher","Is there a lamp in your room?","Xonangizda chiroq bormi?"],
+["Student","Yes, there is a lamp.","Ha, chiroq bor."],
+["Teacher","Are there any pictures?","Suratlar bormi?"],
+["Student","Yes, there are two pictures.","Ha, ikkita surat bor."]
+],
+g:["There is / There are",
+"Use 'There is' with one thing and 'There are' with more than one thing, to say something exists: There is a lamp on the table. There are two windows.",
+"There is / There are",
+"Bitta narsa bilan 'There is', bir nechta narsa bilan 'There are' ishlatiladi va biror narsaning mavjudligini bildiradi: There is a lamp on the table. There are two windows."],
+qz:[
+["Choose the correct sentence.",["There is two windows.","There are two windows.","There a window.","Windows there are."],1],
+["Choose the correct question.",["Is there a lamp?","Is there lamps?","Are there a lamp?","There is a lamp?"],0],
+["'Devorda surat bor' in English is ___.",["There is a picture on the wall.","There are a picture on the wall.","There a picture is on the wall.","Picture there is on the wall."],0],
+["Which form goes with plural nouns?",["There is","There are","There has","There have"],1]
+],
+sp:["Describe your room: say what there is and how many things there are.","Xonangizni tasvirlab bering: nima borligi va nechtasi borligini ayting."],
+ls:["Nature/room picture description: show a picture, students say what there is/are.","Rasm tasviri: rasm ko'rsating, o'quvchilar there is/are bilan gapirsin.",
+"In pairs, describe your bedroom using 'There is/are'.","Juftlikda yotoqxonangizni 'There is/are' bilan tasvirlang."]
+},
+
+{d:9,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",
+t:"Possessives — my, your, his, her",tu:"Egalik olmoshlari — my, your, his, her",
+v:[
+["my","mening","This is my mother."],
+["your","sizning","This is your book."],
+["his","uning (erkak)","This is his sister."],
+["her","uning (ayol)","This is her brother."],
+["our","bizning","This is our house."],
+["their","ularning","This is their car."],
+["mother","ona","This is my mother."],
+["father","ota","This is my father."],
+["sister","opa-singil","This is his sister."],
+["brother","aka-uka","This is her brother."]
+],
+dl:[
+["Malika","Is this your mother?","Bu sizning onangizmi?"],
+["Aziz","Yes, this is my mother. And this is my father.","Ha, bu mening onam. Bu esa mening otam."],
+["Malika","Who is this boy?","Bu bola kim?"],
+["Aziz","This is his son.","Bu uning o'g'li."]
+],
+g:["Possessive Adjectives: my, your, his, her",
+"Possessive adjectives go before a noun to show who owns it: my mother, your book, his sister, her brother. 'His' is for a male owner, 'her' is for a female owner.",
+"Egalik olmoshlari: my, your, his, her",
+"Egalik olmoshlari otdan oldin kelib, kimga tegishli ekanini bildiradi: my mother, your book, his sister, her brother. 'His' — erkak egasi uchun, 'her' — ayol egasi uchun."],
+qz:[
+["'Mening onam' in English is ___.",["Your mother","My mother","His mother","Her mother"],1],
+["Choose the correct possessive for a boy's sister.",["Her sister","His sister","Their sister","Our sister"],1],
+["Choose the correct possessive for a girl's brother.",["His brother","Her brother","Its brother","Your brother"],1],
+["'Bizning uyimiz' in English is ___.",["Their house","Your house","Our house","Its house"],2]
+],
+sp:["Introduce your family using my/his/her: This is my mother, this is his/her...","Oilangizni my/his/her yordamida tanishtiring."],
+ls:["Show a family photo (or draw one) and name 3 family members using 'my'.","Oila suratini ko'rsating va 'my' yordamida 3 ta oila a'zosini nomlang.",
+"In pairs, point at each other's things and practice 'Is this your...?'","Juftlikda bir-biringizning narsalaringizga ishora qilib 'Is this your...?' deb mashq qiling."]
+},
+
+{d:10,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",rev:true,
+t:"Week 2 Review",tu:"2-hafta Takrorlash",
+qz:[
+["Choose the correct word: 'She ___ a teacher.'",["am","is","are","be"],1],
+["Choose the correct sentence.",["This are my shoes.","These are my shoes.","This is my shoes.","These is my shoes."],1],
+["Choose the correct sentence.",["There is two windows.","There are two windows.","There a window.","Windows there are."],1],
+["'Mening onam' in English is ___.",["Your mother","My mother","His mother","Her mother"],1],
+["Choose the correct word: 'They ___ students.'",["am","is","are","be"],2],
+["'Ana u stul' in English is ___.",["This is a chair.","That is a chair.","These are chairs.","Those are chairs."],1],
+["Choose the correct question.",["Is there a lamp?","Is there lamps?","Are there a lamp?","There is a lamp?"],0],
+["Choose the correct possessive for a boy's sister.",["Her sister","His sister","Their sister","Our sister"],1]
+],
+sp:["Describe yourself, your room, and your family using this week's grammar.","O'zingizni, xonangizni va oilangizni shu haftaning grammatikasi bilan tasvirlang."],
+ls:["Class review game: teacher points at people/objects, students respond with the right pattern.","Sinf takrorlash o'yini: o'qituvchi odam/buyumlarga ishora qiladi, o'quvchilar to'g'ri qolip bilan javob beradi.",
+"In pairs, review the week: describe people, objects, and your room.","Juftlikda haftani takrorlang: odamlar, buyumlar va xonangizni tasvirlang."]
+}
 
 ];
 
