@@ -812,6 +812,148 @@ sp:["Describe your room, your daily schedule, and answer 3 questions from a frie
 ls:["Class review relay: prepositions, time, and question words mixed quiz.","Sinf takrorlash estafetasi: predloglar, vaqt va savol so'zlari aralash so'rovi.",
 "In pairs, review the week with a mini interview.","Juftlikda haftani kichik intervyu bilan takrorlang."]
 }
+,
+
+{d:26,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",
+t:"Some / Any",tu:"Some / Any",
+v:[
+["some","biroz","I have some bread."],
+["any","hech qanday","I don't have any milk."],
+["bread","non","I have some bread."],
+["milk","sut","I don't have any milk."],
+["apples","olmalar","I have some apples."],
+["pens","ruchkalar","Do you have any pens?"],
+["water","suv","I want some water."],
+["tea","choy","Would you like some tea?"]
+],
+dl:[
+["Teacher","Do you have any pens?","Ruchkangiz bormi?"],
+["Student","Yes, I have some pens. Would you like some tea?","Ha, menda bir nechta ruchka bor. Choy ichasizmi?"],
+["Teacher","Yes, please. Thank you.","Ha, iltimos. Rahmat."]
+],
+g:["Some and Any",
+"Use 'some' in positive sentences and offers: I have some bread. Would you like some tea? Use 'any' in negatives and questions: I don't have any milk. Do you have any pens?",
+"Some va Any",
+"'Some' tasdiq gaplar va takliflarda ishlatiladi: I have some bread. Would you like some tea? 'Any' inkor va so'roq gaplarda ishlatiladi: I don't have any milk. Do you have any pens?"],
+qz:[
+["Choose the correct word: 'I don't have ___ milk.'",["some","any","a","the"],1],
+["Choose the correct word: 'Would you like ___ tea?'",["some","any","much","many"],0],
+["Choose the correct sentence.",["I have any apples.","I have some apples.","I have a apples.","I have the any apples."],1],
+["When do we usually use 'any'?",["Positive sentences","Negatives and questions","Only with people","Never"],1]
+],
+sp:["Say what food you have some of, and ask a friend if they have any.","Qanday ovqatingiz borligini ayting va do'stingizdan uning bor-yo'qligini so'rang."],
+ls:["Class 'offer' game: offer classmates 'Would you like some...?' with different foods.","Sinf 'taklif' o'yini: sinfdoshlaringizga turli ovqatlar bilan 'Would you like some...?' deb taklif qiling.",
+"In pairs, ask 'Do you have any...?' about school supplies.","Juftlikda maktab buyumlari haqida 'Do you have any...?' deb so'rang."]
+},
+
+{d:27,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",
+t:"Like / Want + -ing / to",tu:"Like / Want + -ing / to",
+v:[
+["like","yoqtirmoq","I like swimming."],
+["love","juda yoqtirmoq","She loves dancing."],
+["hate","yomon ko'rmoq","He hates cleaning."],
+["want","xohlamoq","I want to play."],
+["swimming","suzish","I like swimming."],
+["dancing","raqsga tushish","She loves dancing."],
+["cleaning","tozalash","He hates cleaning."],
+["to play","o'ynashni","I want to play football."]
+],
+dl:[
+["Malika","Do you like swimming?","Suzishni yoqtirasizmi?"],
+["Aziz","Yes, I love swimming. I want to swim today.","Ha, men suzishni juda yoqtiraman. Bugun suzgim keladi."],
+["Malika","I hate cleaning, but I want to help my mother.","Men tozalashni yomon ko'raman, lekin onamga yordam bergim keladi."]
+],
+g:["Like/Love/Hate + -ing, Want + to",
+"After 'like', 'love', 'hate', use a verb + -ing: I like swimming. After 'want', use 'to' + the plain verb: I want to play.",
+"Like/Love/Hate + -ing, Want + to",
+"'Like', 'love', 'hate' dan keyin fe'l + ing ishlatiladi: I like swimming. 'Want' dan keyin 'to' + fe'lning oddiy shakli ishlatiladi: I want to play."],
+qz:[
+["Choose the correct sentence.",["I like to swim always.","I like swimming.","I like swims.","I liking swim."],1],
+["Choose the correct sentence.",["I want playing football.","I want to play football.","I want play football.","I wants to play football."],1],
+["'Raqsga tushishni yaxshi ko'radi' in English is ___.",["She loves dance.","She loves dancing.","She love dancing.","She loving dance."],1],
+["What follows 'want'?",["to + verb","verb + ing","plain verb","verb + s"],0]
+],
+sp:["Say 2 things you like doing and 1 thing you want to do this weekend.","Yoqtiradigan 2 ta ishingizni va bu dam olish kunlari qilishni xohlagan 1 ta ishingizni ayting."],
+ls:["Class survey: ask 'Do you like...?' about hobbies.","Sinf so'rovi: hobbilar haqida 'Do you like...?' deb so'rang.",
+"In pairs, share things you like, love, and hate.","Juftlikda yoqtiradigan, juda yoqtiradigan va yomon ko'radigan narsalaringizni ayting."]
+},
+
+{d:28,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",
+t:"Articles — a/an, the, or nothing",tu:"Artikllar — a/an, the yoki hech narsa",
+v:[
+["the","(ma'lum narsa)","I have a book. The book is red."],
+["Uzbekistan","O'zbekiston","I live in Uzbekistan."],
+["music","musiqa","I like music."],
+["name","ism","My name is Aziz."],
+["close the door","eshikni yop","Close the door, please."],
+["open the window","derazani och","Open the window, please."]
+],
+dl:[
+["Teacher","Close the door, please.","Eshikni yoping, iltimos."],
+["Student","OK. I live in Uzbekistan. Do you like music?","Xo'p. Men O'zbekistonda yashayman. Musiqani yoqtirasizmi?"],
+["Teacher","Yes, I love music.","Ha, men musiqani juda yoqtiraman."]
+],
+g:["Articles: a/an, the, or nothing",
+"Use 'a/an' for something new. Use 'the' when both people know exactly which one: I have a book. The book is red. Use no article with names, most countries, and general ideas: I live in Uzbekistan. I like music.",
+"Artikllar: a/an, the yoki hech narsa",
+"Yangi narsa uchun 'a/an' ishlatiladi. Ikkala tomon ham aynan qaysi narsani bilganda 'the' ishlatiladi: I have a book. The book is red. Ism, ko'pchilik davlat va umumiy tushunchalar bilan artikl ishlatilmaydi: I live in Uzbekistan. I like music."],
+qz:[
+["Choose the correct article: 'I have a book. ___ book is red.'",["A","An","The","No article"],2],
+["Choose the correct article: 'I live in ___ Uzbekistan.'",["a","an","the","no article"],3],
+["Choose the correct article: 'I like ___ music.'",["a","an","the","no article"],3],
+["Choose the correct sentence.",["My name is the Aziz.","My name is Aziz.","My name is a Aziz.","My name is an Aziz."],1]
+],
+sp:["Talk about your country, your name, and something you like, using articles correctly.","Mamlakatingiz, ismingiz va yoqtirgan narsangiz haqida artikllardan to'g'ri foydalanib gapiring."],
+ls:["Class 'a/the' sorting: teacher says a sentence, students say if it needs a/an/the/nothing.","Sinf 'a/the' saralash: o'qituvchi gap aytadi, o'quvchilar a/an/the/hech narsa kerakligini aytadi.",
+"In pairs, talk about your countries and favorite music.","Juftlikda mamlakatlaringiz va sevimli musiqangiz haqida gapiring."]
+},
+
+{d:29,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",
+t:"Someone, Anyone, Nothing...",tu:"Someone, anyone, nothing...",
+v:[
+["someone","kimdir","I can see someone."],
+["anyone","hech kim (savol/inkor)","Is there anyone here?"],
+["something","nimadir","There is something in the box."],
+["anything","hech narsa (savol/inkor)","I can't see anything."],
+["nothing","hech narsa","There is nothing in the box."],
+["nowhere","hech qayerga","I have nowhere to go."]
+],
+dl:[
+["Malika","Is there anyone in the room?","Xonada kimdir bormi?"],
+["Aziz","No, there is no one. There is nothing here.","Yo'q, hech kim yo'q. Bu yerda hech narsa yo'q."],
+["Malika","I can see something over there!","Men u yerda nimadir ko'ryapman!"]
+],
+g:["Someone, Anyone, Nothing, Nowhere",
+"'Someone/something' are for positive sentences: I can see someone. 'Anyone/anything' are for questions and negatives: Is there anyone here? 'Nothing/nowhere' already mean negative — don't add 'not'.",
+"Someone, anyone, nothing, nowhere",
+"'Someone/something' tasdiq gaplarda ishlatiladi: I can see someone. 'Anyone/anything' so'roq va inkor gaplarda ishlatiladi: Is there anyone here? 'Nothing/nowhere' allaqachon inkor ma'nosini bildiradi — 'not' qo'shilmaydi."],
+qz:[
+["Choose the correct word: 'I can see ___.' (positive)",["anyone","someone","no one","nothing"],1],
+["Choose the correct word: 'Is there ___ here?'",["someone","anyone","no one","something"],1],
+["Choose the correct sentence.",["There isn't nothing.","There is nothing.","There isn't anything not.","Nothing isn't there."],1],
+["'Hech qayerga' in English is ___.",["Somewhere","Anywhere","Nowhere","Everywhere"],2]
+],
+sp:["Describe your bag: say something that is in it and something that is not.","Sumkangizni tasvirlang: unda nima borligini va nima yo'qligini ayting."],
+ls:["Mystery bag game: guess what's inside using 'something/nothing'.","Sirli sumka o'yini: ichida nima borligini 'something/nothing' bilan taxmin qiling.",
+"In pairs, ask 'Is there anyone/anything...?' about the classroom.","Juftlikda sinf haqida 'Is there anyone/anything...?' deb so'rang."]
+},
+
+{d:30,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",rev:true,
+t:"Week 6 Review — Term 1 Final Check",tu:"6-hafta Takrorlash — 1-chorak Yakuniy Tekshiruvi",
+qz:[
+["Choose the correct word: 'I don't have ___ milk.'",["some","any","a","the"],1],
+["Choose the correct sentence.",["I want playing football.","I want to play football.","I want play football.","I wants to play football."],1],
+["Choose the correct article: 'I live in ___ Uzbekistan.'",["a","an","the","no article"],3],
+["Choose the correct word: 'Is there ___ here?'",["someone","anyone","no one","something"],1],
+["Choose the correct word: 'Would you like ___ tea?'",["some","any","much","many"],0],
+["What follows 'want'?",["to + verb","verb + ing","plain verb","verb + s"],0],
+["Choose the correct sentence.",["My name is the Aziz.","My name is Aziz.","My name is a Aziz.","My name is an Aziz."],1],
+["'Hech qayerga' in English is ___.",["Somewhere","Anywhere","Nowhere","Everywhere"],2]
+],
+sp:["Give a 1-minute talk about yourself: your name, country, family, daily routine, and things you like.","O'zingiz haqida 1 daqiqalik nutq so'zlang: ismingiz, mamlakatingiz, oilangiz, kundalik hayotingiz va yoqtirgan narsalaringiz haqida."],
+ls:["Term 1 celebration: each student shares one English sentence they're proud of.","1-chorak nishonlash: har bir o'quvchi faxrlanadigan bitta ingliz gapini aytadi.",
+"In pairs, review the whole term by describing yourselves fully.","Juftlikda butun chorakni o'zingizni to'liq tasvirlash orqali takrorlang."]
+}
 
 ];
 
