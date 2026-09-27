@@ -577,6 +577,426 @@ quiz:[
 ["Choose the correct sentence.",["That can't true be.","That can't be true.","That not can be true.","That isn't can be true."],1],
 ["What do these modals help us do?",["Give commands","Make guesses about likelihood","Talk about the past","Ask questions"],1]
 ]}
+,
+
+{id:"prepositions-place", cat:"Prepositions & Connectors",
+title:"Prepositions of Place — in, on, under, next to, between", titleUz:"O'rin predloglari — in, on, under, next to, between",
+ruleUz:"'In' ichida, 'on' ustida, 'under' ostida, 'next to' yonida, 'between' orasida degan ma'noni bildiradi.",
+explain:[
+"'In' = inside something ('in the box'). 'On' = on top of a surface ('on the table'). 'Under' = below something ('under the bed'). 'Next to' = beside something. 'Between' = in the middle of two things.",
+"Uzbek often uses one general locative ending for 'at/in/on', so English's more specific choice of preposition needs extra attention and practice."
+],
+examples:[
+["The book is on the table.","Kitob stol ustida."],
+["The cat is under the bed.","Mushuk karavot ostida."],
+["The bank is between the shop and the park.","Bank do'kon va park orasida."],
+["The pharmacy is next to the bank.","Dorixona bank yonida."],
+["She lives near the school.","U maktab yaqinida yashaydi."]
+],
+mistakeWrong:"The book is in the table. (using 'in' for a surface)",
+mistakeRight:"The book is on the table.",
+mistakeWhy:"Uzbek uses one general locative form regardless of surface/container/nearby location, so learners often pick the wrong specific English preposition.",
+quiz:[
+["'The book is ___ the table.'",["in","on","under","next to"],1],
+["'The shoes are ___ the bed.'",["on","in","under","next to"],2],
+["'The bank is ___ the pharmacy and the shop.'",["next to","between","behind","near"],1],
+["Which preposition means 'inside'?",["on","in","under","between"],1],
+["'My house is ___ the park.' (close by)",["far","near","between","under"],1],
+["'The pharmacy is ___ the bank.' (beside)",["between","next to","under","far"],1]
+]},
+
+{id:"prepositions-time", cat:"Prepositions & Connectors",
+title:"Prepositions of Time — at, in, on, for, since", titleUz:"Vaqt predloglari — at, in, on, for, since",
+ruleUz:"'At' aniq soat, 'on' kun/sana, 'in' oy/yil/fasl, 'for' davomiylik, 'since' boshlanish nuqtasi bilan ishlatiladi.",
+explain:[
+"'At' is used with clock times ('at seven o'clock'). 'On' is used with days and dates ('on Monday'). 'In' is used with months, years, and seasons ('in May', 'in 2026', 'in winter').",
+"'For' is used with a length of time ('for five years'), and 'since' with a starting point ('since 2023')."
+],
+examples:[
+["I wake up at seven o'clock.","Men soat yettida uyg'onaman."],
+["My birthday is in May.","Tug'ilgan kunim mayda."],
+["I have class on Monday.","Dushanba kuni darsim bor."],
+["I have lived here for five years.","Men bu yerda besh yildan beri yashayman."],
+["She has studied English since 2023.","U ingliz tilini 2023 yildan beri o'rganadi."]
+],
+mistakeWrong:"I wake up in seven o'clock. My birthday is on May.",
+mistakeRight:"I wake up at seven o'clock. My birthday is in May.",
+mistakeWhy:"Uzbek doesn't require different prepositions for clock time vs months vs days, so learners often mix up at/on/in — one of the most common small mistakes in English.",
+quiz:[
+["'I have class ___ Monday.'",["in","on","at","for"],1],
+["'My birthday is ___ May.'",["on","in","at","for"],1],
+["'School starts ___ eight o'clock.'",["in","on","at","for"],2],
+["'I have lived here ___ five years.'",["since","for","at","on"],1],
+["'I have studied English ___ 2023.'",["since","for","at","on"],0],
+["Which preposition is used for clock times?",["at","in","on","for"],0]
+]},
+
+{id:"connectors", cat:"Prepositions & Connectors",
+title:"Joining Ideas — and, but, because, so, however, although", titleUz:"Fikrlarni bog'lash — and, but, because, so, however, although",
+ruleUz:"'And' qo'shish, 'but'/'however'/'although' qarama-qarshilik, 'because' sabab, 'so' natija bildiradi.",
+explain:[
+"'And' adds ideas: 'I like tea and coffee.' 'But' shows contrast: 'I wanted to go, but it was raining.' 'Because' gives a reason: 'I stayed home because I was sick.' 'So' shows a result: 'It was late, so we went home.'",
+"'However' and 'although' also show contrast but sound more formal/advanced than 'but': 'It's expensive; however, it's good quality.' 'Although it was raining, we went out.'"
+],
+examples:[
+["I like tea and coffee.","Men choy va kofeni yoqtiraman."],
+["I wanted to go, but it was raining.","Men bormoqchi edim, lekin yomg'ir yog'ayotgan edi."],
+["I stayed home because I was sick.","Men uyda qoldim, chunki kasal edim."],
+["It was late, so we went home.","Kech bo'lgani uchun, biz uyga ketdik."],
+["It's expensive; however, it's good quality.","Bu qimmat; ammo, sifati yaxshi."]
+],
+mistakeWrong:"It was late, so, we went home. (adding an unnecessary comma after 'so')",
+mistakeRight:"It was late, so we went home.",
+mistakeWhy:"Direct translation from Uzbek sentence rhythm sometimes leads to extra commas around connectors like 'so' and 'because' that don't match natural English punctuation.",
+quiz:[
+["'I like tea ___ coffee.'",["but","because","and","so"],2],
+["'I wanted to go, ___ it was raining.'",["and","but","because","so"],1],
+["'I stayed home ___ I was sick.'",["but","because","so","and"],1],
+["Choose the correct connector for contrast in more formal writing.",["and","however","so","because"],1],
+["'It was late, ___ we went home.'",["because","but","so","although"],2],
+["Which connector introduces a reason?",["so","but","because","and"],2]
+]},
+
+{id:"phrasal-verbs", cat:"Prepositions & Connectors",
+title:"Common Phrasal Verbs", titleUz:"Keng tarqalgan frazal fe'llar",
+ruleUz:"Frazal fe'l — fe'l + kichik so'z birikmasi bo'lib, ma'nosi alohida so'zlardan farq qiladi va yodlab olinishi kerak.",
+explain:[
+"A phrasal verb is a verb + a small word (preposition/particle) that together create a new meaning: 'look' + 'for' = 'look for' (search) — a completely different meaning from 'look' alone!",
+"Phrasal verbs are extremely common in everyday spoken English. You can't guess their meaning by translating each word from Uzbek — they must be learned as whole fixed expressions."
+],
+examples:[
+["I am looking for my keys.","Kalitlarimni qidiryapman."],
+["Please turn off the light.","Iltimos, chiroqni o'chiring."],
+["We ran out of milk.","Sutimiz tugab qoldi."],
+["Never give up on your dreams.","Orzularingizdan hech qachon voz kechmang."],
+["I look forward to seeing you.","Sizni ko'rishni intiqlik bilan kutaman."]
+],
+mistakeWrong:"I stopped smoking give up. (trying to translate the phrasal verb word-for-word)",
+mistakeRight:"I gave up smoking.",
+mistakeWhy:"Phrasal verbs have fixed, often unpredictable meanings — you can't build them by translating each word separately from Uzbek; they must be learned as whole units.",
+quiz:[
+["'Qidirmoq' in English is ___.",["Look after","Look for","Look forward to","Look on"],1],
+["'Please ___ the light.' (yoqmoq)",["turn on","turn off","get on","carry on"],0],
+["'Voz kechmoq' in English is ___.",["Give up","Get up","Take up","Put off"],0],
+["'Tugab qolmoq' in English is ___.",["Run out of","Get off","Pick up","Drop off"],0],
+["'Intiqlik bilan kutmoq' in English is ___.",["Look for","Look forward to","Look after","Look on"],1],
+["What makes phrasal verbs tricky for learners?",["They never change","Their meaning is often different from the individual words","They only exist in writing","They are always regular"],1]
+]}
+,
+
+{id:"comparatives", cat:"Numbers & Comparison",
+title:"Comparatives & Superlatives", titleUz:"Comparatives va Superlatives",
+ruleUz:"Qisqa sifatlarga -er/-est, uzunroq sifatlarga more/the most qo'shiladi; ba'zi so'zlar (good, bad) butunlay istisno.",
+explain:[
+"For short adjectives, add -er to compare two things (+than), and -est with 'the' to compare 3+ things: big→bigger→the biggest, fast→faster→the fastest.",
+"For longer adjectives, use 'more' and 'the most': more dangerous, the most dangerous. Some common adjectives are irregular: good→better→the best, bad→worse→the worst."
+],
+examples:[
+["An elephant is bigger than a dog.","Fil itdan kattaroq."],
+["She is the tallest student in the class.","U sinfdagi eng baland bo'yli o'quvchi."],
+["This book is more interesting than that one.","Bu kitob u kitobdan qiziqarliroq."],
+["He is the most intelligent student in the school.","U maktabdagi eng aqlli o'quvchi."],
+["Today is worse than yesterday.","Bugun kechadan yomonroq."]
+],
+mistakeWrong:"This book is more good. She is the intelligentest.",
+mistakeRight:"This book is better. She is the most intelligent.",
+mistakeWhy:"Learners sometimes add 'more' to short adjectives that need -er, or add -est to long adjectives that need 'the most' — and irregular forms like good→better→best follow neither rule.",
+quiz:[
+["Choose the correct comparative for 'big'.",["More big","Bigger","Biggest","The bigger"],1],
+["Choose the correct superlative for 'fast'.",["Faster","Fastest","The fastest","More fast"],2],
+["Choose the correct comparative for the long adjective 'dangerous'.",["More dangerous","Dangerouser","The dangerousest","Most dangerous"],0],
+["Choose the correct comparative form of 'good'.",["Gooder","Better","More good","Best"],1],
+["Choose the correct sentence.",["A cheetah is fast than a lion.","A cheetah is faster than a lion.","A cheetah is more fast than a lion.","A cheetah fastest than a lion."],1],
+["Which word do we add before a superlative?",["a","an","the","some"],2]
+]},
+
+{id:"quantifiers", cat:"Numbers & Comparison",
+title:"Countable & Uncountable Nouns — some/any/much/many", titleUz:"Sanaladigan va sanalmaydigan otlar — some/any/much/many",
+ruleUz:"'Many/few' sanaladigan ko'plik otlar bilan, 'much/little' sanalmaydigan otlar bilan ishlatiladi; 'some' tasdiqda, 'any' inkor/so'roqda.",
+explain:[
+"Countable nouns can be counted (an apple, two apples) and use 'many/few/a few'. Uncountable nouns can't be counted individually (water, money, rice) and use 'much/little/a little'.",
+"'Some' is used in positive sentences and offers ('I have some bread'); 'any' is used in negatives and questions ('I don't have any bread. Do you have any?')."
+],
+examples:[
+["I have some apples.","Menda bir nechta olma bor."],
+["I don't have any money.","Menda pul yo'q."],
+["How much water do you need?","Sizga qancha suv kerak?"],
+["How many books do you have?","Sizda nechta kitob bor?"],
+["There isn't much time left.","Ko'p vaqt qolmadi."]
+],
+mistakeWrong:"How much books do you have? I have many water.",
+mistakeRight:"How many books do you have? I have a lot of water.",
+mistakeWhy:"Uzbek nouns don't grammatically distinguish 'countable' from 'uncountable' the way English does, so learners often mix up much/many between plural countable nouns and uncountable nouns.",
+quiz:[
+["'I don't have ___ money.'",["some","any","a lot","many"],1],
+["'Would you like ___ tea?'",["some","any","much","many"],0],
+["Choose the correct question about an uncountable thing (price).",["How many is this bread?","How much is this bread?","How much are this bread?","How many are this bread?"],1],
+["Choose the correct question about a countable noun.",["How much apples do you want?","How many apples do you want?","How much apple you want?","How many apple do want?"],1],
+["Choose the correct word for a small uncountable amount.",["a few","a little","many","some many"],1],
+["Choose the correct word for a small countable amount.",["a few","a little","much","any"],0]
+]},
+
+{id:"dates-times", cat:"Numbers & Comparison",
+title:"Saying Dates & Times", titleUz:"Sana va vaqtni aytish",
+ruleUz:"Sanalar tartib son + 'of' bilan, oylar 'in' bilan, aniq kunlar 'on' bilan, vaqt half past/quarter past/to iboralari bilan aytiladi.",
+explain:[
+"Dates use ordinal numbers with 'the ___ of': 'Today is the fifth of May.' 'My birthday is on the third of March.' Use 'in' for months/years ('in September', 'in 2026') and 'on' for specific dates/days.",
+"Times use 'half past', 'quarter past', and 'quarter to': 3:30 = 'half past three', 3:15 = 'quarter past three', 3:45 = 'quarter to four'."
+],
+examples:[
+["Today is the fifth of May.","Bugun mayning beshinchisi."],
+["It is half past six.","Soat olti yarim."],
+["My birthday is on the third of March.","Tug'ilgan kunim uch martda."],
+["The meeting is at quarter to nine.","Uchrashuv soat to'qqizga choragida."],
+["School starts in September.","Maktab sentyabrda boshlanadi."]
+],
+mistakeWrong:"Today is five May. It is six thirty said as 'six and half'.",
+mistakeRight:"Today is the fifth of May. It is half past six.",
+mistakeWhy:"Uzbek dates and times use plain cardinal numbers, so learners forget the ordinal 'the ___ of' pattern for dates and the half-past/quarter phrasing for time.",
+quiz:[
+["Choose the correct date.",["Today is five May.","Today is the fifth of May.","Today is fifth May.","Today the fifth of May is."],1],
+["Choose the way this course teaches to say 3:45.",["Quarter past three","Half past three","Quarter to four","Three o'clock"],2],
+["Choose the correct preposition for a date.",["I was born in the fifth of May.","I was born on the fifth of May.","I was born at the fifth of May.","I was born the fifth of May."],1],
+["Choose the correct preposition for a month.",["School starts on September.","School starts at September.","School starts in September.","School starts the September."],2],
+["Choose the correct time question.",["What time it is?","What time is it?","Is what time it?","What is time?"],1],
+["Choose the correct ordinal for '3rd'.",["Threeth","Third","Thirdth","Three"],1]
+]}
+,
+
+{id:"conditionals", cat:"Advanced Grammar",
+title:"If-Sentences — Zero & First Conditional", titleUz:"Shart gaplar — Zero va First Conditional",
+ruleUz:"Zero conditional umumiy haqiqatlar uchun (if + present, present), First conditional haqiqiy kelajak imkoniyati uchun (if + present, will) ishlatiladi.",
+explain:[
+"Zero conditional states general truths: 'If + present simple, present simple': 'If you heat ice, it melts.' First conditional talks about real future possibilities: 'If + present simple, will + verb': 'If you study, you will pass.'",
+"Both use present tense in the if-clause — 'will' never goes in the if-clause itself, even though the sentence is about the future."
+],
+examples:[
+["If you heat ice, it melts.","Agar muzni isitsangiz, u eriydi."],
+["If you study, you will pass the exam.","Agar o'qisangiz, imtihondan o'tasiz."],
+["If it rains, we won't go out.","Agar yomg'ir yog'sa, tashqariga chiqmaymiz."],
+["Water boils if you heat it to 100 degrees.","Agar suvni 100 gradusgacha isitsangiz, u qaynaydi."],
+["If you don't hurry, you will miss the bus.","Agar shoshilmasangiz, avtobusga kechikasiz."]
+],
+mistakeWrong:"If you will study, you will pass. (using 'will' in the if-clause)",
+mistakeRight:"If you study, you will pass.",
+mistakeWhy:"Learners often add 'will' to both parts of the sentence because Uzbek future marking can feel needed in both halves — but English if-clauses use present tense, never 'will'.",
+quiz:[
+["Choose the correct zero conditional.",["If you heat ice, it melted.","If you heat ice, it melts.","If you heat ice, it will melt.","If you heated ice, it melts."],1],
+["Choose the correct first conditional.",["If you study, you pass.","If you study, you will pass.","If you will study, you pass.","If you studied, you will pass."],1],
+["Zero conditional is used for:",["Imaginary situations","General truths and facts","Past events","Polite requests"],1],
+["First conditional is used for:",["Impossible situations","Real future possibilities","Past habits","General facts only"],1],
+["Choose the correct sentence.",["If it rain, we stay home.","If it rains, we will stay home.","If it will rain, we stay home.","If it rains, we stayed home."],1],
+["Which tense goes in the if-clause of a first conditional?",["will + verb","present simple","past simple","past perfect"],1]
+]},
+
+{id:"second-conditional", cat:"Advanced Grammar",
+title:"If-Sentences — Second Conditional (Imaginary)", titleUz:"Shart gaplar — Second Conditional (Xayoliy)",
+ruleUz:"Xayoliy yoki ehtimoli kam vaziyatlar uchun 'if + past simple, would + fe'l' ishlatiladi; barcha egalar bilan 'were' ishlatiladi.",
+explain:[
+"We use the second conditional for imaginary or unlikely situations: 'If + past simple, would + verb': 'If I won the lottery, I would travel the world.'",
+"Note: we use 'were' for all subjects with 'if I/he/she were' in this structure, even though it looks like a plural form: 'If I were you, I would study more.'"
+],
+examples:[
+["If I won the lottery, I would travel the world.","Agar lotereyada yutsam, dunyo bo'ylab sayohat qilardim."],
+["If I were you, I would study more.","Men sizning o'rningizda bo'lsam, ko'proq o'qirdim."],
+["If she had more time, she would learn French.","Agar unda ko'proq vaqt bo'lsa, u fransuz tilini o'rgangan bo'lardi."],
+["What would you do if you could fly?","Agar uchsangiz, nima qilardingiz?"],
+["If I had a superpower, I would help people.","Agar super kuchim bo'lsa, odamlarga yordam berardim."]
+],
+mistakeWrong:"If I win the lottery, I would travel. (mixing present simple with 'would')",
+mistakeRight:"If I won the lottery, I would travel.",
+mistakeWhy:"Learners often keep the if-clause in present tense out of habit from the first conditional, forgetting that the second conditional needs past tense in the if-clause even though it's about an imaginary present/future.",
+quiz:[
+["Choose the correct second conditional.",["If I win the lottery, I will travel.","If I won the lottery, I would travel.","If I would win the lottery, I travel.","If I win the lottery, I would travel."],1],
+["Choose the correct sentence with 'if I were you'.",["If I was you, I would study.","If I were you, I would study.","If I am you, I would study.","If I were you, I will study."],1],
+["Second conditional is used for:",["Real future plans","Imaginary or unlikely situations","Past facts","General truths"],1],
+["Which tense goes in the if-clause?",["will + verb","present simple","past simple","present perfect"],2],
+["Choose the correct sentence.",["If she had more time, she will learn French.","If she had more time, she would learn French.","If she has more time, she would learn French.","If she have more time, she would learn French."],1],
+["What word do we use for 'if I/he/she ___' regardless of subject?",["was","were","is","be"],1]
+]},
+
+{id:"passive-voice", cat:"Advanced Grammar",
+title:"Passive Voice — is/was + Past Participle", titleUz:"Majhul nisbat — is/was + past participle",
+ruleUz:"Harakatni kim bajarganidan ko'ra harakatning o'zi muhimroq bo'lganda 'ega + be + past participle' qolipi ishlatiladi.",
+explain:[
+"We use the passive voice when the action itself is more important than who did it: 'English is spoken worldwide.' 'The telephone was invented by Bell.'",
+"Form: subject + am/is/are/was/were + past participle (+ by + agent, if needed). It also works with modals: 'The homework must be finished today.'"
+],
+examples:[
+["English is spoken worldwide.","Ingliz tili butun dunyoda gapiriladi."],
+["The telephone was invented by Bell.","Telefon Bell tomonidan ixtiro qilingan."],
+["This book was written in 1990.","Bu kitob 1990 yilda yozilgan."],
+["Rice is grown in many countries.","Guruch ko'p davlatlarda yetishtiriladi."],
+["The homework must be finished today.","Uy vazifasi bugun tugatilishi kerak."]
+],
+mistakeWrong:"English speaks worldwide. (using the active form for a passive meaning)",
+mistakeRight:"English is spoken worldwide.",
+mistakeWhy:"Uzbek passive constructions work differently, so learners sometimes keep the active verb form even when the subject isn't doing the action — the English passive always needs a form of 'be' + past participle.",
+quiz:[
+["Choose the correct passive sentence.",["English speaks worldwide.","English is spoken worldwide.","English spoken worldwide.","English is speaking worldwide."],1],
+["Choose the correct passive statement.",["America discovered by Columbus.","America was discovered by Columbus.","America discover by Columbus.","America is discover by Columbus."],1],
+["When do we use passive voice?",["When the action's doer is more important","When the action itself is more important than who did it","Only in questions","Only in the past"],1],
+["Choose the correct passive form.",["This house built in 1990.","This house was built in 1990.","This house is build in 1990.","This house builded in 1990."],1],
+["Choose the correct passive form with a modal.",["Homework must finish today.","Homework must be finished today.","Homework must finished today.","Homework must being finished today."],1],
+["What is the passive voice formula?",["subject + verb + object","subject + be + past participle","subject + have + past participle","subject + do + verb"],1]
+]},
+
+{id:"reported-speech", cat:"Advanced Grammar",
+title:"Reported Speech — Relaying What Someone Said", titleUz:"Ko'chirma gap — kimningdir aytganini ko'chirish",
+ruleUz:"Ko'chirma gapda zamon odatda bir bosqich orqaga siljiydi: present→past, will→would.",
+explain:[
+"When we report what someone said, the tense usually moves back one step: present simple → past simple, 'will' → 'would', present perfect → past perfect. Direct: 'I am tired,' she said. Reported: She said (that) she was tired.",
+"Use 'say' without an object ('She said...'), and 'tell' with an object ('She told me...')."
+],
+examples:[
+["'I am tired,' she said. → She said she was tired.","'Men charchadim,' dedi u. → U charchaganini aytdi."],
+["'I will call you,' he said. → He said he would call me.","'Men sizga qo'ng'iroq qilaman,' dedi u. → U menga qo'ng'iroq qilishini aytdi."],
+["'I have finished,' she said. → She said she had finished.","'Men tugatdim,' dedi u. → U tugatganini aytdi."],
+["He told me that he was busy.","U menga band ekanini aytdi."],
+["She said (that) she liked the movie.","U filmni yoqtirganini aytdi."]
+],
+mistakeWrong:"She said she is tired. (keeping the original tense in reported speech)",
+mistakeRight:"She said she was tired.",
+mistakeWhy:"When reporting what someone said, the tense usually moves back one step; learners often keep the original tense from direct speech instead of shifting it back.",
+quiz:[
+["Choose the correct reported speech for 'I am happy,' she said.",["She said she is happy.","She said she was happy.","She said she happy.","She said I was happy."],1],
+["Which verb is used for reporting with an object (tell someone)?",["say","tell","speak","talk"],1],
+["What does 'will' become in reported speech?",["will","would","shall","going to"],1],
+["Choose the correct sentence.",["He told me that he is busy.","He told me that he was busy.","He told that he was busy.","He told me he is busy."],1],
+["What usually happens to the tense in reported speech?",["It stays the same","It moves one step back","It moves to the future","It disappears"],1],
+["What does 'have finished' become in reported speech?",["has finished","had finished","have finished","finished"],1]
+]},
+
+{id:"relative-clauses", cat:"Advanced Grammar",
+title:"Relative Clauses — who, which, that, where", titleUz:"Nisbiy gaplar — who, which, that, where",
+ruleUz:"Odamlar uchun 'who', narsalar uchun 'which', ikkalasi uchun 'that', joylar uchun 'where', egalik uchun 'whose' ishlatiladi.",
+explain:[
+"Relative clauses give more information about a noun without starting a new sentence: 'The girl who sits next to me is my cousin.' Use 'who' for people, 'which' for things, 'that' for people or things (informal), 'where' for places, and 'whose' to show possession.",
+"This is a great tool for making longer, more natural-sounding sentences instead of two short choppy ones."
+],
+examples:[
+["The girl who sits next to me is my cousin.","Yonimda o'tirgan qiz mening amakivachcham."],
+["This is the book which I read last week.","Bu men o'tgan hafta o'qigan kitob."],
+["The park where we play is beautiful.","Biz o'ynaydigan park chiroyli."],
+["A teacher is a person who helps students learn.","O'qituvchi — o'quvchilarga o'rganishga yordam beradigan shaxs."],
+["That's the boy whose father is a doctor.","Bu — otasi shifokor bo'lgan bola."]
+],
+mistakeWrong:"The man which lives next door is a doctor. (using 'which' for a person)",
+mistakeRight:"The man who lives next door is a doctor.",
+mistakeWhy:"Learners sometimes mix up 'who' (for people) and 'which' (for things) since Uzbek connecting words don't make this same person/thing distinction.",
+quiz:[
+["Choose the correct relative pronoun for a person.",["Which","Where","Who","When"],2],
+["Choose the correct relative pronoun for a place.",["Who","Which","Where","Whose"],2],
+["Choose the correct sentence.",["A doctor is a person which helps sick people.","A doctor is a person who helps sick people.","A doctor is a person where helps sick people.","A doctor is a person whose helps sick people."],1],
+["Choose the correct relative pronoun for showing possession.",["Who","Which","Where","Whose"],3],
+["Choose the correct sentence.",["This is the book who I read.","This is the book which I read.","This is the book where I read.","This is the book whose I read."],1],
+["What do relative clauses do?",["Start a brand new sentence","Give more information about a noun without a new sentence","Only work in questions","Replace the subject entirely"],1]
+]},
+
+{id:"gerunds-infinitives", cat:"Advanced Grammar",
+title:"Gerunds vs Infinitives — -ing vs to + verb", titleUz:"Gerund va infinitiv — -ing va to + fe'l",
+ruleUz:"Ba'zi fe'llardan keyin -ing (gerund), ba'zilaridan keyin 'to + fe'l' (infinitive) keladi; qaysi fe'l qaysi qolipdan foydalanishini mashq orqali o'rganish kerak.",
+explain:[
+"Some verbs are followed by -ing (a gerund): enjoy, avoid, finish, practice, consider, mind: 'I enjoy reading.' Other verbs are followed by 'to + verb' (an infinitive): want, decide, plan, hope, promise, refuse, manage: 'I want to learn.'",
+"There's no simple rule for which pattern a verb takes — you learn each verb's pattern through exposure and practice."
+],
+examples:[
+["I enjoy reading books.","Men kitob o'qishdan zavqlanaman."],
+["I want to learn English.","Men ingliz tilini o'rganishni xohlayman."],
+["She avoids eating junk food.","U foydasiz ovqat yeyishdan qochadi."],
+["He decided to study medicine.","U tibbiyotni o'rganishga qaror qildi."],
+["They finished doing their homework.","Ular uy vazifasini bajarishni tugatishdi."]
+],
+mistakeWrong:"I enjoy to read books. I want learning English.",
+mistakeRight:"I enjoy reading books. I want to learn English.",
+mistakeWhy:"There's no simple rule for which pattern a verb takes — some verbs (enjoy, avoid, finish) need -ing, others (want, decide, hope) need 'to + verb' — learners must memorize each verb's pattern.",
+quiz:[
+["Choose the correct sentence.",["I enjoy to read books.","I enjoy reading books.","I enjoy read books.","I enjoy reads books."],1],
+["Choose the correct sentence.",["I want learning English.","I want learn English.","I want to learn English.","I want learned English."],2],
+["Which verb is usually followed by -ing?",["want","decide","avoid","hope"],2],
+["Which verb is usually followed by to+verb?",["enjoy","avoid","finish","decide"],3],
+["Choose the correct sentence.",["She avoids to eat junk food.","She avoids eating junk food.","She avoids eat junk food.","She avoids ate junk food."],1],
+["Choose the correct sentence.",["He decided studying medicine.","He decided to study medicine.","He decided study medicine.","He decided studies medicine."],1]
+]}
+,
+
+{id:"imperatives", cat:"Speech & Style",
+title:"Giving Instructions — Imperatives", titleUz:"Ko'rsatma berish — Imperativ",
+ruleUz:"Buyruq berish uchun fe'lning asosiy shakli 'I' yoki 'you' so'zisiz ishlatiladi; inkor uchun fe'ldan oldin 'Don't' qo'shiladi.",
+explain:[
+"To give an instruction in English, use the base form of the verb without a subject — this is called the imperative: 'Open your book.' 'Turn left.' 'Sit down.'",
+"To make it negative, add 'Don't' before the verb: 'Don't talk.' 'Don't run in the hallway.' Add 'please' to soften a command and make it more polite."
+],
+examples:[
+["Open your book.","Kitobingizni oching."],
+["Turn left at the corner.","Burchakda chapga buriling."],
+["Don't talk during the test.","Test paytida gapirmang."],
+["Please sit down.","Iltimos, o'tiring."],
+["Listen carefully and repeat.","Diqqat bilan tinglang va takrorlang."]
+],
+mistakeWrong:"You open your book. (adding a subject to a simple instruction)",
+mistakeRight:"Open your book.",
+mistakeWhy:"Uzbek imperatives are formed by changing the verb ending and can feel like they include the subject, so learners sometimes add 'you' before the English verb, which sounds unnatural for a direct instruction.",
+quiz:[
+["Choose the correct imperative.",["You open your book.","Open your book.","Opening your book.","You should open your book."],1],
+["Choose the correct negative imperative.",["You don't talk.","Don't talk.","No talk.","Not talk."],1],
+["What form of the verb is used in imperatives?",["Past tense","Base form","-ing form","to+verb"],1],
+["Choose the correct polite imperative.",["Sit down!","Please sit down.","You sit down.","Sitting down please."],1],
+["Which sentence is an imperative?",["She opens the door.","Open the door.","She is opening the door.","Did she open the door?"],1],
+["Choose the correct instruction.",["Don't to run in the hallway.","Don't run in the hallway.","No running the hallway.","Not run in hallway."],1]
+]},
+
+{id:"adverbs-frequency", cat:"Speech & Style",
+title:"Adverbs of Frequency — always, usually, sometimes, never", titleUz:"Chastota qo'shimchalari — always, usually, sometimes, never",
+ruleUz:"Chastota qo'shimchalari asosiy fe'ldan OLDIN, lekin 'to be' dan KEYIN keladi.",
+explain:[
+"Frequency adverbs (always, usually, often, sometimes, rarely, never) show how often something happens. They usually go BEFORE the main verb: 'I always do my homework.' But AFTER 'to be': 'She is often late.'",
+"To ask about frequency, use 'How often...?': 'How often do you play football?'"
+],
+examples:[
+["I always brush my teeth.","Men doim tishimni yuvaman."],
+["She usually wakes up at seven.","U odatda soat yettida uyg'onadi."],
+["We sometimes watch movies together.","Biz ba'zan birga kino tomosha qilamiz."],
+["He rarely plays video games.","U kamdan-kam video o'yin o'ynaydi."],
+["I never miss my English class.","Men hech qachon ingliz tili darsimni qoldirmayman."]
+],
+mistakeWrong:"I do always my homework. She often is late.",
+mistakeRight:"I always do my homework. She is often late.",
+mistakeWhy:"Frequency adverbs go BEFORE the main verb but AFTER 'to be' — learners often place them in the wrong spot relative to these two very different verb types.",
+quiz:[
+["Choose the correct sentence with a main verb.",["I do always my homework.","I always do my homework.","Always I do my homework.","I do my homework always."],1],
+["Choose the correct sentence with 'to be'.",["She often is late.","She is often late.","Often she is late.","She is late often always."],1],
+["Which word means 'kamdan-kam'?",["Always","Usually","Rarely","Never"],2],
+["Choose the correct question about frequency.",["How often you play football?","How often do you play football?","How much often do you play football?","How often play you football?"],1],
+["Choose the correct sentence.",["He never late for school.","He is never late for school.","He never is late for school.","He not never late for school."],1],
+["Which adverb means 100% of the time?",["Never","Rarely","Sometimes","Always"],3]
+]},
+
+{id:"formal-informal", cat:"Speech & Style",
+title:"Formal vs Informal English", titleUz:"Rasmiy va norasmiy ingliz tili",
+ruleUz:"O'qituvchi, xat va notanish odamlar bilan rasmiy til, do'st va oila bilan norasmiy til ishlatiladi.",
+explain:[
+"Formal English is used with teachers, in letters, and with strangers: 'Would you mind...?', 'Could you please...?', 'Dear Sir/Madam'. Informal English is used with friends and family: 'Can you...?', 'Hi! What's up?'",
+"Choosing the right register (formal or informal) for the situation shows good manners and strong language awareness — just like Uzbek has its own siz/sen distinction."
+],
+examples:[
+["Dear Sir/Madam, I am writing to ask...","Hurmatli janob/xonim, men so'rash uchun yozyapman..."],
+["Hi! What's up?","Salom! Ishlar qalay?"],
+["Would you mind helping me with this?","Bunda menga yordam berishga qarshimisiz?"],
+["Can you help me?","Menga yordam bera olasizmi?"],
+["Yours sincerely, Aziz Karimov.","Hurmat bilan, Aziz Karimov."]
+],
+mistakeWrong:"Hey teacher, gimme the homework. (using very casual language with a teacher or in writing)",
+mistakeRight:"Excuse me, could I please have the homework?",
+mistakeWhy:"Learners often use the same casual style with teachers, strangers, and in writing as with friends — English speakers expect a more formal register in these situations.",
+quiz:[
+["Choose the formal way to ask for help.",["Can you help me?","Would you mind helping me?","Help me!","Gimme a hand."],1],
+["Choose the correct formal letter opening.",["Hi there,","Hey,","Dear Sir/Madam,","What's up,"],2],
+["Choose the correct informal greeting.",["Dear Sir/Madam","Hi!","I would like to","Yours sincerely"],1],
+["When should you use formal English?",["Only in exams","With teachers, in letters, and with strangers","Only with family","Never"],1],
+["Choose the correct formal request.",["Gimme that book.","Could I have that book, please?","Give me that book.","I want that book."],1],
+["Choose the correct informal closing for a message to a friend.",["Yours sincerely","Best regards","See you!","Yours faithfully"],2]
+]}
 
 ];
 
