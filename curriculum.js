@@ -2327,6 +2327,134 @@ sp:["Give directions to a place in town, and talk about a travel experience.","S
 ls:["Class 'lost tourist' role-play.","Sinf 'adashgan sayyoh' rolli o'yini.",
 "In pairs, review town places, directions, and transport.","Juftlikda shahar joylari, yo'nalishlar va transportni takrorlang."]
 }
+,
+
+{d:81,w:17,wt:"Hobbies & Friends",wtUz:"Hobbi va do'stlar",
+t:"Hobbies & Free Time",tu:"Hobbi va bo'sh vaqt",
+v:[
+["football","futbol","I play football every weekend."],
+["swimming","suzish","Swimming is my favorite sport."],
+["drawing","rasm chizish","Drawing is a relaxing hobby."],
+["chess","shaxmat","I can play chess."],
+["free time","bo'sh vaqt","What do you do in your free time?"]
+],
+dl:[
+["Malika","What's your hobby?","Sizning hobbingiz nima?"],
+["Aziz","My hobby is playing football. I like swimming too. What about you?","Mening hobbim — futbol o'ynash. Suzishni ham yoqtiraman. Sizchi?"],
+["Malika","I like drawing.","Menga rasm chizish yoqadi."]
+],
+g:["Talking About Hobbies",
+"After 'like/love', use verb + -ing for hobbies: I like swimming. I love drawing. You already know this pattern!",
+"Hobbilar haqida gapirish",
+"'Like/love' dan keyin hobbilar uchun fe'l + ing ishlatiladi: I like swimming. I love drawing. Siz bu qolipni allaqachon bilasiz!"],
+qz:[
+["Choose the correct sentence.",["I like swim.","I like swimming.","I like to swimming.","I likes swimming."],1],
+["'Rasm chizish' in English is ___.",["Swimming","Drawing","Chess","Football"],1],
+["'Bo'sh vaqt' in English is ___.",["Hobby","Free time","Sport","Game"],1],
+["Choose the correct sentence.",["I can play chess.","I can plays chess.","I can playing chess.","I cans play chess."],0]
+],
+sp:["Talk about your hobbies and free time activities.","Hobbilaringiz va bo'sh vaqt mashg'ulotlaringiz haqida gapiring."],
+ls:["Hobby mingle: find classmates who share your hobby.","Hobbi aralashuvi: hobbisi sizniki bilan bir xil sinfdoshlarni toping.",
+"In pairs, discuss your hobbies.","Juftlikda hobbilaringizni muhokama qiling."]
+},
+
+{d:82,w:17,wt:"Hobbies & Friends",wtUz:"Hobbi va do'stlar",
+t:"Technology",tu:"Texnologiya",
+v:[
+["phone","telefon","My phone is new."],
+["call","qo'ng'iroq qilmoq","I will call you later."],
+["internet","internet","I use the internet every day."],
+["video call","video qo'ng'iroq","We made a video call to grandma."]
+],
+dl:[
+["Malika","Can I call you tonight?","Bugun kechqurun sizga qo'ng'iroq qilsam bo'ladimi?"],
+["Aziz","Sure! Or we can make a video call.","Albatta! Yoki video qo'ng'iroq qilsak ham bo'ladi."]
+],
+g:["Talking About Technology",
+"Use 'will' for future plans with technology (I will call you) and present simple for habits (I use the internet every day) — both patterns you already know!",
+"Texnologiya haqida gapirish",
+"Texnologiya bilan bog'liq kelajak rejalar uchun 'will' (I will call you), odatlar uchun present simple (I use the internet every day) ishlatiladi — ikkalasini ham bilasiz!"],
+qz:[
+["Choose the correct sentence.",["I will calling you.","I will call you.","I calling you will.","I am will call you."],1],
+["'Internet' in English is ___.",["Phone","Internet","Call","Video"],1],
+["Choose the correct sentence for a habit.",["I use the internet every day.","I am using the internet every day.","I used the internet every day.","I will use the internet every day."],0],
+["What do we call talking and seeing someone on the phone?",["A call","A video call","A text","An email"],1]
+],
+sp:["Talk about how you use your phone every day.","Telefoningizdan har kuni qanday foydalanishingiz haqida gapiring."],
+ls:["Class tech survey: how often do you use social media?","Sinf texnologiya so'rovi.",
+"In pairs, role-play arranging a video call.","Juftlikda video qo'ng'iroq tashkil qilishni ijro eting."]
+},
+
+{d:83,w:17,wt:"Hobbies & Friends",wtUz:"Hobbi va do'stlar",
+t:"Friendship",tu:"Do'stlik",
+v:[
+["friendship","do'stlik","Friendship is very important."],
+["trust","ishonmoq","I trust my best friend."],
+["help","yordam bermoq","Friends help each other."],
+["share","bo'lishmoq","We share our problems."]
+],
+dl:[
+["Aziz","Malika is my best friend. We trust each other.","Malika mening eng yaqin do'stim. Biz bir-birimizga ishonamiz."],
+["Teacher","That's wonderful! Good friends help and support each other.","Bu ajoyib! Yaxshi do'stlar bir-biriga yordam beradi va qo'llab-quvvatlaydi."]
+],
+g:["Each Other: Talking About Friendship",
+"Use 'each other' when two people do the same thing to one another: We help each other. They trust each other.",
+"Each Other: do'stlik haqida gapirish",
+"Ikki kishi bir-biriga bir xil ishni qilganda 'each other' ishlatiladi: We help each other. They trust each other."],
+qz:[
+["'Ishonmoq' in English is ___.",["Trust","Share","Help","Like"],0],
+["Choose the correct sentence.",["We help ourselves every day.","We help each other every day.","We help himself every day.","We help herself every day."],1],
+["'Do'stlik' in English is ___.",["Friend","Friendship","Trust","Help"],1],
+["Choose the correct sentence.",["Friends share ourselves problems.","Friends share their problems.","Friends shares their problems.","Friends sharing their problems."],1]
+],
+sp:["Talk about what makes a good friend.","Yaxshi do'st qanday bo'lishi kerakligi haqida gapiring."],
+ls:["Friendship circle: name one quality of a good friend.","Do'stlik doirasi: yaxshi do'stning bir xususiyatini ayting.",
+"In pairs, introduce your best friend.","Juftlikda eng yaqin do'stingizni tanishtiring."]
+},
+
+{d:84,w:17,wt:"Hobbies & Friends",wtUz:"Hobbi va do'stlar",
+t:"Making Plans with Friends",tu:"Do'stlar bilan reja tuzish",
+v:[
+["would you like to","xohlaysizmi","Would you like to come to the cinema?"],
+["let's","keling","Let's go to the park."],
+["party","ziyofat","There's a party this Friday."]
+],
+dl:[
+["Aziz","Would you like to come to my birthday party?","Tug'ilgan kunim ziyofatiga kelasizmi?"],
+["Malika","I'd love to! What time?","Albatta xohlayman! Soat nechada?"],
+["Aziz","Let's meet at five o'clock.","Soat beshda uchrashaylik."]
+],
+g:["Invitations: Would you like to...?",
+"To invite someone politely, use 'Would you like to + verb?' To accept: 'I'd love to!' Use 'Let's + verb' to suggest doing something together.",
+"Taklif qilish: Would you like to...?",
+"Kimnidir odobli taklif qilish uchun 'Would you like to + fe'l?' ishlatiladi. Qabul qilish: 'I'd love to!' Birga biror narsa qilishni taklif qilish uchun 'Let's + fe'l' ishlatiladi."],
+qz:[
+["Choose the correct way to invite someone.",["You come to my party?","Would you like to come to my party?","Coming my party?","You want come party?"],1],
+["Choose the correct way to accept enthusiastically.",["Sorry, I can't.","Maybe next time.","I'd love to!","No, thank you."],2],
+["Choose the correct suggestion.",["Let's to go!","Let's go!","Let we go!","Lets going!"],1],
+["'Ziyofat' in English is ___.",["Party","Friend","Plan","Game"],0]
+],
+sp:["Invite your partner to an event and role-play accepting.","Sherigingizni tadbirga taklif qiling va qabul qilishni ijro eting."],
+ls:["Class party planning: plan a class party together.","Sinf ziyofatini birgalikda rejalashtiring.",
+"In pairs, practice inviting each other to events.","Juftlikda bir-biringizni tadbirlarga taklif qilishni mashq qiling."]
+},
+
+{d:85,w:17,wt:"Hobbies & Friends",wtUz:"Hobbi va do'stlar",rev:true,
+t:"Week 17 Review",tu:"17-hafta Takrorlash",
+qz:[
+["Choose the correct sentence.",["I like swim.","I like swimming.","I like to swimming.","I likes swimming."],1],
+["Choose the correct sentence.",["I will calling you.","I will call you.","I calling you will.","I am will call you."],1],
+["'Ishonmoq' in English is ___.",["Trust","Share","Help","Like"],0],
+["Choose the correct way to invite someone.",["You come to my party?","Would you like to come to my party?","Coming my party?","You want come party?"],1],
+["'Rasm chizish' in English is ___.",["Swimming","Drawing","Chess","Football"],1],
+["'Internet' in English is ___.",["Phone","Internet","Call","Video"],1],
+["Choose the correct sentence.",["We help ourselves every day.","We help each other every day.","We help himself every day.","We help herself every day."],1],
+["Choose the correct way to accept enthusiastically.",["Sorry, I can't.","Maybe next time.","I'd love to!","No, thank you."],2]
+],
+sp:["Talk about your hobbies, how you use technology, and invite a friend to do something.","Hobbilaringiz, texnologiyadan qanday foydalanishingiz haqida gapiring va do'stingizni biror narsaga taklif qiling."],
+ls:["Class 'plan a weekend' game.","Sinf 'dam olish kunini rejalashtirish' o'yini.",
+"In pairs, review hobbies, technology, and friendship.","Juftlikda hobbi, texnologiya va do'stlikni takrorlang."]
+}
 
 ];
 
