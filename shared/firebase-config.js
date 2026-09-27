@@ -10,13 +10,17 @@
  * access to it. Real access control lives in database.rules.json, not here.
  */
 export const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyD5048tGr1biITgI2mlUa_MXdInPX4DZMc",
+  authDomain: "bucketlist-769b9.firebaseapp.com",
+  // TODO: fill this in once you create the Realtime Database (see README —
+  // Build → Realtime Database → Create Database). It will look like
+  // "https://bucketlist-769b9-default-rtdb.<region>.firebasedatabase.app"
+  databaseURL: "https://bucketlist-769b9-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "bucketlist-769b9",
+  storageBucket: "bucketlist-769b9.firebasestorage.app",
+  messagingSenderId: "308027578409",
+  appId: "1:308027578409:web:178aa24b6a26c9a27de438",
+  measurementId: "G-2B9XFZZ52F",
 };
 
 /* The single owner account. Auto-approved as "owner" on first sign-in,

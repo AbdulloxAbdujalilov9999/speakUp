@@ -196,7 +196,7 @@ function syncProgressSubs(uids){
 // <option>s for the "reset a lesson" picker. The admin site has no
 // curriculum data of its own, so it falls back to plain day numbers.
 function dayOptions(p, selected){
-  const days = typeof CURRICULUM !== "undefined" ? CURRICULUM.map(d => ({ d: d.d, t: d.t })) : Array.from({ length: 60 }, (_, i) => ({ d: i + 1, t: "" }));
+  const days = typeof CURRICULUM !== "undefined" ? CURRICULUM.map(d => ({ d: d.d, t: d.t })) : Array.from({ length: 90 }, (_, i) => ({ d: i + 1, t: "" }));
   return days.map(x => `<option value="${x.d}"${String(x.d) === String(selected) ? " selected" : ""}>Day ${x.d}${x.t ? " — " + escapeHtml(x.t) : ""}${p && p.completed && p.completed[x.d] ? "  ✓" : ""}</option>`).join("");
 }
 

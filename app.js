@@ -641,8 +641,8 @@ function weekCardHtml(w){
 function renderDashboard(){
   const app = document.getElementById("app");
   const done = completedCount();
-  const pct = Math.round((done/60)*100);
-  const nextDay = CURRICULUM.find(d => !isCompleted(d.d)) || CURRICULUM[59];
+  const pct = Math.round((done/CURRICULUM.length)*100);
+  const nextDay = CURRICULUM.find(d => !isCompleted(d.d)) || CURRICULUM[CURRICULUM.length-1];
   const weeks = [...new Set(CURRICULUM.map(d=>d.w))];
 
   const roadDots = CURRICULUM.map(d => {
@@ -672,8 +672,8 @@ function renderDashboard(){
       <div class="hero-top">
         <div class="hero-left">
           <p class="eyebrow">${state.progress.name ? greet.toUpperCase() : tr("SPEAKUP ENGLISH")}</p>
-          <h1 class="hwy-title">${state.progress.name ? escapeHtml(state.progress.name) : tr("Your 60-Day Journey")}</h1>
-          <p class="hero-sub">${done === 0 ? tr("Let's start your journey to speaking English with confidence.") : tr("{n} of 60 days done — keep going.", { n: done })}</p>
+          <h1 class="hwy-title">${state.progress.name ? escapeHtml(state.progress.name) : tr("Your 90-Day Journey")}</h1>
+          <p class="hero-sub">${done === 0 ? tr("Let's start your journey to speaking English with confidence.") : tr("{n} of 90 days done — keep going.", { n: done })}</p>
         </div>
         <div class="ring" role="img" aria-label="${pct}%">
           <svg viewBox="0 0 80 80" width="88" height="88">
@@ -726,7 +726,7 @@ function renderDashboard(){
     </section>
 
     <section class="panel">
-      <div class="panel-head"><h2>${tr("Weeks 1&ndash;12")}</h2></div>
+      <div class="panel-head"><h2>${tr("Weeks 1&ndash;18")}</h2></div>
       <div class="week-grid">
         ${weeks.map(weekCardHtml).join("")}
       </div>
@@ -769,7 +769,7 @@ function renderLessonList(){
     <section class="panel">
       <div class="panel-head">
         <h2>${tr("All Lessons")}</h2>
-        <p class="panel-sub">${tr("12 weeks · 60 days · everyday spoken English")}</p>
+        <p class="panel-sub">${tr("18 weeks · 90 days · everyday spoken English")}</p>
       </div>
       <div class="week-grid">
         ${weeks.map(weekCardHtml).join("")}
@@ -792,7 +792,7 @@ function renderWeekDetail(weekNum){
       <div class="lesson-head-top">
         <button class="btn btn-ghost btn-sm" id="backToLessonsBtn">${tr("&larr; All Lessons")}</button>
       </div>
-      <p class="eyebrow">${tr("WEEK {n} OF 12", { n: weekNum })}</p>
+      <p class="eyebrow">${tr("WEEK {n} OF 18", { n: weekNum })}</p>
       <h1 class="hwy-title">${escapeHtml(trc(days[0].wt))}</h1>
       <p class="hero-sub">${tr("{a}/{b} days complete.", { a: wp.done, b: wp.total })}</p>
     </section>
@@ -1475,14 +1475,18 @@ function attemptMatch(d, body, ps){
 }
 
 function renderGrammarTab(d, body){
+  // d.g is [titleEn, bodyEn, titleUz, bodyUz] — baked-in Uzbek, no content-uz.js side-channel needed.
+  const [titleEn, bodyEn, titleUz, bodyUz] = d.g;
+  const uzLeads = !uiEn();
+  const mainTitle = uzLeads ? titleUz : titleEn;
+  const mainBody = uzLeads ? bodyUz : bodyEn;
+  const shadowTitle = uzLeads ? titleEn : titleUz;
+  const shadowBody = uzLeads ? bodyEn : bodyUz;
   body.innerHTML = `
     <div class="tip-card">
       <span class="tip-label mono">${tr("LANGUAGE TIP")}</span>
-      ${(() => {
-        const tip = tTip(d);
-        if (uiEn()) return `<h3>${escapeHtml(d.g[0])}</h3><p>${escapeHtml(d.g[1])}</p>` + (state.settings.showUz && tip ? `<p class="tip-shadow"><strong>${escapeHtml(tip[0])}</strong> — ${escapeHtml(tip[1])}</p>` : "");
-        return `<h3>${escapeHtml(tip ? tip[0] : d.g[0])}</h3><p>${escapeHtml(tip ? tip[1] : d.g[1])}</p>` + (tip ? `<p class="tip-shadow"><em>${escapeHtml(d.g[0])}.</em> ${escapeHtml(d.g[1])}</p>` : "");
-      })()}
+      <h3>${escapeHtml(mainTitle)}</h3><p>${escapeHtml(mainBody)}</p>
+      ${state.settings.showUz ? `<p class="tip-shadow"><strong>${escapeHtml(shadowTitle)}</strong> — ${escapeHtml(shadowBody)}</p>` : ""}
     </div>
   `;
 }
@@ -1694,7 +1698,7 @@ function renderHomework(){
       <div class="hero-left">
         <p class="eyebrow">${tr("HOMEWORK")}</p>
         <h1 class="hwy-title">${tr("Vocabulary Homework")}</h1>
-        <p class="hero-sub">${tr("Every word from the 60-day course, split into {n} sessions of {size} words each. Expand a session to study its words, then pass the quiz — that's the only way to mark it complete.", { n: sessions.length, size: HW_SESSION_SIZE })}</p>
+        <p class="hero-sub">${tr("Every word from the 90-day course, split into {n} sessions of {size} words each. Expand a session to study its words, then pass the quiz — that's the only way to mark it complete.", { n: sessions.length, size: HW_SESSION_SIZE })}</p>
       </div>
       <div class="hero-stats">
         <div class="stat-tile"><span class="stat-num">${done}<span class="stat-den">/${sessions.length}</span></span><span class="stat-label">${tr("Sessions complete")}</span></div>
@@ -2191,18 +2195,18 @@ function renderProgressPage(){
   const done = completedCount();
   const entries = Object.entries(state.progress.completed).map(([day,info]) => ({ day:Number(day), ...info })).sort((a,b)=>a.day-b.day);
   const avgScore = entries.length ? Math.round(entries.reduce((s,e)=>s+(e.score||0),0)/entries.length) : 0;
-  const certReady = isCompleted(60);
+  const certReady = isCompleted(CURRICULUM.length);
 
   app.innerHTML = `
     <section class="panel">
       <div class="panel-head"><h2>${tr("Your Progress")}</h2></div>
       <div class="hero-stats" style="margin-bottom:1.5rem;">
-        <div class="stat-tile"><span class="stat-num">${done}<span class="stat-den">/60</span></span><span class="stat-label">${tr("Days complete")}</span></div>
+        <div class="stat-tile"><span class="stat-num">${done}<span class="stat-den">/${CURRICULUM.length}</span></span><span class="stat-label">${tr("Days complete")}</span></div>
         <div class="stat-tile"><span class="stat-num">${state.progress.streak}</span><span class="stat-label">${tr("Day streak")}</span></div>
         <div class="stat-tile"><span class="stat-num">${avgScore}%</span><span class="stat-label">${tr("Average quiz score")}</span></div>
         <div class="stat-tile"><span class="stat-num">${state.progress.xp}</span><span class="stat-label">${tr("Total XP")}</span></div>
       </div>
-      ${certReady ? `<div class="cert-callout">${icon("trophy",22)}<p>${tr("You completed the Final Test!")}</p><button class="btn btn-accent" id="certBtn">${tr("View / Print Certificate")}</button></div>` : `<p class="panel-sub">${tr("Complete Day 60 (the Final Test) to unlock your certificate.")}</p>`}
+      ${certReady ? `<div class="cert-callout">${icon("trophy",22)}<p>${tr("You completed the Final Test!")}</p><button class="btn btn-accent" id="certBtn">${tr("View / Print Certificate")}</button></div>` : `<p class="panel-sub">${tr("Complete Day 90 (the Final Test) to unlock your certificate.")}</p>`}
     </section>
     <section class="panel">
       <div class="panel-head">
@@ -2233,14 +2237,14 @@ function showCertificate(){
     <div class="modal-backdrop" id="certBackdrop">
       <div class="cert-sheet">
         <div class="cert-border">
-          <p class="cert-eyebrow mono">${tr("SPEAKUP ENGLISH · 60-DAY COURSE")}</p>
+          <p class="cert-eyebrow mono">${tr("SPEAKUP ENGLISH · 90-DAY COURSE")}</p>
           <h2 class="cert-title">${tr("Certificate of Completion")}</h2>
           <p class="cert-line">${tr("This certifies that")}</p>
           <p class="cert-name">${escapeHtml(name)}</p>
-          <p class="cert-line">${tr("has successfully completed 60 days of the SpeakUp English course, building the vocabulary, grammar, and speaking confidence to hold everyday conversations in English.")}</p>
+          <p class="cert-line">${tr("has successfully completed 90 days of the SpeakUp English course, building the vocabulary, grammar, and speaking confidence to hold everyday conversations in English.")}</p>
           <div class="cert-footer">
             <div><span class="cert-date mono">${date}</span><span class="cert-foot-label">${tr("Date")}</span></div>
-            <div><span class="cert-score mono">${state.progress.completed[60] ? state.progress.completed[60].score : "—"}%</span><span class="cert-foot-label">${tr("Final Test Score")}</span></div>
+            <div><span class="cert-score mono">${state.progress.completed[CURRICULUM.length] ? state.progress.completed[CURRICULUM.length].score : "—"}%</span><span class="cert-foot-label">${tr("Final Test Score")}</span></div>
           </div>
         </div>
         <div class="cert-actions">
@@ -2341,7 +2345,7 @@ function renderSettings(){
       ${window.SU_user && window.SU_user.role !== "student" ? `<div class="setting-row">
         <div>
           <h3>${tr("Free navigation")}</h3>
-          <p class="panel-sub">${tr("Unlock all 60 days for teaching or preview, instead of sequential unlocking.")}</p>
+          <p class="panel-sub">${tr("Unlock all 90 days for teaching or preview, instead of sequential unlocking.")}</p>
         </div>
         <label class="switch"><input type="checkbox" id="toggleFreeNav" ${state.settings.freeNav?"checked":""}><span class="slider"></span></label>
       </div>` : ""}
