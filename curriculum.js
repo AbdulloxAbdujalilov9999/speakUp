@@ -954,6 +954,146 @@ sp:["Give a 1-minute talk about yourself: your name, country, family, daily rout
 ls:["Term 1 celebration: each student shares one English sentence they're proud of.","1-chorak nishonlash: har bir o'quvchi faxrlanadigan bitta ingliz gapini aytadi.",
 "In pairs, review the whole term by describing yourselves fully.","Juftlikda butun chorakni o'zingizni to'liq tasvirlash orqali takrorlang."]
 }
+,
+
+{d:31,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
+t:"Adjectives & Adverbs",tu:"Sifatlar va ravishlar",
+v:[
+["happy","baxtli","She is a happy girl."],
+["happily","baxtli tarzda","She sings happily."],
+["careful","ehtiyotkor","He is a careful driver."],
+["carefully","ehtiyotkorlik bilan","He drives carefully."],
+["good","yaxshi","She is a good singer."],
+["well","yaxshi (ravish)","She sings well."],
+["slow","sekin","He is a slow runner."],
+["slowly","sekin (ravish)","He runs slowly."],
+["quick","tez","She is a quick learner."],
+["quickly","tez (ravish)","She learns quickly."]
+],
+dl:[
+["Teacher","Is he a careful driver?","U ehtiyotkor haydovchimi?"],
+["Student","Yes, he drives very carefully.","Ha, u juda ehtiyotkorlik bilan haydaydi."],
+["Teacher","Does she sing well?","U yaxshi qo'shiq aytadimi?"],
+["Student","Yes, she sings very well.","Ha, u juda yaxshi qo'shiq aytadi."]
+],
+g:["Adjectives & Adverbs of Manner",
+"An adjective describes a noun: a happy girl, a careful driver. An adverb describes a verb — most add -ly: happy → happily, careful → carefully. Some are irregular: good → well.",
+"Sifatlar va ravishlar",
+"Sifat otni tasvirlaydi: a happy girl, a careful driver. Ravish fe'lni tasvirlaydi — ko'pchiligiga -ly qo'shiladi: happy → happily, careful → carefully. Ba'zilari istisno: good → well."],
+qz:[
+["Choose the adjective.",["Happily","Happy","Carefully","Well"],1],
+["Choose the adverb.",["Happy","Careful","Carefully","Good"],2],
+["What is the adverb form of 'good'?",["Goodly","Well","Gooder","Good"],1],
+["Choose the correct sentence.",["She sings happy.","She sings happily.","She singing happily.","She happily sing."],1]
+],
+sp:["Describe 2 people using adjectives, then describe how they do something using adverbs.","2 kishini sifatlar bilan tasvirlang, so'ng ular biror narsani qanday qilishini ravishlar bilan ayting."],
+ls:["Adjective/adverb sort: teacher says a word, students say if it's an adjective or adverb.","Sifat/ravish saralash: o'qituvchi so'z aytadi, o'quvchilar sifat yoki ravish ekanini aytadi.",
+"In pairs, describe how you do 3 daily activities using adverbs.","Juftlikda 3 ta kundalik ishni ravishlar bilan qanday qilishingizni tasvirlang."]
+},
+
+{d:32,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
+t:"Comparatives & Superlatives",tu:"Solishtirish va eng ustunlik darajasi",
+v:[
+["taller","balandroq","He is taller than me."],
+["tallest","eng baland","She is the tallest in the class."],
+["bigger","kattaroq","An elephant is bigger than a dog."],
+["biggest","eng katta","The elephant is the biggest."],
+["more beautiful","chiroyliroq","This flower is more beautiful."],
+["most beautiful","eng chiroyli","This is the most beautiful flower."],
+["better","yaxshiroq","This book is better."],
+["best","eng yaxshi","This is the best day."]
+],
+dl:[
+["Malika","Who is taller, you or your brother?","Kim balandroq, siz yoki akangiz?"],
+["Aziz","My brother is taller than me. He is the tallest in our family.","Akam mendan balandroq. U bizning oilamizda eng baland."]
+],
+g:["Comparatives & Superlatives",
+"For short adjectives, add -er to compare two things and -est (with 'the') for three or more: tall → taller → the tallest. For longer adjectives, use 'more/the most'. Irregular: good → better → the best.",
+"Solishtirish va eng ustunlik darajasi",
+"Qisqa sifatlarga ikkitani solishtirish uchun -er, uchtadan ortiqni solishtirish uchun 'the' bilan -est qo'shiladi: tall → taller → the tallest. Uzunroq sifatlarda 'more/the most' ishlatiladi. Istisno: good → better → the best."],
+qz:[
+["Choose the correct comparative for 'tall'.",["More tall","Taller","Tallest","The taller"],1],
+["Choose the correct superlative for 'tall'.",["Taller","Tallest","The tallest","More tall"],2],
+["Choose the correct comparative for 'beautiful'.",["Beautifuller","More beautiful","The beautiful","Beautifulest"],1],
+["Choose the correct comparative form of 'good'.",["Gooder","Better","More good","Best"],1]
+],
+sp:["Compare yourself with a family member (taller/shorter, older/younger).","O'zingizni oila a'zoingiz bilan solishtiring (balandroq/pastroq, kattaroq/kichikroq)."],
+ls:["Class comparison line-up: students line up from shortest to tallest, describing.","Sinf solishtirish safi: o'quvchilar eng pastdan eng balandgacha saf tortadi va tasvirlaydi.",
+"In pairs, compare 3 things (animals, foods, or family members).","Juftlikda 3 ta narsani (hayvon, ovqat yoki oila a'zosi) solishtiring."]
+},
+
+{d:33,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
+t:"As...As — Equal Comparisons",tu:"As...As — teng solishtirish",
+v:[
+["as tall as","kabi baland","She is as tall as her brother."],
+["as old as","kabi katta yoshda","I am as old as my cousin."],
+["as fast as","kabi tez","He runs as fast as me."],
+["as good as","kabi yaxshi","Her English is as good as mine."],
+["worse","yomonroq","Today's weather is worse than yesterday."],
+["worst","eng yomon","This is the worst day."]
+],
+dl:[
+["Teacher","Is your English as good as your friend's?","Ingliz tilingiz do'stingiznikidek yaxshimi?"],
+["Student","Yes, I think it's as good as hers.","Ha, menimcha uning ingliz tili bilan bir xil yaxshi."]
+],
+g:["As...As — Saying Two Things Are Equal",
+"Use 'as + adjective + as' to say two things are equal: She is as tall as her brother. Negative: not as...as: I am not as tall as him.",
+"As...As — ikki narsa teng ekanini aytish",
+"Ikki narsa teng ekanini aytish uchun 'as + sifat + as' ishlatiladi: She is as tall as her brother. Inkor: not as...as: I am not as tall as him."],
+qz:[
+["Choose the correct sentence.",["She is as tall than her brother.","She is as tall as her brother.","She is so tall as her brother.","She is tall as her brother."],1],
+["Choose the correct comparative for 'bad'.",["Badder","Worse","More bad","Baddest"],1],
+["Choose the correct sentence.",["I am not as tall as him.","I am not as tall than him.","I am not so tall than him.","I not as tall as him."],0],
+["What is the superlative of 'bad'?",["Worse","The worst","Badest","More bad"],1]
+],
+sp:["Compare your English to a friend's using 'as good as' or 'not as good as'.","Ingliz tilingizni do'stingiznikiga 'as good as' yoki 'not as good as' bilan solishtiring."],
+ls:["Class 'as...as' game: compare two students or objects using 'as...as'.","Sinf 'as...as' o'yini: ikki o'quvchi yoki buyumni 'as...as' bilan solishtiring.",
+"In pairs, find things you and your partner are equally good at.","Juftlikda siz va sherigingiz teng darajada yaxshi bo'lgan narsalarni toping."]
+},
+
+{d:34,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
+t:"And, But, Or, Because",tu:"And, but, or, because",
+v:[
+["and","va","I like tea and coffee."],
+["but","lekin","I like tea, but I don't like coffee."],
+["or","yoki","Do you want tea or coffee?"],
+["because","chunki","I stayed home because I was sick."]
+],
+dl:[
+["Malika","Do you want tea or coffee?","Choy yoki kofe ichasizmi?"],
+["Aziz","I like tea, but I don't like coffee. And I stayed home yesterday because I was sick.","Men choyni yoqtiraman, lekin kofeni yoqtirmayman. Kecha uyda qoldim, chunki kasal edim."]
+],
+g:["And, But, Or, Because",
+"'And' joins two similar ideas. 'But' shows contrast. 'Or' shows a choice. 'Because' gives a reason: I stayed home because I was sick.",
+"And, but, or, because",
+"'And' ikkita o'xshash fikrni bog'laydi. 'But' qarama-qarshilikni bildiradi. 'Or' tanlovni bildiradi. 'Because' sabab bildiradi: I stayed home because I was sick."],
+qz:[
+["Choose the correct connector: 'I like tea ___ coffee.'",["but","because","and","or"],2],
+["Choose the correct connector: 'I like tea, ___ I don't like coffee.'",["and","but","because","or"],1],
+["Choose the correct connector: 'I stayed home ___ I was sick.'",["but","because","so","and"],1],
+["Which connector gives a reason?",["and","but","because","or"],2]
+],
+sp:["Say 2 things you like and 1 thing you don't, giving a reason with 'because'.","Yoqtirgan 2 ta narsangizni va yoqtirmagan 1 ta narsangizni 'because' bilan sabab ko'rsatib ayting."],
+ls:["Class chain: each student adds a sentence using and/but/or/because.","Sinf zanjiri: har bir o'quvchi and/but/or/because bilan gap qo'shadi.",
+"In pairs, tell each other why you like or don't like something.","Juftlikda biror narsani nega yoqtirishingiz yoki yoqtirmasligingizni ayting."]
+},
+
+{d:35,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",rev:true,
+t:"Week 7 Review",tu:"7-hafta Takrorlash",
+qz:[
+["Choose the adverb.",["Happy","Careful","Carefully","Good"],2],
+["Choose the correct comparative for 'tall'.",["More tall","Taller","Tallest","The taller"],1],
+["Choose the correct sentence.",["She is as tall than her brother.","She is as tall as her brother.","She is so tall as her brother.","She is tall as her brother."],1],
+["Choose the correct connector: 'I stayed home ___ I was sick.'",["but","because","so","and"],1],
+["What is the adverb form of 'good'?",["Goodly","Well","Gooder","Good"],1],
+["Choose the correct comparative form of 'good'.",["Gooder","Better","More good","Best"],1],
+["What is the superlative of 'bad'?",["Worse","The worst","Badest","More bad"],1],
+["Choose the correct connector: 'I like tea ___ coffee.'",["but","because","and","or"],2]
+],
+sp:["Describe and compare 2 family members, saying why you like spending time with them.","2 ta oila a'zoingizni tasvirlang va solishtiring, ular bilan vaqt o'tkazishni nega yoqtirishingizni ayting."],
+ls:["Class review relay: adjectives, comparatives, and connectors mixed quiz.","Sinf takrorlash estafetasi: sifatlar, solishtirish va bog'lovchilar aralash so'rovi.",
+"In pairs, review the week using descriptions and comparisons.","Juftlikda haftani tasvirlash va solishtirish bilan takrorlang."]
+}
 
 ];
 
