@@ -1715,7 +1715,10 @@ ls:["Definition game: describe a word using 'who/which', class guesses.","Ta'rif
 t:"Relative Clauses — Whose, Where",tu:"Nisbiy gaplar — Whose, Where",
 v:[
 ["whose","kimning (bog'lovchi)","That's the boy whose father is a doctor."],
-["where","qayerda (bog'lovchi)","This is the school where I studied."]
+["where","qayerda (bog'lovchi)","This is the school where I studied."],
+["neighborhood","mahalla","This is the neighborhood where I live."],
+["park","park","This is the park where I play football."],
+["classroom","sinf xonasi","This is the classroom where we study."]
 ],
 dl:[
 ["Malika","Who is that boy?","Ana u bola kim?"],
@@ -2454,6 +2457,144 @@ qz:[
 sp:["Talk about your hobbies, how you use technology, and invite a friend to do something.","Hobbilaringiz, texnologiyadan qanday foydalanishingiz haqida gapiring va do'stingizni biror narsaga taklif qiling."],
 ls:["Class 'plan a weekend' game.","Sinf 'dam olish kunini rejalashtirish' o'yini.",
 "In pairs, review hobbies, technology, and friendship.","Juftlikda hobbi, texnologiya va do'stlikni takrorlang."]
+}
+,
+
+{d:86,w:18,wt:"Our World",wtUz:"Bizning dunyomiz",
+t:"Culture & Traditions",tu:"Madaniyat va an'analar",
+v:[
+["festival","bayram","Navruz is an important festival."],
+["tradition","an'ana","Every country has its own traditions."],
+["celebrate","nishonlamoq","We celebrate Navruz every spring."],
+["hospitality","mehmondo'stlik","Uzbek people are famous for their hospitality."]
+],
+dl:[
+["Malika","What is your favorite national holiday?","Sevimli milliy bayramingiz nima?"],
+["Aziz","I love Navruz. We celebrate it with traditional food and songs.","Menga Navruz yoqadi. Biz uni milliy taomlar va qo'shiqlar bilan nishonlaymiz."]
+],
+g:["Talking About Culture",
+"You know 'is famous for' + noun/gerund (Uzbek people are famous for their hospitality) and 'celebrate' + noun (We celebrate Navruz) — use them to talk about your culture!",
+"Madaniyat haqida gapirish",
+"Siz 'is famous for' + ot/gerund (Uzbek people are famous for their hospitality) va 'celebrate' + ot (We celebrate Navruz) ni bilasiz — o'z madaniyatingiz haqida gapirish uchun ulardan foydalaning!"],
+qz:[
+["'Bayram' in English is ___.",["Tradition","Festival","Culture","Custom"],1],
+["Choose the correct sentence.",["We celebrate Navruz every spring.","We celebrating Navruz every spring.","We celebrates Navruz every spring.","We celebrated Navruz every spring always."],0],
+["'Mehmondo'stlik' in English is ___.",["Hospitality","Respect","Heritage","Identity"],0],
+["What do we call customs passed down through generations?",["Festival","Tradition","Celebration","Culture"],1]
+],
+sp:["Describe a traditional celebration or custom from your culture.","O'z madaniyatingizdan an'anaviy bayram yoki urf-odatni tasvirlab bering."],
+ls:["Culture show and tell: describe an object representing your culture.","Madaniyat namoyishi: o'z madaniyatingizni ifodalovchi buyumni tasvirlang.",
+"In pairs, discuss your favorite national holiday.","Juftlikda sevimli milliy bayramingiz haqida gaplashing."]
+},
+
+{d:87,w:18,wt:"Our World",wtUz:"Bizning dunyomiz",
+t:"Protecting the Environment",tu:"Atrof-muhitni himoya qilish",
+v:[
+["environment","atrof-muhit","We must protect the environment."],
+["recycle","qayta ishlamoq","We should recycle paper and plastic."],
+["pollution","ifloslanish","Air pollution is a big problem."],
+["plant a tree","daraxt ekmoq","We planted a tree at school."]
+],
+dl:[
+["Teacher","What can we do to protect the environment?","Atrof-muhitni himoya qilish uchun nima qilishimiz mumkin?"],
+["Student","We should recycle and plant trees. We mustn't pollute rivers.","Biz qayta ishlashimiz va daraxt ekishimiz kerak. Daryolarni ifloslantirmasligimiz kerak."]
+],
+g:["Talking About the Environment",
+"Use 'should' for good environmental habits and 'must/mustn't' for strong rules — you know these already: We should recycle. We mustn't pollute rivers.",
+"Atrof-muhit haqida gapirish",
+"Yaxshi ekologik odatlar uchun 'should', kuchli qoidalar uchun 'must/mustn't' ishlatiladi — siz bularni allaqachon bilasiz: We should recycle. We mustn't pollute rivers."],
+qz:[
+["'Qayta ishlamoq' in English is ___.",["Reuse","Reduce","Recycle","Waste"],2],
+["Choose the correct sentence for a strong rule.",["We should protect endangered animals.","We must protect endangered animals.","We can protect endangered animals.","We recycle endangered animals."],1],
+["'Ifloslanish' in English is ___.",["Pollution","Recycling","Environment","Nature"],0],
+["What should we plant to help the environment?",["Trees","Plastic","Cars","Factories"],0]
+],
+sp:["Talk about 3 things people should do to protect the environment.","Atrof-muhitni himoya qilish uchun odamlar qilishi kerak bo'lgan 3 ta ish haqida gapiring."],
+ls:["Class 'green pledge': promise one eco-friendly action.","Sinf 'yashil va'dasi': bitta ekologik toza harakat qilishga va'da bering.",
+"In pairs, discuss environmental problems and solutions.","Juftlikda ekologik muammolar va yechimlarni muhokama qiling."]
+},
+
+{d:88,w:18,wt:"Our World",wtUz:"Bizning dunyomiz",
+t:"Careers & Future Ambitions",tu:"Kasblar va kelajak orzulari",
+v:[
+["career","karyera","She has a successful career."],
+["dream job","orzu kasb","My dream job is to be a doctor."],
+["qualification","malaka","You need good qualifications for this job."]
+],
+dl:[
+["Malika","What's your dream job?","Orzu kasbingiz nima?"],
+["Aziz","I want to be an engineer. I will study hard to achieve my goal.","Men muhandis bo'lishni xohlayman. Maqsadimga erishish uchun qattiq o'qiyman."]
+],
+g:["Talking About Your Future",
+"Combine 'want to be' (I want to be an engineer) with 'will' for determination (I will study hard) — both patterns you already know, now used to talk about your dreams!",
+"Kelajagingiz haqida gapirish",
+"'Want to be' (I want to be an engineer) bilan qat'iyat uchun 'will' (I will study hard) ni birlashtiring — ikkalasini ham bilasiz, endi orzularingiz haqida gapirish uchun ishlating!"],
+qz:[
+["'Orzu kasb' in English is ___.",["Career","Dream job","Qualification","Salary"],1],
+["Choose the correct sentence.",["I want to be an engineer.","I want be an engineer.","I want being an engineer.","I wants to be an engineer."],0],
+["'Malaka' in English is ___.",["Skill","Qualification","Experience","Salary"],1],
+["Choose the correct sentence about determination.",["I study hard to achieve my goal.","I will study hard to achieve my goal.","I studying hard to achieve my goal.","I studied hard to achieve my goal always."],1]
+],
+sp:["Talk about your dream job and what you will do to achieve it.","Orzu kasbingiz va unga erishish uchun nima qilishingiz haqida gapiring."],
+ls:["Job charades: act out a job, class guesses.","Kasb pantomimasi: kasbni ijro eting, sinf topsin.",
+"In pairs, discuss your dream jobs and goals.","Juftlikda orzu kasbingiz va maqsadlaringiz haqida gaplashing."]
+},
+
+{d:89,w:18,wt:"Our World",wtUz:"Bizning dunyomiz",
+t:"Giving Opinions",tu:"Fikr bildirish",
+v:[
+["I think","menimcha","I think English is important."],
+["agree","rozi bo'lmoq","I agree with you."],
+["disagree","rozi bo'lmaslik","I disagree with that idea."],
+["because","chunki","I think it's good because it helps us learn."]
+],
+dl:[
+["Teacher","What's your opinion about homework?","Uy vazifasi haqida fikringiz qanday?"],
+["Student1","I think homework is good because it helps us remember what we learned.","Menimcha, uy vazifasi yaxshi, chunki u o'rganganlarimizni eslab qolishga yordam beradi."],
+["Student2","I disagree. I think it's too much sometimes.","Men rozi emasman. Menimcha, ba'zan u juda ko'p."]
+],
+g:["Expressing Opinions",
+"Start with 'I think...' to share your opinion, and always give a reason with 'because'. To disagree politely, say 'I disagree' or 'Actually, I don't agree.'",
+"Fikr bildirish",
+"Fikringizni bildirish uchun 'I think...' bilan boshlang va doim 'because' bilan sabab keltiring. Odobli rad etish uchun 'I disagree' yoki 'Actually, I don't agree' deng."],
+qz:[
+["Choose the correct way to start giving your opinion.",["I opinion that...","I think...","My think is...","I am opinion..."],1],
+["Choose the correct way to disagree politely.",["I disagree.","No! You're wrong!","That's stupid.","I hate that idea."],0],
+["Choose the correct sentence with a reason.",["I think it's good because it helps us learn.","I think it's good, it helps us learn.","I think it's good so it helps us learn.","I think it's good but it helps us learn."],0],
+["'Rozi bo'lmoq' in English is ___.",["Disagree","Agree","Think","Because"],1]
+],
+sp:["Give your opinion about a school topic and give a reason.","Maktab mavzusi haqida fikringizni bildiring va sabab keltiring."],
+ls:["Class debate: discuss a simple topic in two groups.","Sinf bahsi: ikki guruhda oddiy mavzuni muhokama qiling.",
+"In pairs, discuss and give opinions on 2 different topics.","Juftlikda 2 xil mavzu bo'yicha fikr bildiring."]
+},
+
+{d:90,w:18,wt:"Our World",wtUz:"Bizning dunyomiz",rev:true,final:true,
+t:"Final Test — SpeakUp Graduation",tu:"Yakuniy sinov — SpeakUp Bitiruvi",
+qz:[
+["How do you say 'Salom' in English?",["Goodbye","Hello","Sorry","No"],1],
+["Choose the correct word: 'She ___ a teacher.'",["am","is","are","be"],1],
+["What is the past tense of 'go'?",["Goed","Went","Gone","Going"],1],
+["Choose the correct comparative for 'tall'.",["More tall","Taller","Tallest","The taller"],1],
+["Choose the correct sentence about a plan.",["I go to visit my aunt.","I am going to visit my aunt.","I going to visit my aunt.","I am go to visit my aunt."],1],
+["Choose the correct question about experience.",["Did you ever visit London?","Have you ever visited London?","Do you ever visited London?","Are you ever visiting London?"],1],
+["Choose the correct first conditional.",["If you study, you pass.","If you study, you will pass.","If you will study, you pass.","If you studied, you will pass."],1],
+["Choose the correct passive sentence.",["English speaks worldwide.","English is spoken worldwide.","English spoken worldwide.","English is speaking worldwide."],1],
+["Choose the correct sentence.",["A doctor is a person which helps sick people.","A doctor is a person who helps sick people.","A doctor is a person where helps sick people.","A doctor is a person whose helps sick people."],1],
+["What does 'mustn't' mean?",["Not necessary","Forbidden","Optional","Recommended"],1],
+["Choose the correct sentence.",["There is two windows.","There are two windows.","There a window.","Windows there are."],1],
+["What is the plural of 'child'?",["Childs","Childes","Children","Childies"],2],
+["Choose the correct word: '___ books do you have?'",["How much","How many","How","What"],1],
+["Choose the correct second conditional.",["If I win the lottery, I will travel.","If I won the lottery, I would travel.","If I win the lottery, I would travel.","If I would win, I travel."],1],
+["Choose the correct sentence about now.",["I read a book now.","I am reading a book now.","I reading a book now.","I reads a book now."],1],
+["'Shifokor' in English is ___.",["Nurse","Doctor","Engineer","Farmer"],1],
+["Choose the polite way to order food.",["I want a pizza.","I would like a pizza, please.","Give me a pizza.","Pizza now!"],1],
+["Choose the correct way to invite someone.",["You come to my party?","Would you like to come to my party?","Coming my party?","You want come party?"],1],
+["Choose the correct sentence for a strong rule.",["We should protect endangered animals.","We must protect endangered animals.","We can protect endangered animals.","We recycle endangered animals."],1],
+["Choose the correct way to start giving your opinion.",["I opinion that...","I think...","My think is...","I am opinion..."],1]
+],
+sp:["Give a 3-minute final speech: introduce yourself, describe your family and hobbies, tell a story about a memorable experience, give your opinion on an important topic, and talk about your future plans and dream career.","3 daqiqalik yakuniy nutq so'zlang: o'zingizni tanishtiring, oilangiz va hobbilaringizni tasvirlang, unutilmas voqea haqida hikoya ayting, muhim mavzu bo'yicha fikringizni bildiring va kelajak rejalaringiz hamda orzu kasbingiz haqida gapiring."],
+ls:["Host a class 'graduation ceremony': each student gives a 1-minute speech about their English journey.","Sinf 'bitiruv marosimi'ni o'tkazing: har bir o'quvchi o'zining ingliz tili safari haqida 1 daqiqalik nutq so'zlaydi.",
+"In pairs, interview each other one last time covering topics from the whole course, then present your partner to the class.","Juftlikda butun kurs mavzularini qamrab olgan holda bir-biringizni oxirgi marta intervyu qiling, so'ng sherigingizni sinfga taqdim eting."]
 }
 
 ];
