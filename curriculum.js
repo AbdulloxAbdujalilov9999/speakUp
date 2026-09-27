@@ -2196,6 +2196,137 @@ sp:["Describe your favorite animal, a place in nature, and today's weather.","Se
 ls:["Class animal & nature quiz relay.","Sinf hayvonlar va tabiat bo'yicha estafeta so'rovi.",
 "In pairs, review animals, nature, and weather.","Juftlikda hayvonlar, tabiat va ob-havoni takrorlang."]
 }
+,
+
+{d:76,w:16,wt:"Town & Travel",wtUz:"Shahar va sayohat",
+t:"Places in Town",tu:"Shahardagi joylar",
+v:[
+["shop","do'kon","There is a shop near my house."],
+["hospital","kasalxona","The hospital is next to the park."],
+["bank","bank","My father works at a bank."],
+["park","park","Children play in the park."],
+["school","maktab","My school is big."],
+["market","bozor","My mother buys vegetables at the market."]
+],
+dl:[
+["Malika","Excuse me, where is the nearest hospital?","Kechirasiz, eng yaqin kasalxona qayerda?"],
+["Aziz","It's next to the park, near the bank.","U park yonida, bank yaqinida."]
+],
+g:["Talking About Places in Town",
+"Use 'there is/are' to say what's in your town (There is a park) and prepositions of place (next to, near) to say exactly where — you know both already!",
+"Shahardagi joylar haqida gapirish",
+"Shahringizda nima borligini aytish uchun 'there is/are' (There is a park), aynan qayerda ekanini aytish uchun o'rin predloglari (next to, near) ishlatiladi — siz ikkalasini ham bilasiz!"],
+qz:[
+["'Kasalxona' in English is ___.",["Bank","Hospital","Shop","Market"],1],
+["Choose the correct preposition: 'The bank is ___ the hospital.'",["next to","between","far","in"],0],
+["Where do you buy vegetables?",["Bank","Hospital","Market","School"],2],
+["Choose the correct sentence.",["There a shop near my house.","There is a shop near my house.","There shop is near my house.","Shop there is near my house."],1]
+],
+sp:["Describe your town: name 4 important places and where they are.","Shahringizni tasvirlang: 4 ta muhim joyni va ularning qayerda ekanini ayting."],
+ls:["Draw a simple town map and label 5 places.","Oddiy shahar xaritasini chizing va 5 ta joyni nomlang.",
+"In pairs, ask 'Where is the nearest...?'","Juftlikda 'Eng yaqin ... qayerda?' deb so'rang."]
+},
+
+{d:77,w:16,wt:"Town & Travel",wtUz:"Shahar va sayohat",
+t:"Asking for Directions",tu:"Yo'l so'rash",
+v:[
+["turn left","chapga burilmoq","Turn left at the corner."],
+["turn right","o'ngga burilmoq","Turn right at the traffic lights."],
+["go straight","to'g'riga bormoq","Go straight for two blocks."],
+["near","yaqinida","My house is near the park."],
+["far","uzoqda","The airport is far from here."]
+],
+dl:[
+["Aziz","Excuse me, how do I get to the station?","Kechirasiz, bekatga qanday borsam bo'ladi?"],
+["Passerby","Go straight, then turn left. It's near.","To'g'ri boring, keyin chapga buriling. Yaqin."]
+],
+g:["Giving Directions",
+"We give directions using imperatives, which you already know: Turn left. Go straight. Add 'please' when asking a stranger for directions.",
+"Yo'l ko'rsatish",
+"Yo'l ko'rsatishda siz allaqachon bilgan imperativlar ishlatiladi: Turn left. Go straight. Notanish odamdan yo'l so'raganda 'please' qo'shing."],
+qz:[
+["Choose the correct direction for turning left.",["Turn right","Turn left","Go straight","Stop here"],1],
+["'Uzoqda' in English is ___.",["Near","Far","Left","Right"],1],
+["Choose the correct imperative for directions.",["You turn left.","Turning left.","Turn left.","Turned left."],2],
+["Choose the correct sentence.",["My house is near the park.","My house near the park.","My house is nearing the park.","My house near is the park."],0]
+],
+sp:["Give directions from your school to your house.","Maktabingizdan uyingizgacha yo'l ko'rsating."],
+ls:["Blindfolded direction game: give directions, partner follows.","Ko'zi yumuq yo'l o'yini: yo'l ko'rsating, sherigi amal qilsin.",
+"In pairs, use a simple map to give directions.","Juftlikda oddiy xarita yordamida yo'l ko'rsating."]
+},
+
+{d:78,w:16,wt:"Town & Travel",wtUz:"Shahar va sayohat",
+t:"Transport",tu:"Transport",
+v:[
+["bus","avtobus","I go to school by bus."],
+["car","mashina","My father has a new car."],
+["train","poyezd","We traveled by train."],
+["on foot","piyoda","I go to school on foot."],
+["plane","samolyot","They flew by plane."]
+],
+dl:[
+["Malika","How do you go to school?","Maktabga qanday borasiz?"],
+["Aziz","I go to school by bus. And you?","Men maktabga avtobusda boraman. Sizchi?"],
+["Malika","I go on foot, it's not far.","Men piyoda boraman, uzoq emas."]
+],
+g:["Talking About Transport",
+"Use 'by + transport' (no article): by bus, by car, by train. The exception is walking: 'on foot' (not 'by foot').",
+"Transport haqida gapirish",
+"'By + transport' ishlatiladi (artiklsiz): by bus, by car, by train. Istisno — piyoda yurish: 'on foot' ('by foot' emas)."],
+qz:[
+["Choose the correct sentence.",["I go by foot.","I go on foot.","I go with foot.","I go in foot."],1],
+["Choose the correct sentence.",["I go to school by the bus.","I go to school by bus.","I go to school with bus.","I go to school on bus."],1],
+["'Samolyot' in English is ___.",["Train","Car","Plane","Bus"],2],
+["How do you say traveling on your own feet?",["By bus","By car","On foot","By train"],2]
+],
+sp:["Describe how you and your family members travel to school/work.","Siz va oila a'zolaringiz maktab/ishga qanday borishingizni tasvirlang."],
+ls:["Transport survey: ask how classmates come to school.","Transport so'rovi: sinfdoshlaringiz maktabga qanday kelishini so'rang.",
+"In pairs, compare your journeys to school.","Juftlikda maktabgacha bo'lgan yo'lingizni solishtiring."]
+},
+
+{d:79,w:16,wt:"Town & Travel",wtUz:"Shahar va sayohat",
+t:"Travel Experiences",tu:"Sayohat tajribalari",
+v:[
+["passport","pasport","Don't forget your passport."],
+["suitcase","chamadon","I packed my suitcase."],
+["abroad","chet elda","She wants to study abroad."],
+["culture","madaniyat","I love learning about other cultures."]
+],
+dl:[
+["Malika","Have you ever traveled abroad?","Chet elga sayohat qilganmisiz?"],
+["Aziz","Yes, I have visited Turkey. It was a great experience.","Ha, men Turkiyaga borganman. Bu ajoyib tajriba bo'ldi."]
+],
+g:["Talking About Travel Experiences",
+"Use present perfect for travel experiences (Have you ever traveled abroad? I have visited Turkey) and past simple for the specific trip details (We went there last year).",
+"Sayohat tajribalari haqida gapirish",
+"Sayohat tajribalari uchun present perfect (Have you ever traveled abroad? I have visited Turkey), sayohatning aniq tafsilotlari uchun past simple (We went there last year) ishlatiladi."],
+qz:[
+["Choose the correct question.",["Did you ever travel abroad?","Have you ever traveled abroad?","Do you ever traveled abroad?","Are you ever traveling abroad?"],1],
+["'Pasport' in English is ___.",["Ticket","Passport","Luggage","Suitcase"],1],
+["'Madaniyat' in English is ___.",["Culture","Tradition","Custom","Adventure"],0],
+["Choose the correct sentence.",["I have visited Turkey last year.","I visited Turkey last year.","I have visit Turkey last year.","I was visited Turkey last year."],1]
+],
+sp:["Talk about a place you have visited or want to visit.","Tashrif buyurgan yoki bormoqchi bo'lgan joyingiz haqida gapiring."],
+ls:["'Have you ever...?' mingle about travel.","Sayohat haqida 'Have you ever...?' aralashuvi.",
+"In pairs, plan an imaginary trip abroad.","Juftlikda xayoliy chet el sayohatini rejalashtiring."]
+},
+
+{d:80,w:16,wt:"Town & Travel",wtUz:"Shahar va sayohat",rev:true,
+t:"Week 16 Review",tu:"16-hafta Takrorlash",
+qz:[
+["'Kasalxona' in English is ___.",["Bank","Hospital","Shop","Market"],1],
+["Choose the correct direction for turning left.",["Turn right","Turn left","Go straight","Stop here"],1],
+["Choose the correct sentence.",["I go by foot.","I go on foot.","I go with foot.","I go in foot."],1],
+["Choose the correct question.",["Did you ever travel abroad?","Have you ever traveled abroad?","Do you ever traveled abroad?","Are you ever traveling abroad?"],1],
+["'Uzoqda' in English is ___.",["Near","Far","Left","Right"],1],
+["'Samolyot' in English is ___.",["Train","Car","Plane","Bus"],2],
+["Where do you buy vegetables?",["Bank","Hospital","Market","School"],2],
+["'Madaniyat' in English is ___.",["Culture","Tradition","Custom","Adventure"],0]
+],
+sp:["Give directions to a place in town, and talk about a travel experience.","Shahardagi bir joyga yo'l ko'rsating va sayohat tajribangiz haqida gapiring."],
+ls:["Class 'lost tourist' role-play.","Sinf 'adashgan sayyoh' rolli o'yini.",
+"In pairs, review town places, directions, and transport.","Juftlikda shahar joylari, yo'nalishlar va transportni takrorlang."]
+}
 
 ];
 
