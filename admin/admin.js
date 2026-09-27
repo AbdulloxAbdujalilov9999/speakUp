@@ -57,6 +57,8 @@ let progressCache = new Map();
 let progressUnsubs = new Map();
 let resetsCache = new Map();   // studentUid -> { id: request }
 let resetsUnsubs = new Map();
+let assignmentsCache = new Map();   // studentUid -> { id: assignment }
+let assignmentsUnsubs = new Map();
 let eventsCache = [];
 let unsubUsers = null;
 let unsubTeacherStudentsIndex = null;
@@ -209,6 +211,41 @@ function syncResetSubs(uid){
   resetsUnsubs.set(uid, unsub);
 }
 
+function syncAssignmentSubs(uid){
+  if (assignmentsUnsubs.has(uid)) return;
+  const unsub = onValue(ref(db, "assignments/" + uid), (snap) => {
+    assignmentsCache.set(uid, snap.exists() ? snap.val() : {});
+    if (state.section === "progress" && state.selectedStudent === uid && !$("modalRoot").innerHTML) renderSection();
+  }, () => {});
+  assignmentsUnsubs.set(uid, unsub);
+}
+
+// Same "who may act on this student" rule as unlocks/resets: owner/manager
+// always, a teacher only for their own student.
+function canAssignHomework(student){
+  return isOwnerOrManager() || (isTeacher() && student.teacherId === me().uid);
+}
+// Homework a teacher assigns after a live session — a day, a grammar unit,
+// or a free-text note, with an optional due date. Unlike resets, nothing
+// here is ever "applied" by the student's app; it's read-only for them
+// (see app.js's assignedHomeworkList) and completion is inferred from their
+// own progress, so this is just a plain push, one per selected student.
+async function queueAssignment(studentUids, payload){
+  const base = { kind: payload.kind, by: me().uid, byName: me().name || "", at: serverTimestamp() };
+  if (payload.key != null && payload.key !== "") base.key = String(payload.key);
+  if (payload.note) base.note = payload.note;
+  if (payload.dueDate) base.dueDate = payload.dueDate;
+  await Promise.all(studentUids.map(uid => push(ref(db, "assignments/" + uid), base)));
+}
+async function cancelAssignment(studentUid, id){
+  await remove(ref(db, "assignments/" + studentUid + "/" + id));
+}
+function assignmentLabel(a){
+  if (a.kind === "day") return "Day " + a.key + (dayTitle(Number(a.key)) ? " — " + dayTitle(Number(a.key)) : "");
+  if (a.kind === "grammar") return grammarTitle(a.key);
+  return "Note";
+}
+
 // Staff can't rewrite a student's local progress directly (it's stored on
 // their own device), so this queues the reset for their app to apply (see
 // applyRemoteResets in app.js) — but there's no approval step on their
@@ -268,6 +305,80 @@ function openResetModal(studentUid, kind, key){
   });
 }
 
+// presetUids: students to pre-check (e.g. the row's own student when opened
+// from a table row) — the checkbox list still lets staff add more, so one
+// modal covers both "assign to this student" and "assign to several at once".
+function openAssignModal(presetUids){
+  const candidates = visibleStudents().filter(s => s.status !== "restricted" && canAssignHomework(s));
+  const preset = new Set(presetUids || []);
+  const modalRoot = $("modalRoot");
+  modalRoot.innerHTML = `
+    <div class="modal-backdrop">
+      <div class="modal-card">
+        <h2>Assign homework</h2>
+        <p class="panel-sub">Pick one or more students, then choose what to assign.</p>
+        <div class="assign-student-list" style="max-height:160px;overflow-y:auto;margin:10px 0;display:flex;flex-direction:column;gap:6px;">
+          ${candidates.length ? candidates.map(s => `
+            <label style="display:flex;align-items:center;gap:8px;font-size:0.9rem;">
+              <input type="checkbox" class="assignStudentCheck" value="${s.id}" ${preset.has(s.id) ? "checked" : ""}>
+              <span>${escapeHtml(s.name)}</span>
+            </label>`).join("") : `<p class="panel-sub">No students available.</p>`}
+        </div>
+        <form id="assignForm" class="auth-form">
+          <label class="auth-label">Kind</label>
+          <select class="select" id="assignKind">
+            <option value="day">Day</option>
+            <option value="grammar">Grammar unit</option>
+            <option value="note">Note only</option>
+          </select>
+          <label class="auth-label" id="assignKeyLabel">Day number</label>
+          <input class="auth-input" id="assignKey" placeholder="e.g. 12">
+          <label class="auth-label">Note (optional)</label>
+          <textarea class="auth-input" id="assignNote" rows="3" placeholder="e.g. Focus on pronunciation of 'th' sounds"></textarea>
+          <label class="auth-label">Due date (optional)</label>
+          <input class="auth-input" id="assignDue" type="date">
+          <div class="modal-actions">
+            <button type="button" class="btn btn-ghost" id="assignCancel">Cancel</button>
+            <button type="submit" class="btn btn-accent" id="assignConfirm">Assign</button>
+          </div>
+        </form>
+      </div>
+    </div>`;
+
+  const kindSelect = $("assignKind"), keyLabel = $("assignKeyLabel"), keyInput = $("assignKey");
+  const syncKeyField = () => {
+    const kind = kindSelect.value;
+    const hide = kind === "note";
+    keyLabel.hidden = hide; keyInput.hidden = hide;
+    keyLabel.textContent = kind === "grammar" ? "Grammar unit id" : "Day number";
+    keyInput.placeholder = kind === "grammar" ? "e.g. present-simple" : "e.g. 12";
+  };
+  kindSelect.addEventListener("change", syncKeyField);
+  syncKeyField();
+
+  $("assignCancel").addEventListener("click", closeModal);
+  $("assignForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const uids = Array.from(modalRoot.querySelectorAll(".assignStudentCheck:checked")).map(c => c.value);
+    if (!uids.length){ alert("Pick at least one student."); return; }
+    const kind = kindSelect.value;
+    const key = keyInput.value.trim();
+    if (kind !== "note" && !key){ alert(kind === "grammar" ? "Enter a grammar unit id." : "Enter a day number."); return; }
+    const note = $("assignNote").value.trim();
+    const dueDate = $("assignDue").value;
+    $("assignConfirm").disabled = true;
+    try{
+      await queueAssignment(uids, { kind, key: kind === "note" ? null : key, note, dueDate });
+      closeModal();
+      toast(uids.length === 1 ? "Homework assigned." : `Homework assigned to ${uids.length} students.`);
+      renderSection();
+    }catch(err){
+      $("assignConfirm").disabled = false;
+      alert("Couldn't assign homework: " + err.message);
+    }
+  });
+}
+
 async function approveUser(uid, role, teacherId){
   const u = usersById.get(uid);
   const wasRestricted = u && u.status === "restricted";
@@ -297,7 +408,7 @@ async function setUserStatus(uid, status){
 async function deleteUser(uid){
   const u = usersById.get(uid);
   if (!u || u.status !== "restricted" || !canManage(u) || u.role === "owner") return;
-  const updates = { [`users/${uid}`]: null, [`progress/${uid}`]: null, [`resets/${uid}`]: null };
+  const updates = { [`users/${uid}`]: null, [`progress/${uid}`]: null, [`resets/${uid}`]: null, [`assignments/${uid}`]: null };
   if (u.role === "student" && u.teacherId) updates[`teacherStudents/${u.teacherId}/${uid}`] = null;
   if (u.role === "teacher"){
     updates[`teacherStudents/${uid}`] = null;
@@ -695,8 +806,11 @@ function renderStudentsSection(main){
 
   main.innerHTML = `
     <section class="panel">
-      <div class="panel-head"><h2>Students (${students.length})</h2>
+      <div class="panel-head-row">
+        <div><h2>Students (${students.length})</h2>
         <p class="panel-sub">${isOwnerOrManager() ? "Everyone currently enrolled as a student." : "Students assigned to you."}</p></div>
+        ${students.some(s => canAssignHomework(s)) ? `<button class="btn btn-accent btn-sm" id="bulkAssignHwBtn">+ Assign homework</button>` : ""}
+      </div>
       ${teacherFilters.length > 2 ? filterSwitch("students", teacherFilters, teacherFilter) : ""}
       ${students.length ? `<div class="table-wrap"><table class="admin-table">
         <thead><tr><th>Name</th><th>Email</th>${isOwnerOrManager() ? "<th>Teacher</th>" : ""}<th>XP</th><th>Streak</th><th>Status</th><th></th></tr></thead>
@@ -710,7 +824,10 @@ function renderStudentsSection(main){
               <td class="mono">${p ? p.xp : "—"}</td>
               <td class="mono">${p ? p.streak : "—"}</td>
               <td><span class="user-badge status-${s.status}">${escapeHtml(s.status)}</span></td>
-              <td><button class="btn btn-ghost btn-sm" data-view-progress="${s.id}">Progress</button></td>
+              <td>
+                <button class="btn btn-ghost btn-sm" data-view-progress="${s.id}">Progress</button>
+                ${canAssignHomework(s) ? `<button class="btn btn-ghost btn-sm" data-assign-hw="${s.id}">Assign</button>` : ""}
+              </td>
             </tr>`;
           }).join("")}
         </tbody>
@@ -719,6 +836,9 @@ function renderStudentsSection(main){
 
   main.querySelectorAll("[data-teacher]").forEach(sel => sel.addEventListener("change", (e) => reassignTeacher(sel.dataset.teacher, e.target.value)));
   main.querySelectorAll("[data-view-progress]").forEach(btn => btn.addEventListener("click", () => setSection("progress", { selectedStudent: btn.dataset.viewProgress })));
+  main.querySelectorAll("[data-assign-hw]").forEach(btn => btn.addEventListener("click", () => openAssignModal([btn.dataset.assignHw])));
+  const bulkBtn = $("bulkAssignHwBtn");
+  if (bulkBtn) bulkBtn.addEventListener("click", () => openAssignModal([]));
   wireFilters(main);
 }
 
@@ -744,9 +864,12 @@ function renderProgressSection(main){
   }
   syncProgressSubs([state.selectedStudent]);
   syncResetSubs(state.selectedStudent);
+  syncAssignmentSubs(state.selectedStudent);
   const p = progressCache.get(state.selectedStudent);
   const resets = Object.entries(resetsCache.get(state.selectedStudent) || {})
     .map(([id, r]) => ({ id, ...r })).sort((a, b) => (b.at || 0) - (a.at || 0)).slice(0, 8);
+  const assignments = Object.entries(assignmentsCache.get(state.selectedStudent) || {})
+    .map(([id, a]) => ({ id, ...a })).sort((a, b) => (b.at || 0) - (a.at || 0));
 
   const completed = p ? Object.entries(p.completed || {}).map(([day, info]) => ({ day: Number(day), ...info })).sort((a, b) => a.day - b.day) : [];
   const homework = p ? Object.entries(p.homeworkDone || {}).map(([n, info]) => ({ n: Number(n), ...info })).sort((a, b) => a.n - b.n) : [];
@@ -770,6 +893,23 @@ function renderProgressSection(main){
         <div class="stat-tile"><span class="stat-num">${grammarDone.length}${totalGrammar ? "/" + totalGrammar : ""}</span><span class="stat-label">Grammar</span></div>
       </div>
     </section>
+
+    ${canAssignHomework(student) ? `<section class="panel">
+      <div class="panel-head-row">
+        <div><h2>Homework assigned</h2>
+        <p class="panel-sub">Day, grammar unit or note-only homework given to ${escapeHtml(student.name)} — shown in their app under "Assigned by your teacher".</p></div>
+        <button class="btn btn-accent btn-sm" id="assignHwFromProgressBtn">+ Assign homework</button>
+      </div>
+      ${assignments.length ? `<div class="reset-log">
+        ${assignments.map(a => `<div class="reset-log-row">
+          <span>${escapeHtml(assignmentLabel(a))}${a.dueDate ? ` · due ${escapeHtml(a.dueDate)}` : ""}${a.note ? ` · “${escapeHtml(a.note)}”` : ""}</span>
+          <span class="panel-sub" style="display:flex;align-items:center;gap:8px;">
+            ${a.byName ? "by " + escapeHtml(a.byName) : ""}
+            <button class="btn btn-ghost btn-sm" data-cancel-assign="${a.id}">Cancel</button>
+          </span>
+        </div>`).join("")}
+      </div>` : `<p class="panel-sub">Nothing assigned yet.</p>`}
+    </section>` : ""}
 
     ${canGrantUnlock(student) ? `<section class="panel">
       <div class="panel-head">
@@ -829,6 +969,14 @@ function renderProgressSection(main){
   $("resetDaySelect").addEventListener("change", (e) => { state.resetDay = e.target.value; });
   $("resetDayBtn").addEventListener("click", () => openResetModal(state.selectedStudent, "lesson", $("resetDaySelect").value));
   main.querySelectorAll("[data-reset]").forEach(btn => btn.addEventListener("click", () => openResetModal(state.selectedStudent, btn.dataset.reset, btn.dataset.key)));
+
+  const assignHwBtn = $("assignHwFromProgressBtn");
+  if (assignHwBtn) assignHwBtn.addEventListener("click", () => openAssignModal([state.selectedStudent]));
+  main.querySelectorAll("[data-cancel-assign]").forEach(btn => btn.addEventListener("click", async () => {
+    if (!confirm("Cancel this homework assignment?")) return;
+    try{ await cancelAssignment(state.selectedStudent, btn.dataset.cancelAssign); toast("Assignment cancelled."); }
+    catch(err){ alert("Couldn't cancel it: " + err.message); }
+  }));
 
   const unlockSetBtn = $("unlockSetBtn"), unlockClearBtn = $("unlockClearBtn");
   if (unlockSetBtn) unlockSetBtn.addEventListener("click", async () => {
@@ -1076,4 +1224,4 @@ function init(){
 window.SU_mount = init;
 window.SU_refresh = () => { renderShell(); setSection(state.section || initialSection()); };
 
-initAuthGate({ appKind: "admin", mainUrl: "https://speakup-webapp.vercel.app/" });
+initAuthGate({ appKind: "admin", mainUrl: "/" });

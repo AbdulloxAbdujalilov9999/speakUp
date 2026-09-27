@@ -434,6 +434,35 @@ const D = {
 "Show the translation under every English word, sentence and question — in your chosen language (Uzbek by default).": { uz:"Har bir inglizcha so'z, gap va savol ostida tarjimani tanlangan tilingizda ko'rsatish (odatda o'zbekcha).", ru:"Показывать перевод под каждым английским словом, предложением и вопросом — на выбранном вами языке (по умолчанию узбекский)." },
 "English original": { uz:"Inglizcha asl matn", ru:"Английский оригинал" },
 "What does “{w}” mean?": { uz:"“{w}” nima degani?", ru:"Что означает «{w}»?" },
+
+/* ---- Live Session (teacher-led presentation mode) ---- */
+"Present": { uz:"Jonli dars boshlash", ru:"Начать урок" },
+"Exit presentation": { uz:"Chiqish", ru:"Выйти из показа" },
+"LIVE SESSION": { uz:"JONLI DARS", ru:"ЖИВОЙ УРОК" },
+"Step {n} of {total}: {name}": { uz:"{total} qadamdan {n}-si: {name}", ru:"Шаг {n} из {total}: {name}" },
+"Warm-up": { uz:"Isinish", ru:"Разминка" },
+"Pair-work": { uz:"Juftlikda ishlash", ru:"Работа в парах" },
+"Grammar Tip": { uz:"Grammatika maslahati", ru:"Грамматический совет" },
+"Class Quiz Review": { uz:"Sinf uchun test sharhi", ru:"Обзор теста для класса" },
+"Speaking Prompt": { uz:"Gapirish topshirig'i", ru:"Задание на говорение" },
+"Previous": { uz:"Oldingi", ru:"Назад" },
+"Next": { uz:"Keyingi", ru:"Далее" },
+"Reveal answer": { uz:"Javobni ko'rsatish", ru:"Показать ответ" },
+"Question {n} of {total}": { uz:"{total} tadan {n}-savol", ru:"Вопрос {n} из {total}" },
+"Previous question": { uz:"Oldingi savol", ru:"Предыдущий вопрос" },
+"Next question": { uz:"Keyingi savol", ru:"Следующий вопрос" },
+
+/* ---- Homework assigned by teacher ---- */
+"Assigned by your teacher": { uz:"O'qituvchi tomonidan berilgan vazifalar", ru:"Задания от учителя" },
+"No homework assigned yet.": { uz:"Hozircha vazifa berilmagan.", ru:"Заданий пока нет." },
+"Due {date}": { uz:"Muddati: {date}", ru:"Срок: {date}" },
+"Note from your teacher: {note}": { uz:"O'qituvchi izohi: {note}", ru:"Заметка учителя: {note}" },
+"Go to Day {n}": { uz:"{n}-kunga o'tish", ru:"Перейти к дню {n}" },
+"Go to grammar unit": { uz:"Grammatika bo'limiga o'tish", ru:"Перейти к разделу грамматики" },
+"Done": { uz:"Bajarilgan", ru:"Выполнено" },
+"Open": { uz:"Ochiq", ru:"Открыто" },
+"Note": { uz:"Izoh", ru:"Заметка" },
+"Assigned by {name}": { uz:"{name} tomonidan berilgan", ru:"Назначено: {name}" },
 };
 
 /* Week titles and grammar topics (course structure labels). */

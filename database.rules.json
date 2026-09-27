@@ -83,6 +83,25 @@
       }
     },
 
+    // Homework assigned by a teacher/manager/owner to a specific student —
+    // a day, a grammar unit, or a free-text note, with an optional due
+    // date. Modeled closely on resets above: staff write a request, but
+    // unlike resets there is nothing for the student's app to "apply" —
+    // completion is inferred client-side from their own existing progress
+    // (see isCompleted/isGrammarDone in app.js), so a student has no write
+    // access here at all, not even to acknowledge it.
+    "assignments": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || (auth != null && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager' || (root.child('users').child(auth.uid).child('role').val() === 'teacher' && root.child('users').child($uid).child('teacherId').val() === auth.uid))))",
+        // Owner/manager may delete the whole node (removing a restricted user).
+        ".write": "auth != null && !newData.exists() && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager')",
+        "$aid": {
+          ".write": "auth != null && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager' || (root.child('users').child(auth.uid).child('role').val() === 'teacher' && root.child('users').child($uid).child('teacherId').val() === auth.uid))",
+          ".validate": "newData.hasChildren(['kind', 'by', 'at']) && (newData.child('kind').val() === 'day' || newData.child('kind').val() === 'grammar' || newData.child('kind').val() === 'note')"
+        }
+      }
+    },
+
     // Nested by teacher rather than a flat collection: RTDB has no
     // composite indexes, so "this teacher's events, in order" is just a
     // direct path read (events/{teacherId}) sorted client-side, instead of

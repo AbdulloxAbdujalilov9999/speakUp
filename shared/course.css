@@ -703,4 +703,55 @@ input[type="range"]{ accent-color:var(--accent-mid); width:160px; }
 }
 .trial-banner-ico{ color:var(--accent-mid); flex-shrink:0; margin-top:1px; }
 .trial-banner-days{ margin:0; font-weight:700; }
+
+/* ---------- Live Session (teacher-led presentation mode) ----------
+ * Deliberately minimal chrome and much bigger type than the normal
+ * small-screen student view — this is read from a projector across a
+ * classroom, not tapped through on a phone. Same color tokens as
+ * everywhere else (light/dark both follow tokens.css automatically). */
+.present-shell{ display:flex; flex-direction:column; gap:18px; min-height:calc(100dvh - 140px); }
+.present-topbar{ display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.present-eyebrow{ font-size:0.78rem; letter-spacing:0.12em; color:var(--accent); text-transform:uppercase; font-weight:600; }
+.present-title{ font-family:var(--font-display); font-size:1.6rem; margin:4px 0 0; }
+.present-progress{ color:var(--muted); font-size:0.85rem; margin:0; }
+.present-body{
+  flex:1; display:flex; flex-direction:column; justify-content:center;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-m);
+  box-shadow:var(--shadow); padding:clamp(24px,5vw,56px); min-height:360px;
+}
+.present-nav{ display:flex; justify-content:space-between; gap:14px; }
+.present-nav .btn{ flex:1 1 0; }
+.present-card{ display:flex; flex-direction:column; align-items:flex-start; gap:18px; text-align:left; }
+.present-card-label{ font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); font-weight:600; }
+.present-big{ font-family:var(--font-display); font-size:clamp(1.6rem,4vw,2.6rem); line-height:1.25; margin:0; text-wrap:balance; }
+.present-sub{ font-size:clamp(1.05rem,2.2vw,1.4rem); color:var(--muted); font-style:italic; margin:0; }
+.present-tip-title{ font-family:var(--font-display); font-size:clamp(1.3rem,3vw,1.8rem); margin:0; }
+.present-vocab-head{ display:flex; justify-content:flex-end; margin-bottom:14px; }
+.present-vocab-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; }
+.present-vocab-card{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  background:var(--surface-2); border-radius:var(--radius-s); padding:16px 18px;
+}
+.present-vocab-en{ font-family:var(--font-display); font-size:1.25rem; font-weight:600; }
+.present-vocab-uz{ display:block; font-size:0.9rem; color:var(--muted); margin-top:2px; }
+.present-dlg{ display:flex; flex-direction:column; gap:16px; }
+.present-dlg-line{ border-bottom:1px solid var(--line); padding-bottom:14px; }
+.present-dlg-line:last-child{ border-bottom:none; padding-bottom:0; }
+.present-dlg-who{ color:var(--accent); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.06em; }
+.present-dlg-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.present-dlg-en{ font-family:var(--font-display); font-size:clamp(1.15rem,2.6vw,1.55rem); margin:2px 0 0; }
+.present-dlg-uz{ color:var(--muted); font-style:italic; margin:2px 0 0; font-size:0.95rem; }
+.present-quiz-q{ margin-bottom:6px; }
+.present-quiz-opts{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:10px 0 20px; }
+.present-quiz-opt{
+  padding:16px 18px; border-radius:var(--radius-s); background:var(--surface-2); border:1.5px solid var(--line);
+  font-size:clamp(1rem,2vw,1.2rem); font-weight:600;
+}
+.present-quiz-opt.correct{ background:var(--accent-2); border-color:var(--accent-2); color:#fff; }
+.present-quiz-actions{ display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; }
+@media (max-width:640px){
+  .present-quiz-opts{ grid-template-columns:1fr; }
+  .present-body{ padding:20px; }
+  .present-nav .btn{ font-size:0.92rem; padding:12px 14px; }
+}
 .trial-banner-sub{ margin:3px 0 0; font-size:0.86rem; color:var(--muted); }

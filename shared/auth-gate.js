@@ -66,6 +66,7 @@ let opts = null;
 let unsubProfile = null;
 let unsubResets = null;
 let resetsUid = null;
+let unsubAssignments = null;
 let mode = "signin"; // signin | signup | reset
 let errorMsg = "";
 let busy = false;
@@ -483,6 +484,7 @@ export function initAuthGate(userOpts){
 
     if (!user){
       if (unsubResets){ unsubResets(); unsubResets = null; resetsUid = null; }
+      if (unsubAssignments){ unsubAssignments(); unsubAssignments = null; }
       clearTimeout(trialTimer);
       showAppShell(false);
       window.SU_user = null; heartbeatUid = null;
@@ -522,6 +524,23 @@ window.SU_changePassword = async function(currentPassword, newPassword){
     await reauthenticateWithCredential(user, EmailAuthProvider.credential(user.email, currentPassword));
     await updatePassword(user, newPassword);
   }catch(err){ throw new Error(mapAuthError(err)); }
+};
+
+// Homework a teacher/manager/owner assigned to this student — day, grammar
+// unit, or free-text note — lives at assignments/{myUid} (see
+// database.rules.json). Unlike resets, there's nothing here for the
+// student's app to "apply" or stamp: it's read-only for them, and
+// completion is inferred client-side from their own progress (app.js).
+// This keeps the same "app.js never imports the Firebase SDK directly"
+// boundary as SU_syncProgress/SU_applyResets: the host app just calls
+// window.SU_watchAssignments(cb) once and gets cb(assignmentsObjectOrNull)
+// whenever the node changes, without knowing anything about Firebase.
+window.SU_watchAssignments = function(cb){
+  const user = auth.currentUser;
+  if (!user){ cb(null); return () => {}; }
+  if (unsubAssignments) unsubAssignments();
+  unsubAssignments = onValue(ref(db, "assignments/" + user.uid), (snap) => cb(snap.val()), () => cb(null));
+  return () => { if (unsubAssignments){ unsubAssignments(); unsubAssignments = null; } };
 };
 
 export function signOutUser(){ return signOut(auth); }

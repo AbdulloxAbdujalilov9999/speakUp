@@ -103,6 +103,41 @@ let state = {
   flippedCards: {},
 };
 
+// Homework a teacher/manager/owner assigned to this student (assignments/{uid}
+// in Firebase — see shared/auth-gate.js's SU_watchAssignments). Not part of
+// `state`/localStorage: it's a live mirror of remote data, not something this
+// device owns, and it's null until the subscription first reports in.
+let assignmentsCache = null;
+function watchAssignments(){
+  if (!window.SU_watchAssignments) return;
+  window.SU_watchAssignments((data) => {
+    assignmentsCache = data;
+    if (state.view === "homework") render();
+  });
+}
+function assignedHomeworkList(){
+  if (!assignmentsCache) return [];
+  return Object.entries(assignmentsCache)
+    .map(([id, a]) => Object.assign({ id }, a))
+    .sort((a, b) => (b.at || 0) - (a.at || 0));
+}
+function isAssignmentDone(a){
+  if (a.kind === "day") return isCompleted(Number(a.key));
+  if (a.kind === "grammar") return isGrammarDone(a.key);
+  return false; // a pure "note" has no completion state — always shown as open
+}
+function assignmentTitle(a){
+  if (a.kind === "day"){
+    const d = dayByNum(Number(a.key));
+    return d ? tr("Day {n}: {title}", { n: d.d, title: titleParts(d).main }) : tr("Day {n}", { n: a.key });
+  }
+  if (a.kind === "grammar"){
+    const u = grammarUnitById(a.key);
+    return u ? (uiEn() ? u.title : u.titleUz) : a.key;
+  }
+  return tr("Note");
+}
+
 function todayStr(){ return new Date().toISOString().slice(0,10); }
 
 let _cloudSyncTimer = null;
@@ -129,6 +164,14 @@ function applyTheme(theme){
 }
 
 function dayByNum(n){ return CURRICULUM.find(d => d.d === n); }
+
+// Anyone signed in as owner/manager/teacher (never a plain student) — used
+// to gate Live Session mode, a teacher-facing presentation tool that has no
+// business appearing for a self-paced student.
+function isStaff(){
+  const role = window.SU_user && window.SU_user.role;
+  return !!role && role !== "student";
+}
 
 function isUnlocked(dayNum){
   // Free Navigation is a staff preview tool (see Settings) — a student
@@ -527,6 +570,8 @@ const ICON_PATHS = {
   bolt: '<polygon points="13,2 4,14 11,14 10,22 20,9 13,9"/>',
   truck: '<path d="M1 6h13v10H1z"/><path d="M14 9h4l4 4v3h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/>',
   chevronRight: '<polyline points="9,6 15,12 9,18"/>',
+  present: '<rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/>',
+  close: '<line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/>',
 };
 const TAB_ICONS = { vocab:"cards", dialogue:"chat", roleplay:"mic", practice:"target", grammar:"bulb", quiz:"check", speak:"speaker", notes:"notes" };
 function icon(name, size){
@@ -592,6 +637,7 @@ function render(){
   else if (view === "grammarUnit") renderGrammarUnit(state.currentUnit);
   else if (view === "homework") renderHomework();
   else if (view === "homeworkSession") renderHomeworkSession(state.currentSession);
+  else if (view === "present") renderPresentView();
 }
 
 function setView(v, extra){
@@ -850,6 +896,7 @@ function renderLesson(dayNum){
           <button class="btn btn-ghost btn-sm" id="prevDayBtn" ${!prev?"disabled":""}>${prev ? tr("&larr; Day {n}", { n: prev.d }) : tr("&larr; Day")}</button>
           <button class="btn btn-ghost btn-sm" id="nextDayBtn" ${!next?"disabled":""}>${next ? tr("Day {n} &rarr;", { n: next.d }) : ""}</button>
         </div>
+        ${isStaff() ? `<button class="btn btn-accent btn-sm" id="presentBtn">${icon("present",16)} ${tr("Present")}</button>` : ""}
       </div>
       <p class="eyebrow">${tr("WEEK {n}", { n: d.w })} &middot; ${escapeHtml(trc(d.wt))}${d.rev ? " &middot; " + tr("REVIEW DAY") : ""}</p>
       <h1 class="hwy-title">${tr("Day {n}: {title}", { n: d.d, title: escapeHtml(titleParts(d).main) })}</h1>
@@ -883,6 +930,8 @@ function renderLesson(dayNum){
   document.getElementById("backBtn").addEventListener("click", () => setView("weekDetail", { currentWeek: d.w }));
   if (prev) document.getElementById("prevDayBtn").addEventListener("click", () => openLesson(prev.d));
   if (next) document.getElementById("nextDayBtn").addEventListener("click", () => openLesson(next.d));
+  const presentBtn = document.getElementById("presentBtn");
+  if (presentBtn) presentBtn.addEventListener("click", () => openPresent(d.d));
   app.querySelectorAll("[data-tab]").forEach(btn => {
     btn.addEventListener("click", () => { state.currentTab = btn.dataset.tab; render(); });
   });
@@ -901,6 +950,181 @@ function renderLessonTab(d){
   else if (tab === "quiz") renderQuizTab(d, body);
   else if (tab === "speak") renderSpeakTab(d, body);
   else if (tab === "notes") renderNotesTab(d, body);
+}
+
+// ---------- Live Session (teacher-led presentation mode) ----------
+// A stateless, big-text walkthrough of a day's content for a teacher running
+// a live class off a projector — no progress/Firebase reads or writes, no
+// quiz scoring, no timers. The teacher controls pace with Next/Prev only.
+// Steps vary by day type: every day always has a warm-up and pair-work
+// (curriculum.js's d.ls, added specifically for this), and skips vocabulary
+// or the grammar tip entirely on review/final days (no d.v / no d.g there).
+function openPresent(dayNum){
+  state.presentDay = dayNum;
+  state.presentStepIdx = 0;
+  state.presentQuizIdx = 0;
+  state.presentQuizRevealed = false;
+  setView("present");
+}
+
+function presentSteps(d){
+  const steps = [{ id: "warmup", label: "Warm-up" }];
+  if (d.v) steps.push({ id: "vocab", label: "Vocabulary" });
+  if (d.dl) steps.push({ id: "dialogue", label: "Dialogue" });
+  if (d.g) steps.push({ id: "grammar", label: "Grammar Tip" });
+  steps.push({ id: "pairwork", label: "Pair-work" });
+  if (d.qz) steps.push({ id: "quiz", label: "Class Quiz Review" });
+  if (d.sp) steps.push({ id: "speaking", label: "Speaking Prompt" });
+  return steps;
+}
+
+function renderPresentView(){
+  const app = document.getElementById("app");
+  const d = dayByNum(state.presentDay);
+  if (!d || !isStaff()){ setView("dashboard"); return; }
+  const steps = presentSteps(d);
+  let idx = state.presentStepIdx || 0;
+  if (idx < 0) idx = 0;
+  if (idx > steps.length - 1) idx = steps.length - 1;
+  state.presentStepIdx = idx;
+  const step = steps[idx];
+
+  app.innerHTML = `
+    <div class="present-shell">
+      <div class="present-topbar">
+        <div>
+          <span class="present-eyebrow mono">${tr("LIVE SESSION")} &middot; ${tr("DAY {n}", { n: d.d })}</span>
+          <h1 class="present-title">${escapeHtml(titleParts(d).main)}</h1>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="presentExitBtn">${icon("close",16)} ${tr("Exit presentation")}</button>
+      </div>
+      <p class="present-progress mono">${tr("Step {n} of {total}: {name}", { n: idx + 1, total: steps.length, name: tr(step.label) })}</p>
+      <div class="present-body" id="presentBody"></div>
+      <div class="present-nav">
+        <button class="btn btn-ghost btn-lg" id="presentPrev" ${idx === 0 ? "disabled" : ""}>&larr; ${tr("Previous")}</button>
+        <button class="btn btn-accent btn-lg" id="presentNext" ${idx === steps.length - 1 ? "disabled" : ""}>${tr("Next")} &rarr;</button>
+      </div>
+    </div>
+  `;
+
+  renderPresentStep(d, step.id, document.getElementById("presentBody"));
+
+  document.getElementById("presentExitBtn").addEventListener("click", () => setView("lesson", { currentDay: d.d }));
+  const pv = document.getElementById("presentPrev"), nx = document.getElementById("presentNext");
+  if (pv) pv.addEventListener("click", () => { state.presentStepIdx = idx - 1; render(); });
+  if (nx) nx.addEventListener("click", () => { state.presentStepIdx = idx + 1; render(); });
+}
+
+function renderPresentStep(d, stepId, body){
+  if (stepId === "warmup") renderPresentText(body, d.ls[0], d.ls[1], "Warm-up");
+  else if (stepId === "vocab") renderPresentVocab(d, body);
+  else if (stepId === "dialogue") renderPresentDialogue(d, body);
+  else if (stepId === "grammar") renderPresentGrammar(d, body);
+  else if (stepId === "pairwork") renderPresentText(body, d.ls[2], d.ls[3], "Pair-work");
+  else if (stepId === "quiz") renderPresentQuiz(d, body);
+  else if (stepId === "speaking") renderPresentText(body, d.sp[0], d.sp[1], "Speaking Prompt");
+}
+
+// Warm-up, pair-work and the closing speaking prompt are all "one big line
+// of text + a listen button" — same shape, different label.
+function renderPresentText(body, en, uz, labelKey){
+  body.innerHTML = `
+    <div class="present-card">
+      <span class="present-card-label mono">${tr(labelKey)}</span>
+      <p class="present-big">${escapeHtml(en)}</p>
+      ${state.settings.showUz ? `<p class="present-sub">${escapeHtml(uz)}</p>` : ""}
+      <button class="btn btn-accent btn-lg" id="presentListenBtn">${icon("speaker",20)} ${tr("Listen")}</button>
+    </div>`;
+  document.getElementById("presentListenBtn").addEventListener("click", () => speak(en));
+}
+
+function renderPresentVocab(d, body){
+  body.innerHTML = `
+    <div class="present-vocab-head">
+      <button class="btn btn-ghost btn-sm" id="presentListenAll">${icon("play",14)} ${tr("Listen to all {n}", { n: d.v.length })}</button>
+    </div>
+    <div class="present-vocab-grid">
+      ${d.v.map(([en, uz]) => `
+        <div class="present-vocab-card">
+          <span class="present-vocab-en">${escapeHtml(en)}</span>
+          ${state.settings.showUz ? `<span class="present-vocab-uz">${escapeHtml(tWord(en, uz))}</span>` : ""}
+          <button class="speak-btn" data-speak="${escapeHtml(en)}" aria-label="${tr("Listen")}">${icon("speaker",18)}</button>
+        </div>`).join("")}
+    </div>`;
+  body.querySelectorAll("[data-speak]").forEach(btn => btn.addEventListener("click", () => speak(btn.dataset.speak)));
+  document.getElementById("presentListenAll").addEventListener("click", () => {
+    if (!ttsSupported()){ toast(tr("Speech is not supported in this browser.")); return; }
+    speakQueue(d.v.map(v => v[0].replace(/\.\.\.$/, "")));
+  });
+}
+
+function renderPresentDialogue(d, body){
+  body.innerHTML = `
+    <div class="present-vocab-head">
+      <button class="btn btn-accent btn-sm" id="presentPlayAll">${icon("play",14)} ${tr("Play full dialogue")}</button>
+    </div>
+    <div class="present-dlg">
+      ${d.dl.map(([speaker, en, uz]) => `
+        <div class="present-dlg-line">
+          <span class="present-dlg-who mono">${escapeHtml(speaker)}</span>
+          <div class="present-dlg-row">
+            <p class="present-dlg-en">${escapeHtml(en)}</p>
+            <button class="speak-btn" data-speak="${escapeHtml(en)}" aria-label="${tr("Listen")}">${icon("speaker",18)}</button>
+          </div>
+          ${state.settings.showUz ? `<p class="present-dlg-uz">${escapeHtml(tDl(en, uz))}</p>` : ""}
+        </div>`).join("")}
+    </div>`;
+  body.querySelectorAll("[data-speak]").forEach(btn => btn.addEventListener("click", () => speak(btn.dataset.speak)));
+  document.getElementById("presentPlayAll").addEventListener("click", () => {
+    if (!ttsSupported()){ toast(tr("Speech is not supported in this browser.")); return; }
+    const first = d.dl[0][0], pv = partnerVoice();
+    speakQueue(d.dl.map(l => l[0] === first ? { text: l[1] } : { text: l[1], voice: pv.voice, pitch: pv.pitch }));
+  });
+}
+
+function renderPresentGrammar(d, body){
+  // d.g is [titleEn, bodyEn, titleUz, bodyUz] — same shape/leading-language
+  // convention as renderGrammarTab, just rendered at presentation scale.
+  const [titleEn, bodyEn, titleUz, bodyUz] = d.g;
+  const uzLeads = !uiEn();
+  const mainTitle = uzLeads ? titleUz : titleEn;
+  const mainBody = uzLeads ? bodyUz : bodyEn;
+  const shadowTitle = uzLeads ? titleEn : titleUz;
+  const shadowBody = uzLeads ? bodyEn : bodyUz;
+  body.innerHTML = `
+    <div class="present-card">
+      <span class="present-card-label mono">${tr("LANGUAGE TIP")}</span>
+      <h2 class="present-tip-title">${escapeHtml(mainTitle)}</h2>
+      <p class="present-big">${escapeHtml(mainBody)}</p>
+      ${state.settings.showUz ? `<p class="present-sub"><strong>${escapeHtml(shadowTitle)}</strong> &mdash; ${escapeHtml(shadowBody)}</p>` : ""}
+    </div>`;
+}
+
+// Quiz-show style review: one question at a time, purely projected — no
+// scoring, no saved state, just a click to reveal the correct choice.
+function renderPresentQuiz(d, body){
+  const qs = d.qz;
+  let i = state.presentQuizIdx || 0;
+  if (i < 0) i = 0;
+  if (i > qs.length - 1) i = qs.length - 1;
+  state.presentQuizIdx = i;
+  const q = qs[i];
+  const revealed = !!state.presentQuizRevealed;
+  body.innerHTML = `
+    <p class="present-card-label mono">${tr("Question {n} of {total}", { n: i + 1, total: qs.length })}</p>
+    <h2 class="present-big present-quiz-q">${escapeHtml(q[0])}</h2>
+    <div class="present-quiz-opts">
+      ${q[1].map((opt, oi) => `<div class="present-quiz-opt${revealed && oi === q[2] ? " correct" : ""}">${escapeHtml(opt)}</div>`).join("")}
+    </div>
+    <div class="present-quiz-actions">
+      <button class="btn btn-ghost" id="pqPrev" ${i === 0 ? "disabled" : ""}>&larr; ${tr("Previous question")}</button>
+      ${!revealed ? `<button class="btn btn-accent" id="pqReveal">${tr("Reveal answer")}</button>` : `<span></span>`}
+      <button class="btn btn-ghost" id="pqNext" ${i === qs.length - 1 ? "disabled" : ""}>${tr("Next question")} &rarr;</button>
+    </div>`;
+  const pqPrev = document.getElementById("pqPrev"), pqNext = document.getElementById("pqNext"), pqReveal = document.getElementById("pqReveal");
+  if (pqPrev) pqPrev.addEventListener("click", () => { state.presentQuizIdx = i - 1; state.presentQuizRevealed = false; renderPresentQuiz(d, body); });
+  if (pqNext) pqNext.addEventListener("click", () => { state.presentQuizIdx = i + 1; state.presentQuizRevealed = false; renderPresentQuiz(d, body); });
+  if (pqReveal) pqReveal.addEventListener("click", () => { state.presentQuizRevealed = true; renderPresentQuiz(d, body); });
 }
 
 function renderVocabTab(d, body){
@@ -1707,6 +1931,13 @@ function renderHomework(){
 
     <section class="panel">
       <div class="panel-head">
+        <h2>${tr("Assigned by your teacher")}</h2>
+      </div>
+      <div id="assignedHwBody"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
         <h2>${tr("Glossary — Study & Quiz")}</h2>
         <p class="panel-sub">${tr("{n} words total. Search to jump to a word, or expand any session below to study its 20 words.", { n: totalWords })}</p>
       </div>
@@ -1716,12 +1947,44 @@ function renderHomework(){
     </section>
   `;
 
+  drawAssignedHomework();
   const searchInput = document.getElementById("hwSearch");
   searchInput.addEventListener("input", (e) => {
     state.hwSearchQuery = e.target.value;
     drawHomeworkBody();
   });
   drawHomeworkBody();
+
+  function drawAssignedHomework(){
+    const el = document.getElementById("assignedHwBody");
+    const list = assignedHomeworkList();
+    if (!list.length){
+      el.innerHTML = `<p class="panel-sub">${tr("No homework assigned yet.")}</p>`;
+      return;
+    }
+    el.innerHTML = `<div class="gloss-list">
+      ${list.map(a => {
+        const done = isAssignmentDone(a);
+        const actionBtn = a.kind === "day"
+          ? `<button class="gloss-daylink mono" data-open-day="${escapeHtml(String(a.key))}">${tr("Go to Day {n}", { n: a.key })}</button>`
+          : a.kind === "grammar"
+            ? `<button class="gloss-daylink mono" data-open-grammar="${escapeHtml(String(a.key))}">${tr("Go to grammar unit")}</button>`
+            : "";
+        return `<div class="gloss-item">
+          <div class="gloss-main">
+            <span class="gloss-en">${escapeHtml(assignmentTitle(a))}</span>
+            <span class="grammar-card-badge${done?"":" muted"}">${done ? "✓ " + tr("Done") : tr("Open")}</span>
+          </div>
+          ${a.dueDate ? `<span class="panel-sub">${tr("Due {date}", { date: escapeHtml(a.dueDate) })}</span>` : ""}
+          ${a.note ? `<span class="panel-sub" style="font-style:italic;">${tr("Note from your teacher: {note}", { note: escapeHtml(a.note) })}</span>` : ""}
+          ${a.byName ? `<span class="panel-sub mono">${tr("Assigned by {name}", { name: escapeHtml(a.byName) })}</span>` : ""}
+          ${actionBtn}
+        </div>`;
+      }).join("")}
+    </div>`;
+    el.querySelectorAll("[data-open-day]").forEach(btn => btn.addEventListener("click", () => openLesson(Number(btn.dataset.openDay))));
+    el.querySelectorAll("[data-open-grammar]").forEach(btn => btn.addEventListener("click", () => setView("grammarUnit", { currentUnit: btn.dataset.openGrammar })));
+  }
 
   function drawHomeworkBody(){
     const bodyEl = document.getElementById("hwBody");
@@ -2576,6 +2839,7 @@ function init(){
   applyTheme(state.settings.theme);
   setView("dashboard");
   setTimeout(loadVoices, 300);
+  watchAssignments();
 }
 
 // Mounted by shared/auth-gate.js once the signed-in user is approved as a student.
