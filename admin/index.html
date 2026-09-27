@@ -5,8 +5,8 @@
 <meta name="google" content="notranslate">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SpeakUp Admin</title>
-<meta name="theme-color" content="#2F6FED" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0F1E3D" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#5416B5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F083B" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
 <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -52,7 +52,7 @@
     display:flex; align-items:center; gap:7px; position:relative;
   }
   .navbtn:hover{ color:#fff; background:rgba(255,255,255,0.1); }
-  .navbtn.active{ color:#0F1E3D; background:var(--brand-200); }
+  .navbtn.active{ color:#0F083B; background:var(--brand-200); }
   .nav-icon{ display:inline-flex; position:relative; }
   .nav-icon svg{ width:19px; height:19px; }
   .navbtn .ttx-badge{ margin-left:2px; }
@@ -141,7 +141,7 @@
       position:fixed; left:0; right:0; bottom:0; z-index:40;
       background:var(--surface); border-top:1px solid var(--line);
       display:flex; gap:2px; padding:6px 6px calc(6px + env(safe-area-inset-bottom));
-      box-shadow:0 -6px 24px rgba(15,30,61,0.10);
+      box-shadow:0 -6px 24px rgba(15,8,59,0.10);
       flex-wrap:nowrap;
     }
     .navbtn{
@@ -262,7 +262,7 @@
 
   /* ---------- Modal ---------- */
   .modal-backdrop{
-    position:fixed; inset:0; background:rgba(15,30,61,0.6); display:flex; align-items:center; justify-content:center;
+    position:fixed; inset:0; background:rgba(15,8,59,0.6); display:flex; align-items:center; justify-content:center;
     padding:20px; z-index:100; overflow-y:auto;
   }
   .modal-card{

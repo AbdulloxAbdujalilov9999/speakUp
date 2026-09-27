@@ -42,7 +42,7 @@ input, select, textarea{ font-size:16px; } /* 16px stops iOS zooming into fields
   display:flex; align-items:center; gap:7px;
 }
 .navbtn:hover{ color:#fff; background:rgba(255,255,255,0.1); }
-.navbtn.active{ color:#0F1E3D; background:var(--brand-200); }
+.navbtn.active{ color:#0F083B; background:var(--brand-200); }
 .nav-icon{ display:inline-flex; }
 .nav-icon svg{ width:19px; height:19px; }
 
@@ -61,7 +61,7 @@ input, select, textarea{ font-size:16px; } /* 16px stops iOS zooming into fields
     position:fixed; left:0; right:0; bottom:0; z-index:40;
     background:var(--surface); border-top:1px solid var(--line);
     display:flex; gap:2px; padding:6px 6px calc(6px + env(safe-area-inset-bottom));
-    box-shadow:0 -6px 24px rgba(15,30,61,0.10);
+    box-shadow:0 -6px 24px rgba(15,8,59,0.10);
     flex-wrap:nowrap;
   }
   .navbtn{
@@ -98,7 +98,7 @@ input, select, textarea{ font-size:16px; } /* 16px stops iOS zooming into fields
 /* ---------- Hero / dashboard ---------- */
 .hero-strip{
   display:flex; flex-direction:column; gap:18px;
-  background:linear-gradient(140deg, var(--brand-700) 0%, var(--brand-900) 100%); color:#F7FAFF;
+  background:linear-gradient(140deg, var(--brand-700) 0%, var(--brand-900) 100%); color:#F8F4FC;
   border-radius:var(--radius-l); padding:26px; box-shadow:var(--shadow);
   position:relative; overflow:hidden;
 }
@@ -124,7 +124,7 @@ input, select, textarea{ font-size:16px; } /* 16px stops iOS zooming into fields
   backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
 }
 .upnext-badge{
-  width:58px; height:58px; border-radius:16px; background:#F7FAFF; color:#2F6FED; flex-shrink:0;
+  width:58px; height:58px; border-radius:16px; background:#F8F4FC; color:#5416B5; flex-shrink:0;
   display:flex; flex-direction:column; align-items:center; justify-content:center; line-height:1;
 }
 .upnext-badge small{ font-family:var(--font-mono); font-size:0.58rem; letter-spacing:0.12em; font-weight:600; }
@@ -133,7 +133,7 @@ input, select, textarea{ font-size:16px; } /* 16px stops iOS zooming into fields
 .upnext-label{ margin:0; font-family:var(--font-mono); font-size:0.66rem; letter-spacing:0.12em; color:var(--brand-200); }
 .upnext-text h2{ font-size:1.12rem; margin:3px 0 2px; font-weight:500; }
 .upnext-meta{ margin:0; font-size:0.82rem; opacity:0.75; }
-.hero-strip .btn-accent{ background:#F7FAFF; color:#2F6FED; border-color:#F7FAFF; }
+.hero-strip .btn-accent{ background:#F8F4FC; color:#5416B5; border-color:#F8F4FC; }
 .upnext .btn{ flex:0 0 auto; }
 .hero-stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
 .stat-tile{
@@ -167,7 +167,7 @@ input, select, textarea{ font-size:16px; } /* 16px stops iOS zooming into fields
 .route-truck{
   position:absolute; top:50%; transform:translate(-50%,-50%); width:30px; height:30px; border-radius:50%;
   background:var(--accent); color:var(--accent-ink); display:flex; align-items:center; justify-content:center;
-  box-shadow:0 3px 10px rgba(15,30,61,0.3); border:2px solid var(--surface);
+  box-shadow:0 3px 10px rgba(15,8,59,0.3); border:2px solid var(--surface);
 }
 
 @media (max-width:640px){
@@ -294,7 +294,7 @@ input, select, textarea{ font-size:16px; } /* 16px stops iOS zooming into fields
 .tabbtn:active{ transform:scale(0.97); }
 .tab-ico{ display:inline-flex; }
 .tab-lbl{ display:block; max-width:100%; overflow:hidden; text-overflow:ellipsis; }
-.tabbtn.active{ color:var(--accent-ink); background:var(--accent); border-color:var(--accent); box-shadow:0 4px 14px rgba(15,30,61,0.22); }
+.tabbtn.active{ color:var(--accent-ink); background:var(--accent); border-color:var(--accent); box-shadow:0 4px 14px rgba(15,8,59,0.22); }
 .tabbtn:hover:not(.active){ color:var(--ink); border-color:var(--accent-mid); }
 @media (min-width:761px){
   .tabbtn{ flex-direction:row; gap:9px; font-size:0.9rem; min-height:52px; padding:10px 10px; }
@@ -458,7 +458,7 @@ input, select, textarea{ font-size:16px; } /* 16px stops iOS zooming into fields
 .rp-msg.them{ align-self:flex-start; background:var(--surface-2); border-bottom-left-radius:6px; }
 .rp-msg.me{ align-self:flex-end; background:var(--accent); color:var(--accent-ink); border-bottom-right-radius:6px; }
 .rp-msg.me .rp-score-chip{ display:inline-block; margin-top:6px; font-family:var(--font-mono); font-size:0.72rem; background:rgba(255,255,255,0.22); padding:2px 8px; border-radius:99px; }
-:root[data-theme="dark"] .rp-msg.me .rp-score-chip{ background:rgba(15,30,61,0.18); }
+:root[data-theme="dark"] .rp-msg.me .rp-score-chip{ background:rgba(15,8,59,0.18); }
 .rp-msg.speaking{ box-shadow:0 0 0 2px var(--accent-mid); }
 .rp-msg .speak-btn{ position:static; display:inline-flex; min-width:36px; min-height:36px; padding:4px; vertical-align:middle; margin-left:4px; }
 .rp-typing{ align-self:flex-start; background:var(--surface-2); border-radius:20px; border-bottom-left-radius:6px; padding:12px 16px; display:flex; gap:5px; }
@@ -481,7 +481,7 @@ input, select, textarea{ font-size:16px; } /* 16px stops iOS zooming into fields
 .rp-mic{
   width:72px; height:72px; border-radius:50%; border:none; background:var(--accent); color:var(--accent-ink);
   display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; position:relative;
-  box-shadow:0 6px 18px rgba(15,30,61,0.28);
+  box-shadow:0 6px 18px rgba(15,8,59,0.28);
 }
 .rp-mic svg{ width:30px; height:30px; }
 .rp-mic.listening{ background:var(--danger); color:#fff; }
@@ -611,7 +611,7 @@ input[type="range"]{ accent-color:var(--accent-mid); width:160px; }
 
 /* ---------- Modal / certificate ---------- */
 .modal-backdrop{
-  position:fixed; inset:0; background:rgba(15,30,61,0.6); display:flex; align-items:center; justify-content:center;
+  position:fixed; inset:0; background:rgba(15,8,59,0.6); display:flex; align-items:center; justify-content:center;
   padding:20px; z-index:100; overflow-y:auto;
 }
 .cert-sheet{ max-width:640px; width:100%; display:flex; flex-direction:column; gap:16px; }
@@ -685,7 +685,7 @@ input[type="range"]{ accent-color:var(--accent-mid); width:160px; }
 .lang-slot{ display:flex; align-items:center; }
 .topbar .lang-switch{ background:rgba(247,250,255,0.10); border-color:rgba(247,250,255,0.18); }
 .topbar .lang-switch button{ color:rgba(247,250,255,0.75); min-width:36px; }
-.topbar .lang-switch button.active{ background:var(--brand-200); color:#0F1E3D; }
+.topbar .lang-switch button.active{ background:var(--brand-200); color:#0F083B; }
 @media (max-width:1100px){ .brand-sub{ display:none; } }
 @media (max-width:760px){ .topbar-inner{ flex-wrap:nowrap; } .topbar .lang-switch button{ min-width:34px; min-height:30px; } }
 .day-tu{ font-size:0.86rem; color:var(--muted); font-style:italic; line-height:1.3; }

@@ -159,7 +159,7 @@ function applyTheme(theme){
   else root.removeAttribute("data-theme");
   document.querySelectorAll('meta[name="theme-color"]').forEach(m => {
     if (!m.dataset.orig) m.dataset.orig = m.getAttribute("content");
-    m.setAttribute("content", theme === "light" ? "#2F6FED" : theme === "dark" ? "#0F1E3D" : m.dataset.orig);
+    m.setAttribute("content", theme === "light" ? "#5416B5" : theme === "dark" ? "#0F083B" : m.dataset.orig);
   });
 }
 
@@ -724,7 +724,7 @@ function renderDashboard(){
         <div class="ring" role="img" aria-label="${pct}%">
           <svg viewBox="0 0 80 80" width="88" height="88">
             <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(247,250,255,0.16)" stroke-width="7"/>
-            <circle cx="40" cy="40" r="34" fill="none" stroke="#BFD3FF" stroke-width="7" stroke-linecap="round"
+            <circle cx="40" cy="40" r="34" fill="none" stroke="#E3D4F7" stroke-width="7" stroke-linecap="round"
               stroke-dasharray="${dash} ${C}" transform="rotate(-90 40 40)"/>
           </svg>
           <span class="ring-num">${pct}<small>%</small></span>
