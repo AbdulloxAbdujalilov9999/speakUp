@@ -505,6 +505,161 @@ sp:["Talk about what you can do, your pet, and give 2 classroom commands.","Nima
 ls:["Class review relay: can, have, imperatives, plurals mixed quiz.","Sinf takrorlash estafetasi: can, have, buyruq va ko'plik aralash so'rovi.",
 "In pairs, review the week using can/have/imperatives/plurals.","Juftlikda haftani can/have/buyruq/ko'plik bilan takrorlang."]
 }
+,
+
+{d:16,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
+t:"Present Simple — Everyday Actions",tu:"Present Simple — kundalik harakatlar",
+v:[
+["go","bormoq","I go to school every day."],
+["eat","yemoq","I eat breakfast every morning."],
+["drink","ichmoq","I drink milk every day."],
+["play","o'ynamoq","I play football every day."],
+["study","o'qimoq","I study English every day."],
+["work","ishlamoq","My father works every day."],
+["live","yashamoq","I live in Tashkent."],
+["like","yoqtirmoq","I like English."],
+["every day","har kuni","I study every day."],
+["always","doim","I always brush my teeth."]
+],
+dl:[
+["Teacher","What do you do every day?","Har kuni nima qilasiz?"],
+["Student","I go to school and I study English.","Men maktabga boraman va ingliz tilini o'qiyman."],
+["Teacher","Do you like English?","Ingliz tilini yoqtirasizmi?"],
+["Student","Yes, I always like my English class.","Ha, men doim ingliz tili darsimni yoqtiraman."]
+],
+g:["Present Simple — I / you / we / they",
+"Use the present simple with I/you/we/they for routines and things you do regularly: I go to school every day. I study English. Add 'always', 'usually', 'sometimes' to say how often.",
+"Present Simple — I / you / we / they",
+"I/you/we/they bilan muntazam qiladigan ishlar haqida gapirish uchun present simple ishlatiladi: I go to school every day. I study English. Qanchalik tez-tez ekanini bildirish uchun 'always', 'usually', 'sometimes' qo'shiladi."],
+qz:[
+["Choose the correct sentence.",["I goes to school.","I go to school.","I going to school.","I am go to school."],1],
+["'Har kuni' in English is ___.",["Sometimes","Always","Every day","Never"],2],
+["Choose the correct sentence.",["I studies English.","I study English.","I am study English.","I studying English."],1],
+["'Yoqtirmoq' in English is ___.",["Live","Work","Like","Play"],2]
+],
+sp:["Talk about 3 things you do every day.","Har kuni qiladigan 3 ta ishingiz haqida gapiring."],
+ls:["Class chain: each student says one thing they do every day.","Sinf zanjiri: har bir o'quvchi har kuni qiladigan bitta ishini aytadi.",
+"In pairs, ask 'What do you do every day?' and compare answers.","Juftlikda 'Har kuni nima qilasiz?' deb so'rang va javoblarni solishtiring."]
+},
+
+{d:17,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
+t:"Present Simple — He / She (-s)",tu:"Present Simple — He / She (-s)",
+v:[
+["goes","boradi","She goes to school."],
+["eats","yeydi","He eats breakfast."],
+["drinks","ichadi","She drinks tea."],
+["plays","o'ynaydi","He plays football."],
+["studies","o'qiydi","She studies English."],
+["works","ishlaydi","My father works every day."],
+["lives","yashaydi","She lives in Samarkand."],
+["likes","yoqtiradi","He likes music."],
+["watches","tomosha qiladi","She watches TV."],
+["reads","o'qiydi (kitob)","He reads books."]
+],
+dl:[
+["Malika","What does your brother do every day?","Akangiz har kuni nima qiladi?"],
+["Aziz","He goes to school and he plays football.","U maktabga boradi va futbol o'ynaydi."],
+["Malika","Does he like football?","U futbolni yoqtiradimi?"],
+["Aziz","Yes, he likes football very much.","Ha, u futbolni juda yoqtiradi."]
+],
+g:["Present Simple: Adding -s with He / She / It",
+"With he/she/it, add -s to the verb: go → goes, like → likes. Words ending in -y after a consonant change to -ies: study → studies. This -s is easy to forget, but it's essential.",
+"Present Simple: He / She / It bilan -s qo'shish",
+"He/she/it bilan fe'lga -s qo'shiladi: go → goes, like → likes. Undosh + y bilan tugagan so'zlarda -ies bo'ladi: study → studies. Bu -s ni unutish oson, lekin u juda muhim."],
+qz:[
+["Choose the correct sentence.",["He go to school.","He goes to school.","He going to school.","He gos to school."],1],
+["'Study' with 'she' becomes ___.",["Studys","Studies","Studying","Studyes"],1],
+["Choose the correct sentence.",["She like music.","She likes music.","She liking music.","She is like music."],1],
+["Choose the correct sentence.",["He read books.","He reads books.","He reading books.","He is reads books."],1]
+],
+sp:["Talk about what your mother or father does every day.","Onangiz yoki otangiz har kuni nima qilishi haqida gapiring."],
+ls:["Class chain: each student says what a family member does, using he/she + -s.","Sinf zanjiri: har bir o'quvchi oila a'zosi nima qilishi haqida he/she + -s bilan aytadi.",
+"In pairs, ask about each other's best friend's daily routine.","Juftlikda bir-biringizning eng yaqin do'stingizning kundalik hayoti haqida so'rang."]
+},
+
+{d:18,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
+t:"Present Continuous — Right Now",tu:"Present Continuous — hozir",
+v:[
+["reading","o'qiyapti","She is reading a book."],
+["writing","yozyapti","He is writing a letter."],
+["playing","o'ynayapti","They are playing football."],
+["eating","yeyapti","I am eating lunch."],
+["drinking","ichyapti","She is drinking tea."],
+["sleeping","uxlayapti","The baby is sleeping."],
+["running","yugurayapti","He is running fast."],
+["watching","tomosha qilyapti","We are watching TV."],
+["now","hozir","What are you doing now?"],
+["right now","aynan hozir","I am studying right now."]
+],
+dl:[
+["Malika","What are you doing right now?","Hozir nima qilyapsiz?"],
+["Aziz","I am reading a book. What about you?","Men kitob o'qiyapman. Sizchi?"],
+["Malika","I am watching TV with my sister.","Men opam bilan televizor tomosha qilyapman."]
+],
+g:["Present Continuous: Actions Happening Now",
+"Use 'am/is/are + verb-ing' for something happening right now: I am reading. She is playing. Most verbs just add -ing (play → playing); verbs ending in -e drop it (write → writing).",
+"Present Continuous: hozir sodir bo'layotgan harakatlar",
+"Hozir sodir bo'layotgan narsa uchun 'am/is/are + fe'l-ing' ishlatiladi: I am reading. She is playing. Ko'pchilik fe'llarga -ing qo'shiladi (play → playing); -e bilan tugaganlarda -e tushadi (write → writing)."],
+qz:[
+["Choose the correct sentence about now.",["I read a book now.","I am reading a book now.","I reading a book now.","I reads a book now."],1],
+["What is the -ing form of 'write'?",["Writeing","Writting","Writing","Wrieing"],2],
+["Choose the correct question.",["What you are doing?","What are you doing?","What doing you are?","Are you what doing?"],1],
+["Choose the correct sentence.",["They play football now.","They are playing football now.","They playing football now.","They is playing football now."],1]
+],
+sp:["Look around and describe 3 things happening right now.","Atrofingizga qarang va hozir sodir bo'layotgan 3 ta ishni tasvirlang."],
+ls:["Freeze game: act, teacher says 'Freeze!' and asks 'What are you doing?'","Muzlash o'yini: harakat qiling, o'qituvchi 'Freeze!' deydi va 'Nima qilyapsiz?' deb so'raydi.",
+"In pairs, mime an action, partner guesses using 'Are you...ing?'","Juftlikda harakatni ijro eting, sherigingiz 'Are you...ing?' deb topsin."]
+},
+
+{d:19,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
+t:"Present Simple vs Present Continuous",tu:"Present Simple va Present Continuous farqi",
+v:[
+["usually","odatda","I usually walk to school."],
+["sometimes","ba'zan","I sometimes watch TV."],
+["never","hech qachon","I never eat late at night."],
+["at the moment","hozirgi paytda","I am busy at the moment."],
+["today","bugun","Today I am wearing a red shirt."],
+["every week","har hafta","We play football every week."],
+["this week","shu hafta","This week I am studying hard."],
+["usually...but now","odatda...lekin hozir","I usually walk, but now I am running."]
+],
+dl:[
+["Teacher","Do you usually walk to school?","Odatda maktabga piyoda borasizmi?"],
+["Student","Yes, but today I am going by bus.","Ha, lekin bugun avtobusda boryapman."],
+["Teacher","Why?","Nega?"],
+["Student","Because it's raining now.","Chunki hozir yomg'ir yog'yapti."]
+],
+g:["Present Simple vs Present Continuous",
+"Present simple is for routines and general facts: I usually walk to school. Present continuous is for right now: But today, I am going by bus. Don't mix them up — 'usually/always' go with present simple, 'now/at the moment' go with present continuous.",
+"Present Simple va Present Continuous farqi",
+"Present simple odat va umumiy faktlar uchun: I usually walk to school. Present continuous hozirgi payt uchun: But today, I am going by bus. Ularni aralashtirmang — 'usually/always' present simple bilan, 'now/at the moment' present continuous bilan keladi."],
+qz:[
+["Choose the correct sentence for a routine.",["I am usually walking to school.","I usually walk to school.","I usually walking to school.","I usually walks to school."],1],
+["Choose the correct sentence for right now.",["I go by bus today.","I am going by bus today.","I am go by bus today.","I going by bus today."],1],
+["Which word goes with present continuous?",["Usually","Always","Now","Every day"],2],
+["Which word goes with present simple?",["Now","At the moment","Right now","Usually"],3]
+],
+sp:["Say something you usually do, and something different you are doing today.","Odatda qiladigan ishingizni va bugun qilayotgan boshqacha ishingizni ayting."],
+ls:["Class contrast game: teacher says 'usually' or 'now', students say a matching sentence.","Sinf farq o'yini: o'qituvchi 'usually' yoki 'now' deydi, o'quvchilar mos gap aytadi.",
+"In pairs, compare your usual routine with what's different today.","Juftlikda odatiy tartibingizni bugungi farqi bilan solishtiring."]
+},
+
+{d:20,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",rev:true,
+t:"Week 4 Review",tu:"4-hafta Takrorlash",
+qz:[
+["Choose the correct sentence.",["I goes to school.","I go to school.","I going to school.","I am go to school."],1],
+["'Study' with 'she' becomes ___.",["Studys","Studies","Studying","Studyes"],1],
+["Choose the correct sentence about now.",["I read a book now.","I am reading a book now.","I reading a book now.","I reads a book now."],1],
+["Choose the correct sentence for a routine.",["I am usually walking to school.","I usually walk to school.","I usually walking to school.","I usually walks to school."],1],
+["What is the -ing form of 'write'?",["Writeing","Writting","Writing","Wrieing"],2],
+["Choose the correct sentence.",["He read books.","He reads books.","He reading books.","He is reads books."],1],
+["Which word goes with present continuous?",["Usually","Always","Now","Every day"],2],
+["'Har kuni' in English is ___.",["Sometimes","Always","Every day","Never"],2]
+],
+sp:["Describe your daily routine, then say what you are doing right now.","Kundalik tartibingizni tasvirlang, so'ng hozir nima qilayotganingizni ayting."],
+ls:["Class review relay: present simple vs continuous mixed quiz.","Sinf takrorlash estafetasi: present simple va continuous aralash so'rovi.",
+"In pairs, review the week using routines and right-now actions.","Juftlikda haftani odatlar va hozirgi harakatlar bilan takrorlang."]
+}
 
 ];
 
