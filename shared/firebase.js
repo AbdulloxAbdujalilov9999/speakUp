@@ -30,11 +30,18 @@ const nativePersistence = platform === "android" ? indexedDBLocalPersistence : p
 // domain (iOS Safari always, desktop Safari/Chrome when third-party storage
 // is blocked), so the popup can't hand the result back and sign-in ends as
 // "cancelled" or "missing initial state". The fix is to serve Firebase's
-// /__/auth/* handler from the app's own domain (vercel.json proxies it, and
-// the redirect URI is registered on the OAuth web client) and use a
-// full-page redirect rather than a popup. Other hosts (localhost, previews,
-// the admin site) keep the plain popup on the default auth domain.
-const PROXIED_AUTH_HOSTS = ["speak-upvercel.vercel.app"];
+// /__/auth/* handler from the app's own domain (vercel.json proxies it) and
+// use a full-page redirect rather than a popup — but that ALSO requires
+// registering "https://<this-host>/__/auth/handler" as an authorized
+// redirect URI on the Google OAuth web client in Google Cloud Console
+// (APIs & Services -> Credentials -> the client Firebase auto-created for
+// Google Sign-In), or Google rejects the redirect with
+// "Error 400: redirect_uri_mismatch". That registration hasn't been done
+// for this project yet, so this list stays empty for now — every host uses
+// the plain popup on the default Firebase authDomain, which works fine
+// outside Safari / strict-privacy browsers. Add a hostname here (and do the
+// Google Cloud Console step above) if Safari support becomes a priority.
+const PROXIED_AUTH_HOSTS = [];
 export const usesRedirectSignIn = !nativePersistence &&
   typeof location !== "undefined" && PROXIED_AUTH_HOSTS.includes(location.hostname);
 
