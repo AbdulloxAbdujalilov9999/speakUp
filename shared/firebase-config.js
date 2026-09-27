@@ -12,9 +12,6 @@
 export const firebaseConfig = {
   apiKey: "AIzaSyD5048tGr1biITgI2mlUa_MXdInPX4DZMc",
   authDomain: "bucketlist-769b9.firebaseapp.com",
-  // TODO: fill this in once you create the Realtime Database (see README —
-  // Build → Realtime Database → Create Database). It will look like
-  // "https://bucketlist-769b9-default-rtdb.<region>.firebasedatabase.app"
   databaseURL: "https://bucketlist-769b9-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "bucketlist-769b9",
   storageBucket: "bucketlist-769b9.firebasestorage.app",
