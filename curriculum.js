@@ -1917,6 +1917,147 @@ sp:["Introduce your family, describe one person, and say where you are from.","O
 ls:["Class review relay: family, appearance, jobs, and countries mixed quiz.","Sinf takrorlash estafetasi: oila, tashqi ko'rinish, kasblar va davlatlar aralash so'rovi.",
 "In pairs, review the week with a mini interview about family and dreams.","Juftlikda haftani oila va orzular haqida kichik intervyu bilan takrorlang."]
 }
+,
+
+{d:66,w:14,wt:"Food & Health",wtUz:"Ovqat va salomatlik",
+t:"Food & Drinks",tu:"Ovqat va ichimliklar",
+v:[
+["bread","non","I eat bread every morning."],
+["rice","guruch","We cook rice with meat."],
+["meat","go'sht","My father likes meat."],
+["fish","baliq","Fish is healthy food."],
+["vegetable","sabzavot","Vegetables are good for you."],
+["fruit","meva","I eat fruit every day."],
+["apple","olma","An apple a day keeps you healthy."],
+["water","suv","I drink water every day."],
+["tea","choy","We drink tea in the morning."],
+["milk","sut","I drink milk every day."]
+],
+dl:[
+["Malika","What do you usually eat for breakfast?","Odatda nonushtaga nima yeysiz?"],
+["Aziz","I usually eat bread and eggs. Do you like vegetables?","Men odatda non va tuxum yeyman. Sabzavotlarni yoqtirasizmi?"],
+["Malika","Yes, I love vegetables and fruit.","Ha, men sabzavot va mevani yaxshi ko'raman."]
+],
+g:["Talking About Food",
+"You already know 'like/love' + -ing or noun (I like vegetables), and 'some/any' for food (I have some bread) — use them to talk about what you eat!",
+"Ovqat haqida gapirish",
+"Siz allaqachon 'like/love' + ot (I like vegetables) va ovqat uchun 'some/any' (I have some bread) ni bilasiz — nima yeyishingiz haqida gapirish uchun ulardan foydalaning!"],
+qz:[
+["'Go'sht' in English is ___.",["Fish","Chicken","Meat","Egg"],2],
+["Choose the correct sentence.",["I like a vegetables.","I like vegetables.","I like an vegetables.","I likes vegetables."],1],
+["'Sabzavot' in English is ___.",["Fruit","Vegetable","Bread","Rice"],1],
+["'Non' in English is ___.",["Rice","Bread","Meat","Milk"],1]
+],
+sp:["Talk about your favorite foods and what you usually eat for breakfast.","Sevimli taomlaringiz va odatda nonushtaga nima yeyishingiz haqida gapiring."],
+ls:["Food picture flashcards: teacher shows a picture, students shout the word.","Ovqat rasm kartochkalari: rasm ko'rsating, o'quvchilar so'zni aytadi.",
+"In pairs, ask 'Do you like...?' about 5 different foods.","Juftlikda 5 xil ovqat haqida 'Do you like...?' deb so'rang."]
+},
+
+{d:67,w:14,wt:"Food & Health",wtUz:"Ovqat va salomatlik",
+t:"At a Cafe — Ordering Food",tu:"Kafeda — ovqat buyurtma qilish",
+v:[
+["menu","menyu","Can I see the menu, please?"],
+["would like","xohlardim","I would like a pizza, please."],
+["order","buyurtma bermoq","I want to order juice."],
+["bill","hisob","Can we have the bill, please?"],
+["delicious","mazali","This soup is delicious."]
+],
+dl:[
+["Waiter","Welcome! What would you like to order?","Xush kelibsiz! Nima buyurtma qilasiz?"],
+["Aziz","I would like a pizza and juice, please.","Menga pitsa va sharbat bering, iltimos."],
+["Waiter","Anything else?","Yana biror narsami?"],
+["Aziz","No, thank you. Can I have the bill, please?","Yo'q, rahmat. Hisobni bera olasizmi?"]
+],
+g:["Polite Requests: 'I would like...'",
+"To politely ask for something, use 'I would like...' instead of 'I want...': I would like a pizza, please. This is more polite, especially with people you don't know well.",
+"Odobli so'rov: 'I would like...'",
+"Biror narsani odobli so'rash uchun 'I want...' o'rniga 'I would like...' ishlatiladi: I would like a pizza, please. Bu, ayniqsa yaxshi tanimagan odamlar bilan, ancha odobliroq."],
+qz:[
+["Choose the polite way to order food.",["I want a pizza.","I would like a pizza, please.","Give me a pizza.","Pizza now!"],1],
+["What do you ask for at the end of a meal?",["Menu","Bill","Order","Waiter"],1],
+["'Mazali' in English is ___.",["Cold","Hot","Delicious","Hungry"],2],
+["Choose the correct sentence.",["I would like ordering juice.","I would like to order juice.","I would like order juice.","I would liking juice."],1]
+],
+sp:["Role-play ordering food at a restaurant politely.","Restoranda ovqat buyurtma qilishni odobli tarzda ijro eting."],
+ls:["Set up a mini class 'cafe' — order using 'I would like...'","Sinfda kichik 'kafe' tashkil qiling.",
+"In pairs, act out ordering food and drinks.","Juftlikda ovqat va ichimlik buyurtma qilishni ijro eting."]
+},
+
+{d:68,w:14,wt:"Food & Health",wtUz:"Ovqat va salomatlik",
+t:"Body & Feelings",tu:"Tana va his-tuyg'ular",
+v:[
+["head","bosh","My head hurts."],
+["hand","qo'l","Wash your hands."],
+["leg","oyoq","My leg hurts."],
+["happy","baxtli","I am happy today."],
+["sad","xafa","She is sad about the news."],
+["tired","charchagan","I am tired after school."],
+["sick","kasal","I feel sick today."]
+],
+dl:[
+["Doctor","What's the problem?","Muammo nimada?"],
+["Aziz","I have a headache. I feel sick.","Boshim og'riyapti. O'zimni kasal his qilyapman."],
+["Doctor","You should rest and drink water.","Dam olishingiz va suv ichishingiz kerak."]
+],
+g:["Talking About How You Feel",
+"Use 'have' for a pain (I have a headache) and 'to be' or 'feel' for an emotion (I am sad / I feel sick) — you already know both patterns!",
+"O'zingizni qanday his qilishingiz haqida gapirish",
+"Og'riq uchun 'have' (I have a headache), his-tuyg'u uchun 'to be' yoki 'feel' (I am sad / I feel sick) ishlatiladi — siz ikkalasini ham bilasiz!"],
+qz:[
+["'Bosh og'rig'i bor' in English is ___.",["I am a headache.","I have a headache.","I headache.","I feel headache."],1],
+["'Charchagan' in English is ___.",["Happy","Sad","Tired","Sick"],2],
+["Choose the correct sentence.",["You should to rest.","You should rest.","You should resting.","You shoulds rest."],1],
+["What is the opposite of 'happy'?",["Tired","Sick","Sad","Well"],2]
+],
+sp:["Say how you feel today and describe a time you were sick.","Bugun o'zingizni qanday his qilayotganingizni ayting va kasal bo'lgan vaqtingizni tasvirlang."],
+ls:["Body parts game: teacher says a body part, students touch it.","Tana a'zolari o'yini: tana a'zosini ayting, o'quvchilar unga tegadi.",
+"In pairs, role-play a doctor visit.","Juftlikda shifokorga borishni ijro eting."]
+},
+
+{d:69,w:14,wt:"Food & Health",wtUz:"Ovqat va salomatlik",
+t:"Healthy Habits",tu:"Sog'lom odatlar",
+v:[
+["healthy","sog'lom","Eating fruit is healthy."],
+["exercise","jismoniy mashq","I exercise every morning."],
+["junk food","foydasiz ovqat","Junk food is not healthy."],
+["sleep well","yaxshi uxlamoq","You should sleep well."]
+],
+dl:[
+["Teacher","What should we do to stay healthy?","Sog'lom bo'lish uchun nima qilishimiz kerak?"],
+["Student","We should eat fruit and exercise every day.","Biz har kuni meva yeyishimiz va mashq qilishimiz kerak."],
+["Teacher","And we shouldn't eat too much junk food.","Va biz juda ko'p foydasiz ovqat yemasligimiz kerak."]
+],
+g:["Giving Health Advice",
+"Use 'should' for good advice and 'shouldn't' for bad ideas — you learned this pattern already: You should exercise. You shouldn't eat too much junk food.",
+"Sog'liq bo'yicha maslahat berish",
+"Yaxshi maslahat uchun 'should', yomon fikr uchun 'shouldn't' ishlatiladi — bu qolipni allaqachon o'rgangansiz: You should exercise. You shouldn't eat too much junk food."],
+qz:[
+["Choose the correct advice.",["You should eating well.","You should eat well.","You should to eat well.","You shoulds eat well."],1],
+["'Foydasiz ovqat' in English is ___.",["Healthy food","Junk food","Fresh food","Fast food"],1],
+["Choose the correct negative advice.",["You shouldn't eating junk food.","You shouldn't eat junk food.","You don't should eat junk food.","You not should eat junk food."],1],
+["What should you do to stay healthy?",["Sleep well and exercise","Eat only junk food","Never exercise","Sleep very little"],0]
+],
+sp:["Give 3 pieces of health advice using should/shouldn't.","Should/shouldn't yordamida 3 ta sog'liq bo'yicha maslahat bering."],
+ls:["Class healthy habit poster: in groups, list 3 healthy habits.","Sinf sog'lom odat plakati: guruhlarda 3 ta sog'lom odatni sanab bering.",
+"In pairs, create a healthy daily routine together.","Juftlikda birgalikda sog'lom kundalik tartib tuzing."]
+},
+
+{d:70,w:14,wt:"Food & Health",wtUz:"Ovqat va salomatlik",rev:true,
+t:"Week 14 Review",tu:"14-hafta Takrorlash",
+qz:[
+["'Go'sht' in English is ___.",["Fish","Chicken","Meat","Egg"],2],
+["Choose the polite way to order food.",["I want a pizza.","I would like a pizza, please.","Give me a pizza.","Pizza now!"],1],
+["'Bosh og'rig'i bor' in English is ___.",["I am a headache.","I have a headache.","I headache.","I feel headache."],1],
+["Choose the correct advice.",["You should eating well.","You should eat well.","You should to eat well.","You shoulds eat well."],1],
+["'Sabzavot' in English is ___.",["Fruit","Vegetable","Bread","Rice"],1],
+["What do you ask for at the end of a meal?",["Menu","Bill","Order","Waiter"],1],
+["'Charchagan' in English is ___.",["Happy","Sad","Tired","Sick"],2],
+["'Foydasiz ovqat' in English is ___.",["Healthy food","Junk food","Fresh food","Fast food"],1]
+],
+sp:["Talk about your favorite meal, how you felt when you were sick, and 2 healthy habits.","Sevimli taomingiz, kasal bo'lganingizda o'zingizni qanday his qilganingiz va 2 ta sog'lom odat haqida gapiring."],
+ls:["Class food & health quiz relay.","Sinf ovqat va salomatlik bo'yicha estafeta so'rovi.",
+"In pairs, review: order food, then give health advice.","Juftlikda takrorlang: ovqat buyurtma qiling, so'ng sog'liq bo'yicha maslahat bering."]
+}
 
 ];
 
