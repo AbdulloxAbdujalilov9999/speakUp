@@ -568,7 +568,7 @@ const ICON_PATHS = {
   notes: '<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h7M9 17h5"/>',
   flame: '<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',
   bolt: '<polygon points="13,2 4,14 11,14 10,22 20,9 13,9"/>',
-  truck: '<path d="M1 6h13v10H1z"/><path d="M14 9h4l4 4v3h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/>',
+  flag: '<path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/>',
   chevronRight: '<polyline points="9,6 15,12 9,18"/>',
   present: '<rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/>',
   close: '<line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/>',
@@ -761,7 +761,7 @@ function renderDashboard(){
         <h2>${tr("Journey Map")} <span class="mono">(${pct}%)</span></h2>
         <p class="panel-sub">${tr("Every dot is one lesson day. Blue outline = unlocked. Green = completed. Grey = locked. Dashed = review day.")}</p>
       </div>
-      <div class="route"><div class="route-fill" style="width:${pct}%"></div><span class="route-truck" style="left:${Math.min(96, Math.max(4, pct))}%">${/* TODO: replace with a SpeakUp logo icon */ icon("truck",16)}</span></div>
+      <div class="route"><div class="route-fill" style="width:${pct}%"></div><span class="route-truck" style="left:${Math.min(96, Math.max(4, pct))}%">${icon("flag",16)}</span></div>
       <div class="road">${roadDots}</div>
       <div class="legend">
         <span><i class="sw done"></i> ${tr("Completed")}</span>
