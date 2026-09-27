@@ -1766,6 +1766,157 @@ sp:["Give a 2-minute talk about yourself: your family, daily routine, an experie
 ls:["Class celebration: each student gives a short speech about their English journey so far.","Sinf nishonlash: har bir o'quvchi hozirgacha bo'lgan ingliz tili safari haqida qisqa nutq so'zlaydi.",
 "In pairs, interview each other covering everything from this course, then introduce your partner to the class.","Juftlikda shu kursning barcha mavzularini qamrab olib bir-biringizni intervyu qiling, so'ng sherigingizni sinfga tanishtiring."]
 }
+,
+
+{d:61,w:13,wt:"Family & People",wtUz:"Oila va odamlar",
+t:"Family Members",tu:"Oila a'zolari",
+v:[
+["mother","ona","My mother is a teacher."],
+["father","ota","My father works every day."],
+["parents","ota-ona","My parents love me."],
+["sister","opa-singil","My sister is ten years old."],
+["brother","aka-uka","My brother plays football."],
+["grandmother","buvi","My grandmother cooks delicious food."],
+["grandfather","bobo","My grandfather tells great stories."],
+["aunt","xola","My aunt lives in Tashkent."],
+["uncle","amaki","My uncle is a doctor."],
+["cousin","amakivachcha","My cousin studies with me."],
+["baby","chaqaloq","The baby is sleeping."],
+["family","oila","I love my family."]
+],
+dl:[
+["Malika","How many people are there in your family?","Oilangizda nechta odam bor?"],
+["Aziz","There are five people. I have two sisters and one brother.","Beshta odam bor. Ikkita opa-singlim va bitta akam bor."],
+["Malika","Are your grandparents alive?","Buvi-bobongiz hayotmi?"],
+["Aziz","Yes, they live with us.","Ha, ular biz bilan yashaydi."]
+],
+g:["Talking About Your Family",
+"You already know everything you need for this: 'have/has' for family members (I have two sisters), 'there is/are' for counting family (There are five people), and possessives (my grandmother). Now let's use them together!",
+"Oilangiz haqida gapirish",
+"Buning uchun kerak bo'lgan hamma narsani allaqachon bilasiz: oila a'zolari uchun 'have/has' (I have two sisters), oilani sanash uchun 'there is/are' (There are five people), va egalik olmoshlari (my grandmother). Endi ularni birga ishlatamiz!"],
+qz:[
+["'Ona' in English is ___.",["Father","Mother","Sister","Aunt"],1],
+["'Amaki' in English is ___.",["Uncle","Aunt","Cousin","Nephew"],0],
+["Choose the correct sentence.",["I have two sister.","I have two sisters.","I has two sisters.","I having two sisters."],1],
+["'Oila' in English is ___.",["Friend","Neighbor","Family","Children"],2]
+],
+sp:["Describe your family: how many people, their names, and their relationship to you.","Oilangizni tasvirlab bering: nechta odam, ismlari va sizga qanday qarindosh ekanini ayting."],
+ls:["Show a family photo (or draw one) and introduce 3 family members.","Oila suratini ko'rsating va 3 ta oila a'zosini tanishtiring.",
+"In pairs, ask about each other's families.","Juftlikda bir-biringizning oilangiz haqida so'rang."]
+},
+
+{d:62,w:13,wt:"Family & People",wtUz:"Oila va odamlar",
+t:"Describing People",tu:"Odamlarni tasvirlash",
+v:[
+["tall","baland bo'yli","My brother is tall."],
+["short","past bo'yli","She is short."],
+["young","yosh","The teacher is young."],
+["old","keksa","My grandfather is old."],
+["kind","mehribon","She is kind to everyone."],
+["funny","kulgili","He is a funny boy."],
+["long hair","uzun soch","She has long hair."],
+["short hair","qisqa soch","He has short hair."],
+["brown eyes","jigarrang ko'z","I have brown eyes."]
+],
+dl:[
+["Teacher","What does your best friend look like?","Eng yaqin do'stingiz qanday ko'rinishga ega?"],
+["Student","She is tall and she has long hair. She is very kind.","U baland bo'yli va uzun sochli. U juda mehribon."]
+],
+g:["Describing Appearance and Character",
+"You already know 'to be' + adjective (She is tall) and 'have' + noun (She has long hair) — combine them to give a full description of anyone!",
+"Tashqi ko'rinish va xarakterni tasvirlash",
+"Siz allaqachon 'to be' + sifat (She is tall) va 'have' + ot (She has long hair) ni bilasiz — to'liq tasvir berish uchun ularni birlashtiring!"],
+qz:[
+["'Mehribon' in English is ___.",["Funny","Kind","Tall","Short"],1],
+["Choose the correct sentence.",["She have long hair.","She has long hair.","She is have long hair.","She having long hair."],1],
+["What is the opposite of 'tall'?",["Old","Young","Short","Kind"],2],
+["'Jigarrang ko'z' in English is ___.",["Long hair","Brown eyes","Short hair","Old eyes"],1]
+],
+sp:["Describe 2 people you know: their appearance and their character.","Tanigan 2 kishini tasvirlab bering: tashqi ko'rinishi va xarakteri."],
+ls:["Guess who: describe a classmate without naming them, others guess.","Kimni toping: sinfdoshni ismini aytmasdan tasvirlang, boshqalar topsin.",
+"In pairs, describe each other using 3 adjectives.","Juftlikda bir-biringizni 3 ta sifat bilan tasvirlang."]
+},
+
+{d:63,w:13,wt:"Family & People",wtUz:"Oila va odamlar",
+t:"Jobs & Occupations",tu:"Kasblar",
+v:[
+["doctor","shifokor","My uncle is a doctor."],
+["nurse","hamshira","She works as a nurse."],
+["engineer","muhandis","He wants to be an engineer."],
+["farmer","fermer","My grandfather is a farmer."],
+["driver","haydovchi","He is a bus driver."],
+["cook","oshpaz","She is a good cook."],
+["police officer","militsioner","He is a police officer."],
+["pilot","uchuvchi","She wants to be a pilot."]
+],
+dl:[
+["Malika","What does your father do?","Otangiz nima ish qiladi?"],
+["Aziz","He is an engineer. What do you want to be?","U muhandis. Siz kim bo'lishni xohlaysiz?"],
+["Malika","I want to be a doctor. I want to help people.","Men shifokor bo'lishni xohlayman. Odamlarga yordam bergim keladi."]
+],
+g:["Talking About Jobs",
+"Use 'to be' for someone's job (She is a nurse) and 'want to be' for a future dream job (I want to be a doctor) — you already know both patterns!",
+"Kasblar haqida gapirish",
+"Kimningdir kasbi uchun 'to be' (She is a nurse), kelajakdagi orzu kasb uchun 'want to be' (I want to be a doctor) ishlatiladi — siz ikkalasini ham allaqachon bilasiz!"],
+qz:[
+["'Shifokor' in English is ___.",["Nurse","Doctor","Engineer","Farmer"],1],
+["Choose the correct sentence.",["I want be a doctor.","I want to be a doctor.","I wants to be a doctor.","I want being a doctor."],1],
+["'Uchuvchi' in English is ___.",["Pilot","Driver","Cook","Farmer"],0],
+["Choose the correct sentence.",["He engineer.","He is engineer.","He is an engineer.","He an engineer."],2]
+],
+sp:["Talk about your parents' jobs and the job you want to have.","Ota-onangizning kasbi va xohlagan kasbingiz haqida gapiring."],
+ls:["Job charades: act out a job, class guesses.","Kasb pantomimasi: kasbni ijro eting, sinf topsin.",
+"In pairs, ask each other about your dream jobs.","Juftlikda bir-biringizning orzu kasbingiz haqida so'rang."]
+},
+
+{d:64,w:13,wt:"Family & People",wtUz:"Oila va odamlar",
+t:"Countries & Nationalities",tu:"Davlatlar va millatlar",
+v:[
+["Uzbekistan","O'zbekiston","I am from Uzbekistan."],
+["Uzbek","o'zbek","I am Uzbek."],
+["England","Angliya","She is from England."],
+["English","ingliz","He speaks English."],
+["Russia","Rossiya","He is from Russia."],
+["China","Xitoy","This tea is from China."],
+["Turkey","Turkiya","We traveled to Turkey."],
+["Korea","Koreya","I like music from Korea."]
+],
+dl:[
+["Malika","Where are you from?","Qayerliksiz?"],
+["Aziz","I am from Uzbekistan. I am Uzbek. Where is your pen pal from?","Men O'zbekistondanman. Men o'zbekman. Sizning maktubdosh do'stingiz qayerlik?"],
+["Malika","She is from Turkey. She speaks Turkish and English.","U Turkiyadan. U turk va ingliz tillarida gaplashadi."]
+],
+g:["Country vs. Nationality",
+"The country and the nationality word are often different: Uzbekistan (country) → Uzbek (nationality). Use 'I am from + country' or 'I am + nationality' — both are correct!",
+"Davlat nomi va millat",
+"Davlat nomi va millat so'zi ko'pincha turlicha bo'ladi: Uzbekistan (davlat) → Uzbek (millat). 'I am from + davlat' yoki 'I am + millat' ishlatiladi — ikkalasi ham to'g'ri!"],
+qz:[
+["What is the nationality word for 'England'?",["Englishman","English","England","Englisher"],1],
+["'Men o'zbekman' in English is ___.",["I am from Uzbek.","I am Uzbekistan.","I am Uzbek.","I Uzbek am."],2],
+["What language do people speak in Turkey?",["German","French","Turkish","Korean"],2],
+["Choose the correct sentence.",["I from Uzbekistan.","I am from Uzbekistan.","I am Uzbekistan from.","I is from Uzbekistan."],1]
+],
+sp:["Say where you are from, your nationality, and name 2 other countries and nationalities.","Qayerlik ekaningizni, millatingizni va yana 2 ta davlat va millatni ayting."],
+ls:["Class map activity: point to a country and say its nationality.","Sinf xarita mashqi: davlatni ko'rsating va millatini ayting.",
+"In pairs, pretend to be from different countries and introduce yourselves.","Juftlikda turli davlatlardan bo'lganingizni tasavvur qilib, o'zingizni tanishtiring."]
+},
+
+{d:65,w:13,wt:"Family & People",wtUz:"Oila va odamlar",rev:true,
+t:"Week 13 Review",tu:"13-hafta Takrorlash",
+qz:[
+["'Ona' in English is ___.",["Father","Mother","Sister","Aunt"],1],
+["'Mehribon' in English is ___.",["Funny","Kind","Tall","Short"],1],
+["Choose the correct sentence.",["I want be a doctor.","I want to be a doctor.","I wants to be a doctor.","I want being a doctor."],1],
+["'Men o'zbekman' in English is ___.",["I am from Uzbek.","I am Uzbekistan.","I am Uzbek.","I Uzbek am."],2],
+["'Amaki' in English is ___.",["Uncle","Aunt","Cousin","Nephew"],0],
+["What is the opposite of 'tall'?",["Old","Young","Short","Kind"],2],
+["'Shifokor' in English is ___.",["Nurse","Doctor","Engineer","Farmer"],1],
+["What language do people speak in Turkey?",["German","French","Turkish","Korean"],2]
+],
+sp:["Introduce your family, describe one person, and say where you are from.","Oilangizni tanishtiring, bitta kishini tasvirlang va qayerlik ekaningizni ayting."],
+ls:["Class review relay: family, appearance, jobs, and countries mixed quiz.","Sinf takrorlash estafetasi: oila, tashqi ko'rinish, kasblar va davlatlar aralash so'rovi.",
+"In pairs, review the week with a mini interview about family and dreams.","Juftlikda haftani oila va orzular haqida kichik intervyu bilan takrorlang."]
+}
 
 ];
 
