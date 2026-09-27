@@ -1364,6 +1364,136 @@ sp:["Talk about school rules, give advice to a friend, and share your weekend pl
 ls:["Class review relay: modals and future mixed quiz.","Sinf takrorlash estafetasi: modal va kelajak aralash so'rovi.",
 "In pairs, review the week using rules, advice, and plans.","Juftlikda haftani qoidalar, maslahat va rejalar bilan takrorlang."]
 }
+,
+
+{d:46,w:10,wt:"My Experiences",wtUz:"Mening tajribalarim",
+t:"Present Perfect — Have You Ever...?",tu:"Present Perfect — Have you ever...?",
+v:[
+["have visited","borgan","I have visited Turkey."],
+["have eaten","yegan","Have you ever eaten sushi?"],
+["have seen","ko'rgan","She has seen this movie."],
+["ever","hech qachon","Have you ever been to London?"],
+["never","hech qachon (inkor)","I have never eaten sushi."]
+],
+dl:[
+["Malika","Have you ever visited another country?","Boshqa mamlakatga borganmisiz?"],
+["Aziz","Yes, I have visited Turkey. Have you ever eaten sushi?","Ha, men Turkiyaga borganman. Sushi yeganmisiz?"],
+["Malika","No, I have never eaten sushi.","Yo'q, men hech qachon sushi yemaganman."]
+],
+g:["Present Perfect — Have you ever...?",
+"Use 'have/has + past participle' to talk about life experiences without saying exactly when: I have visited Turkey. Have you ever eaten sushi? Negative: I have never eaten sushi.",
+"Present Perfect — Have you ever...?",
+"Aniq vaqtni aytmasdan hayotiy tajriba haqida gapirish uchun 'have/has + past participle' ishlatiladi: I have visited Turkey. Have you ever eaten sushi? Inkor: I have never eaten sushi."],
+qz:[
+["Choose the correct question about experience.",["Did you ever visit London?","Have you ever visited London?","Do you ever visited London?","Are you ever visiting London?"],1],
+["Choose the correct sentence.",["She has went there.","She has gone there.","She has go there.","She have gone there."],1],
+["Choose the correct negative.",["I have not never eaten sushi.","I have never eaten sushi.","I never have eaten sushi not.","I haven't never eaten sushi."],1],
+["What does 'ever' mean here?",["Always","At any time in your life","Never","Today"],1]
+],
+sp:["Ask a friend 3 'Have you ever...?' questions.","Do'stingizga 3 ta 'Have you ever...?' savolini bering."],
+ls:["'Have you ever...?' mingle: ask classmates about experiences.","'Have you ever...?' aralashuvi: sinfdoshlaringizdan tajribalar haqida so'rang.",
+"In pairs, find 2 experiences you both have had.","Juftlikda ikkalangiz ham boshdan kechirgan 2 ta tajribani toping."]
+},
+
+{d:47,w:10,wt:"My Experiences",wtUz:"Mening tajribalarim",
+t:"Present Perfect — Already, Yet, Just",tu:"Present Perfect — Already, yet, just",
+v:[
+["already","allaqachon","I have already finished my homework."],
+["yet","hali","Have you finished yet?"],
+["just","hozirgina","I have just arrived."],
+["not yet","hali emas","I haven't finished yet."]
+],
+dl:[
+["Teacher","Have you finished your homework yet?","Uy vazifangizni hali tugatdingizmi?"],
+["Student","Yes, I have already finished it.","Ha, men uni allaqachon tugatganman."],
+["Teacher","Great, I have just checked it.","Ajoyib, men uni hozirgina tekshirdim."]
+],
+g:["Already, Yet, Just",
+"'Already' goes in positive sentences: I have already finished. 'Yet' goes in questions and negatives: Have you finished yet? I haven't finished yet. 'Just' means very recently: I have just arrived.",
+"Already, yet, just",
+"'Already' tasdiq gaplarda: I have already finished. 'Yet' savol va inkor gaplarda: Have you finished yet? I haven't finished yet. 'Just' juda yaqinda ma'nosini bildiradi: I have just arrived."],
+qz:[
+["Choose the correct sentence.",["I have finished already my homework.","I have already finished my homework.","I already have finished my homework.","I have finished my homework already yet."],1],
+["Choose the correct question.",["Have you finished yet?","Have you already finished?","Have you just finished?","Have you finished already yet?"],0],
+["'Hozirgina keldim' in English is ___.",["I have already arrived.","I have just arrived.","I have arrived yet.","I have never arrived."],1],
+["Which word goes in negative sentences?",["Already","Just","Yet","Ever"],2]
+],
+sp:["Say 2 things you have already done today and 1 thing you haven't done yet.","Bugun allaqachon qilgan 2 ta ishingizni va hali qilmagan 1 ta ishingizni ayting."],
+ls:["Class check-in: ask 'Have you finished...yet?' about homework/tasks.","Sinf tekshiruvi: uy vazifasi haqida 'Have you finished...yet?' deb so'rang.",
+"In pairs, share what you have just done and what you haven't done yet.","Juftlikda hozirgina qilgan va hali qilmagan ishlaringizni ayting."]
+},
+
+{d:48,w:10,wt:"My Experiences",wtUz:"Mening tajribalarim",
+t:"Present Perfect — For / Since",tu:"Present Perfect — For / Since",
+v:[
+["for","davomida","I have lived here for five years."],
+["since","-dan beri","I have studied English since 2023."],
+["how long","qancha vaqtdan beri","How long have you lived here?"]
+],
+dl:[
+["Malika","How long have you studied English?","Ingliz tilini qancha vaqtdan beri o'rganyapsiz?"],
+["Aziz","I have studied English for one year. What about you?","Men ingliz tilini bir yildan beri o'rganyapman. Sizchi?"],
+["Malika","I have studied it since last year too.","Men ham o'tgan yildan beri o'rganyapman."]
+],
+g:["For and Since",
+"Use 'for' with a length of time: for five years, for one month. Use 'since' with a starting point: since 2023, since last year. Both answer the question 'How long...?'",
+"For va Since",
+"'For' vaqt oralig'i bilan ishlatiladi: for five years, for one month. 'Since' boshlanish nuqtasi bilan ishlatiladi: since 2023, since last year. Ikkalasi ham 'How long...?' savoliga javob beradi."],
+qz:[
+["Choose the correct word: 'I have lived here ___ five years.'",["since","for","at","on"],1],
+["Choose the correct word: 'I have studied English ___ 2023.'",["since","for","at","on"],0],
+["Choose the correct question.",["How long you have lived here?","How long have you lived here?","How long do you live here?","How long you live here?"],1],
+["Which word goes with a length of time?",["Since","For","Ever","Yet"],1]
+],
+sp:["Say how long you have lived in your city and how long you have studied English.","Shahringizda qancha vaqtdan beri yashaganingizni va ingliz tilini qancha vaqtdan beri o'rganganingizni ayting."],
+ls:["Class survey: ask 'How long have you...?' about hobbies and school.","Sinf so'rovi: hobbi va maktab haqida 'Qancha vaqtdan beri...?' deb so'rang.",
+"In pairs, ask each other 'How long have you known your best friend?'","Juftlikda 'Eng yaqin do'stingizni qancha vaqtdan beri bilasiz?' deb so'rang."]
+},
+
+{d:49,w:10,wt:"My Experiences",wtUz:"Mening tajribalarim",
+t:"Present Perfect vs Past Simple",tu:"Present Perfect va Past Simple farqi",
+v:[
+["last year","o'tgan yili","I visited Turkey last year."],
+["experience","tajriba","This was a great experience."],
+["result","natija","The result of my hard work is good grades."]
+],
+dl:[
+["Teacher","Have you ever visited Turkey?","Turkiyaga borganmisiz?"],
+["Student","Yes, I have. I visited Turkey last year.","Ha, borganman. O'tgan yili Turkiyaga bordim."],
+["Teacher","Was it a good experience?","Bu yaxshi tajriba bo'ldimi?"],
+["Student","Yes, it was a great experience.","Ha, bu ajoyib tajriba bo'ldi."]
+],
+g:["Present Perfect vs Past Simple",
+"Use present perfect for an experience without saying when: I have visited Turkey. Use past simple with a specific time word: I visited Turkey last year. Never mix present perfect with 'yesterday' or 'last year'.",
+"Present Perfect va Past Simple farqi",
+"Aniq vaqtni aytmasdan tajriba uchun present perfect ishlatiladi: I have visited Turkey. Aniq vaqt so'zi bilan past simple ishlatiladi: I visited Turkey last year. Present perfect'ni 'yesterday' yoki 'last year' bilan hech qachon aralashtirmang."],
+qz:[
+["Choose the correct sentence.",["I have visited Turkey last year.","I visited Turkey last year.","I have visit Turkey last year.","I was visited Turkey last year."],1],
+["Choose the correct sentence for an experience (no time given).",["I visited Turkey.","I have visited Turkey.","I am visiting Turkey.","I visit Turkey."],1],
+["Which time word needs past simple, not present perfect?",["Ever","Already","Last year","Just"],2],
+["Choose the correct sentence.",["Have you ever visited London?","Did you ever visited London?","Do you ever visit London?","Are you ever visited London?"],0]
+],
+sp:["Talk about a place you have visited, then give the specific time you went there.","Borgan joyingiz haqida gapiring, so'ng u yerga aniq qachon borganingizni ayting."],
+ls:["Class experience board: list class experiences, then ask 'When did you...?' for details.","Sinf tajriba taxtasi: sinf tajribalarini ro'yxatlang, so'ng 'Qachon...?' deb tafsilot so'rang.",
+"In pairs, talk about a memorable experience and when it happened.","Juftlikda unutilmas tajriba va u qachon sodir bo'lgani haqida gapiring."]
+},
+
+{d:50,w:10,wt:"My Experiences",wtUz:"Mening tajribalarim",rev:true,
+t:"Week 10 Review",tu:"10-hafta Takrorlash",
+qz:[
+["Choose the correct question about experience.",["Did you ever visit London?","Have you ever visited London?","Do you ever visited London?","Are you ever visiting London?"],1],
+["Choose the correct sentence.",["I have finished already my homework.","I have already finished my homework.","I already have finished my homework.","I have finished my homework already yet."],1],
+["Choose the correct word: 'I have lived here ___ five years.'",["since","for","at","on"],1],
+["Choose the correct sentence.",["I have visited Turkey last year.","I visited Turkey last year.","I have visit Turkey last year.","I was visited Turkey last year."],1],
+["'Hozirgina keldim' in English is ___.",["I have already arrived.","I have just arrived.","I have arrived yet.","I have never arrived."],1],
+["Choose the correct word: 'I have studied English ___ 2023.'",["since","for","at","on"],0],
+["Choose the correct sentence.",["She has went there.","She has gone there.","She has go there.","She have gone there."],1],
+["Which time word needs past simple, not present perfect?",["Ever","Already","Last year","Just"],2]
+],
+sp:["Talk about your experiences: places you've visited, things you've tried, and how long you've done your hobbies.","Tajribalaringiz haqida gapiring: borgan joylaringiz, sinab ko'rgan narsalaringiz va hobbilaringizni qancha vaqtdan beri qilishingiz."],
+ls:["Class experience trivia: mixed present perfect quiz relay.","Sinf tajriba bilim bellashuvi: aralash present perfect so'rovi.",
+"In pairs, review the week: share experiences using present perfect and past simple.","Juftlikda haftani present perfect va past simple bilan takrorlang."]
+}
 
 ];
 
