@@ -1233,6 +1233,137 @@ sp:["Tell a story about yesterday: where you were, what you did, and what you we
 ls:["Class storytelling: build a class story about 'yesterday' together.","Sinf hikoyachiligi: birgalikda 'kecha' haqida sinf hikoyasini tuzing.",
 "In pairs, review: tell each other a story about last weekend.","Juftlikda takrorlang: o'tgan dam olish kunlari haqida bir-biringizga hikoya ayting."]
 }
+,
+
+{d:41,w:9,wt:"Rules & Plans",wtUz:"Qoidalar va rejalar",
+t:"Must, Mustn't, Have To",tu:"Must, mustn't, have to",
+v:[
+["must","kerak (majburiy)","Students must wear a uniform."],
+["mustn't","mumkin emas","You mustn't run in the classroom."],
+["have to","kerak","I have to finish my homework."],
+["don't have to","kerak emas","You don't have to come if you're busy."]
+],
+dl:[
+["Teacher","You must be quiet in the library.","Kutubxonada jim bo'lishingiz kerak."],
+["Student","OK. Do I have to bring my own book?","Xo'p. O'z kitobimni olib kelishim kerakmi?"],
+["Teacher","No, you don't have to. We have books here.","Yo'q, kerak emas. Bizda bu yerda kitoblar bor."]
+],
+g:["Must, Mustn't, Have To",
+"'Must' and 'have to' show obligation: Students must wear a uniform. 'Mustn't' means forbidden: You mustn't run here. 'Don't have to' means not necessary: You don't have to come.",
+"Must, mustn't, have to",
+"'Must' va 'have to' majburiyatni bildiradi: Students must wear a uniform. 'Mustn't' — taqiqlangan: You mustn't run here. 'Don't have to' — zarur emas: You don't have to come."],
+qz:[
+["What does 'mustn't' mean?",["Not necessary","Forbidden","Optional","Recommended"],1],
+["What does 'don't have to' mean?",["Forbidden","Not necessary","Impossible","Required"],1],
+["Choose the correct sentence for a strict rule.",["Students should wear a uniform.","Students must wear a uniform.","Students can wear a uniform.","Students like a uniform."],1],
+["Choose the correct sentence.",["I have finish my homework.","I have to finish my homework.","I must to finish my homework.","I having to finish my homework."],1]
+],
+sp:["Say 2 rules you must follow at school and 1 thing you don't have to do.","Maktabda amal qilishingiz kerak bo'lgan 2 ta qoidani va qilishingiz shart bo'lmagan 1 ta narsani ayting."],
+ls:["Class rules poster: in groups, write 3 classroom rules using must/mustn't.","Sinf qoidalari plakati: guruhlarda must/mustn't bilan 3 ta sinf qoidasini yozing.",
+"In pairs, discuss school rules using must/mustn't/have to.","Juftlikda maktab qoidalarini must/mustn't/have to bilan muhokama qiling."]
+},
+
+{d:42,w:9,wt:"Rules & Plans",wtUz:"Qoidalar va rejalar",
+t:"Should, May, Could",tu:"Should, may, could",
+v:[
+["should","kerak (maslahat)","You should study every day."],
+["shouldn't","kerak emas (maslahat)","You shouldn't eat too much sugar."],
+["may","mumkin (ruxsat)","May I go out, please?"],
+["could","mumkin (imkoniyat)","It could rain today."]
+],
+dl:[
+["Student","May I go out, please?","Chiqsam bo'ladimi, iltimos?"],
+["Teacher","Yes, you may.","Ha, mumkin."],
+["Student","Should I bring an umbrella? It could rain.","Soyabon olib kelishim kerakmi? Yomg'ir yog'ishi mumkin."],
+["Teacher","Yes, you should.","Ha, kerak."]
+],
+g:["Should, May, Could",
+"'Should' gives friendly advice: You should study more. 'May' politely asks for permission: May I go out? 'Could' shows possibility: It could rain today.",
+"Should, may, could",
+"'Should' do'stona maslahat beradi: You should study more. 'May' odobli ruxsat so'raydi: May I go out? 'Could' imkoniyatni bildiradi: It could rain today."],
+qz:[
+["Choose the softer word for friendly advice.",["Must","Have to","Should","Mustn't"],2],
+["Choose the correct way to ask permission politely.",["Must I go out?","May I go out?","Should I go out?","Have I go out?"],1],
+["Choose the word for possibility.",["Must","Mustn't","Could","Have to"],2],
+["Choose the correct advice.",["You should eating well.","You should eat well.","You should to eat well.","You shoulds eat well."],1]
+],
+sp:["Give a friend 2 pieces of advice using 'should', and ask permission for something using 'may'.","Do'stingizga 'should' bilan 2 ta maslahat bering va 'may' bilan biror narsaga ruxsat so'rang."],
+ls:["Advice circle: each student gives one 'should' piece of advice for staying healthy.","Maslahat doirasi: har bir o'quvchi sog'lom bo'lish uchun bitta 'should' maslahati beradi.",
+"In pairs, practice asking permission politely with 'May I...?'","Juftlikda 'May I...?' bilan odobli ruxsat so'rashni mashq qiling."]
+},
+
+{d:43,w:9,wt:"Rules & Plans",wtUz:"Qoidalar va rejalar",
+t:"Future — Going To",tu:"Kelajak — Going To",
+v:[
+["going to","-moqchi (reja)","I am going to visit my grandmother."],
+["plan","reja","What's your plan for the weekend?"],
+["tomorrow","ertaga","I am going to study tomorrow."],
+["next week","kelasi hafta","We are going to travel next week."]
+],
+dl:[
+["Malika","What are you going to do this weekend?","Bu dam olish kunlari nima qilmoqchisiz?"],
+["Aziz","I am going to visit my grandmother. What about you?","Men buvimga borishni rejalashtiryapman. Sizchi?"],
+["Malika","I am going to study for my test.","Men testimga tayyorlanmoqchiman."]
+],
+g:["Future Plans: be going to",
+"Use 'am/is/are + going to + verb' for plans already decided: I am going to visit my grandmother tomorrow.",
+"Kelajak rejalari: be going to",
+"Oldindan qaror qilingan rejalar uchun 'am/is/are + going to + fe'l' ishlatiladi: I am going to visit my grandmother tomorrow."],
+qz:[
+["Choose the correct sentence about a plan.",["I go to visit my aunt.","I am going to visit my aunt.","I going to visit my aunt.","I am go to visit my aunt."],1],
+["Choose the correct question.",["What you are going to do?","What are you going to do?","What going you to do?","Are what you going to do?"],1],
+["Choose the correct sentence.",["She is going to study medicine.","She go to study medicine.","She will studies medicine.","She going study medicine."],0],
+["'Kelasi hafta sayohat qilamiz' in English is ___.",["We travel next week.","We are going to travel next week.","We going travel next week.","We are travel next week."],1]
+],
+sp:["Talk about your plans for next weekend.","Kelasi dam olish kunlari uchun rejalaringiz haqida gapiring."],
+ls:["Plans mingle: ask classmates 'What are you going to do this weekend?'","Rejalar aralashuvi: sinfdoshlaringizdan so'rang.",
+"In pairs, share your plans for tomorrow.","Juftlikda ertangi rejalaringizni ayting."]
+},
+
+{d:44,w:9,wt:"Rules & Plans",wtUz:"Qoidalar va rejalar",
+t:"Future — Will / Shall",tu:"Kelajak — Will / Shall",
+v:[
+["will","-ar (bashorat/qaror)","I think it will rain tomorrow."],
+["won't","-mas","It won't rain today."],
+["shall","-aymi (taklif)","Shall I open the window?"],
+["promise","va'da bermoq","I promise I will help you."]
+],
+dl:[
+["Malika","Look at those clouds!","Ana bulutlarga qarang!"],
+["Aziz","I think it will rain. Shall we go inside?","Menimcha yomg'ir yog'adi. Ichkariga kiraylikmi?"],
+["Malika","Yes, let's go. I promise I'll bring an umbrella tomorrow.","Ha, boraylik. Ertaga soyabon olib kelishga va'da beraman."]
+],
+g:["Future: Will / Shall",
+"Use 'will' for predictions and decisions made right now: I think it will rain. I'll help you. Use 'shall' for offers and suggestions with I/we: Shall I open the window? Shall we go?",
+"Kelajak: Will / Shall",
+"Bashorat va hozir qabul qilingan qarorlar uchun 'will' ishlatiladi: I think it will rain. I'll help you. I/we bilan taklif uchun 'shall' ishlatiladi: Shall I open the window? Shall we go?"],
+qz:[
+["'The phone is ringing!' — choose the spontaneous decision.",["I'm going to answer it.","I'll answer it.","I answer it.","I answered it."],1],
+["Choose the correct offer.",["Shall I open the window?","Will I open the window?","Going I open the window?","Do I shall open the window?"],0],
+["'Menimcha ertaga yomg'ir yog'adi' in English is ___.",["I think it rains tomorrow.","I think it will rain tomorrow.","I think it going to rain tomorrow.","I think it rained tomorrow."],1],
+["Choose the correct negative.",["It won't rain today.","It wonts rain today.","It will not to rain today.","It not will rain today."],0]
+],
+sp:["Make 2 predictions about tomorrow's weather and 1 promise to a friend.","Ertangi ob-havo haqida 2 ta bashorat va do'stingizga 1 ta va'da bering."],
+ls:["Fortune teller game: predict things about classmates' futures using 'will'.","Folbin o'yini: sinfdoshlaringizning kelajagi haqida 'will' bilan bashorat qiling.",
+"In pairs, make offers to each other using 'Shall I...?'","Juftlikda bir-biringizga 'Shall I...?' bilan taklif bering."]
+},
+
+{d:45,w:9,wt:"Rules & Plans",wtUz:"Qoidalar va rejalar",rev:true,
+t:"Week 9 Review",tu:"9-hafta Takrorlash",
+qz:[
+["What does 'mustn't' mean?",["Not necessary","Forbidden","Optional","Recommended"],1],
+["Choose the correct way to ask permission politely.",["Must I go out?","May I go out?","Should I go out?","Have I go out?"],1],
+["Choose the correct sentence about a plan.",["I go to visit my aunt.","I am going to visit my aunt.","I going to visit my aunt.","I am go to visit my aunt."],1],
+["Choose the correct offer.",["Shall I open the window?","Will I open the window?","Going I open the window?","Do I shall open the window?"],0],
+["What does 'don't have to' mean?",["Forbidden","Not necessary","Impossible","Required"],1],
+["Choose the softer word for friendly advice.",["Must","Have to","Should","Mustn't"],2],
+["Choose the word for possibility.",["Must","Mustn't","Could","Have to"],2],
+["'The phone is ringing!' — choose the spontaneous decision.",["I'm going to answer it.","I'll answer it.","I answer it.","I answered it."],1]
+],
+sp:["Talk about school rules, give advice to a friend, and share your weekend plans.","Maktab qoidalari haqida gapiring, do'stingizga maslahat bering va dam olish kunlari rejalaringizni ayting."],
+ls:["Class review relay: modals and future mixed quiz.","Sinf takrorlash estafetasi: modal va kelajak aralash so'rovi.",
+"In pairs, review the week using rules, advice, and plans.","Juftlikda haftani qoidalar, maslahat va rejalar bilan takrorlang."]
+}
 
 ];
 
