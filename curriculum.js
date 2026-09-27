@@ -1623,6 +1623,149 @@ sp:["Talk about a general truth, a real future plan, and an imaginary wish, usin
 ls:["Class conditional relay: zero, first, and second conditional mixed quiz.","Sinf shart gap estafetasi: zero, first va second conditional aralash so'rovi.",
 "In pairs, review the week with 3 conditional sentences each.","Juftlikda haftani har biringiz 3 tadan shart gap bilan takrorlang."]
 }
+,
+
+{d:56,w:12,wt:"Interesting Facts",wtUz:"Qiziqarli faktlar",
+t:"The Passive Voice — Present Simple",tu:"Majhul nisbat — Present Simple",
+v:[
+["is spoken","gapiriladi","English is spoken worldwide."],
+["is grown","yetishtiriladi","Rice is grown in many countries."],
+["are made","yasaladi","These toys are made in China."],
+["worldwide","butun dunyoda","English is spoken worldwide."]
+],
+dl:[
+["Teacher","Where is rice grown?","Guruch qayerda yetishtiriladi?"],
+["Student","Rice is grown in many countries.","Guruch ko'p davlatlarda yetishtiriladi."],
+["Teacher","Is English spoken in your country?","Sizning mamlakatingizda ingliz tili gapiriladimi?"],
+["Student","Yes, English is spoken in schools.","Ha, ingliz tili maktablarda gapiriladi."]
+],
+g:["The Passive Voice — Present Simple",
+"We use the passive when the action matters more than who does it: English is spoken worldwide. Form: subject + am/is/are + past participle.",
+"Majhul nisbat — Present Simple",
+"Harakatni kim bajarganidan ko'ra harakatning o'zi muhimroq bo'lganda passive ishlatiladi: English is spoken worldwide. Qolip: ega + am/is/are + past participle."],
+qz:[
+["Choose the correct passive sentence.",["English speaks worldwide.","English is spoken worldwide.","English spoken worldwide.","English is speaking worldwide."],1],
+["Choose the correct passive sentence.",["Rice grows in many countries.","Rice is grown in many countries.","Rice growing in many countries.","Rice is grow in many countries."],1],
+["What is the passive voice formula?",["subject + verb + object","subject + be + past participle","subject + have + past participle","subject + do + verb"],1],
+["When do we use the passive voice?",["When the doer is more important","When the action is more important than the doer","Only in questions","Only in the future"],1]
+],
+sp:["Say 2 facts about your country using the passive voice (e.g. 'Cotton is grown in Uzbekistan').","Passive voice yordamida mamlakatingiz haqida 2 ta fakt ayting."],
+ls:["Fact quiz: 'Where is ___ made/grown?' — class guesses using passive.","Fakt so'rovi: 'Qayerda ishlab chiqariladi/yetishtiriladi?' — sinf passive bilan topsin.",
+"In pairs, make 3 passive sentences about products or food.","Juftlikda mahsulot yoki ovqat haqida 3 ta passive gap tuzing."]
+},
+
+{d:57,w:12,wt:"Interesting Facts",wtUz:"Qiziqarli faktlar",
+t:"The Passive Voice — Past Simple",tu:"Majhul nisbat — Past Simple",
+v:[
+["was invented","ixtiro qilingan","The telephone was invented by Bell."],
+["was written","yozilgan","This book was written in 1990."],
+["was built","qurilgan","This house was built in 1990."],
+["were made","yasalgan","These shoes were made in Italy."]
+],
+dl:[
+["Teacher","Who was the telephone invented by?","Telefon kim tomonidan ixtiro qilingan?"],
+["Student","It was invented by Alexander Graham Bell.","U Aleksandr Graham Bell tomonidan ixtiro qilingan."],
+["Teacher","When was this school built?","Bu maktab qachon qurilgan?"],
+["Student","It was built in 1990.","U 1990 yilda qurilgan."]
+],
+g:["The Passive Voice — Past Simple",
+"For the past, use was/were + past participle: The telephone was invented by Bell. Add 'by + person' only if it's important to say who did it.",
+"Majhul nisbat — Past Simple",
+"O'tgan zamon uchun was/were + past participle ishlatiladi: The telephone was invented by Bell. Kim bajargani muhim bo'lsagina 'by + shaxs' qo'shiladi."],
+qz:[
+["Choose the correct passive statement.",["America discovered by Columbus.","America was discovered by Columbus.","America discover by Columbus.","America is discover by Columbus."],1],
+["Choose the correct passive form.",["This house built in 1990.","This house was built in 1990.","This house is build in 1990.","This house builded in 1990."],1],
+["Choose the correct passive sentence.",["These shoes made in Italy.","These shoes were made in Italy.","These shoes was made in Italy.","These shoes is made in Italy."],1],
+["Choose the correct question.",["Who invented the telephone was?","Who was the telephone invented by?","Who was invented the telephone?","By who the telephone was invented?"],1]
+],
+sp:["Talk about a famous invention and who invented it, using the passive.","Mashhur ixtiro va uni kim ixtiro qilgani haqida passive bilan gapiring."],
+ls:["Famous inventions quiz: match inventions to inventors using passive sentences.","Mashhur ixtirolar so'rovi: ixtirolarni ixtirochilar bilan passive gaplar orqali moslashtiring.",
+"In pairs, discuss when your school or house was built.","Juftlikda maktabingiz yoki uyingiz qachon qurilgani haqida gaplashing."]
+},
+
+{d:58,w:12,wt:"Interesting Facts",wtUz:"Qiziqarli faktlar",
+t:"Relative Clauses — Who, Which",tu:"Nisbiy gaplar — Who, Which",
+v:[
+["who","kim (bog'lovchi)","The girl who sits next to me is my cousin."],
+["which","qaysi (bog'lovchi)","This is the book which I read last week."],
+["that","ki (bog'lovchi)","The car that I bought is red."]
+],
+dl:[
+["Teacher","Can you describe a teacher using 'who'?","O'qituvchini 'who' bilan tasvirlay olasizmi?"],
+["Student","A teacher is a person who helps students learn.","O'qituvchi — o'quvchilarga o'rganishga yordam beradigan shaxs."],
+["Teacher","Great! Now describe your favorite book using 'which'.","Ajoyib! Endi sevimli kitobingizni 'which' bilan tasvirlang."],
+["Student","This is the book which I read last week.","Bu men o'tgan hafta o'qigan kitob."]
+],
+g:["Relative Clauses: Who, Which",
+"Use 'who' for people and 'which' for things to give more information about a noun without starting a new sentence: The girl who sits next to me is my cousin. This is the book which I read.",
+"Nisbiy gaplar: Who, Which",
+"Odamlar uchun 'who', narsalar uchun 'which' ishlatilib, yangi gap boshlamasdan ot haqida qo'shimcha ma'lumot beriladi: The girl who sits next to me is my cousin. This is the book which I read."],
+qz:[
+["Choose the correct relative pronoun for a person.",["Which","Where","Who","When"],2],
+["Choose the correct sentence.",["A doctor is a person which helps sick people.","A doctor is a person who helps sick people.","A doctor is a person where helps sick people.","A doctor is a person whose helps sick people."],1],
+["Choose the correct sentence.",["This is the book who I read.","This is the book which I read.","This is the book where I read.","This is the book whose I read."],1],
+["What do relative clauses do?",["Start a brand new sentence","Give more information about a noun","Only work in questions","Replace the subject entirely"],1]
+],
+sp:["Describe a person and a thing using relative clauses.","Nisbiy gaplar yordamida bir kishi va bir narsani tasvirlang."],
+ls:["Definition game: describe a word using 'who/which', class guesses.","Ta'rif o'yini: so'zni 'who/which' bilan tasvirlang, sinf topsin.",
+"In pairs, describe people and things you know using who/which.","Juftlikda tanigan odamlar va narsalarni who/which bilan tasvirlang."]
+},
+
+{d:59,w:12,wt:"Interesting Facts",wtUz:"Qiziqarli faktlar",
+t:"Relative Clauses — Whose, Where",tu:"Nisbiy gaplar — Whose, Where",
+v:[
+["whose","kimning (bog'lovchi)","That's the boy whose father is a doctor."],
+["where","qayerda (bog'lovchi)","This is the school where I studied."]
+],
+dl:[
+["Malika","Who is that boy?","Ana u bola kim?"],
+["Aziz","That's the boy whose father is our teacher.","Bu — otasi bizning o'qituvchimiz bo'lgan bola."],
+["Malika","And where is your old school?","Va sizning eski maktabingiz qayerda?"],
+["Aziz","This is the school where I studied.","Bu men o'qigan maktab."]
+],
+g:["Relative Clauses: Whose, Where",
+"Use 'whose' to show possession: That's the boy whose father is a doctor. Use 'where' for places: This is the school where I studied.",
+"Nisbiy gaplar: Whose, Where",
+"Egalikni bildirish uchun 'whose' ishlatiladi: That's the boy whose father is a doctor. Joylar uchun 'where' ishlatiladi: This is the school where I studied."],
+qz:[
+["Choose the correct relative pronoun for a place.",["Who","Which","Where","Whose"],2],
+["Choose the correct relative pronoun for possession.",["Who","Which","Where","Whose"],3],
+["Choose the correct sentence.",["This is the park who I play.","This is the park where I play.","This is the park which I play.","This is the park whose I play."],1],
+["'Otasi shifokor bo'lgan bola' in English is ___.",["The boy who father is a doctor","The boy whose father is a doctor","The boy which father is a doctor","The boy where father is a doctor"],1]
+],
+sp:["Describe your school and a friend whose family you know, using where/whose.","Maktabingiz va oilasini bilgan do'stingizni where/whose bilan tasvirlang."],
+ls:["Class 'who/which/where/whose' review game with pictures.","Sinf 'who/which/where/whose' rasm bilan takrorlash o'yini.",
+"In pairs, describe your neighborhood using 'where'.","Juftlikda mahallangizni 'where' bilan tasvirlang."]
+},
+
+{d:60,w:12,wt:"Interesting Facts",wtUz:"Qiziqarli faktlar",rev:true,
+t:"Grammar Foundations Complete!",tu:"Grammatika asoslari tugallandi!",
+qz:[
+["How do you say 'Salom' in English?",["Goodbye","Hello","Sorry","No"],1],
+["Choose the correct word: 'She ___ a teacher.'",["am","is","are","be"],1],
+["Choose the correct sentence.",["I goes to school.","I go to school.","I going to school.","I am go to school."],1],
+["What is the past tense of 'go'?",["Goed","Went","Gone","Going"],1],
+["Choose the correct comparative for 'tall'.",["More tall","Taller","Tallest","The taller"],1],
+["Choose the correct sentence about a plan.",["I go to visit my aunt.","I am going to visit my aunt.","I going to visit my aunt.","I am go to visit my aunt."],1],
+["Choose the correct question about experience.",["Did you ever visit London?","Have you ever visited London?","Do you ever visited London?","Are you ever visiting London?"],1],
+["Choose the correct first conditional.",["If you study, you pass.","If you study, you will pass.","If you will study, you pass.","If you studied, you will pass."],1],
+["Choose the correct passive sentence.",["English speaks worldwide.","English is spoken worldwide.","English spoken worldwide.","English is speaking worldwide."],1],
+["Choose the correct sentence.",["A doctor is a person which helps sick people.","A doctor is a person who helps sick people.","A doctor is a person where helps sick people.","A doctor is a person whose helps sick people."],1],
+["What does 'mustn't' mean?",["Not necessary","Forbidden","Optional","Recommended"],1],
+["Choose the correct sentence.",["There is two windows.","There are two windows.","There a window.","Windows there are."],1],
+["What is the plural of 'child'?",["Childs","Childes","Children","Childies"],2],
+["Choose the correct sentence.",["I like to swim always.","I like swimming.","I like swims.","I liking swim."],1],
+["Choose the correct word: '___ books do you have?'",["How much","How many","How","What"],1],
+["Choose the correct second conditional.",["If I win the lottery, I will travel.","If I won the lottery, I would travel.","If I win the lottery, I would travel.","If I would win, I travel."],1],
+["Choose the correct sentence.",["She can sings.","She can sing.","She cans sing.","She can singing."],1],
+["Choose the correct sentence about now.",["I read a book now.","I am reading a book now.","I reading a book now.","I reads a book now."],1],
+["Choose the correct connector: 'I stayed home ___ I was sick.'",["but","because","so","and"],1],
+["Choose the correct sentence.",["This is the park who I play.","This is the park where I play.","This is the park which I play.","This is the park whose I play."],1]
+],
+sp:["Give a 2-minute talk about yourself: your family, daily routine, an experience you've had, your plans, and your opinion on something — using as much grammar from this course as you can.","O'zingiz haqida 2 daqiqalik nutq so'zlang: oilangiz, kundalik hayotingiz, boshdan kechirgan tajribangiz, rejalaringiz va biror narsa haqidagi fikringiz — shu kursda o'rgangan grammatikangizdan iloji boricha ko'proq foydalaning."],
+ls:["Class celebration: each student gives a short speech about their English journey so far.","Sinf nishonlash: har bir o'quvchi hozirgacha bo'lgan ingliz tili safari haqida qisqa nutq so'zlaydi.",
+"In pairs, interview each other covering everything from this course, then introduce your partner to the class.","Juftlikda shu kursning barcha mavzularini qamrab olib bir-biringizni intervyu qiling, so'ng sherigingizni sinfga tanishtiring."]
+}
 
 ];
 
