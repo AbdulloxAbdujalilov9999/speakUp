@@ -66,7 +66,7 @@ const D = {
 "Set your name": { uz:"Ismingizni kiriting", ru:"Укажите имя" },
 "Role-play": { uz:"Rolli suhbat", ru:"Диалог по ролям" },
 "Talk it out": { uz:"Gapirib ko'ring", ru:"Поговорите вслух" },
-"20 new words": { uz:"20 ta yangi so'z", ru:"20 новых слов" },
+"New words": { uz:"Yangi so'zlar", ru:"Новые слова" },
 "Grammar": { uz:"Grammatika", ru:"Грамматика" },
 "Learn the rules": { uz:"Qoidalarni o'rganing", ru:"Изучайте правила" },
 "Journey Map": { uz:"Yo'l xaritasi", ru:"Карта пути" },

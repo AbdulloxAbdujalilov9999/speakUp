@@ -752,7 +752,7 @@ function renderDashboard(){
 
     <section class="quick">
       <button class="quick-tile" data-quick="roleplay"><span class="quick-ico">${icon("mic",24)}</span><span class="quick-t">${tr("Role-play")}</span><span class="quick-s">${tr("Talk it out")}</span></button>
-      <button class="quick-tile" data-quick="homework"><span class="quick-ico">${icon("homework",24)}</span><span class="quick-t">${tr("Homework")}</span><span class="quick-s">${tr("20 new words")}</span></button>
+      <button class="quick-tile" data-quick="homework"><span class="quick-ico">${icon("homework",24)}</span><span class="quick-t">${tr("Homework")}</span><span class="quick-s">${tr("New words")}</span></button>
       <button class="quick-tile" data-quick="grammar"><span class="quick-ico">${icon("grammar",24)}</span><span class="quick-t">${tr("Grammar")}</span><span class="quick-s">${tr("Learn the rules")}</span></button>
     </section>
 
