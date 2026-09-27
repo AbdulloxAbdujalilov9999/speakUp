@@ -2058,6 +2058,144 @@ sp:["Talk about your favorite meal, how you felt when you were sick, and 2 healt
 ls:["Class food & health quiz relay.","Sinf ovqat va salomatlik bo'yicha estafeta so'rovi.",
 "In pairs, review: order food, then give health advice.","Juftlikda takrorlang: ovqat buyurtma qiling, so'ng sog'liq bo'yicha maslahat bering."]
 }
+,
+
+{d:71,w:15,wt:"Animals & Nature",wtUz:"Hayvonlar va tabiat",
+t:"Animals",tu:"Hayvonlar",
+v:[
+["dog","it","I have a dog."],
+["cat","mushuk","My cat is white."],
+["lion","sher","The lion is the king of animals."],
+["elephant","fil","The elephant is very big."],
+["monkey","maymun","The monkey climbs trees."],
+["bird","qush","The bird can fly."],
+["fish","baliq","I have a fish in a bowl."],
+["horse","ot","He can ride a horse."]
+],
+dl:[
+["Malika","Do you have any pets?","Sizda uy hayvoni bormi?"],
+["Aziz","Yes, I have a dog and a cat. What's your favorite wild animal?","Ha, mening itim va mushugim bor. Sevimli yovvoyi hayvoningiz qaysi?"],
+["Malika","I like elephants. They are so big.","Menga fillar yoqadi. Ular juda katta."]
+],
+g:["Talking About Animals",
+"You know 'have' for pets (I have a dog) and plurals (dogs, cats) — animal words are also a great place to notice irregular plurals: sheep stays 'sheep', mouse becomes 'mice'.",
+"Hayvonlar haqida gapirish",
+"Siz uy hayvonlari uchun 'have' (I have a dog) va ko'plikni bilasiz (dogs, cats) — hayvon so'zlari istisno ko'plikni ko'rish uchun ham yaxshi: sheep 'sheep' bo'lib qoladi, mouse esa 'mice' bo'ladi."],
+qz:[
+["'Sher' in English is ___.",["Tiger","Lion","Bear","Wolf"],1],
+["Which animal can fly?",["Dog","Cat","Bird","Horse"],2],
+["'Maymun' in English is ___.",["Fox","Wolf","Monkey","Bear"],2],
+["Choose the correct sentence.",["I have a dog and a cat.","I has a dog and a cat.","I having a dog and a cat.","I am have a dog and a cat."],0]
+],
+sp:["Talk about your favorite animal (pet or wild) and describe it.","Sevimli hayvoningiz (uy yoki yovvoyi) haqida gapiring va uni tasvirlang."],
+ls:["Animal sounds game: make an animal sound, students name it.","Hayvon ovozlari o'yini: hayvon ovozini chiqaring, o'quvchilar nomlasin.",
+"In pairs, ask 'Do you have any pets?'","Juftlikda 'Uy hayvoningiz bormi?' deb so'rang."]
+},
+
+{d:72,w:15,wt:"Animals & Nature",wtUz:"Hayvonlar va tabiat",
+t:"Nature & Places",tu:"Tabiat va joylar",
+v:[
+["forest","o'rmon","There are many trees in the forest."],
+["mountain","tog'","The mountain is very high."],
+["river","daryo","The river flows to the sea."],
+["sea","dengiz","The sea is blue."],
+["tree","daraxt","The tree is very tall."],
+["flower","gul","She picked a flower."]
+],
+dl:[
+["Teacher","Have you ever visited the mountains?","Tog'larga borganmisiz?"],
+["Student","Yes, I visited the mountains last summer. There was a beautiful river.","Ha, o'tgan yozda tog'larga borgan edim. U yerda chiroyli daryo bor edi."]
+],
+g:["Describing Nature",
+"You know 'there is/are' for saying what exists (There is a river) and present perfect for experiences (Have you ever visited...?) — combine them to talk about nature!",
+"Tabiatni tasvirlash",
+"Siz mavjudlikni aytish uchun 'there is/are' (There is a river) va tajriba uchun present perfect (Have you ever visited...?) ni bilasiz — tabiat haqida gapirish uchun ularni birlashtiring!"],
+qz:[
+["'Daryo' in English is ___.",["Lake","Sea","River","Ocean"],2],
+["Choose the correct sentence.",["There is many trees.","There are many trees.","There a tree.","Tree there is."],1],
+["'Tog'' in English is ___.",["Forest","Mountain","River","Sea"],1],
+["Choose the correct question.",["Have you ever visit the mountains?","Have you ever visited the mountains?","Did you ever visited the mountains?","Do you ever visit the mountains?"],1]
+],
+sp:["Describe a beautiful place in nature you have visited or want to visit.","Tabiatda tashrif buyurgan yoki bormoqchi bo'lgan chiroyli joyingizni tasvirlang."],
+ls:["Nature picture description: describe what there is in a landscape picture.","Tabiat surati tasviri: manzara suratida nima borligini tasvirlang.",
+"In pairs, describe a place in nature using 'there is/are'.","Juftlikda tabiatdagi bir joyni 'there is/are' bilan tasvirlang."]
+},
+
+{d:73,w:15,wt:"Animals & Nature",wtUz:"Hayvonlar va tabiat",
+t:"Comparing Animals",tu:"Hayvonlarni solishtirish",
+v:[
+["bigger","kattaroq","An elephant is bigger than a dog."],
+["faster","tezroq","A cheetah is faster than a lion."],
+["the biggest","eng katta","The elephant is the biggest animal here."],
+["the fastest","eng tez","The cheetah is the fastest animal."]
+],
+dl:[
+["Teacher","Which is bigger, an elephant or a horse?","Fil kattami yoki ot?"],
+["Student","An elephant is bigger than a horse. I think the cheetah is the fastest animal.","Fil otdan kattaroq. Menimcha, gepard eng tez hayvon."]
+],
+g:["Comparing Animals",
+"You already learned comparatives and superlatives (bigger, the biggest) — now use them to compare your favorite animals!",
+"Hayvonlarni solishtirish",
+"Siz allaqachon comparative va superlative (bigger, the biggest) ni o'rgangansiz — endi sevimli hayvonlaringizni solishtirish uchun ulardan foydalaning!"],
+qz:[
+["Choose the correct comparative for 'big'.",["More big","Bigger","Biggest","The bigger"],1],
+["Choose the correct superlative for 'fast'.",["Faster","Fastest","The fastest","More fast"],2],
+["Choose the correct sentence.",["A cheetah is fast than a lion.","A cheetah is faster than a lion.","A cheetah is more fast than a lion.","A cheetah fastest than a lion."],1],
+["Which animal is usually the biggest?",["Cat","Dog","Elephant","Bird"],2]
+],
+sp:["Compare 3 animals using comparatives and superlatives.","3 ta hayvonni comparative va superlative bilan solishtiring."],
+ls:["Animal comparison debate: which animal is the strongest/fastest?","Hayvonlarni solishtirish bahsi: qaysi hayvon eng kuchli/eng tez?",
+"In pairs, compare yourselves and your family members.","Juftlikda o'zingiz va oila a'zolaringizni solishtiring."]
+},
+
+{d:74,w:15,wt:"Animals & Nature",wtUz:"Hayvonlar va tabiat",
+t:"Weather & Seasons",tu:"Ob-havo va fasllar",
+v:[
+["sunny","quyoshli","It's sunny today."],
+["rainy","yomg'irli","It's rainy outside."],
+["hot","issiq","It's hot in summer."],
+["cold","sovuq","It's cold in winter."],
+["spring","bahor","Flowers bloom in spring."],
+["summer","yoz","We swim in summer."],
+["autumn","kuz","Leaves fall in autumn."],
+["winter","qish","It snows in winter."]
+],
+dl:[
+["Malika","What's the weather like today?","Bugun ob-havo qanday?"],
+["Aziz","It's sunny and warm. Which season do you like best?","Quyoshli va iliq. Sizga qaysi fasl yoqadi?"],
+["Malika","I like winter because it snows.","Menga qish yoqadi, chunki qor yog'adi."]
+],
+g:["Talking About Weather",
+"We always use 'it' for weather: It is sunny. It is raining. This is a fixed pattern — always use 'it', never 'the weather is' as the main sentence.",
+"Ob-havo haqida gapirish",
+"Ob-havo haqida doim 'it' ishlatiladi: It is sunny. It is raining. Bu doimiy qolip — doim 'it' ishlating, asosiy gap sifatida 'the weather is' emas."],
+qz:[
+["Choose the correct sentence about weather.",["The weather is sunny today.","It is sunny today.","Sunny is today.","Today sunny is."],1],
+["Which season comes after summer?",["Winter","Spring","Autumn","Rain"],2],
+["'Sovuq' in English is ___.",["Hot","Cold","Sunny","Rainy"],1],
+["What happens in winter?",["It's hot.","It snows.","Flowers bloom.","Leaves grow."],1]
+],
+sp:["Describe the weather in each season in your country.","Mamlakatingizdagi har bir fasldagi ob-havoni tasvirlab bering."],
+ls:["Weather forecaster role-play: present tomorrow's weather.","Ob-havo bashoratchisi rolli o'yini: ertangi ob-havoni taqdim eting.",
+"In pairs, ask and answer about weather in different seasons.","Juftlikda turli fasllardagi ob-havo haqida so'rang va javob bering."]
+},
+
+{d:75,w:15,wt:"Animals & Nature",wtUz:"Hayvonlar va tabiat",rev:true,
+t:"Week 15 Review",tu:"15-hafta Takrorlash",
+qz:[
+["'Sher' in English is ___.",["Tiger","Lion","Bear","Wolf"],1],
+["'Daryo' in English is ___.",["Lake","Sea","River","Ocean"],2],
+["Choose the correct comparative for 'big'.",["More big","Bigger","Biggest","The bigger"],1],
+["Choose the correct sentence about weather.",["The weather is sunny today.","It is sunny today.","Sunny is today.","Today sunny is."],1],
+["Which animal can fly?",["Dog","Cat","Bird","Horse"],2],
+["'Tog'' in English is ___.",["Forest","Mountain","River","Sea"],1],
+["Choose the correct superlative for 'fast'.",["Faster","Fastest","The fastest","More fast"],2],
+["Which season comes after summer?",["Winter","Spring","Autumn","Rain"],2]
+],
+sp:["Describe your favorite animal, a place in nature, and today's weather.","Sevimli hayvoningizni, tabiat joyini va bugungi ob-havoni tasvirlang."],
+ls:["Class animal & nature quiz relay.","Sinf hayvonlar va tabiat bo'yicha estafeta so'rovi.",
+"In pairs, review animals, nature, and weather.","Juftlikda hayvonlar, tabiat va ob-havoni takrorlang."]
+}
 
 ];
 
