@@ -660,6 +660,158 @@ sp:["Describe your daily routine, then say what you are doing right now.","Kunda
 ls:["Class review relay: present simple vs continuous mixed quiz.","Sinf takrorlash estafetasi: present simple va continuous aralash so'rovi.",
 "In pairs, review the week using routines and right-now actions.","Juftlikda haftani odatlar va hozirgi harakatlar bilan takrorlang."]
 }
+,
+
+{d:21,w:5,wt:"Where Is It?",wtUz:"U qayerda?",
+t:"Prepositions of Place",tu:"O'rin predloglari",
+v:[
+["in","ichida","The cat is in the box."],
+["on","ustida","The book is on the table."],
+["under","ostida","The shoes are under the bed."],
+["behind","orqasida","The bag is behind the door."],
+["between","orasida","The pen is between the books."],
+["next to","yonida","The lamp is next to the bed."],
+["box","quti","The cat is in the box."],
+["table","stol","The book is on the table."],
+["bed","karavot","The shoes are under the bed."],
+["door","eshik","The bag is behind the door."]
+],
+dl:[
+["Teacher","Where is the cat?","Mushuk qayerda?"],
+["Student","The cat is under the table.","Mushuk stol ostida."],
+["Teacher","Is the book on the table?","Kitob stol ustidami?"],
+["Student","Yes, it's on the table.","Ha, u stol ustida."]
+],
+g:["Prepositions of Place: in, on, under, next to",
+"'In' = inside ('in the box'). 'On' = on a surface ('on the table'). 'Under' = below ('under the bed'). 'Behind' = at the back. 'Between' = in the middle of two things. 'Next to' = beside.",
+"O'rin predloglari: in, on, under, next to",
+"'In' — ichida ('in the box'). 'On' — ustida ('on the table'). 'Under' — ostida ('under the bed'). 'Behind' — orqasida. 'Between' — ikkitasining orasida. 'Next to' — yonida."],
+qz:[
+["Choose the correct preposition: 'The book is ___ the table.'",["in","on","under","next to"],1],
+["Choose the correct preposition: 'The cat is ___ the box.'",["on","in","under","between"],1],
+["Choose the correct preposition: 'The shoes are ___ the bed.'",["on","in","under","next to"],2],
+["Which preposition means 'yonida'?",["In","On","Under","Next to"],3]
+],
+sp:["Describe where 5 things are in your room using in/on/under/next to.","Xonangizdagi 5 ta narsaning qayerda ekanini in/on/under/next to yordamida tasvirlang."],
+ls:["Classroom scavenger hunt: find objects and describe their location.","Sinfda buyum qidirish: buyumlarni topib joylashuvini tasvirlang.",
+"In pairs, hide an object and give clues using prepositions.","Juftlikda buyumni yashiring va predloglar yordamida maslahat bering."]
+},
+
+{d:22,w:5,wt:"Where Is It?",wtUz:"U qayerda?",
+t:"Prepositions of Time",tu:"Vaqt predloglari",
+v:[
+["at","-da (aniq vaqt)","I wake up at seven o'clock."],
+["on","-da (kun)","I have class on Monday."],
+["in","-da (oy/yil)","My birthday is in May."],
+["seven o'clock","soat yetti","I wake up at seven o'clock."],
+["Monday","dushanba","I have class on Monday."],
+["May","may","My birthday is in May."],
+["morning","ertalab","I study in the morning."],
+["night","tun","I sleep at night."],
+["today","bugun","I have a test today."],
+["tomorrow","ertaga","I will see you tomorrow."]
+],
+dl:[
+["Malika","What time do you wake up?","Soat nechada uyg'onasiz?"],
+["Aziz","I wake up at seven o'clock. When is your birthday?","Men soat yettida uyg'onaman. Tug'ilgan kuningiz qachon?"],
+["Malika","My birthday is in May.","Tug'ilgan kunim mayda."]
+],
+g:["Prepositions of Time: at, on, in",
+"Use 'at' with clock times: at seven o'clock. Use 'on' with days: on Monday. Use 'in' with months and years: in May, in 2026.",
+"Vaqt predloglari: at, on, in",
+"'At' aniq soat bilan ishlatiladi: at seven o'clock. 'On' kunlar bilan ishlatiladi: on Monday. 'In' oy va yillar bilan ishlatiladi: in May, in 2026."],
+qz:[
+["Choose the correct word: 'I wake up ___ seven o'clock.'",["on","in","at","for"],2],
+["Choose the correct word: 'I have class ___ Monday.'",["in","on","at","for"],1],
+["Choose the correct word: 'My birthday is ___ May.'",["on","in","at","for"],1],
+["Which preposition goes with a clock time?",["at","on","in","for"],0]
+],
+sp:["Say what time you wake up, and what day you have your favorite class.","Soat nechada uyg'onishingizni va sevimli faningiz qaysi kun ekanini ayting."],
+ls:["Class calendar check: ask 'What day is it?' and 'What time is it?'","Sinf kalendar tekshiruvi: 'Bugun qaysi kun?' va 'Soat necha?' deb so'rang.",
+"In pairs, ask each other's birthday month and favorite class day.","Juftlikda bir-biringizning tug'ilgan oyingiz va sevimli dars kuningizni so'rang."]
+},
+
+{d:23,w:5,wt:"Where Is It?",wtUz:"U qayerda?",
+t:"Question Words",tu:"Savol so'zlari",
+v:[
+["who","kim","Who is your teacher?"],
+["what","nima","What is your name?"],
+["where","qayerda","Where do you live?"],
+["when","qachon","When is your birthday?"],
+["why","nega","Why are you late?"],
+["how","qanday","How are you?"],
+["whose","kimning","Whose book is this?"],
+["question","savol","I have a question."]
+],
+dl:[
+["Teacher","Who is your best friend?","Eng yaqin do'stingiz kim?"],
+["Student","My best friend is Malika.","Eng yaqin do'stim Malika."],
+["Teacher","Where does she live?","U qayerda yashaydi?"],
+["Student","She lives near my house.","U mening uyim yaqinida yashaydi."]
+],
+g:["Question Words",
+"Question words start the question: Who (person), What (thing), Where (place), When (time), Why (reason), How (manner). They always come first: Where do you live?",
+"Savol so'zlari",
+"Savol so'zlari savolni boshlaydi: Who (kim), What (nima), Where (qayerda), When (qachon), Why (nega), How (qanday). Ular doim birinchi o'rinda keladi: Where do you live?"],
+qz:[
+["Choose the correct question word for a person.",["What","Where","Who","When"],2],
+["Choose the correct question word for a place.",["Who","What","Where","When"],2],
+["Choose the correct question word for a reason.",["How","Why","Which","Whose"],1],
+["'Bu kimning kitobi?' in English is ___.",["Who book is this?","Whose book is this?","What book is this?","Where book is this?"],1]
+],
+sp:["Ask your partner 4 different questions using who/what/where/when.","Sherigingizga who/what/where/when yordamida 4 xil savol bering."],
+ls:["Question chain: each student asks a question to the next student.","Savol zanjiri: har bir o'quvchi keyingisiga savol beradi.",
+"In pairs, interview each other with at least 4 different question words.","Juftlikda kamida 4 xil savol so'zi bilan bir-biringizni intervyu qiling."]
+},
+
+{d:24,w:5,wt:"Where Is It?",wtUz:"U qayerda?",
+t:"How Much / How Many",tu:"How Much / How Many",
+v:[
+["how much","qancha (sanalmaydigan)","How much water do you drink?"],
+["how many","nechta (sanaladigan)","How many books do you have?"],
+["money","pul","How much money do you have?"],
+["water","suv","How much water do you drink?"],
+["books","kitoblar","How many books do you have?"],
+["apples","olmalar","How many apples do you want?"],
+["a lot of","ko'p","I have a lot of books."],
+["not much","ko'p emas","I don't have much money."]
+],
+dl:[
+["Malika","How many books do you have?","Sizda nechta kitob bor?"],
+["Aziz","I have a lot of books. How much money do you have?","Menda ko'p kitob bor. Sizda qancha pul bor?"],
+["Malika","I don't have much money today.","Bugun menda ko'p pul yo'q."]
+],
+g:["How Much / How Many",
+"Use 'How much' with things we can't count (money, water): How much money do you have? Use 'How many' with things we can count: How many books do you have?",
+"How Much / How Many",
+"Sanalmaydigan narsalar (pul, suv) bilan 'How much' ishlatiladi: How much money do you have? Sanaladigan narsalar bilan 'How many' ishlatiladi: How many books do you have?"],
+qz:[
+["Choose the correct word: '___ money do you have?'",["How much","How many","How","What"],0],
+["Choose the correct word: '___ books do you have?'",["How much","How many","How","What"],1],
+["'Ko'p kitobim bor' in English is ___.",["I have a lot of books.","I have much books.","I have many of books.","I have a lot books."],0],
+["Which word goes with uncountable things like water?",["Many","Much","Few","A"],1]
+],
+sp:["Ask your partner how much money and how many books they have.","Sherigingizdan qancha puli va nechta kitobi borligini so'rang."],
+ls:["Class survey: ask 'How many pens do you have?' and total the class results.","Sinf so'rovi: 'Nechta ruchkangiz bor?' deb so'rang va sinf natijasini yig'ing.",
+"In pairs, practice how much/how many with school supplies.","Juftlikda maktab buyumlari bilan how much/how many mashq qiling."]
+},
+
+{d:25,w:5,wt:"Where Is It?",wtUz:"U qayerda?",rev:true,
+t:"Week 5 Review",tu:"5-hafta Takrorlash",
+qz:[
+["Choose the correct preposition: 'The book is ___ the table.'",["in","on","under","next to"],1],
+["Choose the correct word: 'I wake up ___ seven o'clock.'",["on","in","at","for"],2],
+["Choose the correct question word for a person.",["What","Where","Who","When"],2],
+["Choose the correct word: '___ books do you have?'",["How much","How many","How","What"],1],
+["Choose the correct word: 'I have class ___ Monday.'",["in","on","at","for"],1],
+["'Bu kimning kitobi?' in English is ___.",["Who book is this?","Whose book is this?","What book is this?","Where book is this?"],1],
+["Which preposition means 'yonida'?",["In","On","Under","Next to"],3],
+["'Ko'p kitobim bor' in English is ___.",["I have a lot of books.","I have much books.","I have many of books.","I have a lot books."],0]
+],
+sp:["Describe your room, your daily schedule, and answer 3 questions from a friend.","Xonangizni, kundalik jadvalingizni tasvirlang va do'stingizning 3 ta savoliga javob bering."],
+ls:["Class review relay: prepositions, time, and question words mixed quiz.","Sinf takrorlash estafetasi: predloglar, vaqt va savol so'zlari aralash so'rovi.",
+"In pairs, review the week with a mini interview.","Juftlikda haftani kichik intervyu bilan takrorlang."]
+}
 
 ];
 
