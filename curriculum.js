@@ -1494,6 +1494,135 @@ sp:["Talk about your experiences: places you've visited, things you've tried, an
 ls:["Class experience trivia: mixed present perfect quiz relay.","Sinf tajriba bilim bellashuvi: aralash present perfect so'rovi.",
 "In pairs, review the week: share experiences using present perfect and past simple.","Juftlikda haftani present perfect va past simple bilan takrorlang."]
 }
+,
+
+{d:51,w:11,wt:"If...",wtUz:"Agar...",
+t:"Zero Conditional — General Truths",tu:"Zero Conditional — umumiy haqiqatlar",
+v:[
+["if","agar","If you heat ice, it melts."],
+["melts","eriydi","If you heat ice, it melts."],
+["boils","qaynaydi","Water boils if you heat it."],
+["freezes","muzlaydi","Water freezes if it gets very cold."]
+],
+dl:[
+["Teacher","What happens if you heat ice?","Muzni isitsangiz nima bo'ladi?"],
+["Student","If you heat ice, it melts.","Agar muzni isitsangiz, u eriydi."],
+["Teacher","And what happens if water gets very cold?","Va suv juda sovib qolsa nima bo'ladi?"],
+["Student","It freezes.","U muzlaydi."]
+],
+g:["Zero Conditional",
+"Zero conditional talks about general truths and facts that are always true: If you heat ice, it melts. Water boils if you heat it to 100 degrees. Form: If + present simple, present simple.",
+"Zero Conditional",
+"Zero conditional doim to'g'ri bo'lgan umumiy haqiqat va faktlar haqida: If you heat ice, it melts. Water boils if you heat it to 100 degrees. Qolip: If + present simple, present simple."],
+qz:[
+["Choose the correct zero conditional.",["If you heat ice, it melted.","If you heat ice, it melts.","If you heat ice, it will melt.","If you heated ice, it melts."],1],
+["Zero conditional is used for:",["Imaginary situations","General truths and facts","Past events","Polite requests"],1],
+["Choose the correct sentence.",["Water boil if you heat it.","Water boils if you heat it.","Water boiled if you heat it.","Water will boil if heat it."],1],
+["What tense is used in both parts of a zero conditional?",["Past simple","Present simple","Future","Present continuous"],1]
+],
+sp:["Say 2 zero conditional sentences about science facts you know.","Bilgan fan faktlaringiz haqida 2 ta zero conditional gap tuzing."],
+ls:["Science facts game: teams make zero conditional sentences about nature.","Fan faktlari o'yini: jamoalar tabiat haqida zero conditional gaplar tuzadi.",
+"In pairs, make 3 zero conditional sentences together.","Juftlikda birgalikda 3 ta zero conditional gap tuzing."]
+},
+
+{d:52,w:11,wt:"If...",wtUz:"Agar...",
+t:"First Conditional — Real Possibilities",tu:"First Conditional — haqiqiy imkoniyatlar",
+v:[
+["will pass","o'tadi","If you study, you will pass."],
+["will rain","yomg'ir yog'adi","If it rains, we won't go out."],
+["will miss","kechikadi","If you don't hurry, you will miss the bus."]
+],
+dl:[
+["Teacher","What will happen if you study hard?","Agar qattiq o'qisangiz nima bo'ladi?"],
+["Student","If I study hard, I will pass the exam.","Agar qattiq o'qisam, imtihondan o'taman."],
+["Teacher","And if you don't study?","Va agar o'qimasangiz?"],
+["Student","If I don't study, I will fail.","Agar o'qimasam, yiqilaman."]
+],
+g:["First Conditional",
+"First conditional talks about real future possibilities: If you study, you will pass. Form: If + present simple, will + verb. The if-clause never uses 'will'.",
+"First Conditional",
+"First conditional haqiqiy kelajak imkoniyatlari haqida: If you study, you will pass. Qolip: If + present simple, will + fe'l. If-qismida hech qachon 'will' ishlatilmaydi."],
+qz:[
+["Choose the correct first conditional.",["If you study, you pass.","If you study, you will pass.","If you will study, you pass.","If you studied, you will pass."],1],
+["Choose the correct sentence.",["If it rain, we stay home.","If it rains, we will stay home.","If it will rain, we stay home.","If it rains, we stayed home."],1],
+["Which tense goes in the if-clause of a first conditional?",["will + verb","present simple","past simple","past perfect"],1],
+["Choose the correct sentence.",["If you don't hurry, you miss the bus.","If you don't hurry, you will miss the bus.","If you won't hurry, you will miss the bus.","If you don't hurry, you missed the bus."],1]
+],
+sp:["Say what will happen if you study hard, and if you don't do your homework.","Agar qattiq o'qisangiz va agar uy vazifangizni qilmasangiz nima bo'lishini ayting."],
+ls:["Conditional chain: 'If it rains, I will...' — build a chain of consequences.","Shart zanjiri: 'Agar yomg'ir yog'sa, men...' — oqibatlar zanjirini tuzing.",
+"In pairs, discuss real possibilities for this weekend using first conditional.","Juftlikda first conditional yordamida shu dam olish kunlari uchun haqiqiy imkoniyatlarni muhokama qiling."]
+},
+
+{d:53,w:11,wt:"If...",wtUz:"Agar...",
+t:"Second Conditional — Imaginary Situations",tu:"Second Conditional — xayoliy vaziyatlar",
+v:[
+["would travel","sayohat qilardi","If I won the lottery, I would travel."],
+["if I were you","men sizning o'rningizda bo'lsam","If I were you, I would study more."],
+["would help","yordam berardi","If I had a superpower, I would help people."]
+],
+dl:[
+["Malika","What would you do if you won the lottery?","Agar lotereyada yutsangiz, nima qilar edingiz?"],
+["Aziz","If I won the lottery, I would travel the world.","Agar lotereyada yutsam, dunyo bo'ylab sayohat qilardim."],
+["Malika","If I were you, I would help my family too.","Men sizning o'rningizda bo'lsam, oilamga ham yordam berardim."]
+],
+g:["Second Conditional",
+"Second conditional talks about imaginary or unlikely situations: If I won the lottery, I would travel the world. Form: If + past simple, would + verb. Use 'were' for all subjects: If I were you...",
+"Second Conditional",
+"Second conditional xayoliy yoki ehtimoli kam vaziyatlar haqida: If I won the lottery, I would travel the world. Qolip: If + past simple, would + fe'l. Barcha egalar bilan 'were' ishlatiladi: If I were you..."],
+qz:[
+["Choose the correct second conditional.",["If I win the lottery, I will travel.","If I won the lottery, I would travel.","If I win the lottery, I would travel.","If I would win, I travel."],1],
+["Choose the correct sentence with 'if I were you'.",["If I was you, I would study.","If I were you, I would study.","If I am you, I would study.","If I were you, I will study."],1],
+["Second conditional is used for:",["Real future plans","Imaginary or unlikely situations","Past facts","General truths"],1],
+["Which tense goes in the if-clause of a second conditional?",["will + verb","present simple","past simple","present perfect"],2]
+],
+sp:["Say what you would do if you had a superpower.","Agar super kuchingiz bo'lsa, nima qilishingiz haqida ayting."],
+ls:["'What would you do if...?' circle: pose imaginative situations.","'Nima qilar edingiz agar...?' doirasi.",
+"In pairs, discuss 2 hypothetical situations using second conditional.","Juftlikda second conditional yordamida 2 ta xayoliy vaziyatni muhokama qiling."]
+},
+
+{d:54,w:11,wt:"If...",wtUz:"Agar...",
+t:"Giving Advice with \"If I were you\"",tu:"\"If I were you\" bilan maslahat berish",
+v:[
+["advice","maslahat","If I were you, I would ask the teacher for advice."],
+["problem","muammo","If I had that problem, I would talk to my parents."],
+["would ask","so'rar edim","If I were you, I would ask for help."]
+],
+dl:[
+["Malika","I have a problem. I don't understand my homework.","Muammom bor. Uy vazifamni tushunmayapman."],
+["Aziz","If I were you, I would ask the teacher for help.","Men sizning o'rningizda bo'lsam, o'qituvchidan yordam so'rardim."],
+["Malika","That's good advice. Thank you!","Bu yaxshi maslahat. Rahmat!"]
+],
+g:["\"If I were you...\" for Giving Advice",
+"We often use the second conditional to give advice: If I were you, I would ask for help. It's a polite, gentle way to suggest what someone else should do.",
+"\"If I were you...\" maslahat berish uchun",
+"Maslahat berish uchun ko'pincha second conditional ishlatiladi: If I were you, I would ask for help. Bu boshqa birovga nima qilish kerakligini taklif qilishning odobli, muloyim usuli."],
+qz:[
+["Choose the correct advice.",["If I am you, I ask for help.","If I were you, I would ask for help.","If I was you, I ask for help.","If I were you, I ask for help."],1],
+["What is this pattern used for?",["Giving orders","Giving polite advice","Asking permission","Making promises"],1],
+["Choose the correct sentence.",["If I were you, I would talk to my parents.","If I am you, I would talk to my parents.","If I were you, I talk to my parents.","If I was you, I will talk to my parents."],0],
+["Choose the correct response to a problem.",["If I were you, I ignore it.","If I were you, I would ignore it.","If I am you, I would ignore it.","If I were you, I ignoring it."],1]
+],
+sp:["Listen to a friend's problem and give advice using 'If I were you...'","Do'stingizning muammosini tinglang va 'If I were you...' bilan maslahat bering."],
+ls:["Advice circle: students share a small problem, classmates give advice.","Maslahat doirasi: o'quvchilar kichik muammo aytadi, sinfdoshlar maslahat beradi.",
+"In pairs, take turns sharing a problem and giving advice.","Juftlikda navbatma-navbat muammo ayting va maslahat bering."]
+},
+
+{d:55,w:11,wt:"If...",wtUz:"Agar...",rev:true,
+t:"Week 11 Review",tu:"11-hafta Takrorlash",
+qz:[
+["Choose the correct zero conditional.",["If you heat ice, it melted.","If you heat ice, it melts.","If you heat ice, it will melt.","If you heated ice, it melts."],1],
+["Choose the correct first conditional.",["If you study, you pass.","If you study, you will pass.","If you will study, you pass.","If you studied, you will pass."],1],
+["Choose the correct second conditional.",["If I win the lottery, I will travel.","If I won the lottery, I would travel.","If I win the lottery, I would travel.","If I would win, I travel."],1],
+["Choose the correct sentence with 'if I were you'.",["If I was you, I would study.","If I were you, I would study.","If I am you, I would study.","If I were you, I will study."],1],
+["Zero conditional is used for:",["Imaginary situations","General truths and facts","Past events","Polite requests"],1],
+["Which tense goes in the if-clause of a second conditional?",["will + verb","present simple","past simple","present perfect"],2],
+["What is 'if I were you' used for?",["Giving orders","Giving polite advice","Asking permission","Making promises"],1],
+["Choose the correct sentence.",["If it rain, we stay home.","If it rains, we will stay home.","If it will rain, we stay home.","If it rains, we stayed home."],1]
+],
+sp:["Talk about a general truth, a real future plan, and an imaginary wish, using all three conditionals.","Uchala shart gapdan foydalanib, umumiy haqiqat, haqiqiy kelajak rejasi va xayoliy istak haqida gapiring."],
+ls:["Class conditional relay: zero, first, and second conditional mixed quiz.","Sinf shart gap estafetasi: zero, first va second conditional aralash so'rovi.",
+"In pairs, review the week with 3 conditional sentences each.","Juftlikda haftani har biringiz 3 tadan shart gap bilan takrorlang."]
+}
 
 ];
 
