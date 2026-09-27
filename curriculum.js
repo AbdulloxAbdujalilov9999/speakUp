@@ -1094,6 +1094,145 @@ sp:["Describe and compare 2 family members, saying why you like spending time wi
 ls:["Class review relay: adjectives, comparatives, and connectors mixed quiz.","Sinf takrorlash estafetasi: sifatlar, solishtirish va bog'lovchilar aralash so'rovi.",
 "In pairs, review the week using descriptions and comparisons.","Juftlikda haftani tasvirlash va solishtirish bilan takrorlang."]
 }
+,
+
+{d:36,w:8,wt:"Yesterday",wtUz:"Kecha",
+t:"Past Simple — Was / Were",tu:"Past Simple — Was / Were",
+v:[
+["was","edi (I/he/she/it)","I was tired yesterday."],
+["were","edi (you/we/they)","They were happy."],
+["yesterday","kecha","I was at school yesterday."],
+["last week","o'tgan hafta","We were on vacation last week."],
+["ago","oldin","I was here two days ago."],
+["there was","bor edi","There was a book on the table."],
+["there were","bor edi (ko'plik)","There were three cats."]
+],
+dl:[
+["Teacher","Where were you yesterday?","Kecha qayerda edingiz?"],
+["Student","I was at home. I was sick.","Men uyda edim. Men kasal edim."],
+["Teacher","Were your friends at school?","Do'stlaringiz maktabda edimi?"],
+["Student","Yes, they were at school.","Ha, ular maktabda edi."]
+],
+g:["Past Simple — Was / Were",
+"'Was' is the past of 'am/is' (I/he/she/it). 'Were' is the past of 'are' (you/we/they): I was tired. They were happy. 'There was/there were' is the past of 'there is/there are'.",
+"Past Simple — Was / Were",
+"'Was' — 'am/is' ning o'tgan zamoni (I/he/she/it). 'Were' — 'are' ning o'tgan zamoni (you/we/they): I was tired. They were happy. 'There was/there were' — 'there is/there are' ning o'tgan zamoni."],
+qz:[
+["Choose the correct word: 'I ___ tired.'",["was","were","am","is"],0],
+["Choose the correct word: 'They ___ happy.'",["was","were","is","am"],1],
+["Choose the correct sentence.",["There was three cats.","There were three cats.","There is three cats.","There are three cats yesterday."],1],
+["Choose the correct negative.",["She weren't at school.","She wasn't at school.","She isn't at school yesterday.","She not was at school."],1]
+],
+sp:["Say where you were and how you felt yesterday.","Kecha qayerda edingiz va o'zingizni qanday his qilganingizni ayting."],
+ls:["Class chain: 'Yesterday I was...' each student adds a sentence.","Sinf zanjiri: 'Kecha men...' har bir o'quvchi gap qo'shadi.",
+"In pairs, ask each other 'Where were you yesterday?'","Juftlikda bir-biringizdan 'Kecha qayerda edingiz?' deb so'rang."]
+},
+
+{d:37,w:8,wt:"Yesterday",wtUz:"Kecha",
+t:"Past Simple — Regular Verbs",tu:"Past Simple — qoidali fe'llar",
+v:[
+["played","o'ynadi","I played football yesterday."],
+["watched","tomosha qildi","We watched a movie last night."],
+["studied","o'qidi","She studied English last night."],
+["walked","piyoda yurdi","She walked to school."],
+["visited","tashrif buyurdi","We visited our grandmother."],
+["cooked","pishirdi","My mother cooked dinner."]
+],
+dl:[
+["Malika","What did you do yesterday?","Kecha nima qildingiz?"],
+["Aziz","I played football and I watched a movie.","Men futbol o'ynadim va film tomosha qildim."],
+["Malika","I studied English and visited my grandmother.","Men ingliz tilini o'qidim va buvimga tashrif buyurdim."]
+],
+g:["Past Simple — Regular Verbs",
+"Regular verbs add -ed for the past: play → played, watch → watched. Words ending in consonant+y change to -ied: study → studied. Negative: didn't + plain verb.",
+"Past Simple — qoidali fe'llar",
+"Qoidali fe'llarga o'tgan zamon uchun -ed qo'shiladi: play → played, watch → watched. Undosh+y bilan tugagan so'zlarda -ied bo'ladi: study → studied. Inkor: didn't + oddiy fe'l."],
+qz:[
+["What is the past tense of 'play'?",["Played","Player","Playing","Plays"],0],
+["What is the past tense of 'study'?",["Studyed","Studied","Studies","Studying"],1],
+["Choose the correct negative.",["I didn't played.","I didn't play.","I not played.","I doesn't play."],1],
+["Choose the correct sentence.",["She studied English.","She studyed English.","She studies English yesterday.","She studying English."],0]
+],
+sp:["Talk about what you did yesterday, using at least 3 past verbs.","Kecha nima qilganingiz haqida kamida 3 ta o'tgan zamon fe'li bilan gapiring."],
+ls:["Yesterday chain: each student says one thing they did yesterday.","Kecha zanjiri: har bir o'quvchi kecha qilgan bitta ishini aytadi.",
+"In pairs, interview each other about yesterday.","Juftlikda kecha haqida bir-biringizni intervyu qiling."]
+},
+
+{d:38,w:8,wt:"Yesterday",wtUz:"Kecha",
+t:"Past Simple — Irregular Verbs",tu:"Past Simple — istisno fe'llar",
+v:[
+["went","bordi","I went to school."],
+["ate","yedi","She ate breakfast."],
+["saw","ko'rdi","He saw a bird."],
+["had","bor edi","We had a good time."],
+["did","qildi","They did their homework."],
+["made","yasadi","My mother made a cake."]
+],
+dl:[
+["Teacher","What did you do last weekend?","O'tgan dam olish kunlari nima qildingiz?"],
+["Student","I went to the market. I saw my friend there.","Men bozorga bordim. U yerda do'stimni ko'rdim."],
+["Teacher","Did you have fun?","Yaxshi vaqt o'tkazdingizmi?"],
+["Student","Yes, we had a great time.","Ha, biz juda yaxshi vaqt o'tkazdik."]
+],
+g:["Past Simple — Irregular Verbs",
+"Many common verbs don't follow the -ed rule — they change completely: go → went, eat → ate, see → saw, have → had, do → did, make → made. There's no shortcut, memorize them through practice.",
+"Past Simple — istisno fe'llar",
+"Ko'plab keng tarqalgan fe'llar -ed qoidasiga bo'ysunmaydi — ular butunlay o'zgaradi: go → went, eat → ate, see → saw, have → had, do → did, make → made. Bunda yo'l yo'q, mashq orqali yodlang."],
+qz:[
+["What is the past tense of 'go'?",["Goed","Went","Gone","Going"],1],
+["What is the past tense of 'eat'?",["Eated","Ate","Eaten","Eating"],1],
+["What is the past tense of 'see'?",["Seed","Saw","Seen","Seeing"],1],
+["What is the past tense of 'have'?",["Haved","Had","Haves","Having"],1]
+],
+sp:["Tell a short story about last weekend using at least 3 irregular past verbs.","O'tgan dam olish kunlari haqida kamida 3 ta istisno fe'l bilan qisqa hikoya ayting."],
+ls:["Past tense charades: act out a past action, class guesses the verb.","O'tgan zamon pantomimasi: harakatni ijro eting, sinf fe'lni topsin.",
+"In pairs, tell each other 3 things you did last weekend.","Juftlikda o'tgan dam olish kunlari qilgan 3 ta ishingizni ayting."]
+},
+
+{d:39,w:8,wt:"Yesterday",wtUz:"Kecha",
+t:"Past Continuous",tu:"Past Continuous",
+v:[
+["was doing","qilayotgan edi","I was doing my homework at 8 PM."],
+["was sleeping","uxlayotgan edi","I was sleeping when you called."],
+["were playing","o'ynayotgan edi (ko'plik)","They were playing football."],
+["when","-ganda","I was sleeping when the phone rang."],
+["while","-yotgan paytda","While I was cooking, the phone rang."]
+],
+dl:[
+["Malika","What were you doing at 8 PM yesterday?","Kecha soat 20:00 da nima qilayotgan edingiz?"],
+["Aziz","I was doing my homework when my friend called.","Do'stim qo'ng'iroq qilganda men uy vazifamni qilayotgan edim."]
+],
+g:["Past Continuous",
+"Use 'was/were + verb-ing' for an action in progress at a past time: I was doing my homework at 8 PM. Combine with 'when' for an interrupting action: I was sleeping when the phone rang.",
+"Past Continuous",
+"O'tmishda ma'lum vaqtda davom etayotgan harakat uchun 'was/were + fe'l-ing' ishlatiladi: I was doing my homework at 8 PM. Bo'lib yuruvchi harakat uchun 'when' bilan birga ishlatiladi: I was sleeping when the phone rang."],
+qz:[
+["Choose the correct sentence.",["I was sleeping when you called.","I sleep when you called.","I slept when you calling.","I sleeping when you called."],0],
+["Choose the correct past continuous form for 'they'.",["was playing","were playing","is playing","are playing"],1],
+["Choose the correct question.",["What were you doing?","What was you doing?","What you were doing?","Were you what doing?"],0],
+["Choose the correct sentence.",["While I was cooking, the phone rang.","While I cooking, the phone rang.","While I cook, the phone rang.","While I was cook, the phone rang."],0]
+],
+sp:["Say what you were doing at three different times yesterday.","Kecha uchta turli vaqtda nima qilayotganingizni ayting."],
+ls:["Freeze-and-tell: act, freeze, and say 'I was...ing' when asked.","Muzlash va aytish: harakat qiling, muzlang va so'ralganda 'I was...ing' deng.",
+"In pairs, tell each other what you were doing at 8 PM yesterday.","Juftlikda kecha soat 20:00 da nima qilayotganingizni ayting."]
+},
+
+{d:40,w:8,wt:"Yesterday",wtUz:"Kecha",rev:true,
+t:"Week 8 Review",tu:"8-hafta Takrorlash",
+qz:[
+["Choose the correct word: 'I ___ tired.'",["was","were","am","is"],0],
+["What is the past tense of 'play'?",["Played","Player","Playing","Plays"],0],
+["What is the past tense of 'go'?",["Goed","Went","Gone","Going"],1],
+["Choose the correct sentence.",["I was sleeping when you called.","I sleep when you called.","I slept when you calling.","I sleeping when you called."],0],
+["Choose the correct word: 'They ___ happy.'",["was","were","is","am"],1],
+["What is the past tense of 'eat'?",["Eated","Ate","Eaten","Eating"],1],
+["Choose the correct negative.",["I didn't played.","I didn't play.","I not played.","I doesn't play."],1],
+["Choose the correct past continuous form for 'they'.",["was playing","were playing","is playing","are playing"],1]
+],
+sp:["Tell a story about yesterday: where you were, what you did, and what you were doing at a specific time.","Kecha haqida hikoya ayting: qayerda edingiz, nima qildingiz va aniq bir vaqtda nima qilayotgan edingiz."],
+ls:["Class storytelling: build a class story about 'yesterday' together.","Sinf hikoyachiligi: birgalikda 'kecha' haqida sinf hikoyasini tuzing.",
+"In pairs, review: tell each other a story about last weekend.","Juftlikda takrorlang: o'tgan dam olish kunlari haqida bir-biringizga hikoya ayting."]
+}
 
 ];
 
