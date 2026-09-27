@@ -350,6 +350,161 @@ sp:["Describe yourself, your room, and your family using this week's grammar.","
 ls:["Class review game: teacher points at people/objects, students respond with the right pattern.","Sinf takrorlash o'yini: o'qituvchi odam/buyumlarga ishora qiladi, o'quvchilar to'g'ri qolip bilan javob beradi.",
 "In pairs, review the week: describe people, objects, and your room.","Juftlikda haftani takrorlang: odamlar, buyumlar va xonangizni tasvirlang."]
 }
+,
+
+{d:11,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",
+t:"Can — Ability",tu:"Can — qobiliyat",
+v:[
+["can","qila oladi","I can swim."],
+["can't","qila olmaydi","I can't sing."],
+["swim","suzmoq","I can swim."],
+["sing","qo'shiq aytmoq","I can sing."],
+["dance","raqsga tushmoq","I can dance."],
+["draw","rasm chizmoq","I can draw."],
+["jump","sakramoq","I can jump."],
+["run","yugurmoq","I can run fast."],
+["cook","ovqat pishirmoq","My mother can cook."],
+["ride a bike","velosiped haydamoq","I can ride a bike."]
+],
+dl:[
+["Malika","Can you swim?","Suza olasizmi?"],
+["Aziz","Yes, I can swim. Can you sing?","Ha, men suza olaman. Siz qo'shiq ayta olasizmi?"],
+["Malika","No, I can't sing, but I can dance.","Yo'q, men qo'shiq ayta olmayman, lekin raqsga tusha olaman."]
+],
+g:["Can — Ability",
+"'Can' shows something you know how to do: I can swim. She can sing. The negative is 'can't': He can't fly. 'Can' never changes form, no matter who the subject is.",
+"Can — qobiliyat",
+"'Can' nimani qila olishingizni bildiradi: I can swim. She can sing. Inkor shakli 'can't': He can't fly. 'Can' ega kim bo'lishidan qat'i nazar hech qachon shaklini o'zgartirmaydi."],
+qz:[
+["Choose the correct sentence.",["She can sings.","She can sing.","She cans sing.","She can singing."],1],
+["'Suza olaman' in English is ___.",["I can swims.","I can swim.","I cans swim.","I am can swim."],1],
+["Choose the correct negative.",["He not can fly.","He can't fly.","He don't can fly.","He cann't fly."],1],
+["What can your mother do? Choose the correct word for cooking.",["She can cook.","She can cooks.","She cans cook.","She can cooking."],0]
+],
+sp:["Say 3 things you can do and 1 thing you can't do yet.","Qila oladigan 3 ta ishingizni va hali qila olmaydigan 1 ta ishingizni ayting."],
+ls:["'Can you...?' mingle: ask classmates what they can do.","'Can you...?' aralashuvi: sinfdoshlaringizdan nima qila olishlarini so'rang.",
+"In pairs, find 2 things you can both do.","Juftlikda ikkalangiz ham qila oladigan 2 ta ishni toping."]
+},
+
+{d:12,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",
+t:"Have / Has — Pets",tu:"Have / Has — uy hayvonlari",
+v:[
+["have","bor (I/you/we/they)","I have a dog."],
+["has","bor (he/she/it)","She has a cat."],
+["don't have","yo'q (I/you/we/they)","I don't have a pet."],
+["doesn't have","yo'q (he/she/it)","He doesn't have a bike."],
+["pet","uy hayvoni","This is my pet."],
+["dog","it","I have a dog."],
+["cat","mushuk","She has a cat."],
+["fish","baliq","He has a fish."],
+["bird","qush","They have a bird."],
+["rabbit","quyon","We have a rabbit."]
+],
+dl:[
+["Teacher","Do you have a pet?","Uy hayvoningiz bormi?"],
+["Student","Yes, I have a dog. Does she have a pet?","Ha, mening itim bor. Uning uy hayvoni bormi?"],
+["Teacher","Yes, she has a cat.","Ha, uning mushugi bor."]
+],
+g:["Have / Has",
+"Use 'have' with I/you/we/they and 'has' with he/she/it: I have a dog. She has a cat. Negative: don't have / doesn't have.",
+"Have / Has",
+"I/you/we/they bilan 'have', he/she/it bilan 'has' ishlatiladi: I have a dog. She has a cat. Inkor: don't have / doesn't have."],
+qz:[
+["Choose the correct word: 'She ___ a cat.'",["have","has","having","haves"],1],
+["Choose the correct word: 'I ___ a dog.'",["has","have","having","haves"],1],
+["Choose the correct negative: 'He ___ a pen.'",["don't have","doesn't have","not have","haven't has"],1],
+["Choose the correct question.",["Does you have a sister?","Do you have a sister?","Have you a sister do?","You have a sister?"],1]
+],
+sp:["Say if you have a pet, and describe your friend's pet using 'has'.","Uy hayvoningiz bor-yo'qligini ayting va do'stingizning uy hayvonini 'has' bilan tasvirlang."],
+ls:["Class survey: ask 'Do you have a pet?' and count the answers.","Sinf so'rovi: 'Uy hayvoningiz bormi?' deb so'rang va javoblarni sanang.",
+"In pairs, ask about each other's pets.","Juftlikda bir-biringizning uy hayvonlaringiz haqida so'rang."]
+},
+
+{d:13,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",
+t:"The Imperative — Commands",tu:"Buyruq gap",
+v:[
+["open","ochmoq","Open the door."],
+["close","yopmoq","Close the window."],
+["come here","bu yerga kel","Come here, please."],
+["stand up","o'rningdan tur","Stand up, please."],
+["sit down","o'tir","Sit down, everyone."],
+["take","olmoq","Take your book."],
+["give","bermoq","Give me the pen."],
+["put","qo'ymoq","Put the book on the desk."],
+["write","yozmoq","Write your name here."],
+["don't run","yugurma","Don't run in the classroom."]
+],
+dl:[
+["Teacher","Open your books, please.","Kitoblaringizni oching, iltimos."],
+["Student","OK. What page?","Xo'p. Qaysi bet?"],
+["Teacher","Page ten. Don't talk, please. Listen.","O'ninchi bet. Gaplashmang, iltimos. Tinglang."]
+],
+g:["The Imperative",
+"To give an instruction, use the plain verb with no subject: Open the door. Sit down. For a negative instruction, add 'Don't': Don't run. Don't talk.",
+"Buyruq gap",
+"Ko'rsatma berish uchun fe'lning oddiy shakli, egasiz ishlatiladi: Open the door. Sit down. Salbiy ko'rsatma uchun 'Don't' qo'shiladi: Don't run. Don't talk."],
+qz:[
+["Choose the correct imperative.",["You open the door.","Open the door.","You opening the door.","Opens the door."],1],
+["Choose the correct negative imperative.",["You don't run.","Don't run.","No run.","Not run."],1],
+["'O'tir' in English is ___.",["Stand up","Sit down","Come here","Open"],1],
+["Which sentence is an imperative?",["She opens the door.","Open the door.","She is opening the door.","Did she open the door?"],1]
+],
+sp:["Give your partner 3 commands (e.g. 'Stand up', 'Open your book').","Sherigingizga 3 ta buyruq bering."],
+ls:["Play 'Simon Says' using commands from this unit.","Bu bo'limdagi buyruqlar bilan 'Simon Says' o'yinini o'ynang.",
+"In pairs, one gives 5 commands, the other performs them.","Juftlikda bir kishi 5 ta buyruq beradi, ikkinchisi bajaradi."]
+},
+
+{d:14,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",
+t:"Plural Nouns",tu:"Ko'plik otlar",
+v:[
+["box","quti","This is a box."],
+["boxes","qutilar","These are boxes."],
+["baby","chaqaloq","This is a baby."],
+["babies","chaqaloqlar","These are babies."],
+["child","bola","This is a child."],
+["children","bolalar","These are children."],
+["man","erkak","This is a man."],
+["men","erkaklar","These are men."],
+["woman","ayol","This is a woman."],
+["women","ayollar","These are women."]
+],
+dl:[
+["Teacher","How many children are there?","Nechta bola bor?"],
+["Student","There are three children.","Uchta bola bor."],
+["Teacher","Good! And how many boxes?","Yaxshi! Va nechta quti?"],
+["Student","There are two boxes.","Ikkita quti bor."]
+],
+g:["Plural Nouns",
+"Most nouns just add -s: box → boxes. Some words are irregular and change completely: child → children, man → men, woman → women. There is no shortcut — you memorize these through practice.",
+"Ko'plik otlar",
+"Ko'pchilik otlarga shunchaki -s qo'shiladi: box → boxes. Ba'zi so'zlar butunlay istisno: child → children, man → men, woman → women. Bu yerda yo'l yo'q — bularni mashq orqali yodlash kerak."],
+qz:[
+["What is the plural of 'box'?",["Boxs","Boxes","Box's","Boxies"],1],
+["What is the plural of 'child'?",["Childs","Childes","Children","Childies"],2],
+["What is the plural of 'man'?",["Mans","Men","Manes","Mens"],1],
+["What is the plural of 'woman'?",["Womans","Women","Woman's","Womenes"],1]
+],
+sp:["Count children, men, and women in a picture (or around you) using the correct plural.","Rasmda (yoki atrofingizda) bola, erkak va ayollarni to'g'ri ko'plik bilan sanang."],
+ls:["Plural bingo: teacher says a singular word, students shout the plural.","Ko'plik bingo: o'qituvchi birlik so'zni aytadi, o'quvchilar ko'plikni qichqiradi.",
+"In pairs, quiz each other on singular/plural pairs from this unit.","Juftlikda bu bo'limdagi birlik/ko'plik juftliklarini bir-biringizga so'rang."]
+},
+
+{d:15,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",rev:true,
+t:"Week 3 Review",tu:"3-hafta Takrorlash",
+qz:[
+["Choose the correct sentence.",["She can sings.","She can sing.","She cans sing.","She can singing."],1],
+["Choose the correct word: 'She ___ a cat.'",["have","has","having","haves"],1],
+["Choose the correct imperative.",["You open the door.","Open the door.","You opening the door.","Opens the door."],1],
+["What is the plural of 'child'?",["Childs","Childes","Children","Childies"],2],
+["Choose the correct negative.",["He not can fly.","He can't fly.","He don't can fly.","He cann't fly."],1],
+["Choose the correct question.",["Does you have a sister?","Do you have a sister?","Have you a sister do?","You have a sister?"],1],
+["Choose the correct negative imperative.",["You don't run.","Don't run.","No run.","Not run."],1],
+["What is the plural of 'man'?",["Mans","Men","Manes","Mens"],1]
+],
+sp:["Talk about what you can do, your pet, and give 2 classroom commands.","Nima qila olishingiz, uy hayvoningiz haqida gapiring va 2 ta sinf buyrug'ini bering."],
+ls:["Class review relay: can, have, imperatives, plurals mixed quiz.","Sinf takrorlash estafetasi: can, have, buyruq va ko'plik aralash so'rovi.",
+"In pairs, review the week using can/have/imperatives/plurals.","Juftlikda haftani can/have/buyruq/ko'plik bilan takrorlang."]
+}
 
 ];
 
