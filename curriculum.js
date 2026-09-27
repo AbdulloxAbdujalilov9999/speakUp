@@ -1,6 +1,8 @@
-// SpeakUp curriculum — REBUILD in progress (started fresh on the deduplicated
-// Round-Up 1/2/3 grammar sequence in grammar.js; see that file's header).
-// Only Week 1 is built so far — more weeks are added incrementally.
+// SpeakUp curriculum — 90 days, 18 weeks, built on the deduplicated
+// Round-Up 1/2/3 grammar sequence in grammar.js (see that file's header).
+// All 34 grammar points are introduced by Day 60; Days 61-90 apply that
+// complete toolkit to thematic vocabulary and fluency practice rather than
+// introducing new grammar.
 //
 // Pedagogy note (fixes the "how does a zero-starter know 'I have' means
 // anything?" problem from the previous version): a day's vocabulary examples
