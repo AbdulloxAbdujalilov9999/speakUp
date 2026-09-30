@@ -66,132 +66,6 @@ ls:["Stand up and greet 3 classmates using different greetings.","O'rningizdan t
 },
 
 {d:2,w:1,wt:"First Steps in English",wtUz:"Ingliz tiliga birinchi qadam",
-t:"The Alphabet & \"This is a...\"",tu:"Alifbo va \"This is a...\" iborasi",
-v:[
-["cat","mushuk","This is a cat."],
-["dog","it","This is a dog."],
-["book","kitob","This is a book."],
-["pen","ruchka","This is a pen."],
-["bag","sumka","This is a bag."],
-["sun","quyosh","This is the sun."],
-["apple","olma","This is an apple."],
-["egg","tuxum","This is an egg."],
-["ball","to'p","This is a ball."],
-["hat","shlyapa","This is a hat."]
-],
-dl:[
-["Teacher","What's this?","Bu nima?"],
-["Student","It's a book.","Bu kitob."],
-["Teacher","Is this a pen?","Bu ruchkami?"],
-["Student","No, it's a bag.","Yo'q, bu sumka."],
-["Teacher","Good! What's this?","Yaxshi! Bu nima?"],
-["Student","It's an apple.","Bu olma."]
-],
-g:["A Useful Pattern: \"This is a/an...\" / \"It's a/an...\"",
-"For now, just memorize this pattern for naming objects: 'This is a ___' or 'It's a ___'. Use 'an' instead of 'a' before words that start with a vowel sound: an apple, an egg. We'll learn the real grammar rule for 'a/an' and 'to be' soon — for now, just use the whole pattern to name things around you.",
-"Foydali qolip: \"This is a/an...\" / \"It's a/an...\"",
-"Hozircha narsalarni nomlash uchun shu qolipni yodlab oling: 'This is a ___' yoki 'It's a ___'. Unli tovush bilan boshlanuvchi so'zlardan oldin 'a' o'rniga 'an' ishlatiladi: an apple, an egg. 'A/an' va 'to be' ning haqiqiy grammatik qoidasini tez orada o'rganamiz — hozircha butun qolipni narsalarni nomlash uchun ishlating."],
-qz:[
-["How many letters are in the English alphabet?",["24","25","26","27"],2],
-["'Mushuk' in English is ___.",["Dog","Cat","Book","Bag"],1],
-["Choose the correct pattern to name an object.",["This a book.","This is a book.","This book is.","Is this book."],1],
-["Choose 'a' or 'an': '___ apple'",["a","an","the","some"],1]
-],
-sp:["Point to 5 objects near you and say 'This is a ___' for each one.","Atrofingizdagi 5 ta buyumga ishora qilib, har biri uchun 'This is a ___' deng."],
-ls:["Sing the ABC song together as a class.","Sinf bilan birga ABC qo'shig'ini kuylang.",
-"In pairs, take turns pointing at objects and asking 'What's this?'","Juftlikda navbatma-navbat buyumlarga ishora qilib 'Bu nima?' deb so'rang."]
-},
-
-{d:3,w:1,wt:"First Steps in English",wtUz:"Ingliz tiliga birinchi qadam",
-t:"Numbers 1-10 & \"I have...\"",tu:"1 dan 10 gacha sonlar va \"I have...\" iborasi",
-v:[
-["one","bir","I have one book."],
-["two","ikki","I have two pens."],
-["three","uch","I have three apples."],
-["four","to'rt","I have four balls."],
-["five","besh","I have five hats."],
-["six","olti","I have six books."],
-["seven","yetti","I have seven pens."],
-["eight","sakkiz","I have eight apples."],
-["nine","to'qqiz","I have nine balls."],
-["ten","o'n","I have ten books."]
-],
-dl:[
-["Teacher","How many pens do you have?","Nechta ruchkangiz bor?"],
-["Student","I have three pens.","Mening uchta ruchkam bor."],
-["Teacher","How many books do you have?","Nechta kitobingiz bor?"],
-["Student","I have five books.","Mening beshta kitobim bor."]
-],
-g:["A Useful Pattern: \"I have...\"",
-"Memorize this pattern to talk about what you have: 'I have ___'. Add a number before the thing to say how many: I have two pens. We'll learn the full grammar rule for 'have/has' (and how it changes for he/she) in a later lesson — for now, just use 'I have' to count and describe your things.",
-"Foydali qolip: \"I have...\"",
-"Nimangiz borligini aytish uchun shu qolipni yodlab oling: 'I have ___'. Nechta ekanini aytish uchun narsadan oldin son qo'shiladi: I have two pens. 'Have/has' ning to'liq qoidasini (va u he/she bilan qanday o'zgarishini) keyingi darslarda o'rganamiz — hozircha 'I have' dan narsalaringizni sanash va tasvirlash uchun foydalaning."],
-qz:[
-["What number is 'five'?",["3","4","5","6"],2],
-["'O'n' in English is ___.",["Nine","Ten","Eight","Seven"],1],
-["Choose the correct pattern: '___ two pens.'",["I has","I have","I am","I is"],1],
-["What comes after 'seven'?",["Six","Eight","Nine","Ten"],1]
-],
-sp:["Count 5 things you have with you and say 'I have ___' for each.","Yoningizdagi 5 ta narsani sanang va har biri uchun 'I have ___' deng."],
-ls:["Count around the room — each student says the next number from 1 to 10.","Xona bo'ylab sanang — har bir o'quvchi navbatma-navbat 1 dan 10 gacha keyingi sonni aytadi.",
-"In pairs, ask 'How many ___ do you have?' about pens, books, and bags.","Juftlikda ruchka, kitob va sumkalar haqida 'Nechtasi bor?' deb so'rang."]
-},
-
-{d:4,w:1,wt:"First Steps in English",wtUz:"Ingliz tiliga birinchi qadam",
-t:"Classroom Words & Instructions",tu:"Sinf so'zlari va topshiriqlar",
-v:[
-["notebook","daftar","Open your notebook."],
-["desk","parta","Sit at your desk."],
-["chair","stul","Sit on the chair."],
-["board","doska","Look at the board."],
-["stand up","o'rningdan tur","Stand up, please."],
-["sit down","o'tir","Sit down, everyone."],
-["listen","tinglamoq","Listen to the teacher."],
-["look","qaramoq","Look at the board."],
-["be quiet","jim bo'l","Be quiet, please."],
-["raise your hand","qo'lingizni ko'taring","Raise your hand if you know the answer."]
-],
-dl:[
-["Teacher","Good morning, class! Stand up, please.","Xayrli tong, sinf! O'rningizdan turing, iltimos."],
-["Students","Good morning, teacher!","Xayrli tong, o'qituvchi!"],
-["Teacher","Sit down. Open your notebook.","O'tiring. Daftaringizni oching."],
-["Student","I don't have a pen.","Mening ruchkam yo'q."],
-["Teacher","Here you are. Now listen, please.","Mana. Endi tinglang, iltimos."]
-],
-g:["A Useful Pattern: Classroom Commands",
-"These short commands are fixed phrases teachers use in every lesson — memorize them as whole chunks: Stand up. Sit down. Listen. Look. Be quiet. Raise your hand. We'll learn the grammar behind commands (the imperative) properly in a later lesson.",
-"Foydali qolip: sinf buyruqlari",
-"Bu qisqa buyruqlar o'qituvchilar har bir darsda ishlatadigan tayyor iboralar — ularni butun bo'lak sifatida yodlab oling: Stand up. Sit down. Listen. Look. Be quiet. Raise your hand. Buyruqlar ortidagi grammatikani (imperativni) keyingi darsda to'liq o'rganamiz."],
-qz:[
-["What do you say to ask someone to be quiet and listen?",["Stand up","Listen","Sit down","Raise your hand"],1],
-["'Daftar' in English is ___.",["Book","Notebook","Pen","Bag"],1],
-["What do you do when you know the answer?",["Sit down","Be quiet","Raise your hand","Stand up"],2],
-["Choose the command for standing up.",["Sit down","Stand up","Listen","Look"],1]
-],
-sp:["Give your partner 3 classroom commands (e.g. 'Stand up', 'Open your notebook').","Sherigingizga 3 ta sinf buyrug'ini bering (masalan, 'Stand up', 'Open your notebook')."],
-ls:["Play 'Simon Says' using classroom commands (stand up, sit down, listen, look).","Sinf buyruqlari bilan 'Simon Says' o'yinini o'ynang.",
-"In pairs, one student gives 5 commands, the other performs them, then switch.","Juftlikda bir o'quvchi 5 ta buyruq beradi, ikkinchisi bajaradi, so'ngra almashing."]
-},
-
-{d:5,w:1,wt:"First Steps in English",wtUz:"Ingliz tiliga birinchi qadam",rev:true,
-t:"Week 1 Review",tu:"1-hafta Takrorlash",
-qz:[
-["How do you say 'Salom' in English?",["Goodbye","Hello","Sorry","No"],1],
-["Choose the correct pattern to name an object.",["This a book.","This is a book.","This book is.","Is this book."],1],
-["'O'n' in English is ___.",["Nine","Ten","Eight","Seven"],1],
-["What do you say to ask someone to be quiet and listen?",["Stand up","Listen","Sit down","Raise your hand"],1],
-["Choose 'a' or 'an': '___ apple'",["a","an","the","some"],1],
-["Choose the correct pattern: '___ two pens.'",["I has","I have","I am","I is"],1],
-["What is the opposite of 'Yes'?",["No","Please","Sorry","Hello"],0],
-["'Daftar' in English is ___.",["Book","Notebook","Pen","Bag"],1]
-],
-sp:["Introduce yourself fully: say hello, your name, count from 1 to 10, and name 3 things in your bag using 'I have'.","O'zingizni to'liq tanishtiring: salomlashing, ismingizni ayting, 1 dan 10 gacha sanang va sumkangizdagi 3 ta narsani 'I have' bilan ayting."],
-ls:["Quick class quiz: call out a number or object, students respond fast in English.","Tezkor sinf so'rovi: son yoki buyumni ayting, o'quvchilar tezda ingliz tilida javob beradi.",
-"In pairs, review the week: greet each other, name objects, count, and give commands.","Juftlikda haftani takrorlang: bir-biringizni salomlang, buyumlarni nomlang, sanang va buyruq bering."]
-}
-,
-
-{d:6,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",
 t:"Pronouns & The Verb 'To Be'",tu:"Olmoshlar va 'To Be' fe'li",
 v:[
 ["I","men","I am a student."],
@@ -211,15 +85,15 @@ v:[
 ["friend","do'st","You are my friend."]
 ],
 dl:[
-["Teacher","Who is this?","Bu kim?"],
-["Student","This is my friend. He is a student.","Bu mening do'stim. U o'quvchi."],
-["Teacher","Are you a teacher?","Siz o'qituvchimisiz?"],
-["Student","No, I am a student.","Yo'q, men o'quvchiman."]
+["Teacher","Are you a student?","Siz o'quvchimisiz?"],
+["Student","Yes, I am a student. He is my friend.","Ha, men o'quvchiman. U mening do'stim."],
+["Teacher","Is he a student too?","U ham o'quvchimi?"],
+["Student","Yes, he is a student too. We are friends.","Ha, u ham o'quvchi. Biz do'stmiz."]
 ],
 g:["The Verb 'To Be' — am / is / are",
-"Now let's learn the real grammar behind sentences like 'This is a cat': the verb 'to be'. Use 'am' with I, 'is' with he/she/it, 'are' with you/we/they: I am a student. He is a boy. They are teachers.",
+"Every English sentence needs a verb, even to say who someone is. The verb 'to be' connects 'I/you/he...' to a name or description: use 'am' with I, 'is' with he/she/it, 'are' with you/we/they. I am a student. He is a boy. They are teachers.",
 "'To Be' fe'li — am / is / are",
-"Endi 'This is a cat' kabi gaplar ortidagi haqiqiy grammatikani o'rganamiz: 'to be' fe'li. I bilan 'am', he/she/it bilan 'is', you/we/they bilan 'are' ishlatiladi: I am a student. He is a boy. They are teachers."],
+"Har bir ingliz gapida fe'l bo'lishi kerak, hatto kimningdir kimligini aytish uchun ham. 'To be' fe'li 'I/you/he...' ni ism yoki tasvir bilan bog'laydi: I bilan 'am', he/she/it bilan 'is', you/we/they bilan 'are' ishlatiladi. I am a student. He is a boy. They are teachers."],
 qz:[
 ["Choose the correct word: 'She ___ a teacher.'",["am","is","are","be"],1],
 ["Choose the correct word: 'They ___ students.'",["am","is","are","be"],2],
@@ -231,7 +105,44 @@ ls:["Point at classmates and say 'He is...' or 'She is...' with their name.","Si
 "In pairs, describe 3 people in the room using am/is/are.","Juftlikda xonadagi 3 kishini am/is/are yordamida tasvirlang."]
 },
 
-{d:7,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",
+{d:3,w:1,wt:"First Steps in English",wtUz:"Ingliz tiliga birinchi qadam",
+t:"Naming Things — A / An",tu:"Narsalarni nomlash — A / An",
+v:[
+["cat","mushuk","It is a cat."],
+["dog","it","It is a dog."],
+["book","kitob","It is a book."],
+["pen","ruchka","It is a pen."],
+["bag","sumka","It is a bag."],
+["sun","quyosh","It is the sun."],
+["apple","olma","It is an apple."],
+["egg","tuxum","It is an egg."],
+["ball","to'p","It is a ball."],
+["hat","shlyapa","It is a hat."]
+],
+dl:[
+["Teacher","What is it?","Bu nima?"],
+["Student","It is a book.","Bu kitob."],
+["Teacher","Is it a pen?","Bu ruchkami?"],
+["Student","No, it is a bag.","Yo'q, bu sumka."],
+["Teacher","Good! What is it?","Yaxshi! Bu nima?"],
+["Student","It is an apple.","Bu olma."]
+],
+g:["A / An",
+"Now that you know 'it is', use it to name things: 'a' before a word that starts with a consonant sound (a cat, a dog, a book), 'an' before a word that starts with a vowel sound (an apple, an egg). It's about the sound, not just the letter.",
+"A / An",
+"Endi 'it is' ni bilganingiz uchun, undan narsalarni nomlash uchun foydalaning: undosh tovush bilan boshlanuvchi so'zdan oldin 'a' (a cat, a dog, a book), unli tovush bilan boshlanuvchidan oldin 'an' (an apple, an egg) ishlatiladi. Bu harfga emas, tovushga bog'liq."],
+qz:[
+["How many letters are in the English alphabet?",["24","25","26","27"],2],
+["'Mushuk' in English is ___.",["Dog","Cat","Book","Bag"],1],
+["Choose the correct pattern to name an object.",["It a book.","It is a book.","It book is.","Is it book."],1],
+["Choose 'a' or 'an': '___ apple'",["a","an","the","some"],1]
+],
+sp:["Point to 5 objects near you and say 'It is a ___' for each one.","Atrofingizdagi 5 ta buyumga ishora qilib, har biri uchun 'It is a ___' deng."],
+ls:["Sing the ABC song together as a class.","Sinf bilan birga ABC qo'shig'ini kuylang.",
+"In pairs, take turns pointing at objects and asking 'What is it?'","Juftlikda navbatma-navbat buyumlarga ishora qilib 'Bu nima?' deb so'rang."]
+},
+
+{d:4,w:1,wt:"First Steps in English",wtUz:"Ingliz tiliga birinchi qadam",
 t:"This / That / These / Those",tu:"This / That / These / Those",
 v:[
 ["this","bu (yaqin)","This is a table."],
@@ -266,42 +177,97 @@ ls:["Classroom scavenger hunt: point and say 'This is a...' or 'That is a...' fo
 "In pairs, ask 'Is this a...?' and 'Are those...?' about classroom objects.","Juftlikda sinf buyumlari haqida 'Is this a...?' va 'Are those...?' deb so'rang."]
 },
 
-{d:8,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",
-t:"There is / There are",tu:"There is / There are",
-v:[
-["there is","bor (birlik)","There is a lamp on the table."],
-["there are","bor (ko'plik)","There are two windows."],
-["room","xona","There is a nice room."],
-["wall","devor","There is a picture on the wall."],
-["picture","surat","There is a picture on the wall."],
-["lamp","chiroq","There is a lamp on the desk."],
-["shelf","tokcha","There is a shelf in my room."],
-["two","ikki","There are two windows."],
-["three","uch","There are three chairs."],
-["four","to'rt","There are four books."]
-],
-dl:[
-["Teacher","Is there a lamp in your room?","Xonangizda chiroq bormi?"],
-["Student","Yes, there is a lamp.","Ha, chiroq bor."],
-["Teacher","Are there any pictures?","Suratlar bormi?"],
-["Student","Yes, there are two pictures.","Ha, ikkita surat bor."]
-],
-g:["There is / There are",
-"Use 'There is' with one thing and 'There are' with more than one thing, to say something exists: There is a lamp on the table. There are two windows.",
-"There is / There are",
-"Bitta narsa bilan 'There is', bir nechta narsa bilan 'There are' ishlatiladi va biror narsaning mavjudligini bildiradi: There is a lamp on the table. There are two windows."],
+{d:5,w:1,wt:"First Steps in English",wtUz:"Ingliz tiliga birinchi qadam",
+rev:true,t:"Week 1 Review",tu:"1-hafta Takrorlash",
 qz:[
-["Choose the correct sentence.",["There is two windows.","There are two windows.","There a window.","Windows there are."],1],
-["Choose the correct question.",["Is there a lamp?","Is there lamps?","Are there a lamp?","There is a lamp?"],0],
-["'Devorda surat bor' in English is ___.",["There is a picture on the wall.","There are a picture on the wall.","There a picture is on the wall.","Picture there is on the wall."],0],
-["Which form goes with plural nouns?",["There is","There are","There has","There have"],1]
+["How do you say 'Salom' in English?",["Goodbye","Hello","Sorry","No"],1],
+["Choose the correct word: 'She ___ a teacher.'",["am","is","are","be"],1],
+["Choose the correct pattern to name an object.",["It a book.","It is a book.","It book is.","Is it book."],1],
+["Choose the word for one thing near you.",["That","This","These","Those"],1],
+["What is the opposite of 'Yes'?",["No","Please","Sorry","Hello"],0],
+["Choose 'a' or 'an': '___ apple'",["a","an","the","some"],1],
+["Choose the correct word: 'They ___ students.'",["am","is","are","be"],2],
+["Choose the correct sentence.",["This are my shoes.","These are my shoes.","This is my shoes.","These is my shoes."],1]
 ],
-sp:["Describe your room: say what there is and how many things there are.","Xonangizni tasvirlab bering: nima borligi va nechtasi borligini ayting."],
-ls:["Nature/room picture description: show a picture, students say what there is/are.","Rasm tasviri: rasm ko'rsating, o'quvchilar there is/are bilan gapirsin.",
-"In pairs, describe your bedroom using 'There is/are'.","Juftlikda yotoqxonangizni 'There is/are' bilan tasvirlang."]
+sp:["Introduce yourself, then point at things near and far, saying what they are with it is / this is / that is.","O'zingizni tanishtiring, so'ngra yaqin va uzoqdagi narsalarga ishora qilib, ular nima ekanini 'it is / this is / that is' bilan ayting."],
+ls:["Quick class quiz: teacher points at a person or object, students respond fast in English.","Tezkor sinf so'rovi: o'qituvchi odam yoki buyumga ishora qiladi, o'quvchilar tezda ingliz tilida javob beradi.",
+"In pairs, review the week: greet each other, say who you are, and name objects near and far.","Juftlikda haftani takrorlang: bir-biringizni salomlang, kimligingizni ayting va yaqin-uzoqdagi buyumlarni nomlang."]
 },
 
-{d:9,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",
+{d:6,w:2,wt:"Counting & Describing Things",wtUz:"Sanash va narsalarni tasvirlash",
+t:"Numbers 1-10 & Plural Nouns",tu:"1 dan 10 gacha sonlar va ko'plik otlar",
+v:[
+["one","bir","This is one cat."],
+["two","ikki","These are two cats."],
+["three","uch","These are three boxes."],
+["four","to'rt","These are four books."],
+["five","besh","These are five pens."],
+["box","quti","This is a box."],
+["boxes","qutilar","These are boxes."],
+["baby","chaqaloq","This is a baby."],
+["babies","chaqaloqlar","These are babies."],
+["child","bola","This is a child."],
+["children","bolalar","These are children."],
+["man","erkak","This is a man."],
+["men","erkaklar","These are men."],
+["woman","ayol","This is a woman."],
+["women","ayollar","These are women."]
+],
+dl:[
+["Teacher","Look! This is one box.","Qarang! Bu bitta quti."],
+["Student","And these are three boxes!","Va bular uch ta quti!"],
+["Teacher","Very good! This is one child. These are three children.","Juda yaxshi! Bu bitta bola. Bular uch ta bola."]
+],
+g:["Plural Nouns",
+"Most nouns just add -s: box → boxes, cat → cats. Some words are irregular and change completely: child → children, man → men, woman → women. Practice these often, so you remember them.",
+"Ko'plik otlar",
+"Ko'pchilik otlarga shunchaki -s qo'shiladi: box → boxes, cat → cats. Ba'zi so'zlar butunlay istisno: child → children, man → men, woman → women. Bularni tez-tez mashq qiling, shunda esda qoladi."],
+qz:[
+["What is the plural of 'box'?",["Boxs","Boxes","Box's","Boxies"],1],
+["What is the plural of 'child'?",["Childs","Childes","Children","Childies"],2],
+["What is the plural of 'man'?",["Mans","Men","Manes","Mens"],1],
+["What is the plural of 'woman'?",["Womans","Women","Woman's","Womenes"],1]
+],
+sp:["Count 5 things around you, saying each number and whether it's singular or plural.","Atrofingizdagi 5 ta narsani sanang, har bir son va u birlikmi yoki ko'plikmi ekanini ayting."],
+ls:["Plural bingo: teacher says a singular word, students shout the plural.","Ko'plik bingo: o'qituvchi birlik so'zni aytadi, o'quvchilar ko'plikni qichqiradi.",
+"In pairs, count children, men, and women in a picture using the correct plural.","Juftlikda rasmdagi bola, erkak va ayollarni to'g'ri ko'plik bilan sanang."]
+},
+
+{d:7,w:2,wt:"Counting & Describing Things",wtUz:"Sanash va narsalarni tasvirlash",
+t:"Have / Has — Pets",tu:"Have / Has — uy hayvonlari",
+v:[
+["have","bor (I/you/we/they)","I have a dog."],
+["has","bor (he/she/it)","She has a cat."],
+["don't have","yo'q (I/you/we/they)","I don't have a pet."],
+["doesn't have","yo'q (he/she/it)","He doesn't have a bike."],
+["pet","uy hayvoni","This is my pet."],
+["dog","it","I have a dog."],
+["cat","mushuk","She has a cat."],
+["fish","baliq","He has a fish."],
+["bird","qush","They have a bird."],
+["rabbit","quyon","We have a rabbit."]
+],
+dl:[
+["Teacher","Do you have a pet?","Uy hayvoningiz bormi?"],
+["Student","Yes, I have a dog. Does she have a pet?","Ha, mening itim bor. Uning uy hayvoni bormi?"],
+["Teacher","Yes, she has a cat.","Ha, uning mushugi bor."]
+],
+g:["Have / Has",
+"Use 'have' with I/you/we/they and 'has' with he/she/it: I have a dog. She has a cat. Negative: don't have / doesn't have.",
+"Have / Has",
+"I/you/we/they bilan 'have', he/she/it bilan 'has' ishlatiladi: I have a dog. She has a cat. Inkor: don't have / doesn't have."],
+qz:[
+["Choose the correct word: 'She ___ a cat.'",["have","has","having","haves"],1],
+["Choose the correct word: 'I ___ a dog.'",["has","have","having","haves"],1],
+["Choose the correct negative: 'He ___ a pen.'",["don't have","doesn't have","not have","haven't has"],1],
+["Choose the correct question.",["Does you have a sister?","Do you have a sister?","Have you a sister do?","You have a sister?"],1]
+],
+sp:["Say if you have a pet, and describe your friend's pet using 'has'.","Uy hayvoningiz bor-yo'qligini ayting va do'stingizning uy hayvonini 'has' bilan tasvirlang."],
+ls:["Class survey: ask 'Do you have a pet?' and count the answers.","Sinf so'rovi: 'Uy hayvoningiz bormi?' deb so'rang va javoblarni sanang.",
+"In pairs, ask about each other's pets.","Juftlikda bir-biringizning uy hayvonlaringiz haqida so'rang."]
+},
+
+{d:8,w:2,wt:"Counting & Describing Things",wtUz:"Sanash va narsalarni tasvirlash",
 t:"Possessives — my, your, his, her",tu:"Egalik olmoshlari — my, your, his, her",
 v:[
 ["my","mening","This is my mother."],
@@ -336,25 +302,59 @@ ls:["Show a family photo (or draw one) and name 3 family members using 'my'.","O
 "In pairs, point at each other's things and practice 'Is this your...?'","Juftlikda bir-biringizning narsalaringizga ishora qilib 'Is this your...?' deb mashq qiling."]
 },
 
-{d:10,w:2,wt:"Me & My Friends",wtUz:"Men va do'stlarim",rev:true,
-t:"Week 2 Review",tu:"2-hafta Takrorlash",
-qz:[
-["Choose the correct word: 'She ___ a teacher.'",["am","is","are","be"],1],
-["Choose the correct sentence.",["This are my shoes.","These are my shoes.","This is my shoes.","These is my shoes."],1],
-["Choose the correct sentence.",["There is two windows.","There are two windows.","There a window.","Windows there are."],1],
-["'Mening onam' in English is ___.",["Your mother","My mother","His mother","Her mother"],1],
-["Choose the correct word: 'They ___ students.'",["am","is","are","be"],2],
-["'Ana u stul' in English is ___.",["This is a chair.","That is a chair.","These are chairs.","Those are chairs."],1],
-["Choose the correct question.",["Is there a lamp?","Is there lamps?","Are there a lamp?","There is a lamp?"],0],
-["Choose the correct possessive for a boy's sister.",["Her sister","His sister","Their sister","Our sister"],1]
+{d:9,w:2,wt:"Counting & Describing Things",wtUz:"Sanash va narsalarni tasvirlash",
+t:"There is / There are",tu:"There is / There are",
+v:[
+["there is","bor (birlik)","There is a lamp on the table."],
+["there are","bor (ko'plik)","There are two windows."],
+["room","xona","There is a nice room."],
+["wall","devor","There is a picture on the wall."],
+["picture","surat","There is a picture on the wall."],
+["lamp","chiroq","There is a lamp on the desk."],
+["shelf","tokcha","There is a shelf in my room."],
+["two","ikki","There are two windows."],
+["three","uch","There are three chairs."],
+["four","to'rt","There are four books."]
 ],
-sp:["Describe yourself, your room, and your family using this week's grammar.","O'zingizni, xonangizni va oilangizni shu haftaning grammatikasi bilan tasvirlang."],
-ls:["Class review game: teacher points at people/objects, students respond with the right pattern.","Sinf takrorlash o'yini: o'qituvchi odam/buyumlarga ishora qiladi, o'quvchilar to'g'ri qolip bilan javob beradi.",
-"In pairs, review the week: describe people, objects, and your room.","Juftlikda haftani takrorlang: odamlar, buyumlar va xonangizni tasvirlang."]
-}
-,
+dl:[
+["Teacher","Is there a lamp in your room?","Xonangizda chiroq bormi?"],
+["Student","Yes, there is a lamp.","Ha, chiroq bor."],
+["Teacher","Are there any pictures?","Suratlar bormi?"],
+["Student","Yes, there are two pictures.","Ha, ikkita surat bor."]
+],
+g:["There is / There are",
+"Use 'There is' with one thing and 'There are' with more than one thing, to say something exists: There is a lamp on the table. There are two windows.",
+"There is / There are",
+"Bitta narsa bilan 'There is', bir nechta narsa bilan 'There are' ishlatiladi va biror narsaning mavjudligini bildiradi: There is a lamp on the table. There are two windows."],
+qz:[
+["Choose the correct sentence.",["There is two windows.","There are two windows.","There a window.","Windows there are."],1],
+["Choose the correct question.",["Is there a lamp?","Is there lamps?","Are there a lamp?","There is a lamp?"],0],
+["'Devorda surat bor' in English is ___.",["There is a picture on the wall.","There are a picture on the wall.","There a picture is on the wall.","Picture there is on the wall."],0],
+["Which form goes with plural nouns?",["There is","There are","There has","There have"],1]
+],
+sp:["Describe your room: say what there is and how many things there are.","Xonangizni tasvirlab bering: nima borligi va nechtasi borligini ayting."],
+ls:["Picture description: show a picture, students say what there is/are.","Rasm tasviri: rasm ko'rsating, o'quvchilar there is/are bilan gapirsin.",
+"In pairs, describe your bedroom using 'There is/are'.","Juftlikda yotoqxonangizni 'There is/are' bilan tasvirlang."]
+},
 
-{d:11,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",
+{d:10,w:2,wt:"Counting & Describing Things",wtUz:"Sanash va narsalarni tasvirlash",
+rev:true,t:"Week 2 Review",tu:"2-hafta Takrorlash",
+qz:[
+["What is the plural of 'child'?",["Childs","Childes","Children","Childies"],2],
+["Choose the correct word: 'She ___ a cat.'",["have","has","having","haves"],1],
+["'Mening onam' in English is ___.",["Your mother","My mother","His mother","Her mother"],1],
+["Choose the correct sentence.",["There is two windows.","There are two windows.","There a window.","Windows there are."],1],
+["What is the plural of 'man'?",["Mans","Men","Manes","Mens"],1],
+["Choose the correct negative: 'He ___ a pen.'",["don't have","doesn't have","not have","haven't has"],1],
+["Choose the correct possessive for a boy's sister.",["Her sister","His sister","Their sister","Our sister"],1],
+["Choose the correct question.",["Is there a lamp?","Is there lamps?","Are there a lamp?","There is a lamp?"],0]
+],
+sp:["Count some things, say if you have a pet, describe your family, and describe your room.","Ba'zi narsalarni sanang, uy hayvoningiz bor-yo'qligini ayting, oilangiz va xonangizni tasvirlang."],
+ls:["Class review game: teacher points at people/objects, students respond with the right pattern.","Sinf takrorlash o'yini: o'qituvchi odam/buyumlarga ishora qiladi, o'quvchilar to'g'ri qolip bilan javob beradi.",
+"In pairs, review the week: count, describe pets, family, and your room.","Juftlikda haftani takrorlang: sanang, uy hayvoni, oila va xonangizni tasvirlang."]
+},
+
+{d:11,w:3,wt:"Actions, Commands & My World",wtUz:"Harakatlar, buyruqlar va mening dunyom",
 t:"Can — Ability",tu:"Can — qobiliyat",
 v:[
 ["can","qila oladi","I can swim."],
@@ -388,63 +388,30 @@ ls:["'Can you...?' mingle: ask classmates what they can do.","'Can you...?' aral
 "In pairs, find 2 things you can both do.","Juftlikda ikkalangiz ham qila oladigan 2 ta ishni toping."]
 },
 
-{d:12,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",
-t:"Have / Has — Pets",tu:"Have / Has — uy hayvonlari",
-v:[
-["have","bor (I/you/we/they)","I have a dog."],
-["has","bor (he/she/it)","She has a cat."],
-["don't have","yo'q (I/you/we/they)","I don't have a pet."],
-["doesn't have","yo'q (he/she/it)","He doesn't have a bike."],
-["pet","uy hayvoni","This is my pet."],
-["dog","it","I have a dog."],
-["cat","mushuk","She has a cat."],
-["fish","baliq","He has a fish."],
-["bird","qush","They have a bird."],
-["rabbit","quyon","We have a rabbit."]
-],
-dl:[
-["Teacher","Do you have a pet?","Uy hayvoningiz bormi?"],
-["Student","Yes, I have a dog. Does she have a pet?","Ha, mening itim bor. Uning uy hayvoni bormi?"],
-["Teacher","Yes, she has a cat.","Ha, uning mushugi bor."]
-],
-g:["Have / Has",
-"Use 'have' with I/you/we/they and 'has' with he/she/it: I have a dog. She has a cat. Negative: don't have / doesn't have.",
-"Have / Has",
-"I/you/we/they bilan 'have', he/she/it bilan 'has' ishlatiladi: I have a dog. She has a cat. Inkor: don't have / doesn't have."],
-qz:[
-["Choose the correct word: 'She ___ a cat.'",["have","has","having","haves"],1],
-["Choose the correct word: 'I ___ a dog.'",["has","have","having","haves"],1],
-["Choose the correct negative: 'He ___ a pen.'",["don't have","doesn't have","not have","haven't has"],1],
-["Choose the correct question.",["Does you have a sister?","Do you have a sister?","Have you a sister do?","You have a sister?"],1]
-],
-sp:["Say if you have a pet, and describe your friend's pet using 'has'.","Uy hayvoningiz bor-yo'qligini ayting va do'stingizning uy hayvonini 'has' bilan tasvirlang."],
-ls:["Class survey: ask 'Do you have a pet?' and count the answers.","Sinf so'rovi: 'Uy hayvoningiz bormi?' deb so'rang va javoblarni sanang.",
-"In pairs, ask about each other's pets.","Juftlikda bir-biringizning uy hayvonlaringiz haqida so'rang."]
-},
-
-{d:13,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",
-t:"The Imperative — Commands",tu:"Buyruq gap",
+{d:12,w:3,wt:"Actions, Commands & My World",wtUz:"Harakatlar, buyruqlar va mening dunyom",
+t:"The Imperative — Classroom Commands",tu:"Buyruq gap — sinf buyruqlari",
 v:[
 ["open","ochmoq","Open the door."],
 ["close","yopmoq","Close the window."],
 ["come here","bu yerga kel","Come here, please."],
 ["stand up","o'rningdan tur","Stand up, please."],
 ["sit down","o'tir","Sit down, everyone."],
-["take","olmoq","Take your book."],
-["give","bermoq","Give me the pen."],
-["put","qo'ymoq","Put the book on the desk."],
-["write","yozmoq","Write your name here."],
+["listen","tinglamoq","Listen to the teacher."],
+["look","qaramoq","Look at the board."],
+["be quiet","jim bo'l","Be quiet, please."],
+["raise your hand","qo'lingizni ko'taring","Raise your hand if you know the answer."],
 ["don't run","yugurma","Don't run in the classroom."]
 ],
 dl:[
-["Teacher","Open your books, please.","Kitoblaringizni oching, iltimos."],
-["Student","OK. What page?","Xo'p. Qaysi bet?"],
-["Teacher","Page ten. Don't talk, please. Listen.","O'ninchi bet. Gaplashmang, iltimos. Tinglang."]
+["Teacher","Good morning, class! Stand up, please.","Xayrli tong, sinf! O'rningizdan turing, iltimos."],
+["Students","Good morning, teacher!","Xayrli tong, o'qituvchi!"],
+["Teacher","Sit down. Open your book, please.","O'tiring. Kitobingizni oching, iltimos."],
+["Student","OK. Now listen, please.","Xo'p. Endi tinglang, iltimos."]
 ],
 g:["The Imperative",
-"To give an instruction, use the plain verb with no subject: Open the door. Sit down. For a negative instruction, add 'Don't': Don't run. Don't talk.",
+"To give an instruction, use the plain verb with no subject: Open the door. Sit down. Listen. For a negative instruction, add 'Don't': Don't run. Don't talk. This is exactly how the classroom commands you've been hearing since Day 1 are built.",
 "Buyruq gap",
-"Ko'rsatma berish uchun fe'lning oddiy shakli, egasiz ishlatiladi: Open the door. Sit down. Salbiy ko'rsatma uchun 'Don't' qo'shiladi: Don't run. Don't talk."],
+"Ko'rsatma berish uchun fe'lning oddiy shakli, egasiz ishlatiladi: Open the door. Sit down. Listen. Salbiy ko'rsatma uchun 'Don't' qo'shiladi: Don't run. Don't talk. 1-kundan beri eshitib kelayotgan sinf buyruqlari aynan shu qoida bilan tuzilgan."],
 qz:[
 ["Choose the correct imperative.",["You open the door.","Open the door.","You opening the door.","Opens the door."],1],
 ["Choose the correct negative imperative.",["You don't run.","Don't run.","No run.","Not run."],1],
@@ -452,62 +419,96 @@ qz:[
 ["Which sentence is an imperative?",["She opens the door.","Open the door.","She is opening the door.","Did she open the door?"],1]
 ],
 sp:["Give your partner 3 commands (e.g. 'Stand up', 'Open your book').","Sherigingizga 3 ta buyruq bering."],
-ls:["Play 'Simon Says' using commands from this unit.","Bu bo'limdagi buyruqlar bilan 'Simon Says' o'yinini o'ynang.",
-"In pairs, one gives 5 commands, the other performs them.","Juftlikda bir kishi 5 ta buyruq beradi, ikkinchisi bajaradi."]
+ls:["Play 'Simon Says' using classroom commands (stand up, sit down, listen, look).","Sinf buyruqlari bilan 'Simon Says' o'yinini o'ynang.",
+"In pairs, one gives 5 commands, the other performs them, then switch.","Juftlikda bir kishi 5 ta buyruq beradi, ikkinchisi bajaradi, so'ngra almashing."]
 },
 
-{d:14,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",
-t:"Plural Nouns",tu:"Ko'plik otlar",
+{d:13,w:3,wt:"Actions, Commands & My World",wtUz:"Harakatlar, buyruqlar va mening dunyom",
+t:"Classroom Objects",tu:"Sinf buyumlari",
 v:[
-["box","quti","This is a box."],
-["boxes","qutilar","These are boxes."],
-["baby","chaqaloq","This is a baby."],
-["babies","chaqaloqlar","These are babies."],
-["child","bola","This is a child."],
-["children","bolalar","These are children."],
-["man","erkak","This is a man."],
-["men","erkaklar","These are men."],
-["woman","ayol","This is a woman."],
-["women","ayollar","These are women."]
+["notebook","daftar","This is my notebook."],
+["desk","parta","There is a desk in the classroom."],
+["chair","stul","This chair is mine."],
+["board","doska","Look at the board."],
+["pencil","qalam","I have a pencil."],
+["ruler","chizg'ich","This is a ruler."],
+["eraser","o'chirg'ich","She has an eraser."],
+["schoolbag","maktab sumkasi","These are our schoolbags."],
+["classroom","sinf xonasi","There are 20 desks in the classroom."],
+["wall clock","devor soati","There is a wall clock on the wall."]
 ],
 dl:[
-["Teacher","How many children are there?","Nechta bola bor?"],
-["Student","There are three children.","Uchta bola bor."],
-["Teacher","Good! And how many boxes?","Yaxshi! Va nechta quti?"],
-["Student","There are two boxes.","Ikkita quti bor."]
+["Teacher","What is this?","Bu nima?"],
+["Student","It's my pencil. And these are my books.","Bu mening qalamim. Bular esa mening kitoblarim."],
+["Teacher","How many desks are there in the classroom?","Sinfda nechta parta bor?"],
+["Student","There are 20 desks.","20 ta parta bor."]
 ],
-g:["Plural Nouns",
-"Most nouns just add -s: box → boxes. Some words are irregular and change completely: child → children, man → men, woman → women. There is no shortcut — you memorize these through practice.",
-"Ko'plik otlar",
-"Ko'pchilik otlarga shunchaki -s qo'shiladi: box → boxes. Ba'zi so'zlar butunlay istisno: child → children, man → men, woman → women. Bu yerda yo'l yo'q — bularni mashq orqali yodlash kerak."],
+g:["Naming a Group of Things",
+"You already know 'this/that/these/those', 'there is/are', and plurals — now use them all together to talk about the things in your classroom: This is my pencil. There are 20 desks. These are our schoolbags.",
+"Narsalar guruhini nomlash",
+"Siz allaqachon 'this/that/these/those', 'there is/are' va ko'plikni bilasiz — endi ularning barchasidan birgalikda sinfingizdagi narsalar haqida gapirish uchun foydalaning: This is my pencil. There are 20 desks. These are our schoolbags."],
 qz:[
-["What is the plural of 'box'?",["Boxs","Boxes","Box's","Boxies"],1],
-["What is the plural of 'child'?",["Childs","Childes","Children","Childies"],2],
-["What is the plural of 'man'?",["Mans","Men","Manes","Mens"],1],
-["What is the plural of 'woman'?",["Womans","Women","Woman's","Womenes"],1]
+["'Daftar' in English is ___.",["Book","Notebook","Pen","Bag"],1],
+["'Qalam' in English is ___.",["Pencil","Pen","Ruler","Eraser"],0],
+["Choose the correct sentence.",["There is 20 desks.","There are 20 desks.","There a desk.","Desks there are."],1],
+["'Bular bizning sumkalarimiz' in English is ___.",["This is our schoolbag.","These are our schoolbags.","That is our schoolbag.","Those is our schoolbags."],1]
 ],
-sp:["Count children, men, and women in a picture (or around you) using the correct plural.","Rasmda (yoki atrofingizda) bola, erkak va ayollarni to'g'ri ko'plik bilan sanang."],
-ls:["Plural bingo: teacher says a singular word, students shout the plural.","Ko'plik bingo: o'qituvchi birlik so'zni aytadi, o'quvchilar ko'plikni qichqiradi.",
-"In pairs, quiz each other on singular/plural pairs from this unit.","Juftlikda bu bo'limdagi birlik/ko'plik juftliklarini bir-biringizga so'rang."]
+sp:["Describe 5 things in your classroom using this/that/these/those and there is/are.","Sinfingizdagi 5 ta narsani this/that/these/those va there is/are yordamida tasvirlang."],
+ls:["Classroom scavenger hunt: point and name objects using this/that/these/those.","Sinfda buyum qidirish: buyumlarga ishora qilib this/that/these/those bilan nomlang.",
+"In pairs, ask 'How many ___ are there?' about classroom objects.","Juftlikda sinf buyumlari haqida 'Nechtasi bor?' deb so'rang."]
 },
 
-{d:15,w:3,wt:"What I Can Do",wtUz:"Men nima qila olaman",rev:true,
-t:"Week 3 Review",tu:"3-hafta Takrorlash",
+{d:14,w:3,wt:"Actions, Commands & My World",wtUz:"Harakatlar, buyruqlar va mening dunyom",
+t:"The Alphabet & Spelling",tu:"Alifbo va harflash",
+v:[
+["A, B, C...","(harflar)","Can you say the alphabet?"],
+["letter","harf","'Cat' has three letters."],
+["word","so'z","This is a short word."],
+["spell","harflamoq","Can you spell 'dog'?"],
+["vowel","unli tovush","A, E, I, O, U are vowels."],
+["consonant","undosh tovush","B and C are consonants."],
+["capital letter","bosh harf","Names start with a capital letter."],
+["small letter","kichik harf","Most letters are small letters."],
+["How do you spell...?","...ni qanday harflaysiz?","How do you spell your name?"],
+["What does ... mean?","...nima degani?","What does 'pencil' mean?"]
+],
+dl:[
+["Teacher","How do you spell 'cat'?","'Cat' so'zini qanday harflaysiz?"],
+["Student","C-A-T. It has three letters.","C-A-T. Unda uchta harf bor."],
+["Teacher","Good! Is 'A' a vowel or a consonant?","Yaxshi! 'A' unlimi yoki undoshmi?"],
+["Student","It's a vowel.","Bu unli tovush."]
+],
+g:["The Alphabet & First Words",
+"English has 26 letters — 5 vowels (A, E, I, O, U) and 21 consonants. Learn to say and spell each letter, so you can always ask 'How do you spell...?' or 'What does ... mean?' when you meet a new word.",
+"Alifbo va birinchi so'zlar",
+"Ingliz tilida 26 ta harf bor — 5 tasi unli (A, E, I, O, U), 21 tasi undosh. Har bir harfni aytish va harflashni o'rganing, shunda yangi so'zga duch kelganingizda doim 'Buni qanday harflaysiz?' yoki 'Bu nima degani?' deb so'ray olasiz."],
+qz:[
+["How many letters are in the English alphabet?",["24","25","26","27"],2],
+["Which of these is a vowel?",["B","C","E","D"],2],
+["How do you spell 'cat'?",["K-A-T","C-A-T","S-A-T","C-A-P"],1],
+["What should you ask when you don't understand a new word?",["How are you?","What does it mean?","Can you swim?","Is this a pen?"],1]
+],
+sp:["Spell your name out loud, letter by letter.","Ismingizni ovoz chiqarib, harflab ayting."],
+ls:["Alphabet relay: each student says the next letter of the alphabet.","Alifbo estafetasi: har bir o'quvchi alifbodagi keyingi harfni aytadi.",
+"In pairs, take turns spelling classroom words for each other to guess.","Juftlikda navbatma-navbat sinf so'zlarini harflab, bir-biringizga topdiring."]
+},
+
+{d:15,w:3,wt:"Actions, Commands & My World",wtUz:"Harakatlar, buyruqlar va mening dunyom",
+rev:true,t:"Week 3 Review — Foundations Check",tu:"3-hafta Takrorlash — Boshlang'ich tekshiruv",
 qz:[
 ["Choose the correct sentence.",["She can sings.","She can sing.","She cans sing.","She can singing."],1],
-["Choose the correct word: 'She ___ a cat.'",["have","has","having","haves"],1],
 ["Choose the correct imperative.",["You open the door.","Open the door.","You opening the door.","Opens the door."],1],
-["What is the plural of 'child'?",["Childs","Childes","Children","Childies"],2],
+["'Daftar' in English is ___.",["Book","Notebook","Pen","Bag"],1],
+["How many letters are in the English alphabet?",["24","25","26","27"],2],
 ["Choose the correct negative.",["He not can fly.","He can't fly.","He don't can fly.","He cann't fly."],1],
-["Choose the correct question.",["Does you have a sister?","Do you have a sister?","Have you a sister do?","You have a sister?"],1],
 ["Choose the correct negative imperative.",["You don't run.","Don't run.","No run.","Not run."],1],
-["What is the plural of 'man'?",["Mans","Men","Manes","Mens"],1]
+["Choose the correct sentence.",["There is 20 desks.","There are 20 desks.","There a desk.","Desks there are."],1],
+["Which of these is a vowel?",["B","C","E","D"],2]
 ],
-sp:["Talk about what you can do, your pet, and give 2 classroom commands.","Nima qila olishingiz, uy hayvoningiz haqida gapiring va 2 ta sinf buyrug'ini bering."],
-ls:["Class review relay: can, have, imperatives, plurals mixed quiz.","Sinf takrorlash estafetasi: can, have, buyruq va ko'plik aralash so'rovi.",
-"In pairs, review the week using can/have/imperatives/plurals.","Juftlikda haftani can/have/buyruq/ko'plik bilan takrorlang."]
-}
-,
+sp:["Talk about what you can do, give 2 classroom commands, describe your classroom, and spell your name.","Nima qila olishingiz haqida gapiring, 2 ta sinf buyrug'ini bering, sinfingizni tasvirlang va ismingizni harflab bering."],
+ls:["Class review relay: can, imperatives, classroom objects, and the alphabet mixed quiz.","Sinf takrorlash estafetasi: can, buyruq, sinf buyumlari va alifbo aralash so'rovi.",
+"In pairs, review the week using can/imperatives/classroom objects/spelling.","Juftlikda haftani can/buyruq/sinf buyumlari/harflash bilan takrorlang."]
+},
 
 {d:16,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
 t:"Present Simple — Everyday Actions",tu:"Present Simple — kundalik harakatlar",
