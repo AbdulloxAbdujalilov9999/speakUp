@@ -66,6 +66,8 @@ let opts = null;
 let unsubProfile = null;
 let unsubResets = null;
 let resetsUid = null;
+let unsubPasses = null;
+let passesUid = null;
 let unsubAssignments = null;
 let mode = "signin"; // signin | signup | reset
 let errorMsg = "";
@@ -424,6 +426,19 @@ function mountApp(user, profile, trial){
       });
     }, () => {});
   }
+
+  // Lesson passes issued by a teacher, manager or owner — the mirror of
+  // resets above, same request/apply/stamp flow, under passes/{myUid}.
+  if (opts.appKind === "main" && passesUid !== user.uid){
+    if (unsubPasses) unsubPasses();
+    passesUid = user.uid;
+    unsubPasses = onValue(ref(db, "passes/" + user.uid), (snap) => {
+      if (!window.SU_applyPasses) return;
+      window.SU_applyPasses(snap.val(), (id) => {
+        update(ref(db, "passes/" + user.uid + "/" + id), { appliedAt: serverTimestamp() }).catch(() => {});
+      });
+    }, () => {});
+  }
 }
 
 function handleProfile(user, profile){
@@ -484,6 +499,7 @@ export function initAuthGate(userOpts){
 
     if (!user){
       if (unsubResets){ unsubResets(); unsubResets = null; resetsUid = null; }
+      if (unsubPasses){ unsubPasses(); unsubPasses = null; passesUid = null; }
       if (unsubAssignments){ unsubAssignments(); unsubAssignments = null; }
       clearTimeout(trialTimer);
       showAppShell(false);

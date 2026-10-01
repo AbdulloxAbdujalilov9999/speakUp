@@ -83,6 +83,23 @@
       }
     },
 
+    // Modeled exactly on resets above, but in the opposite direction: a
+    // teacher/manager/owner can force-mark a lesson complete for a student
+    // (e.g. a legitimate pass that didn't register, or letting someone
+    // skip ahead). Same request/apply/stamp flow, same access rule.
+    "passes": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || (auth != null && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager' || (root.child('users').child(auth.uid).child('role').val() === 'teacher' && root.child('users').child($uid).child('teacherId').val() === auth.uid))))",
+        // Owner/manager may delete the whole node (removing a restricted user).
+        ".write": "auth != null && !newData.exists() && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager')",
+        "$pid": {
+          ".write": "auth != null && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager' || (root.child('users').child(auth.uid).child('role').val() === 'teacher' && root.child('users').child($uid).child('teacherId').val() === auth.uid))",
+          ".validate": "newData.hasChildren(['kind', 'key', 'score', 'by', 'at']) && newData.child('kind').val() === 'lesson' && newData.child('score').isNumber() && newData.child('score').val() >= 0 && newData.child('score').val() <= 100",
+          "appliedAt": { ".write": "auth != null && auth.uid === $uid && data.parent().exists() && !data.exists()" }
+        }
+      }
+    },
+
     // Homework assigned by a teacher/manager/owner to a specific student —
     // a day, a grammar unit, or a free-text note, with an optional due
     // date. Modeled closely on resets above: staff write a request, but

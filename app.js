@@ -1775,12 +1775,16 @@ function renderQuizTab(d, body){
       qState.score = Math.round((correct / questions.length) * 100);
       qState.submitted = true;
       persistQuizState();
-      if (!d.rev){
-        markComplete(d.d, qState.score);
-        toast(qState.score>=70 ? tr("Day {n} complete! +XP earned.", { n: d.d }) : tr("Day {n} complete. Consider reviewing the material again.", { n: d.d }));
-      } else {
-        toast(tr("Review quiz submitted — score {n}%.", { n: qState.score }));
-      }
+      // Review days complete exactly like any other day (submitting the
+      // quiz marks the day done, regardless of score) — they used to skip
+      // markComplete entirely, which silently left every review day
+      // (5, 10, 15...) permanently incomplete and blocked normal
+      // progression into the next week, since isUnlocked requires the
+      // previous day to be completed.
+      markComplete(d.d, qState.score);
+      toast(d.rev
+        ? tr("Review day {n} complete — score {s}%.", { n: d.d, s: qState.score })
+        : (qState.score>=70 ? tr("Day {n} complete! +XP earned.", { n: d.d }) : tr("Day {n} complete. Consider reviewing the material again.", { n: d.d })));
       render();
     });
   } else {
@@ -2812,6 +2816,35 @@ function applyRemoteResets(resets, ack){
   if (state.view) render();
 }
 window.SU_applyResets = applyRemoteResets;
+
+// ---------- Passes issued by a teacher / manager / owner ----------
+// The mirror image of resets above: a teacher force-marks a lesson
+// complete for a student (a legitimate pass that didn't register, or
+// letting someone skip ahead) instead of clearing one. Same request/
+// apply/stamp flow under passes/{studentUid}/{id}, same access rule.
+function applyRemotePasses(passes, ack){
+  if (!passes) return;
+  if (!state.progress.appliedPasses) state.progress.appliedPasses = {};
+  const done = [];
+  Object.entries(passes)
+    .sort((a, b) => ((a[1] && a[1].at) || 0) - ((b[1] && b[1].at) || 0))
+    .forEach(([id, r]) => {
+      if (!r || r.appliedAt) return;
+      if (!state.progress.appliedPasses[id]){
+        if (r.kind === "lesson") markComplete(String(r.key), typeof r.score === "number" ? r.score : 100);
+        else return;
+        state.progress.appliedPasses[id] = true;
+        done.push(r);
+      }
+      if (ack) ack(id);
+    });
+  if (!done.length) return;
+  saveProgress();
+  const label = (r) => tr("Day {n}", { n: r.key });
+  toast(tr("Your teacher marked {what} as passed.", { what: done.length === 1 ? label(done[0]) : tr("{n} lessons", { n: done.length }) }));
+  if (state.view) render();
+}
+window.SU_applyPasses = applyRemotePasses;
 
 // ---------- Init ----------
 // Vocabulary-quiz options are generated in the translation language, so a

@@ -57,6 +57,8 @@ let progressCache = new Map();
 let progressUnsubs = new Map();
 let resetsCache = new Map();   // studentUid -> { id: request }
 let resetsUnsubs = new Map();
+let passesCache = new Map();   // studentUid -> { id: request }
+let passesUnsubs = new Map();
 let assignmentsCache = new Map();   // studentUid -> { id: assignment }
 let assignmentsUnsubs = new Map();
 let eventsCache = [];
@@ -211,6 +213,15 @@ function syncResetSubs(uid){
   resetsUnsubs.set(uid, unsub);
 }
 
+function syncPassSubs(uid){
+  if (passesUnsubs.has(uid)) return;
+  const unsub = onValue(ref(db, "passes/" + uid), (snap) => {
+    passesCache.set(uid, snap.exists() ? snap.val() : {});
+    if (state.section === "progress" && state.selectedStudent === uid && !$("modalRoot").innerHTML) renderSection();
+  }, () => {});
+  passesUnsubs.set(uid, unsub);
+}
+
 function syncAssignmentSubs(uid){
   if (assignmentsUnsubs.has(uid)) return;
   const unsub = onValue(ref(db, "assignments/" + uid), (snap) => {
@@ -302,6 +313,40 @@ function openResetModal(studentUid, kind, key){
     $("resetConfirm").disabled = true;
     try{ await queueReset(studentUid, kind, key); closeModal(); toast("Reset done — applied now if they're online, or the next time they open the app."); renderSection(); }
     catch(err){ $("resetConfirm").disabled = false; alert("Couldn't reset it: " + err.message); }
+  });
+}
+
+// The mirror of queueReset above: instead of clearing a lesson, force-mark
+// it complete (score 100) for a student whose own app didn't register a
+// pass — same no-approval, applies-on-next-open flow.
+async function queuePass(studentUid, day){
+  await push(ref(db, "passes/" + studentUid), {
+    kind: "lesson", key: String(day), score: 100, by: me().uid, byName: me().name || "", at: serverTimestamp(),
+  });
+}
+function passLabel(r){
+  return "Day " + r.key + (dayTitle(Number(r.key)) ? " — " + dayTitle(Number(r.key)) : "");
+}
+function openPassModal(studentUid, day){
+  const student = usersById.get(studentUid);
+  const label = passLabel({ key: day });
+  $("modalRoot").innerHTML = `
+    <div class="modal-backdrop">
+      <div class="modal-card">
+        <h2>Mark lesson as passed?</h2>
+        <p class="panel-sub"><strong>${escapeHtml(label)}</strong> for <strong>${escapeHtml(student ? student.name : "this student")}</strong>.</p>
+        <p class="panel-sub" style="margin-top:8px;">Marks it complete with a score of 100%, the same as if they'd just passed it themselves. Nothing else is touched. It applies the next time they open the app (right away if it's already open).</p>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" id="passCancel">Cancel</button>
+          <button class="btn btn-accent" id="passConfirm">Mark as passed</button>
+        </div>
+      </div>
+    </div>`;
+  $("passCancel").addEventListener("click", closeModal);
+  $("passConfirm").addEventListener("click", async () => {
+    $("passConfirm").disabled = true;
+    try{ await queuePass(studentUid, day); closeModal(); toast("Marked as passed — applied now if they're online, or the next time they open the app."); renderSection(); }
+    catch(err){ $("passConfirm").disabled = false; alert("Couldn't mark it as passed: " + err.message); }
   });
 }
 
@@ -864,9 +909,12 @@ function renderProgressSection(main){
   }
   syncProgressSubs([state.selectedStudent]);
   syncResetSubs(state.selectedStudent);
+  syncPassSubs(state.selectedStudent);
   syncAssignmentSubs(state.selectedStudent);
   const p = progressCache.get(state.selectedStudent);
   const resets = Object.entries(resetsCache.get(state.selectedStudent) || {})
+    .map(([id, r]) => ({ id, ...r })).sort((a, b) => (b.at || 0) - (a.at || 0)).slice(0, 8);
+  const passes = Object.entries(passesCache.get(state.selectedStudent) || {})
     .map(([id, r]) => ({ id, ...r })).sort((a, b) => (b.at || 0) - (a.at || 0)).slice(0, 8);
   const assignments = Object.entries(assignmentsCache.get(state.selectedStudent) || {})
     .map(([id, a]) => ({ id, ...a })).sort((a, b) => (b.at || 0) - (a.at || 0));
@@ -945,6 +993,23 @@ function renderProgressSection(main){
     </section>
 
     <section class="panel">
+      <div class="panel-head">
+        <h2>Mark a lesson as passed</h2>
+        <p class="panel-sub">Force-completes one lesson for ${escapeHtml(student.name)} with a score of 100% — for a pass that didn't register, or to let them skip ahead.</p>
+      </div>
+      <div class="reset-row">
+        <select class="select" id="passDaySelect">
+          ${dayOptions(p, state.passDay)}
+        </select>
+        <button class="btn btn-accent" id="passDayBtn">Mark as passed</button>
+      </div>
+      ${passes.length ? `<div class="reset-log">
+        <p class="panel-sub" style="margin:14px 0 6px;">Recent passes</p>
+        ${passes.map(r => `<div class="reset-log-row"><span>${escapeHtml(passLabel(r))}</span><span class="panel-sub">${r.appliedAt ? "applied" : "waiting for the student to open the app"}${r.byName ? " · by " + escapeHtml(r.byName) : ""}</span></div>`).join("")}
+      </div>` : ""}
+    </section>
+
+    <section class="panel">
       <div class="panel-head"><h2>Lessons completed (${completed.length})</h2></div>
       ${completed.length ? `<div class="table-wrap"><table class="admin-table"><thead><tr><th>Day</th><th>Title</th><th>Date</th><th>Score</th><th></th></tr></thead><tbody>
         ${completed.map(c => `<tr><td>${c.day}</td><td>${escapeHtml(dayTitle(c.day))}</td><td class="mono">${escapeHtml(c.date)}</td><td class="mono">${c.score}%</td><td><button class="btn btn-ghost btn-sm" data-reset="lesson" data-key="${c.day}">Reset</button></td></tr>`).join("")}
@@ -969,6 +1034,8 @@ function renderProgressSection(main){
   $("resetDaySelect").addEventListener("change", (e) => { state.resetDay = e.target.value; });
   $("resetDayBtn").addEventListener("click", () => openResetModal(state.selectedStudent, "lesson", $("resetDaySelect").value));
   main.querySelectorAll("[data-reset]").forEach(btn => btn.addEventListener("click", () => openResetModal(state.selectedStudent, btn.dataset.reset, btn.dataset.key)));
+  $("passDaySelect").addEventListener("change", (e) => { state.passDay = e.target.value; });
+  $("passDayBtn").addEventListener("click", () => openPassModal(state.selectedStudent, $("passDaySelect").value));
 
   const assignHwBtn = $("assignHwFromProgressBtn");
   if (assignHwBtn) assignHwBtn.addEventListener("click", () => openAssignModal([state.selectedStudent]));
