@@ -202,7 +202,7 @@ function weekProgress(weekNum){
 
 function markComplete(dayNum, score){
   const wasCompleted = isCompleted(dayNum);
-  state.progress.completed[dayNum] = { date: todayStr(), score: score };
+  state.progress.completed[dayNum] = { date: todayStr(), score: score, at: Date.now() };
   if (!wasCompleted){
     state.progress.xp += 100 + (score || 0) * 5;
     // streak logic
@@ -224,7 +224,7 @@ function isGrammarDone(id){ return !!state.progress.grammarDone[id]; }
 function grammarDoneCount(){ return Object.keys(state.progress.grammarDone).length; }
 function markGrammarComplete(id, score){
   const wasDone = isGrammarDone(id);
-  state.progress.grammarDone[id] = { date: todayStr(), score: score };
+  state.progress.grammarDone[id] = { date: todayStr(), score: score, at: Date.now() };
   if (!wasDone) state.progress.xp += 60 + (score || 0) * 3;
   saveProgress();
 }
@@ -1357,7 +1357,7 @@ async function rpAdvance(d, body, rp){
   rp.phase = "done"; rp.status = "idle"; rp.typing = false; rp.speakingIdx = null;
   const prev = state.progress.roleplay[d.d];
   if (!prev) state.progress.xp += 30;
-  state.progress.roleplay[d.d] = { best: Math.max((prev && prev.best) || 0, avg || 0), date: todayStr() };
+  state.progress.roleplay[d.d] = { best: Math.max((prev && prev.best) || 0, avg || 0), date: todayStr(), at: Date.now() };
   saveProgress();
   rpRender(d, body, rp);
 }
@@ -1908,7 +1908,7 @@ function isHomeworkDone(n){ return !!state.progress.homeworkDone[n]; }
 function homeworkDoneCount(){ return Object.keys(state.progress.homeworkDone).length; }
 function markHomeworkComplete(n, score){
   const wasDone = isHomeworkDone(n);
-  state.progress.homeworkDone[n] = { date: todayStr(), score: score };
+  state.progress.homeworkDone[n] = { date: todayStr(), score: score, at: Date.now() };
   if (!wasDone) state.progress.xp += 80 + (score || 0) * 3;
   saveProgress();
 }
@@ -2744,7 +2744,7 @@ function renderSettings(){
   ack.addEventListener("change", () => { document.getElementById("resetBtn").disabled = !ack.checked; });
   document.getElementById("resetBtn").addEventListener("click", () => {
     if (!ack.checked) return;
-    state.progress = { completed:{}, grammarDone:{}, homeworkDone:{}, roleplay:{}, appliedResets:{}, xp:0, streak:0, lastDate:null, name:"" };
+    state.progress = { completed:{}, grammarDone:{}, homeworkDone:{}, roleplay:{}, appliedResets:{}, xp:0, streak:0, lastDate:null, name:"", epoch: Date.now() };
     state.notes = {};
     state.quizState = {};
     state.grammarQuizState = {};
@@ -2758,6 +2758,32 @@ function renderSettings(){
   });
 }
 
+// ---------- Cross-device sync ----------
+// auth-gate.js streams progress/{uid} from the cloud into this. The cloud
+// copy is merged into this device (never the other way round blindly), and
+// if this device knew something the cloud didn't, the merged result is
+// pushed back — so whichever device did the most never gets overwritten by
+// one that was behind. See shared/progress-merge.js.
+const REFRESH_VIEWS = ["dashboard", "lessons", "weekDetail", "progress", "homework", "grammar", "grammarCategory"];
+function onRemoteProgress(remote){
+  const M = window.SU_progressMerge;
+  if (!M) return;
+  if (!remote){
+    if (Object.keys(state.progress.completed).length || Object.keys(state.progress.grammarDone).length || Object.keys(state.progress.homeworkDone).length) saveProgress();
+    return;
+  }
+  const merged = M.merge(state.progress, remote);
+  const localChanged = M.signature(merged) !== M.signature(state.progress);
+  const cloudBehind = M.signature(merged) !== M.signature(remote);
+  if (localChanged){
+    state.progress = merged;
+    saveJSON(STORE_KEY, state.progress);
+    if (state.view && REFRESH_VIEWS.includes(state.view)) render();
+  }
+  if (cloudBehind) saveProgress();
+}
+window.SU_onRemoteProgress = onRemoteProgress;
+
 // ---------- Resets issued by a teacher / manager / owner ----------
 // Staff can't write a student's progress directly (the student's device is
 // the source of truth and pushes its whole progress object), so a reset is
@@ -2765,11 +2791,20 @@ function renderSettings(){
 // applies each one exactly once — as soon as it's open, or the next time it
 // is — pushes the updated progress back, and stamps the request applied.
 function xpBack(amount){ state.progress.xp = Math.max(0, (state.progress.xp || 0) - amount); }
+// Deleting a record also leaves a tombstone so other devices (see
+// shared/progress-merge.js) don't bring it back when they sync.
+function tombstone(coll, key){
+  if (!state.progress.removed) state.progress.removed = {};
+  if (!state.progress.removed[coll]) state.progress.removed[coll] = {};
+  state.progress.removed[coll][key] = Date.now();
+}
 
 function resetLessonLocal(day){
   const rec = state.progress.completed[day];
   if (rec){ xpBack(100 + (rec.score || 0) * 5); delete state.progress.completed[day]; }
+  tombstone("completed", day);
   if (state.progress.roleplay && state.progress.roleplay[day]){ xpBack(30); delete state.progress.roleplay[day]; }
+  tombstone("roleplay", day);
   delete state.quizState[day];
   const qs = loadJSON("su_quizstate_v1", {}); delete qs[day]; saveJSON("su_quizstate_v1", qs);
   if (state.practiceState) delete state.practiceState[day];
@@ -2779,12 +2814,14 @@ function resetLessonLocal(day){
 function resetHomeworkLocal(n){
   const rec = state.progress.homeworkDone[n];
   if (rec){ xpBack(80 + (rec.score || 0) * 3); delete state.progress.homeworkDone[n]; }
+  tombstone("homeworkDone", n);
   if (state.homeworkQuizState) delete state.homeworkQuizState[n];
   const q = loadJSON("su_hwquiz_v1", {}); delete q[n]; saveJSON("su_hwquiz_v1", q);
 }
 function resetGrammarLocal(id){
   const rec = state.progress.grammarDone[id];
   if (rec){ xpBack(60 + (rec.score || 0) * 3); delete state.progress.grammarDone[id]; }
+  tombstone("grammarDone", id);
   delete state.grammarQuizState[id];
   const q = loadJSON("su_grammarquiz_v1", {}); delete q[id]; saveJSON("su_grammarquiz_v1", q);
 }

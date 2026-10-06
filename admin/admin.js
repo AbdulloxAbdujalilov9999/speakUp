@@ -15,13 +15,16 @@
  * teacherId field names them) — never a broad query over all of /users.
  */
 import { db, auth } from "../shared/firebase.js";
+import { firebaseConfig } from "../shared/firebase-config.js";
 import { initAuthGate } from "../shared/auth-gate.js";
 import {
   ref, onValue, set, update, remove, push, serverTimestamp,
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-database.js";
 import {
   sendPasswordResetEmail, EmailAuthProvider, reauthenticateWithCredential, verifyBeforeUpdateEmail,
+  getAuth, createUserWithEmailAndPassword, signOut as fbSignOut,
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+import { initializeApp, deleteApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
 
 const ROLE_LABEL = { owner: "Owner", manager: "Manager", teacher: "Teacher", student: "Student" };
 
@@ -424,6 +427,144 @@ function openAssignModal(presetUids){
   });
 }
 
+/* ---------------- Add user (owner only) ---------------- */
+// For people who can't sign in with Google: the owner makes an email +
+// password account for them and hands over the login. The sign-in account is
+// created on a separate, throwaway Firebase app instance — creating one on
+// the main instance would sign the owner out and into the new account — and
+// the profile is then written with the owner's own session (the database
+// rules only let the owner create someone else's profile). The email doesn't
+// have to be real; nothing is ever sent to it, but that also means "Forgot
+// password" can't work for such an account.
+function genPassword(){
+  const chars = "abcdefghjkmnpqrstuvwxyz23456789";   // no look-alike characters
+  const buf = new Uint32Array(8);
+  crypto.getRandomValues(buf);
+  return Array.from(buf, (n) => chars[n % chars.length]).join("");
+}
+async function createManagedUser({ name, email, password, role, teacherId }){
+  if (!isOwner()) throw new Error("Only the owner can add users.");
+  const secondary = initializeApp(firebaseConfig, "su-add-user-" + Date.now());
+  let uid;
+  try{
+    const secondaryAuth = getAuth(secondary);
+    const cred = await createUserWithEmailAndPassword(secondaryAuth, email, password);
+    uid = cred.user.uid;
+    await fbSignOut(secondaryAuth);
+  } finally {
+    deleteApp(secondary).catch(() => {});
+  }
+  const profile = {
+    name, email, provider: "password", status: "approved", role,
+    createdBy: me().uid, createdAt: serverTimestamp(), updatedAt: serverTimestamp(), lastActive: serverTimestamp(),
+  };
+  const updates = {};
+  if (role === "student" && teacherId){
+    profile.teacherId = teacherId;
+    updates[`teacherStudents/${teacherId}/${uid}`] = true;
+  }
+  updates[`users/${uid}`] = profile;
+  try{ await update(ref(db), updates); }
+  catch(err){ throw new Error("The sign-in account was created, but saving their profile failed (" + err.message + "). Ask them to sign in with these details and they'll land on 'Complete your profile'."); }
+  return uid;
+}
+function mapCreateError(err){
+  const code = err && err.code;
+  if (code === "auth/email-already-in-use") return "That email already has an account. Look for them under All users instead.";
+  if (code === "auth/invalid-email") return "That doesn't look like a valid email address.";
+  if (code === "auth/weak-password") return "Password is too weak — use at least 6 characters.";
+  if (code === "auth/operation-not-allowed") return "Email/password sign-in isn't enabled for this Firebase project.";
+  return (err && err.message) || "Couldn't create the account.";
+}
+function openAddUserModal(){
+  if (!isOwner()) return;
+  const teachers = usersCache.filter(x => x.role === "teacher" && x.status === "approved");
+  const modalRoot = $("modalRoot");
+  modalRoot.innerHTML = `
+    <div class="modal-backdrop">
+      <div class="modal-card">
+        <h2>Add a user</h2>
+        <p class="panel-sub">Creates an account with an email and password you choose, ready to use straight away — no approval step.</p>
+        <label class="auth-label" for="addName">Full name</label>
+        <input class="auth-input" id="addName" type="text" autocomplete="off">
+        <label class="auth-label" for="addEmail" style="margin-top:10px;">Email (or any email-style username)</label>
+        <input class="auth-input" id="addEmail" type="email" autocomplete="off" placeholder="e.g. aziz@speakup.uz">
+        <label class="auth-label" for="addPassword" style="margin-top:10px;">Password</label>
+        <div style="display:flex;gap:8px;">
+          <input class="auth-input mono" id="addPassword" type="text" autocomplete="off" value="${genPassword()}" style="flex:1;">
+          <button class="btn btn-ghost btn-sm" type="button" id="addGenPw">Generate</button>
+        </div>
+        <label class="auth-label" style="margin-top:10px;">Role</label>
+        <div class="role-choice">
+          <label><input type="radio" name="addRole" value="student" checked> Student</label>
+          <label><input type="radio" name="addRole" value="teacher"> Teacher</label>
+          <label><input type="radio" name="addRole" value="manager"> Manager</label>
+        </div>
+        <div id="addTeacherPick">
+          <label class="auth-label">Teacher (optional)</label>
+          <select class="select" id="addTeacherSelect" style="width:100%;">
+            <option value="">— no teacher yet —</option>
+            ${teachers.map(t => `<option value="${t.id}">${escapeHtml(t.name)}</option>`).join("")}
+          </select>
+        </div>
+        <div class="auth-error" id="addError" style="display:none;margin-top:10px;"></div>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" id="addCancel">Cancel</button>
+          <button class="btn btn-accent" id="addConfirm">Create account</button>
+        </div>
+      </div>
+    </div>`;
+  modalRoot.querySelectorAll('input[name="addRole"]').forEach(r => r.addEventListener("change", (e) => {
+    $("addTeacherPick").hidden = e.target.value !== "student";
+  }));
+  $("addGenPw").addEventListener("click", () => { $("addPassword").value = genPassword(); });
+  $("addCancel").addEventListener("click", closeModal);
+  $("addConfirm").addEventListener("click", async () => {
+    const name = $("addName").value.trim();
+    const email = $("addEmail").value.trim().toLowerCase();
+    const password = $("addPassword").value;
+    const role = modalRoot.querySelector('input[name="addRole"]:checked').value;
+    const teacherId = role === "student" ? $("addTeacherSelect").value : "";
+    const showError = (msg) => { const el = $("addError"); el.textContent = msg; el.style.display = "block"; };
+    if (!name) return showError("Enter their name.");
+    if (!email) return showError("Enter an email.");
+    if (password.length < 6) return showError("The password needs at least 6 characters.");
+    $("addConfirm").disabled = true; $("addConfirm").textContent = "Creating…";
+    try{
+      await createManagedUser({ name, email, password, role, teacherId });
+      showAddedUser({ name, email, password, role });
+    }catch(err){
+      $("addConfirm").disabled = false; $("addConfirm").textContent = "Create account";
+      showError(err.code ? mapCreateError(err) : err.message);
+    }
+  });
+}
+// Shown once, right after creation — the password isn't stored anywhere the
+// owner can look it up again.
+function showAddedUser({ name, email, password, role }){
+  const loginUrl = location.origin + "/";
+  const message = `SpeakUp login\nWebsite: ${loginUrl}\nEmail: ${email}\nPassword: ${password}\n(Choose "Sign in with email", not Google.)`;
+  $("modalRoot").innerHTML = `
+    <div class="modal-backdrop">
+      <div class="modal-card">
+        <h2>${escapeHtml(name)} can sign in now</h2>
+        <p class="panel-sub">${escapeHtml(ROLE_LABEL[role] || role)} account created. Send them these details — <strong>the password can't be shown again</strong>.</p>
+        <pre class="mono" id="addedCreds" style="white-space:pre-wrap;word-break:break-all;background:var(--surface-2, rgba(127,127,127,.12));padding:12px;border-radius:10px;margin:12px 0;">${escapeHtml(message)}</pre>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" id="addAnother">Add another</button>
+          <button class="btn btn-ghost" id="addCopy">Copy</button>
+          <button class="btn btn-accent" id="addDone">Done</button>
+        </div>
+      </div>
+    </div>`;
+  $("addCopy").addEventListener("click", async () => {
+    try{ await navigator.clipboard.writeText(message); toast("Copied."); }
+    catch(e){ const r = document.createRange(); r.selectNodeContents($("addedCreds")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); toast("Select and copy the text."); }
+  });
+  $("addAnother").addEventListener("click", openAddUserModal);
+  $("addDone").addEventListener("click", closeModal);
+}
+
 async function approveUser(uid, role, teacherId){
   const u = usersById.get(uid);
   const wasRestricted = u && u.status === "restricted";
@@ -679,6 +820,13 @@ function renderUsersSection(main){
   const shown = roleFilter === "all" ? others : others.filter(u => u.role === roleFilter);
 
   main.innerHTML = `
+    ${isOwner() ? `<section class="panel">
+      <div class="panel-head-row">
+        <div><h2>Add a user</h2>
+        <p class="panel-sub">Create an email + password account for someone who can't sign in with Google, then send them the login. Only you (the owner) can do this.</p></div>
+        <button class="btn btn-accent btn-sm" id="addUserBtn">+ Add user</button>
+      </div>
+    </section>` : ""}
     <section class="panel">
       <div class="panel-head"><h2>Pending requests</h2>
         <p class="panel-sub">People using their 3-day free trial, or waiting to be approved after it ends. Approve to give them permanent access any time — no need to wait for the trial to run out.</p></div>
@@ -690,6 +838,8 @@ function renderUsersSection(main){
       ${shown.length ? shown.map(u => userRow(u, false)).join("") : `<p class="panel-sub">${others.length ? "No one matches this filter." : "No one yet."}</p>`}
     </section>`;
 
+  const addUserBtn = $("addUserBtn");
+  if (addUserBtn) addUserBtn.addEventListener("click", openAddUserModal);
   main.querySelectorAll("[data-approve]").forEach(btn => btn.addEventListener("click", () => openApproveModal(btn.dataset.approve)));
   main.querySelectorAll("[data-restrict]").forEach(btn => btn.addEventListener("click", () => {
     if (confirm("Restrict this person's access? They'll be signed out immediately.")) setUserStatus(btn.dataset.restrict, "restricted");

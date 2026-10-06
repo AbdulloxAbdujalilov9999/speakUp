@@ -16,7 +16,8 @@
         // reads only the specific student records naming them as teacher.
         ".read": "auth != null && (auth.uid === $uid || (root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager')) || (root.child('users').child(auth.uid).child('status').val() === 'approved' && root.child('users').child(auth.uid).child('role').val() === 'teacher' && data.child('teacherId').val() === auth.uid))",
 
-        // Owner: unrestricted. Manager: full control over teacher/student/
+        // Owner: unrestricted, and the only one who can create a profile for
+        // someone else (the admin "Add user" tool). Manager: full control over existing teacher/student/
         // pending accounts, but can never touch (or create) an owner or a
         // manager. Anyone: may still create exactly one profile — their
         // own — as either the hardcoded owner bootstrap, or (everyone else)
@@ -26,7 +27,7 @@
         // shared/auth-gate.js) without waiting on approval. Turning that
         // into permanent access (any role), or cutting it short, only ever
         // happens via the owner/manager branch above, never at creation.
-        ".write": "auth != null && ((root.child('users').child(auth.uid).child('status').val() === 'approved' && root.child('users').child(auth.uid).child('role').val() === 'owner') || (root.child('users').child(auth.uid).child('status').val() === 'approved' && root.child('users').child(auth.uid).child('role').val() === 'manager' && !(data.exists() && (data.child('role').val() === 'owner' || data.child('role').val() === 'manager')) && !(newData.exists() && (newData.child('role').val() === 'owner' || newData.child('role').val() === 'manager'))) || (auth.uid === $uid && !data.exists() && newData.child('email').val() === auth.token.email && ((auth.token.email === 'abdujalilov7707@gmail.com' && newData.child('role').val() === 'owner' && newData.child('status').val() === 'approved') || (auth.token.email !== 'abdujalilov7707@gmail.com' && newData.child('role').val() === 'student' && newData.child('status').val() === 'pending' && !newData.hasChild('teacherId')))))",
+        ".write": "auth != null && ((root.child('users').child(auth.uid).child('status').val() === 'approved' && root.child('users').child(auth.uid).child('role').val() === 'owner') || (root.child('users').child(auth.uid).child('status').val() === 'approved' && root.child('users').child(auth.uid).child('role').val() === 'manager' && data.exists() && !(data.child('role').val() === 'owner' || data.child('role').val() === 'manager') && !(newData.exists() && (newData.child('role').val() === 'owner' || newData.child('role').val() === 'manager'))) || (auth.uid === $uid && !data.exists() && newData.child('email').val() === auth.token.email && ((auth.token.email === 'abdujalilov7707@gmail.com' && newData.child('role').val() === 'owner' && newData.child('status').val() === 'approved') || (auth.token.email !== 'abdujalilov7707@gmail.com' && newData.child('role').val() === 'student' && newData.child('status').val() === 'pending' && !newData.hasChild('teacherId')))))",
 
         // An approved user may always touch just these three fields of
         // their own record (name edits, presence heartbeat) — on top of,
