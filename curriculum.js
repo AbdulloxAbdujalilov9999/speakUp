@@ -514,7 +514,131 @@ ls:["Class review relay: can, imperatives, there is/are, and classroom objects m
 },
 
 
-{d:16,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
+{d:16,w:4,wt:"Quantities & Everyday Things",wtUz:"Miqdorlar va kundalik narsalar",
+t:"Some / Any",tu:"Some / Any",
+v:[
+["some","biroz","I have some bread."],
+["any","hech qanday","I don't have any milk."],
+["bread","non","I have some bread."],
+["milk","sut","I don't have any milk."],
+["apples","olmalar","I have some apples."],
+["pens","ruchkalar","Do you have any pens?"],
+["water","suv","I want some water."],
+["tea","choy","Would you like some tea?"]
+],
+dl:[
+["Teacher","Do you have any pens?","Ruchkangiz bormi?"],
+["Student","Yes, I have some pens. Would you like some tea?","Ha, menda bir nechta ruchka bor. Choy ichasizmi?"],
+["Teacher","Yes, please. Thank you.","Ha, iltimos. Rahmat."]
+],
+g:["Some and Any","Use 'some' in positive sentences and offers: I have some bread. Would you like some tea? Use 'any' in negatives and questions: I don't have any milk. Do you have any pens?","Some va Any","'Some' tasdiq gaplar va takliflarda ishlatiladi: I have some bread. Would you like some tea? 'Any' inkor va so'roq gaplarda ishlatiladi: I don't have any milk. Do you have any pens?"],
+qz:[
+["Choose the correct word: 'I don't have ___ milk.'",["some","any","a","the"],1],
+["Choose the correct word: 'Would you like ___ tea?'",["some","any","much","many"],0],
+["Choose the correct sentence.",["I have any apples.","I have some apples.","I have a apples.","I have the any apples."],1],
+["When do we usually use 'any'?",["Positive sentences","Negatives and questions","Only with people","Never"],1]
+],
+sp:["Say what food you have some of, and ask a friend if they have any.","Qanday ovqatingiz borligini ayting va do'stingizdan uning bor-yo'qligini so'rang."],
+ls:["Class 'offer' game: offer classmates 'Would you like some...?' with different foods.","Sinf 'taklif' o'yini: sinfdoshlaringizga turli ovqatlar bilan 'Would you like some...?' deb taklif qiling.","In pairs, ask 'Do you have any...?' about school supplies.","Juftlikda maktab buyumlari haqida 'Do you have any...?' deb so'rang."]
+},
+
+{d:17,w:4,wt:"Quantities & Everyday Things",wtUz:"Miqdorlar va kundalik narsalar",
+t:"How Much / How Many",tu:"How Much / How Many",
+v:[
+["how much","qancha (sanalmaydigan)","How much water do you drink?"],
+["how many","nechta (sanaladigan)","How many books do you have?"],
+["money","pul","How much money do you have?"],
+["water","suv","How much water do you drink?"],
+["books","kitoblar","How many books do you have?"],
+["apples","olmalar","How many apples do you want?"],
+["a lot of","ko'p","I have a lot of books."],
+["not much","ko'p emas","I don't have much money."]
+],
+dl:[
+["Malika","How many books do you have?","Sizda nechta kitob bor?"],
+["Aziz","I have a lot of books. How much money do you have?","Menda ko'p kitob bor. Sizda qancha pul bor?"],
+["Malika","I don't have much money today.","Bugun menda ko'p pul yo'q."]
+],
+g:["How Much / How Many","Use 'How much' with things we can't count (money, water): How much money do you have? Use 'How many' with things we can count: How many books do you have?","How Much / How Many","Sanalmaydigan narsalar (pul, suv) bilan 'How much' ishlatiladi: How much money do you have? Sanaladigan narsalar bilan 'How many' ishlatiladi: How many books do you have?"],
+qz:[
+["Choose the correct word: '___ money do you have?'",["How much","How many","How","What"],0],
+["Choose the correct word: '___ books do you have?'",["How much","How many","How","What"],1],
+["'Ko'p kitobim bor' in English is ___.",["I have a lot of books.","I have much books.","I have many of books.","I have a lot books."],0],
+["Which word goes with uncountable things like water?",["Many","Much","Few","A"],1]
+],
+sp:["Ask your partner how much money and how many books they have.","Sherigingizdan qancha puli va nechta kitobi borligini so'rang."],
+ls:["Class survey: ask 'How many pens do you have?' and total the class results.","Sinf so'rovi: 'Nechta ruchkangiz bor?' deb so'rang va sinf natijasini yig'ing.","In pairs, practice how much/how many with school supplies.","Juftlikda maktab buyumlari bilan how much/how many mashq qiling."]
+},
+
+{d:18,w:4,wt:"Quantities & Everyday Things",wtUz:"Miqdorlar va kundalik narsalar",
+t:"Articles — a/an, the, or nothing",tu:"Artikllar — a/an, the yoki hech narsa",
+v:[
+["the","(ma'lum narsa)","I have a book. The book is red."],
+["Uzbekistan","O'zbekiston","I live in Uzbekistan."],
+["music","musiqa","I like music."],
+["name","ism","My name is Aziz."],
+["close the door","eshikni yop","Close the door, please."],
+["open the window","derazani och","Open the window, please."]
+],
+dl:[
+["Teacher","Close the door, please.","Eshikni yoping, iltimos."],
+["Student","OK. I live in Uzbekistan. Do you like music?","Xo'p. Men O'zbekistonda yashayman. Musiqani yoqtirasizmi?"],
+["Teacher","Yes, I love music.","Ha, men musiqani juda yoqtiraman."]
+],
+g:["Articles: a/an, the, or nothing","You already know 'a/an' for something new. Now use 'the' when both people know exactly which one: I have a book. The book is red. Use no article with names, most countries, and general ideas: I live in Uzbekistan. I like music.","Artikllar: a/an, the yoki hech narsa","Siz allaqachon yangi narsa uchun 'a/an' ni bilasiz. Endi ikkala tomon ham aynan qaysi narsani bilganda 'the' ishlatiladi: I have a book. The book is red. Ism, ko'pchilik davlat va umumiy tushunchalar bilan artikl ishlatilmaydi: I live in Uzbekistan. I like music."],
+qz:[
+["Choose the correct article: 'I have a book. ___ book is red.'",["A","An","The","No article"],2],
+["Choose the correct article: 'I live in ___ Uzbekistan.'",["a","an","the","no article"],3],
+["Choose the correct article: 'I like ___ music.'",["a","an","the","no article"],3],
+["Choose the correct sentence.",["My name is the Aziz.","My name is Aziz.","My name is a Aziz.","My name is an Aziz."],1]
+],
+sp:["Talk about your country, your name, and something you like, using articles correctly.","Mamlakatingiz, ismingiz va yoqtirgan narsangiz haqida artikllardan to'g'ri foydalanib gapiring."],
+ls:["Class 'a/the' sorting: teacher says a sentence, students say if it needs a/an/the/nothing.","Sinf 'a/the' saralash: o'qituvchi gap aytadi, o'quvchilar a/an/the/hech narsa kerakligini aytadi.","In pairs, talk about your countries and favorite music.","Juftlikda mamlakatlaringiz va sevimli musiqangiz haqida gapiring."]
+},
+
+{d:19,w:4,wt:"Quantities & Everyday Things",wtUz:"Miqdorlar va kundalik narsalar",
+t:"Someone, Anyone, Nothing...",tu:"Someone, anyone, nothing...",
+v:[
+["someone","kimdir","I can see someone."],
+["anyone","hech kim (savol/inkor)","Is there anyone here?"],
+["something","nimadir","There is something here."],
+["anything","hech narsa (savol/inkor)","I can't see anything."],
+["nothing","hech narsa","There is nothing here."],
+["nowhere","hech qayerga","I have nowhere to go."]
+],
+dl:[
+["Malika","Is there anyone here?","Bu yerda kimdir bormi?"],
+["Aziz","No, there is no one. There is nothing here.","Yo'q, hech kim yo'q. Bu yerda hech narsa yo'q."],
+["Malika","I can see something over there!","Men u yerda nimadir ko'ryapman!"]
+],
+g:["Someone, Anyone, Nothing, Nowhere","'Someone/something' are for positive sentences: I can see someone. 'Anyone/anything' are for questions and negatives: Is there anyone here? 'Nothing/nowhere' already mean negative — don't add 'not'.","Someone, anyone, nothing, nowhere","'Someone/something' tasdiq gaplarda ishlatiladi: I can see someone. 'Anyone/anything' so'roq va inkor gaplarda ishlatiladi: Is there anyone here? 'Nothing/nowhere' allaqachon inkor ma'nosini bildiradi — 'not' qo'shilmaydi."],
+qz:[
+["Choose the correct word: 'I can see ___.' (positive)",["anyone","someone","no one","nothing"],1],
+["Choose the correct word: 'Is there ___ here?'",["someone","anyone","no one","something"],1],
+["Choose the correct sentence.",["There isn't nothing.","There is nothing.","There isn't anything not.","Nothing isn't there."],1],
+["'Hech qayerga' in English is ___.",["Somewhere","Anywhere","Nowhere","Everywhere"],2]
+],
+sp:["Describe your bag: say something that is in it and something that is not.","Sumkangizni tasvirlang: unda nima borligini va nima yo'qligini ayting."],
+ls:["Mystery bag game: guess what's inside using 'something/nothing'.","Sirli sumka o'yini: ichida nima borligini 'something/nothing' bilan taxmin qiling.","In pairs, ask 'Is there anyone/anything...?' about the classroom.","Juftlikda sinf haqida 'Is there anyone/anything...?' deb so'rang."]
+},
+
+{d:20,w:4,wt:"Quantities & Everyday Things",wtUz:"Miqdorlar va kundalik narsalar",rev:true,
+t:"Week 4 Review",tu:"4-hafta Takrorlash",
+qz:[
+["Choose the correct word: 'I don't have ___ milk.'",["some","any","a","the"],1],
+["Choose the correct word: 'Would you like ___ tea?'",["some","any","much","many"],0],
+["Choose the correct word: '___ money do you have?'",["How much","How many","How","What"],0],
+["Choose the correct word: '___ books do you have?'",["How much","How many","How","What"],1],
+["Choose the correct article: 'I have a book. ___ book is red.'",["A","An","The","No article"],2],
+["Choose the correct article: 'I live in ___ Uzbekistan.'",["a","an","the","no article"],3],
+["Choose the correct word: 'I can see ___.' (positive)",["anyone","someone","no one","nothing"],1],
+["Choose the correct word: 'Is there ___ here?'",["someone","anyone","no one","something"],1]
+],
+sp:["Talk about what food and money you have, using some/any/how much/how many.","Qanday ovqat va pulingiz borligi haqida some/any/how much/how many bilan gapiring."],
+ls:["Class review relay: some/any, how much/many, articles, and someone/anyone mixed quiz.","Sinf takrorlash estafetasi: some/any, how much/many, artikllar va someone/anyone aralash so'rovi.","In pairs, review the week using quantities and articles.","Juftlikda haftani miqdorlar va artikllar bilan takrorlang."]
+},
+
+{d:21,w:5,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
 t:"Present Simple — Everyday Actions",tu:"Present Simple — kundalik harakatlar",
 v:[
 ["go","bormoq","I go to school every day."],
@@ -534,10 +658,7 @@ dl:[
 ["Teacher","Do you like English?","Ingliz tilini yoqtirasizmi?"],
 ["Student","Yes, I always like my English class.","Ha, men doim ingliz tili darsimni yoqtiraman."]
 ],
-g:["Present Simple — I / you / we / they",
-"Use the present simple with I/you/we/they for routines and things you do regularly: I go to school every day. I study English. Add 'always', 'usually', 'sometimes' to say how often.",
-"Present Simple — I / you / we / they",
-"I/you/we/they bilan muntazam qiladigan ishlar haqida gapirish uchun present simple ishlatiladi: I go to school every day. I study English. Qanchalik tez-tez ekanini bildirish uchun 'always', 'usually', 'sometimes' qo'shiladi."],
+g:["Present Simple — I / you / we / they","Use the present simple with I/you/we/they for routines and things you do regularly: I go to school every day. I study English. Add 'always', 'usually', 'sometimes' to say how often.","Present Simple — I / you / we / they","I/you/we/they bilan muntazam qiladigan ishlar haqida gapirish uchun present simple ishlatiladi: I go to school every day. I study English. Qanchalik tez-tez ekanini bildirish uchun 'always', 'usually', 'sometimes' qo'shiladi."],
 qz:[
 ["Choose the correct sentence.",["I goes to school.","I go to school.","I going to school.","I am go to school."],1],
 ["'Har kuni' in English is ___.",["Sometimes","Always","Every day","Never"],2],
@@ -545,11 +666,10 @@ qz:[
 ["'Yoqtirmoq' in English is ___.",["Live","Work","Like","Play"],2]
 ],
 sp:["Talk about 3 things you do every day.","Har kuni qiladigan 3 ta ishingiz haqida gapiring."],
-ls:["Class chain: each student says one thing they do every day.","Sinf zanjiri: har bir o'quvchi har kuni qiladigan bitta ishini aytadi.",
-"In pairs, ask 'What do you do every day?' and compare answers.","Juftlikda 'Har kuni nima qilasiz?' deb so'rang va javoblarni solishtiring."]
+ls:["Class chain: each student says one thing they do every day.","Sinf zanjiri: har bir o'quvchi har kuni qiladigan bitta ishini aytadi.","In pairs, ask 'What do you do every day?' and compare answers.","Juftlikda 'Har kuni nima qilasiz?' deb so'rang va javoblarni solishtiring."]
 },
 
-{d:17,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
+{d:22,w:5,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
 t:"Present Simple — He / She (-s)",tu:"Present Simple — He / She (-s)",
 v:[
 ["goes","boradi","She goes to school."],
@@ -569,10 +689,7 @@ dl:[
 ["Malika","Does he like football?","U futbolni yoqtiradimi?"],
 ["Aziz","Yes, he likes football very much.","Ha, u futbolni juda yoqtiradi."]
 ],
-g:["Present Simple: Adding -s with He / She / It",
-"With he/she/it, add -s to the verb: go → goes, like → likes. Words ending in -y after a consonant change to -ies: study → studies. This -s is easy to forget, but it's essential.",
-"Present Simple: He / She / It bilan -s qo'shish",
-"He/she/it bilan fe'lga -s qo'shiladi: go → goes, like → likes. Undosh + y bilan tugagan so'zlarda -ies bo'ladi: study → studies. Bu -s ni unutish oson, lekin u juda muhim."],
+g:["Present Simple: Adding -s with He / She / It","With he/she/it, add -s to the verb: go → goes, like → likes. Words ending in -y after a consonant change to -ies: study → studies. This -s is easy to forget, but it's essential.","Present Simple: He / She / It bilan -s qo'shish","He/she/it bilan fe'lga -s qo'shiladi: go → goes, like → likes. Undosh + y bilan tugagan so'zlarda -ies bo'ladi: study → studies. Bu -s ni unutish oson, lekin u juda muhim."],
 qz:[
 ["Choose the correct sentence.",["He go to school.","He goes to school.","He going to school.","He gos to school."],1],
 ["'Study' with 'she' becomes ___.",["Studys","Studies","Studying","Studyes"],1],
@@ -580,11 +697,10 @@ qz:[
 ["Choose the correct sentence.",["He read books.","He reads books.","He reading books.","He is reads books."],1]
 ],
 sp:["Talk about what your mother or father does every day.","Onangiz yoki otangiz har kuni nima qilishi haqida gapiring."],
-ls:["Class chain: each student says what a family member does, using he/she + -s.","Sinf zanjiri: har bir o'quvchi oila a'zosi nima qilishi haqida he/she + -s bilan aytadi.",
-"In pairs, ask about each other's best friend's daily routine.","Juftlikda bir-biringizning eng yaqin do'stingizning kundalik hayoti haqida so'rang."]
+ls:["Class chain: each student says what a family member does, using he/she + -s.","Sinf zanjiri: har bir o'quvchi oila a'zosi nima qilishi haqida he/she + -s bilan aytadi.","In pairs, ask about each other's best friend's daily routine.","Juftlikda bir-biringizning eng yaqin do'stingizning kundalik hayoti haqida so'rang."]
 },
 
-{d:18,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
+{d:23,w:5,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
 t:"Present Continuous — Right Now",tu:"Present Continuous — hozir",
 v:[
 ["reading","o'qiyapti","She is reading a book."],
@@ -603,10 +719,7 @@ dl:[
 ["Aziz","I am reading a book. What about you?","Men kitob o'qiyapman. Sizchi?"],
 ["Malika","I am watching TV with my sister.","Men opam bilan televizor tomosha qilyapman."]
 ],
-g:["Present Continuous: Actions Happening Now",
-"Use 'am/is/are + verb-ing' for something happening right now: I am reading. She is playing. Most verbs just add -ing (play → playing); verbs ending in -e drop it (write → writing).",
-"Present Continuous: hozir sodir bo'layotgan harakatlar",
-"Hozir sodir bo'layotgan narsa uchun 'am/is/are + fe'l-ing' ishlatiladi: I am reading. She is playing. Ko'pchilik fe'llarga -ing qo'shiladi (play → playing); -e bilan tugaganlarda -e tushadi (write → writing)."],
+g:["Present Continuous: Actions Happening Now","Use 'am/is/are + verb-ing' for something happening right now: I am reading. She is playing. Most verbs just add -ing (play → playing); verbs ending in -e drop it (write → writing).","Present Continuous: hozir sodir bo'layotgan harakatlar","Hozir sodir bo'layotgan narsa uchun 'am/is/are + fe'l-ing' ishlatiladi: I am reading. She is playing. Ko'pchilik fe'llarga -ing qo'shiladi (play → playing); -e bilan tugaganlarda -e tushadi (write → writing)."],
 qz:[
 ["Choose the correct sentence about now.",["I read a book now.","I am reading a book now.","I reading a book now.","I reads a book now."],1],
 ["What is the -ing form of 'write'?",["Writeing","Writting","Writing","Wrieing"],2],
@@ -614,11 +727,10 @@ qz:[
 ["Choose the correct sentence.",["They play football now.","They are playing football now.","They playing football now.","They is playing football now."],1]
 ],
 sp:["Look around and describe 3 things happening right now.","Atrofingizga qarang va hozir sodir bo'layotgan 3 ta ishni tasvirlang."],
-ls:["Freeze game: act, teacher says 'Freeze!' and asks 'What are you doing?'","Muzlash o'yini: harakat qiling, o'qituvchi 'Freeze!' deydi va 'Nima qilyapsiz?' deb so'raydi.",
-"In pairs, mime an action, partner guesses using 'Are you...ing?'","Juftlikda harakatni ijro eting, sherigingiz 'Are you...ing?' deb topsin."]
+ls:["Freeze game: act, teacher says 'Freeze!' and asks 'What are you doing?'","Muzlash o'yini: harakat qiling, o'qituvchi 'Freeze!' deydi va 'Nima qilyapsiz?' deb so'raydi.","In pairs, mime an action, partner guesses using 'Are you...ing?'","Juftlikda harakatni ijro eting, sherigingiz 'Are you...ing?' deb topsin."]
 },
 
-{d:19,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
+{d:24,w:5,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",
 t:"Present Simple vs Present Continuous",tu:"Present Simple va Present Continuous farqi",
 v:[
 ["usually","odatda","I usually walk to school."],
@@ -633,13 +745,10 @@ v:[
 dl:[
 ["Teacher","Do you usually walk to school?","Odatda maktabga piyoda borasizmi?"],
 ["Student","Yes, but today I am going by bus.","Ha, lekin bugun avtobusda boryapman."],
-["Teacher","Why?","Nega?"],
-["Student","Because it's raining now.","Chunki hozir yomg'ir yog'yapti."]
+["Teacher","OK! Have a good day.","Xo'p! Kuningiz xayrli o'tsin."],
+["Student","Thank you, see you later!","Rahmat, ko'rishguncha!"]
 ],
-g:["Present Simple vs Present Continuous",
-"Present simple is for routines and general facts: I usually walk to school. Present continuous is for right now: But today, I am going by bus. Don't mix them up — 'usually/always' go with present simple, 'now/at the moment' go with present continuous.",
-"Present Simple va Present Continuous farqi",
-"Present simple odat va umumiy faktlar uchun: I usually walk to school. Present continuous hozirgi payt uchun: But today, I am going by bus. Ularni aralashtirmang — 'usually/always' present simple bilan, 'now/at the moment' present continuous bilan keladi."],
+g:["Present Simple vs Present Continuous","Present simple is for routines and general facts: I usually walk to school. Present continuous is for right now: But today, I am going by bus. Don't mix them up — 'usually/always' go with present simple, 'now/at the moment' go with present continuous.","Present Simple va Present Continuous farqi","Present simple odat va umumiy faktlar uchun: I usually walk to school. Present continuous hozirgi payt uchun: But today, I am going by bus. Ularni aralashtirmang — 'usually/always' present simple bilan, 'now/at the moment' present continuous bilan keladi."],
 qz:[
 ["Choose the correct sentence for a routine.",["I am usually walking to school.","I usually walk to school.","I usually walking to school.","I usually walks to school."],1],
 ["Choose the correct sentence for right now.",["I go by bus today.","I am going by bus today.","I am go by bus today.","I going by bus today."],1],
@@ -647,29 +756,26 @@ qz:[
 ["Which word goes with present simple?",["Now","At the moment","Right now","Usually"],3]
 ],
 sp:["Say something you usually do, and something different you are doing today.","Odatda qiladigan ishingizni va bugun qilayotgan boshqacha ishingizni ayting."],
-ls:["Class contrast game: teacher says 'usually' or 'now', students say a matching sentence.","Sinf farq o'yini: o'qituvchi 'usually' yoki 'now' deydi, o'quvchilar mos gap aytadi.",
-"In pairs, compare your usual routine with what's different today.","Juftlikda odatiy tartibingizni bugungi farqi bilan solishtiring."]
+ls:["Class contrast game: teacher says 'usually' or 'now', students say a matching sentence.","Sinf farq o'yini: o'qituvchi 'usually' yoki 'now' deydi, o'quvchilar mos gap aytadi.","In pairs, compare your usual routine with what's different today.","Juftlikda odatiy tartibingizni bugungi farqi bilan solishtiring."]
 },
 
-{d:20,w:4,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",rev:true,
-t:"Week 4 Review",tu:"4-hafta Takrorlash",
+{d:25,w:5,wt:"My Daily Routine",wtUz:"Mening kundalik hayotim",rev:true,
+t:"Week 5 Review",tu:"5-hafta Takrorlash",
 qz:[
 ["Choose the correct sentence.",["I goes to school.","I go to school.","I going to school.","I am go to school."],1],
+["'Har kuni' in English is ___.",["Sometimes","Always","Every day","Never"],2],
+["Choose the correct sentence.",["He go to school.","He goes to school.","He going to school.","He gos to school."],1],
 ["'Study' with 'she' becomes ___.",["Studys","Studies","Studying","Studyes"],1],
 ["Choose the correct sentence about now.",["I read a book now.","I am reading a book now.","I reading a book now.","I reads a book now."],1],
-["Choose the correct sentence for a routine.",["I am usually walking to school.","I usually walk to school.","I usually walking to school.","I usually walks to school."],1],
 ["What is the -ing form of 'write'?",["Writeing","Writting","Writing","Wrieing"],2],
-["Choose the correct sentence.",["He read books.","He reads books.","He reading books.","He is reads books."],1],
-["Which word goes with present continuous?",["Usually","Always","Now","Every day"],2],
-["'Har kuni' in English is ___.",["Sometimes","Always","Every day","Never"],2]
+["Choose the correct sentence for a routine.",["I am usually walking to school.","I usually walk to school.","I usually walking to school.","I usually walks to school."],1],
+["Choose the correct sentence for right now.",["I go by bus today.","I am going by bus today.","I am go by bus today.","I going by bus today."],1]
 ],
 sp:["Describe your daily routine, then say what you are doing right now.","Kundalik tartibingizni tasvirlang, so'ng hozir nima qilayotganingizni ayting."],
-ls:["Class review relay: present simple vs continuous mixed quiz.","Sinf takrorlash estafetasi: present simple va continuous aralash so'rovi.",
-"In pairs, review the week using routines and right-now actions.","Juftlikda haftani odatlar va hozirgi harakatlar bilan takrorlang."]
-}
-,
+ls:["Class review relay: present simple vs continuous mixed quiz.","Sinf takrorlash estafetasi: present simple va continuous aralash so'rovi.","In pairs, review the week using routines and right-now actions.","Juftlikda haftani odatlar va hozirgi harakatlar bilan takrorlang."]
+},
 
-{d:21,w:5,wt:"Where Is It?",wtUz:"U qayerda?",
+{d:26,w:6,wt:"Where, When & Why",wtUz:"Qayer, qachon va nega",
 t:"Prepositions of Place",tu:"O'rin predloglari",
 v:[
 ["in","ichida","The cat is in the box."],
@@ -689,10 +795,7 @@ dl:[
 ["Teacher","Is the book on the table?","Kitob stol ustidami?"],
 ["Student","Yes, it's on the table.","Ha, u stol ustida."]
 ],
-g:["Prepositions of Place: in, on, under, next to",
-"'In' = inside ('in the box'). 'On' = on a surface ('on the table'). 'Under' = below ('under the bed'). 'Behind' = at the back. 'Between' = in the middle of two things. 'Next to' = beside.",
-"O'rin predloglari: in, on, under, next to",
-"'In' — ichida ('in the box'). 'On' — ustida ('on the table'). 'Under' — ostida ('under the bed'). 'Behind' — orqasida. 'Between' — ikkitasining orasida. 'Next to' — yonida."],
+g:["Prepositions of Place: in, on, under, next to","'In' = inside ('in the box'). 'On' = on a surface ('on the table'). 'Under' = below ('under the bed'). 'Behind' = at the back. 'Between' = in the middle of two things. 'Next to' = beside.","O'rin predloglari: in, on, under, next to","'In' — ichida ('in the box'). 'On' — ustida ('on the table'). 'Under' — ostida ('under the bed'). 'Behind' — orqasida. 'Between' — ikkitasining orasida. 'Next to' — yonida."],
 qz:[
 ["Choose the correct preposition: 'The book is ___ the table.'",["in","on","under","next to"],1],
 ["Choose the correct preposition: 'The cat is ___ the box.'",["on","in","under","between"],1],
@@ -700,11 +803,10 @@ qz:[
 ["Which preposition means 'yonida'?",["In","On","Under","Next to"],3]
 ],
 sp:["Describe where 5 things are in your room using in/on/under/next to.","Xonangizdagi 5 ta narsaning qayerda ekanini in/on/under/next to yordamida tasvirlang."],
-ls:["Classroom scavenger hunt: find objects and describe their location.","Sinfda buyum qidirish: buyumlarni topib joylashuvini tasvirlang.",
-"In pairs, hide an object and give clues using prepositions.","Juftlikda buyumni yashiring va predloglar yordamida maslahat bering."]
+ls:["Classroom scavenger hunt: find objects and describe their location.","Sinfda buyum qidirish: buyumlarni topib joylashuvini tasvirlang.","In pairs, hide an object and give clues using prepositions.","Juftlikda buyumni yashiring va predloglar yordamida maslahat bering."]
 },
 
-{d:22,w:5,wt:"Where Is It?",wtUz:"U qayerda?",
+{d:27,w:6,wt:"Where, When & Why",wtUz:"Qayer, qachon va nega",
 t:"Prepositions of Time",tu:"Vaqt predloglari",
 v:[
 ["at","-da (aniq vaqt)","I wake up at seven o'clock."],
@@ -716,17 +818,14 @@ v:[
 ["morning","ertalab","I study in the morning."],
 ["night","tun","I sleep at night."],
 ["today","bugun","I have a test today."],
-["tomorrow","ertaga","I will see you tomorrow."]
+["tomorrow","ertaga","My test is tomorrow."]
 ],
 dl:[
 ["Malika","What time do you wake up?","Soat nechada uyg'onasiz?"],
 ["Aziz","I wake up at seven o'clock. When is your birthday?","Men soat yettida uyg'onaman. Tug'ilgan kuningiz qachon?"],
 ["Malika","My birthday is in May.","Tug'ilgan kunim mayda."]
 ],
-g:["Prepositions of Time: at, on, in",
-"Use 'at' with clock times: at seven o'clock. Use 'on' with days: on Monday. Use 'in' with months and years: in May, in 2026.",
-"Vaqt predloglari: at, on, in",
-"'At' aniq soat bilan ishlatiladi: at seven o'clock. 'On' kunlar bilan ishlatiladi: on Monday. 'In' oy va yillar bilan ishlatiladi: in May, in 2026."],
+g:["Prepositions of Time: at, on, in","Use 'at' with clock times: at seven o'clock. Use 'on' with days: on Monday. Use 'in' with months and years: in May, in 2026.","Vaqt predloglari: at, on, in","'At' aniq soat bilan ishlatiladi: at seven o'clock. 'On' kunlar bilan ishlatiladi: on Monday. 'In' oy va yillar bilan ishlatiladi: in May, in 2026."],
 qz:[
 ["Choose the correct word: 'I wake up ___ seven o'clock.'",["on","in","at","for"],2],
 ["Choose the correct word: 'I have class ___ Monday.'",["in","on","at","for"],1],
@@ -734,11 +833,10 @@ qz:[
 ["Which preposition goes with a clock time?",["at","on","in","for"],0]
 ],
 sp:["Say what time you wake up, and what day you have your favorite class.","Soat nechada uyg'onishingizni va sevimli faningiz qaysi kun ekanini ayting."],
-ls:["Class calendar check: ask 'What day is it?' and 'What time is it?'","Sinf kalendar tekshiruvi: 'Bugun qaysi kun?' va 'Soat necha?' deb so'rang.",
-"In pairs, ask each other's birthday month and favorite class day.","Juftlikda bir-biringizning tug'ilgan oyingiz va sevimli dars kuningizni so'rang."]
+ls:["Class calendar check: ask 'What day is it?' and 'What time is it?'","Sinf kalendar tekshiruvi: 'Bugun qaysi kun?' va 'Soat necha?' deb so'rang.","In pairs, ask each other's birthday month and favorite class day.","Juftlikda bir-biringizning tug'ilgan oyingiz va sevimli dars kuningizni so'rang."]
 },
 
-{d:23,w:5,wt:"Where Is It?",wtUz:"U qayerda?",
+{d:28,w:6,wt:"Where, When & Why",wtUz:"Qayer, qachon va nega",
 t:"Question Words",tu:"Savol so'zlari",
 v:[
 ["who","kim","Who is your teacher?"],
@@ -756,10 +854,7 @@ dl:[
 ["Teacher","Where does she live?","U qayerda yashaydi?"],
 ["Student","She lives near my house.","U mening uyim yaqinida yashaydi."]
 ],
-g:["Question Words",
-"Question words start the question: Who (person), What (thing), Where (place), When (time), Why (reason), How (manner). They always come first: Where do you live?",
-"Savol so'zlari",
-"Savol so'zlari savolni boshlaydi: Who (kim), What (nima), Where (qayerda), When (qachon), Why (nega), How (qanday). Ular doim birinchi o'rinda keladi: Where do you live?"],
+g:["Question Words","Question words start the question: Who (person), What (thing), Where (place), When (time), Why (reason), How (manner). They always come first: Where do you live?","Savol so'zlari","Savol so'zlari savolni boshlaydi: Who (kim), What (nima), Where (qayerda), When (qachon), Why (nega), How (qanday). Ular doim birinchi o'rinda keladi: Where do you live?"],
 qz:[
 ["Choose the correct question word for a person.",["What","Where","Who","When"],2],
 ["Choose the correct question word for a place.",["Who","What","Where","When"],2],
@@ -767,93 +862,49 @@ qz:[
 ["'Bu kimning kitobi?' in English is ___.",["Who book is this?","Whose book is this?","What book is this?","Where book is this?"],1]
 ],
 sp:["Ask your partner 4 different questions using who/what/where/when.","Sherigingizga who/what/where/when yordamida 4 xil savol bering."],
-ls:["Question chain: each student asks a question to the next student.","Savol zanjiri: har bir o'quvchi keyingisiga savol beradi.",
-"In pairs, interview each other with at least 4 different question words.","Juftlikda kamida 4 xil savol so'zi bilan bir-biringizni intervyu qiling."]
+ls:["Question chain: each student asks a question to the next student.","Savol zanjiri: har bir o'quvchi keyingisiga savol beradi.","In pairs, interview each other with at least 4 different question words.","Juftlikda kamida 4 xil savol so'zi bilan bir-biringizni intervyu qiling."]
 },
 
-{d:24,w:5,wt:"Where Is It?",wtUz:"U qayerda?",
-t:"How Much / How Many",tu:"How Much / How Many",
+{d:29,w:6,wt:"Where, When & Why",wtUz:"Qayer, qachon va nega",
+t:"And, But, Or, Because",tu:"And, but, or, because",
 v:[
-["how much","qancha (sanalmaydigan)","How much water do you drink?"],
-["how many","nechta (sanaladigan)","How many books do you have?"],
-["money","pul","How much money do you have?"],
-["water","suv","How much water do you drink?"],
-["books","kitoblar","How many books do you have?"],
-["apples","olmalar","How many apples do you want?"],
-["a lot of","ko'p","I have a lot of books."],
-["not much","ko'p emas","I don't have much money."]
+["and","va","I like tea and coffee."],
+["but","lekin","I like tea, but I don't like coffee."],
+["or","yoki","Do you want tea or coffee?"],
+["because","chunki","I stay home because I am sick."]
 ],
 dl:[
-["Malika","How many books do you have?","Sizda nechta kitob bor?"],
-["Aziz","I have a lot of books. How much money do you have?","Menda ko'p kitob bor. Sizda qancha pul bor?"],
-["Malika","I don't have much money today.","Bugun menda ko'p pul yo'q."]
+["Malika","Do you want tea or coffee?","Choy yoki kofe ichasizmi?"],
+["Aziz","I like tea, but I don't like coffee. And I stay home today because I am sick.","Men choyni yoqtiraman, lekin kofeni yoqtirmayman. Va bugun uyda qolaman, chunki kasalman."]
 ],
-g:["How Much / How Many",
-"Use 'How much' with things we can't count (money, water): How much money do you have? Use 'How many' with things we can count: How many books do you have?",
-"How Much / How Many",
-"Sanalmaydigan narsalar (pul, suv) bilan 'How much' ishlatiladi: How much money do you have? Sanaladigan narsalar bilan 'How many' ishlatiladi: How many books do you have?"],
+g:["And, But, Or, Because","'And' joins two similar ideas. 'But' shows contrast. 'Or' shows a choice. 'Because' gives a reason: I stay home because I am sick.","And, but, or, because","'And' ikkita o'xshash fikrni bog'laydi. 'But' qarama-qarshilikni bildiradi. 'Or' tanlovni bildiradi. 'Because' sabab bildiradi: I stay home because I am sick."],
 qz:[
-["Choose the correct word: '___ money do you have?'",["How much","How many","How","What"],0],
-["Choose the correct word: '___ books do you have?'",["How much","How many","How","What"],1],
-["'Ko'p kitobim bor' in English is ___.",["I have a lot of books.","I have much books.","I have many of books.","I have a lot books."],0],
-["Which word goes with uncountable things like water?",["Many","Much","Few","A"],1]
+["Choose the correct connector: 'I like tea ___ coffee.'",["but","because","and","or"],2],
+["Choose the correct connector: 'I like tea, ___ I don't like coffee.'",["and","but","because","or"],1],
+["Choose the correct connector: 'I stay home ___ I am sick.'",["but","because","so","and"],1],
+["Which connector gives a reason?",["and","but","because","or"],2]
 ],
-sp:["Ask your partner how much money and how many books they have.","Sherigingizdan qancha puli va nechta kitobi borligini so'rang."],
-ls:["Class survey: ask 'How many pens do you have?' and total the class results.","Sinf so'rovi: 'Nechta ruchkangiz bor?' deb so'rang va sinf natijasini yig'ing.",
-"In pairs, practice how much/how many with school supplies.","Juftlikda maktab buyumlari bilan how much/how many mashq qiling."]
+sp:["Say 2 things you like and 1 thing you don't, giving a reason with 'because'.","Yoqtirgan 2 ta narsangizni va yoqtirmagan 1 ta narsangizni 'because' bilan sabab ko'rsatib ayting."],
+ls:["Class chain: each student adds a sentence using and/but/or/because.","Sinf zanjiri: har bir o'quvchi and/but/or/because bilan gap qo'shadi.","In pairs, tell each other why you like or don't like something.","Juftlikda biror narsani nega yoqtirishingiz yoki yoqtirmasligingizni ayting."]
 },
 
-{d:25,w:5,wt:"Where Is It?",wtUz:"U qayerda?",rev:true,
-t:"Week 5 Review",tu:"5-hafta Takrorlash",
+{d:30,w:6,wt:"Where, When & Why",wtUz:"Qayer, qachon va nega",rev:true,
+t:"Week 6 Review — Term 1 Final Check",tu:"6-hafta Takrorlash — 1-chorak Yakuniy Tekshiruvi",
 qz:[
 ["Choose the correct preposition: 'The book is ___ the table.'",["in","on","under","next to"],1],
+["Choose the correct preposition: 'The cat is ___ the box.'",["on","in","under","between"],1],
 ["Choose the correct word: 'I wake up ___ seven o'clock.'",["on","in","at","for"],2],
-["Choose the correct question word for a person.",["What","Where","Who","When"],2],
-["Choose the correct word: '___ books do you have?'",["How much","How many","How","What"],1],
 ["Choose the correct word: 'I have class ___ Monday.'",["in","on","at","for"],1],
-["'Bu kimning kitobi?' in English is ___.",["Who book is this?","Whose book is this?","What book is this?","Where book is this?"],1],
-["Which preposition means 'yonida'?",["In","On","Under","Next to"],3],
-["'Ko'p kitobim bor' in English is ___.",["I have a lot of books.","I have much books.","I have many of books.","I have a lot books."],0]
+["Choose the correct question word for a person.",["What","Where","Who","When"],2],
+["Choose the correct question word for a place.",["Who","What","Where","When"],2],
+["Choose the correct connector: 'I like tea ___ coffee.'",["but","because","and","or"],2],
+["Choose the correct connector: 'I like tea, ___ I don't like coffee.'",["and","but","because","or"],1]
 ],
 sp:["Describe your room, your daily schedule, and answer 3 questions from a friend.","Xonangizni, kundalik jadvalingizni tasvirlang va do'stingizning 3 ta savoliga javob bering."],
-ls:["Class review relay: prepositions, time, and question words mixed quiz.","Sinf takrorlash estafetasi: predloglar, vaqt va savol so'zlari aralash so'rovi.",
-"In pairs, review the week with a mini interview.","Juftlikda haftani kichik intervyu bilan takrorlang."]
-}
-,
-
-{d:26,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",
-t:"Some / Any",tu:"Some / Any",
-v:[
-["some","biroz","I have some bread."],
-["any","hech qanday","I don't have any milk."],
-["bread","non","I have some bread."],
-["milk","sut","I don't have any milk."],
-["apples","olmalar","I have some apples."],
-["pens","ruchkalar","Do you have any pens?"],
-["water","suv","I want some water."],
-["tea","choy","Would you like some tea?"]
-],
-dl:[
-["Teacher","Do you have any pens?","Ruchkangiz bormi?"],
-["Student","Yes, I have some pens. Would you like some tea?","Ha, menda bir nechta ruchka bor. Choy ichasizmi?"],
-["Teacher","Yes, please. Thank you.","Ha, iltimos. Rahmat."]
-],
-g:["Some and Any",
-"Use 'some' in positive sentences and offers: I have some bread. Would you like some tea? Use 'any' in negatives and questions: I don't have any milk. Do you have any pens?",
-"Some va Any",
-"'Some' tasdiq gaplar va takliflarda ishlatiladi: I have some bread. Would you like some tea? 'Any' inkor va so'roq gaplarda ishlatiladi: I don't have any milk. Do you have any pens?"],
-qz:[
-["Choose the correct word: 'I don't have ___ milk.'",["some","any","a","the"],1],
-["Choose the correct word: 'Would you like ___ tea?'",["some","any","much","many"],0],
-["Choose the correct sentence.",["I have any apples.","I have some apples.","I have a apples.","I have the any apples."],1],
-["When do we usually use 'any'?",["Positive sentences","Negatives and questions","Only with people","Never"],1]
-],
-sp:["Say what food you have some of, and ask a friend if they have any.","Qanday ovqatingiz borligini ayting va do'stingizdan uning bor-yo'qligini so'rang."],
-ls:["Class 'offer' game: offer classmates 'Would you like some...?' with different foods.","Sinf 'taklif' o'yini: sinfdoshlaringizga turli ovqatlar bilan 'Would you like some...?' deb taklif qiling.",
-"In pairs, ask 'Do you have any...?' about school supplies.","Juftlikda maktab buyumlari haqida 'Do you have any...?' deb so'rang."]
+ls:["Class review relay: prepositions, time, question words, and connectors mixed quiz.","Sinf takrorlash estafetasi: predloglar, vaqt, savol so'zlari va bog'lovchilar aralash so'rovi.","In pairs, review the week with a mini interview.","Juftlikda haftani kichik intervyu bilan takrorlang."]
 },
 
-{d:27,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",
+{d:31,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
 t:"Like / Want + -ing / to",tu:"Like / Want + -ing / to",
 v:[
 ["like","yoqtirmoq","I like swimming."],
@@ -870,10 +921,7 @@ dl:[
 ["Aziz","Yes, I love swimming. I want to swim today.","Ha, men suzishni juda yoqtiraman. Bugun suzgim keladi."],
 ["Malika","I hate cleaning, but I want to help my mother.","Men tozalashni yomon ko'raman, lekin onamga yordam bergim keladi."]
 ],
-g:["Like/Love/Hate + -ing, Want + to",
-"After 'like', 'love', 'hate', use a verb + -ing: I like swimming. After 'want', use 'to' + the plain verb: I want to play.",
-"Like/Love/Hate + -ing, Want + to",
-"'Like', 'love', 'hate' dan keyin fe'l + ing ishlatiladi: I like swimming. 'Want' dan keyin 'to' + fe'lning oddiy shakli ishlatiladi: I want to play."],
+g:["Like/Love/Hate + -ing, Want + to","After 'like', 'love', 'hate', use a verb + -ing: I like swimming. After 'want', use 'to' + the plain verb: I want to play.","Like/Love/Hate + -ing, Want + to","'Like', 'love', 'hate' dan keyin fe'l + ing ishlatiladi: I like swimming. 'Want' dan keyin 'to' + fe'lning oddiy shakli ishlatiladi: I want to play."],
 qz:[
 ["Choose the correct sentence.",["I like to swim always.","I like swimming.","I like swims.","I liking swim."],1],
 ["Choose the correct sentence.",["I want playing football.","I want to play football.","I want play football.","I wants to play football."],1],
@@ -881,89 +929,10 @@ qz:[
 ["What follows 'want'?",["to + verb","verb + ing","plain verb","verb + s"],0]
 ],
 sp:["Say 2 things you like doing and 1 thing you want to do this weekend.","Yoqtiradigan 2 ta ishingizni va bu dam olish kunlari qilishni xohlagan 1 ta ishingizni ayting."],
-ls:["Class survey: ask 'Do you like...?' about hobbies.","Sinf so'rovi: hobbilar haqida 'Do you like...?' deb so'rang.",
-"In pairs, share things you like, love, and hate.","Juftlikda yoqtiradigan, juda yoqtiradigan va yomon ko'radigan narsalaringizni ayting."]
+ls:["Class survey: ask 'Do you like...?' about hobbies.","Sinf so'rovi: hobbilar haqida 'Do you like...?' deb so'rang.","In pairs, share things you like, love, and hate.","Juftlikda yoqtiradigan, juda yoqtiradigan va yomon ko'radigan narsalaringizni ayting."]
 },
 
-{d:28,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",
-t:"Articles — a/an, the, or nothing",tu:"Artikllar — a/an, the yoki hech narsa",
-v:[
-["the","(ma'lum narsa)","I have a book. The book is red."],
-["Uzbekistan","O'zbekiston","I live in Uzbekistan."],
-["music","musiqa","I like music."],
-["name","ism","My name is Aziz."],
-["close the door","eshikni yop","Close the door, please."],
-["open the window","derazani och","Open the window, please."]
-],
-dl:[
-["Teacher","Close the door, please.","Eshikni yoping, iltimos."],
-["Student","OK. I live in Uzbekistan. Do you like music?","Xo'p. Men O'zbekistonda yashayman. Musiqani yoqtirasizmi?"],
-["Teacher","Yes, I love music.","Ha, men musiqani juda yoqtiraman."]
-],
-g:["Articles: a/an, the, or nothing",
-"Use 'a/an' for something new. Use 'the' when both people know exactly which one: I have a book. The book is red. Use no article with names, most countries, and general ideas: I live in Uzbekistan. I like music.",
-"Artikllar: a/an, the yoki hech narsa",
-"Yangi narsa uchun 'a/an' ishlatiladi. Ikkala tomon ham aynan qaysi narsani bilganda 'the' ishlatiladi: I have a book. The book is red. Ism, ko'pchilik davlat va umumiy tushunchalar bilan artikl ishlatilmaydi: I live in Uzbekistan. I like music."],
-qz:[
-["Choose the correct article: 'I have a book. ___ book is red.'",["A","An","The","No article"],2],
-["Choose the correct article: 'I live in ___ Uzbekistan.'",["a","an","the","no article"],3],
-["Choose the correct article: 'I like ___ music.'",["a","an","the","no article"],3],
-["Choose the correct sentence.",["My name is the Aziz.","My name is Aziz.","My name is a Aziz.","My name is an Aziz."],1]
-],
-sp:["Talk about your country, your name, and something you like, using articles correctly.","Mamlakatingiz, ismingiz va yoqtirgan narsangiz haqida artikllardan to'g'ri foydalanib gapiring."],
-ls:["Class 'a/the' sorting: teacher says a sentence, students say if it needs a/an/the/nothing.","Sinf 'a/the' saralash: o'qituvchi gap aytadi, o'quvchilar a/an/the/hech narsa kerakligini aytadi.",
-"In pairs, talk about your countries and favorite music.","Juftlikda mamlakatlaringiz va sevimli musiqangiz haqida gapiring."]
-},
-
-{d:29,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",
-t:"Someone, Anyone, Nothing...",tu:"Someone, anyone, nothing...",
-v:[
-["someone","kimdir","I can see someone."],
-["anyone","hech kim (savol/inkor)","Is there anyone here?"],
-["something","nimadir","There is something in the box."],
-["anything","hech narsa (savol/inkor)","I can't see anything."],
-["nothing","hech narsa","There is nothing in the box."],
-["nowhere","hech qayerga","I have nowhere to go."]
-],
-dl:[
-["Malika","Is there anyone in the room?","Xonada kimdir bormi?"],
-["Aziz","No, there is no one. There is nothing here.","Yo'q, hech kim yo'q. Bu yerda hech narsa yo'q."],
-["Malika","I can see something over there!","Men u yerda nimadir ko'ryapman!"]
-],
-g:["Someone, Anyone, Nothing, Nowhere",
-"'Someone/something' are for positive sentences: I can see someone. 'Anyone/anything' are for questions and negatives: Is there anyone here? 'Nothing/nowhere' already mean negative — don't add 'not'.",
-"Someone, anyone, nothing, nowhere",
-"'Someone/something' tasdiq gaplarda ishlatiladi: I can see someone. 'Anyone/anything' so'roq va inkor gaplarda ishlatiladi: Is there anyone here? 'Nothing/nowhere' allaqachon inkor ma'nosini bildiradi — 'not' qo'shilmaydi."],
-qz:[
-["Choose the correct word: 'I can see ___.' (positive)",["anyone","someone","no one","nothing"],1],
-["Choose the correct word: 'Is there ___ here?'",["someone","anyone","no one","something"],1],
-["Choose the correct sentence.",["There isn't nothing.","There is nothing.","There isn't anything not.","Nothing isn't there."],1],
-["'Hech qayerga' in English is ___.",["Somewhere","Anywhere","Nowhere","Everywhere"],2]
-],
-sp:["Describe your bag: say something that is in it and something that is not.","Sumkangizni tasvirlang: unda nima borligini va nima yo'qligini ayting."],
-ls:["Mystery bag game: guess what's inside using 'something/nothing'.","Sirli sumka o'yini: ichida nima borligini 'something/nothing' bilan taxmin qiling.",
-"In pairs, ask 'Is there anyone/anything...?' about the classroom.","Juftlikda sinf haqida 'Is there anyone/anything...?' deb so'rang."]
-},
-
-{d:30,w:6,wt:"Food & Things",wtUz:"Ovqat va narsalar",rev:true,
-t:"Week 6 Review — Term 1 Final Check",tu:"6-hafta Takrorlash — 1-chorak Yakuniy Tekshiruvi",
-qz:[
-["Choose the correct word: 'I don't have ___ milk.'",["some","any","a","the"],1],
-["Choose the correct sentence.",["I want playing football.","I want to play football.","I want play football.","I wants to play football."],1],
-["Choose the correct article: 'I live in ___ Uzbekistan.'",["a","an","the","no article"],3],
-["Choose the correct word: 'Is there ___ here?'",["someone","anyone","no one","something"],1],
-["Choose the correct word: 'Would you like ___ tea?'",["some","any","much","many"],0],
-["What follows 'want'?",["to + verb","verb + ing","plain verb","verb + s"],0],
-["Choose the correct sentence.",["My name is the Aziz.","My name is Aziz.","My name is a Aziz.","My name is an Aziz."],1],
-["'Hech qayerga' in English is ___.",["Somewhere","Anywhere","Nowhere","Everywhere"],2]
-],
-sp:["Give a 1-minute talk about yourself: your name, country, family, daily routine, and things you like.","O'zingiz haqida 1 daqiqalik nutq so'zlang: ismingiz, mamlakatingiz, oilangiz, kundalik hayotingiz va yoqtirgan narsalaringiz haqida."],
-ls:["Term 1 celebration: each student shares one English sentence they're proud of.","1-chorak nishonlash: har bir o'quvchi faxrlanadigan bitta ingliz gapini aytadi.",
-"In pairs, review the whole term by describing yourselves fully.","Juftlikda butun chorakni o'zingizni to'liq tasvirlash orqali takrorlang."]
-}
-,
-
-{d:31,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
+{d:32,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
 t:"Adjectives & Adverbs",tu:"Sifatlar va ravishlar",
 v:[
 ["happy","baxtli","She is a happy girl."],
@@ -983,10 +952,7 @@ dl:[
 ["Teacher","Does she sing well?","U yaxshi qo'shiq aytadimi?"],
 ["Student","Yes, she sings very well.","Ha, u juda yaxshi qo'shiq aytadi."]
 ],
-g:["Adjectives & Adverbs of Manner",
-"An adjective describes a noun: a happy girl, a careful driver. An adverb describes a verb — most add -ly: happy → happily, careful → carefully. Some are irregular: good → well.",
-"Sifatlar va ravishlar",
-"Sifat otni tasvirlaydi: a happy girl, a careful driver. Ravish fe'lni tasvirlaydi — ko'pchiligiga -ly qo'shiladi: happy → happily, careful → carefully. Ba'zilari istisno: good → well."],
+g:["Adjectives & Adverbs of Manner","An adjective describes a noun: a happy girl, a careful driver. An adverb describes a verb — most add -ly: happy → happily, careful → carefully. Some are irregular: good → well.","Sifatlar va ravishlar","Sifat otni tasvirlaydi: a happy girl, a careful driver. Ravish fe'lni tasvirlaydi — ko'pchiligiga -ly qo'shiladi: happy → happily, careful → carefully. Ba'zilari istisno: good → well."],
 qz:[
 ["Choose the adjective.",["Happily","Happy","Carefully","Well"],1],
 ["Choose the adverb.",["Happy","Careful","Carefully","Good"],2],
@@ -994,11 +960,10 @@ qz:[
 ["Choose the correct sentence.",["She sings happy.","She sings happily.","She singing happily.","She happily sing."],1]
 ],
 sp:["Describe 2 people using adjectives, then describe how they do something using adverbs.","2 kishini sifatlar bilan tasvirlang, so'ng ular biror narsani qanday qilishini ravishlar bilan ayting."],
-ls:["Adjective/adverb sort: teacher says a word, students say if it's an adjective or adverb.","Sifat/ravish saralash: o'qituvchi so'z aytadi, o'quvchilar sifat yoki ravish ekanini aytadi.",
-"In pairs, describe how you do 3 daily activities using adverbs.","Juftlikda 3 ta kundalik ishni ravishlar bilan qanday qilishingizni tasvirlang."]
+ls:["Adjective/adverb sort: teacher says a word, students say if it's an adjective or adverb.","Sifat/ravish saralash: o'qituvchi so'z aytadi, o'quvchilar sifat yoki ravish ekanini aytadi.","In pairs, describe how you do 3 daily activities using adverbs.","Juftlikda 3 ta kundalik ishni ravishlar bilan qanday qilishingizni tasvirlang."]
 },
 
-{d:32,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
+{d:33,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
 t:"Comparatives & Superlatives",tu:"Solishtirish va eng ustunlik darajasi",
 v:[
 ["taller","balandroq","He is taller than me."],
@@ -1014,10 +979,7 @@ dl:[
 ["Malika","Who is taller, you or your brother?","Kim balandroq, siz yoki akangiz?"],
 ["Aziz","My brother is taller than me. He is the tallest in our family.","Akam mendan balandroq. U bizning oilamizda eng baland."]
 ],
-g:["Comparatives & Superlatives",
-"For short adjectives, add -er to compare two things and -est (with 'the') for three or more: tall → taller → the tallest. For longer adjectives, use 'more/the most'. Irregular: good → better → the best.",
-"Solishtirish va eng ustunlik darajasi",
-"Qisqa sifatlarga ikkitani solishtirish uchun -er, uchtadan ortiqni solishtirish uchun 'the' bilan -est qo'shiladi: tall → taller → the tallest. Uzunroq sifatlarda 'more/the most' ishlatiladi. Istisno: good → better → the best."],
+g:["Comparatives & Superlatives","For short adjectives, add -er to compare two things and -est (with 'the') for three or more: tall → taller → the tallest. For longer adjectives, use 'more/the most'. Irregular: good → better → the best.","Solishtirish va eng ustunlik darajasi","Qisqa sifatlarga ikkitani solishtirish uchun -er, uchtadan ortiqni solishtirish uchun 'the' bilan -est qo'shiladi: tall → taller → the tallest. Uzunroq sifatlarda 'more/the most' ishlatiladi. Istisno: good → better → the best."],
 qz:[
 ["Choose the correct comparative for 'tall'.",["More tall","Taller","Tallest","The taller"],1],
 ["Choose the correct superlative for 'tall'.",["Taller","Tallest","The tallest","More tall"],2],
@@ -1025,28 +987,24 @@ qz:[
 ["Choose the correct comparative form of 'good'.",["Gooder","Better","More good","Best"],1]
 ],
 sp:["Compare yourself with a family member (taller/shorter, older/younger).","O'zingizni oila a'zoingiz bilan solishtiring (balandroq/pastroq, kattaroq/kichikroq)."],
-ls:["Class comparison line-up: students line up from shortest to tallest, describing.","Sinf solishtirish safi: o'quvchilar eng pastdan eng balandgacha saf tortadi va tasvirlaydi.",
-"In pairs, compare 3 things (animals, foods, or family members).","Juftlikda 3 ta narsani (hayvon, ovqat yoki oila a'zosi) solishtiring."]
+ls:["Class comparison line-up: students line up from shortest to tallest, describing.","Sinf solishtirish safi: o'quvchilar eng pastdan eng balandgacha saf tortadi va tasvirlaydi.","In pairs, compare 3 things (animals, foods, or family members).","Juftlikda 3 ta narsani (hayvon, ovqat yoki oila a'zosi) solishtiring."]
 },
 
-{d:33,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
+{d:34,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
 t:"As...As — Equal Comparisons",tu:"As...As — teng solishtirish",
 v:[
 ["as tall as","kabi baland","She is as tall as her brother."],
 ["as old as","kabi katta yoshda","I am as old as my cousin."],
 ["as fast as","kabi tez","He runs as fast as me."],
 ["as good as","kabi yaxshi","Her English is as good as mine."],
-["worse","yomonroq","Today's weather is worse than yesterday."],
+["worse","yomonroq","Today's weather is worse than usual."],
 ["worst","eng yomon","This is the worst day."]
 ],
 dl:[
 ["Teacher","Is your English as good as your friend's?","Ingliz tilingiz do'stingiznikidek yaxshimi?"],
 ["Student","Yes, I think it's as good as hers.","Ha, menimcha uning ingliz tili bilan bir xil yaxshi."]
 ],
-g:["As...As — Saying Two Things Are Equal",
-"Use 'as + adjective + as' to say two things are equal: She is as tall as her brother. Negative: not as...as: I am not as tall as him.",
-"As...As — ikki narsa teng ekanini aytish",
-"Ikki narsa teng ekanini aytish uchun 'as + sifat + as' ishlatiladi: She is as tall as her brother. Inkor: not as...as: I am not as tall as him."],
+g:["As...As — Saying Two Things Are Equal","Use 'as + adjective + as' to say two things are equal: She is as tall as her brother. Negative: not as...as: I am not as tall as him.","As...As — ikki narsa teng ekanini aytish","Ikki narsa teng ekanini aytish uchun 'as + sifat + as' ishlatiladi: She is as tall as her brother. Inkor: not as...as: I am not as tall as him."],
 qz:[
 ["Choose the correct sentence.",["She is as tall than her brother.","She is as tall as her brother.","She is so tall as her brother.","She is tall as her brother."],1],
 ["Choose the correct comparative for 'bad'.",["Badder","Worse","More bad","Baddest"],1],
@@ -1054,54 +1012,24 @@ qz:[
 ["What is the superlative of 'bad'?",["Worse","The worst","Badest","More bad"],1]
 ],
 sp:["Compare your English to a friend's using 'as good as' or 'not as good as'.","Ingliz tilingizni do'stingiznikiga 'as good as' yoki 'not as good as' bilan solishtiring."],
-ls:["Class 'as...as' game: compare two students or objects using 'as...as'.","Sinf 'as...as' o'yini: ikki o'quvchi yoki buyumni 'as...as' bilan solishtiring.",
-"In pairs, find things you and your partner are equally good at.","Juftlikda siz va sherigingiz teng darajada yaxshi bo'lgan narsalarni toping."]
-},
-
-{d:34,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",
-t:"And, But, Or, Because",tu:"And, but, or, because",
-v:[
-["and","va","I like tea and coffee."],
-["but","lekin","I like tea, but I don't like coffee."],
-["or","yoki","Do you want tea or coffee?"],
-["because","chunki","I stayed home because I was sick."]
-],
-dl:[
-["Malika","Do you want tea or coffee?","Choy yoki kofe ichasizmi?"],
-["Aziz","I like tea, but I don't like coffee. And I stayed home yesterday because I was sick.","Men choyni yoqtiraman, lekin kofeni yoqtirmayman. Kecha uyda qoldim, chunki kasal edim."]
-],
-g:["And, But, Or, Because",
-"'And' joins two similar ideas. 'But' shows contrast. 'Or' shows a choice. 'Because' gives a reason: I stayed home because I was sick.",
-"And, but, or, because",
-"'And' ikkita o'xshash fikrni bog'laydi. 'But' qarama-qarshilikni bildiradi. 'Or' tanlovni bildiradi. 'Because' sabab bildiradi: I stayed home because I was sick."],
-qz:[
-["Choose the correct connector: 'I like tea ___ coffee.'",["but","because","and","or"],2],
-["Choose the correct connector: 'I like tea, ___ I don't like coffee.'",["and","but","because","or"],1],
-["Choose the correct connector: 'I stayed home ___ I was sick.'",["but","because","so","and"],1],
-["Which connector gives a reason?",["and","but","because","or"],2]
-],
-sp:["Say 2 things you like and 1 thing you don't, giving a reason with 'because'.","Yoqtirgan 2 ta narsangizni va yoqtirmagan 1 ta narsangizni 'because' bilan sabab ko'rsatib ayting."],
-ls:["Class chain: each student adds a sentence using and/but/or/because.","Sinf zanjiri: har bir o'quvchi and/but/or/because bilan gap qo'shadi.",
-"In pairs, tell each other why you like or don't like something.","Juftlikda biror narsani nega yoqtirishingiz yoki yoqtirmasligingizni ayting."]
+ls:["Class 'as...as' game: compare two students or objects using 'as...as'.","Sinf 'as...as' o'yini: ikki o'quvchi yoki buyumni 'as...as' bilan solishtiring.","In pairs, find things you and your partner are equally good at.","Juftlikda siz va sherigingiz teng darajada yaxshi bo'lgan narsalarni toping."]
 },
 
 {d:35,w:7,wt:"Describing Things",wtUz:"Narsalarni tasvirlash",rev:true,
 t:"Week 7 Review",tu:"7-hafta Takrorlash",
 qz:[
+["Choose the correct sentence.",["I like to swim always.","I like swimming.","I like swims.","I liking swim."],1],
+["Choose the correct sentence.",["I want playing football.","I want to play football.","I want play football.","I wants to play football."],1],
+["Choose the adjective.",["Happily","Happy","Carefully","Well"],1],
 ["Choose the adverb.",["Happy","Careful","Carefully","Good"],2],
 ["Choose the correct comparative for 'tall'.",["More tall","Taller","Tallest","The taller"],1],
+["Choose the correct superlative for 'tall'.",["Taller","Tallest","The tallest","More tall"],2],
 ["Choose the correct sentence.",["She is as tall than her brother.","She is as tall as her brother.","She is so tall as her brother.","She is tall as her brother."],1],
-["Choose the correct connector: 'I stayed home ___ I was sick.'",["but","because","so","and"],1],
-["What is the adverb form of 'good'?",["Goodly","Well","Gooder","Good"],1],
-["Choose the correct comparative form of 'good'.",["Gooder","Better","More good","Best"],1],
-["What is the superlative of 'bad'?",["Worse","The worst","Badest","More bad"],1],
-["Choose the correct connector: 'I like tea ___ coffee.'",["but","because","and","or"],2]
+["Choose the correct comparative for 'bad'.",["Badder","Worse","More bad","Baddest"],1]
 ],
-sp:["Describe and compare 2 family members, saying why you like spending time with them.","2 ta oila a'zoingizni tasvirlang va solishtiring, ular bilan vaqt o'tkazishni nega yoqtirishingizni ayting."],
-ls:["Class review relay: adjectives, comparatives, and connectors mixed quiz.","Sinf takrorlash estafetasi: sifatlar, solishtirish va bog'lovchilar aralash so'rovi.",
-"In pairs, review the week using descriptions and comparisons.","Juftlikda haftani tasvirlash va solishtirish bilan takrorlang."]
-}
-,
+sp:["Describe and compare 2 family members, saying what you like doing with them.","2 ta oila a'zoingizni tasvirlang va solishtiring, ular bilan nima qilishni yoqtirishingizni ayting."],
+ls:["Class review relay: like/want, adjectives, comparatives mixed quiz.","Sinf takrorlash estafetasi: like/want, sifatlar, solishtirish aralash so'rovi.","In pairs, review the week using preferences, descriptions, and comparisons.","Juftlikda haftani xohish-istaklar, tasvirlash va solishtirish bilan takrorlang."]
+},
 
 {d:36,w:8,wt:"Yesterday",wtUz:"Kecha",
 t:"Past Simple — Was / Were",tu:"Past Simple — Was / Were",

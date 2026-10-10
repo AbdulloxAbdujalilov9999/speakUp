@@ -463,6 +463,10 @@ const D = {
 "Open": { uz:"Ochiq", ru:"Открыто" },
 "Note": { uz:"Izoh", ru:"Заметка" },
 "Assigned by {name}": { uz:"{name} tomonidan berilgan", ru:"Назначено: {name}" },
+"Review day {n} complete — score {s}%.": { uz:"{n}-takrorlash kuni yakunlandi — natija {s}%.", ru:"День повторения {n} завершён — результат {s}%." },
+"Your teacher marked {what} as passed.": { uz:"O'qituvchingiz {what} ni o'tilgan deb belgiladi.", ru:"Ваш учитель отметил {what} как пройденное." },
+"{n} lessons": { uz:"{n} ta dars", ru:"Уроков: {n}" },
+"Auto-generated from today's vocabulary — a fresh set every time.": { uz:"Bugungi so'zlardan avtomatik tuzilgan — har safar yangi to'plam.", ru:"Составлено автоматически из слов сегодняшнего дня — каждый раз новый набор." },
 };
 
 /* Week titles and grammar topics (course structure labels). */

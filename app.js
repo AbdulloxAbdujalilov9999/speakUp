@@ -8,6 +8,11 @@
 // grammar topics).
 const tr = (k, v) => (window.TT_t ? window.TT_t(k, v) : String(k).replace(/\{(\w+)\}/g, (m, n) => (v && v[n] != null ? v[n] : m)));
 const trc = (x) => (window.TT_tc ? window.TT_tc(x) : x);
+// Week titles carry their own Uzbek (wtUz); the i18n label table only knows a few.
+function weekTitle(d){
+  const t = trc(d.wt);
+  return (t === d.wt && !uiEn() && cLang() === "uz" && d.wtUz) ? d.wtUz : t;
+}
 
 // ---------- Course-content translations ("shadow text") ----------
 // English lessons show a translation beneath each line. It is Uzbek by
@@ -43,9 +48,13 @@ function indexContent(lang){
 }
 function cidx(){ const l = cLang(); if (!CIDX[l]) CIDX[l] = indexContent(l); return CIDX[l]; }
 const contentLoading = {};
+// Neither shared/content-uz.js nor content-ru.js is shipped yet — asking for
+// them just produced a 404 on every load (the baked-in Uzbek in curriculum.js
+// is what's shown). Flip a language to true once its file exists.
+const CONTENT_FILES = { uz: false, ru: false };
 function ensureContent(){
   const l = cLang();
-  if (contentFor(l) || contentLoading[l]) return;
+  if (!CONTENT_FILES[l] || contentFor(l) || contentLoading[l]) return;
   contentLoading[l] = true;
   const el = document.createElement("script");
   el.src = "shared/content-" + l + ".js";
@@ -678,7 +687,7 @@ function weekCardHtml(w){
   const wpct = Math.round((wp.done / wp.total) * 100);
   return `<button class="week-card${wp.done === wp.total ? " done" : ""}" data-week="${w}">
     <span class="week-top"><span class="week-badge">${w}</span><span class="week-count mono">${wp.done}/${wp.total}</span></span>
-    <span class="week-title">${escapeHtml(trc(first.wt))}</span>
+    <span class="week-title">${escapeHtml(weekTitle(first))}</span>
     <span class="week-bar"><span style="width:${wpct}%"></span></span>
   </button>`;
 }
@@ -839,7 +848,7 @@ function renderWeekDetail(weekNum){
         <button class="btn btn-ghost btn-sm" id="backToLessonsBtn">${tr("&larr; All Lessons")}</button>
       </div>
       <p class="eyebrow">${tr("WEEK {n} OF 18", { n: weekNum })}</p>
-      <h1 class="hwy-title">${escapeHtml(trc(days[0].wt))}</h1>
+      <h1 class="hwy-title">${escapeHtml(weekTitle(days[0]))}</h1>
       <p class="hero-sub">${tr("{a}/{b} days complete.", { a: wp.done, b: wp.total })}</p>
     </section>
     <section class="panel">
@@ -898,7 +907,7 @@ function renderLesson(dayNum){
         </div>
         ${isStaff() ? `<button class="btn btn-accent btn-sm" id="presentBtn">${icon("present",16)} ${tr("Present")}</button>` : ""}
       </div>
-      <p class="eyebrow">${tr("WEEK {n}", { n: d.w })} &middot; ${escapeHtml(trc(d.wt))}${d.rev ? " &middot; " + tr("REVIEW DAY") : ""}</p>
+      <p class="eyebrow">${tr("WEEK {n}", { n: d.w })} &middot; ${escapeHtml(weekTitle(d))}${d.rev ? " &middot; " + tr("REVIEW DAY") : ""}</p>
       <h1 class="hwy-title">${tr("Day {n}: {title}", { n: d.d, title: escapeHtml(titleParts(d).main) })}</h1>
       ${titleParts(d).sub ? `<p class="lesson-title-uz">${escapeHtml(titleParts(d).sub)}</p>` : ""}
       <div class="lesson-badges">
@@ -1611,7 +1620,7 @@ function renderPracticeTab(d, body){
 
   body.innerHTML = `
     <div class="practice-header">
-      <p class="panel-sub">${d.rev ? tr("Auto-generated from this whole week's vocabulary — a fresh set every time.") : tr("Auto-generated from today's 20 vocabulary words — a fresh set every time.")}</p>
+      <p class="panel-sub">${d.rev ? tr("Auto-generated from this whole week's vocabulary — a fresh set every time.") : tr("Auto-generated from today's vocabulary — a fresh set every time.")}</p>
       <button class="btn btn-ghost btn-sm" id="newSetBtn">${icon("refresh",14)} ${tr("New practice set")}</button>
     </div>
 
