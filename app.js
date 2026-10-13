@@ -1741,6 +1741,11 @@ function renderQuizTab(d, body){
     qState.submitted = false;
   }
   const questions = qState.questions;
+  // Review days used to skip markComplete, so a quiz submitted before that was
+  // fixed has a score but no completion — credit it now. A day a teacher has
+  // reset carries a tombstone and is left alone (its saved quiz is stale).
+  const resetHere = state.progress.removed && state.progress.removed.completed && state.progress.removed.completed[d.d];
+  if (qState.submitted && typeof qState.score === "number" && !isCompleted(d.d) && !resetHere) markComplete(d.d, qState.score);
 
   body.innerHTML = `
     <p class="panel-sub">${d.rev ? tr("{n} questions · cumulative review of this week's vocabulary, plus core comprehension. Answer all, then submit.", { n: questions.length }) : tr("{n} questions · core comprehension plus auto-generated vocabulary practice. Answer all, then submit to complete the day.", { n: questions.length })}</p>

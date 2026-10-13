@@ -108,18 +108,24 @@
     return m;
   }
 
+  // Realtime Database never stores null or empty objects, so a copy that has
+  // come back from the cloud lacks them while the local one may still have
+  // them — treat "missing" and "empty" as the same, or the two never compare
+  // equal and the app re-uploads forever.
   function canon(v) {
-    if (Array.isArray(v)) return v.map(canon);
     if (v && typeof v === "object") {
       const o = {};
-      Object.keys(v).sort().forEach((k) => { o[k] = canon(v[k]); });
-      return o;
+      Object.keys(v).sort().forEach((k) => {
+        const c = canon(v[k]);
+        if (c !== undefined) o[k] = c;
+      });
+      return Object.keys(o).length ? o : undefined;
     }
-    return v;
+    return v === null ? undefined : v;
   }
   // Stable string for "are these two copies the same?" — ignores updatedAt
   // and the array-vs-object quirk of Realtime Database.
-  function signature(p) { return JSON.stringify(canon(normalize(p))); }
+  function signature(p) { return JSON.stringify(canon(normalize(p))) || "{}"; }
 
   const api = { merge, signature, normalize };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
