@@ -666,6 +666,7 @@ function renderNav(){
   const items = [
     ["dashboard","nav.home","dashboard"],
     ["lessons","nav.lessons","lessons"],
+    ...(window.TTHelper && window.TTHelper.available() ? [["teacher","nav.teacher","chat"]] : []),
     ["grammar","nav.grammar","grammar"],
     ["homework","nav.homework","homework"],
     ["progress","nav.progress","progress"],
@@ -677,9 +678,11 @@ function renderNav(){
     return `<button class="navbtn${isActive?" active":""}" data-nav="${id}"><span class="nav-icon">${icon(iconName,20)}</span><span class="nav-label">${tr(label)}</span></button>`;
   }).join("");
   nav.querySelectorAll("[data-nav]").forEach(btn => {
-    btn.addEventListener("click", () => setView(btn.dataset.nav));
+    btn.addEventListener("click", () => { if (btn.dataset.nav === "teacher") window.TTHelper.openTalk(); else setView(btn.dataset.nav); });
   });
 }
+// the Teacher menu item appears (or goes away) when the helper becomes available or the student signs out
+window.addEventListener("tt-helper-ready", () => { try { renderNav(); } catch (e) {} });
 
 function weekCardHtml(w){
   const first = CURRICULUM.find(d => d.w === w);
@@ -881,6 +884,29 @@ function openLesson(dayNum){
   state.currentTab = d && d.rev ? "quiz" : "vocab";
   setView("lesson", { currentDay: dayNum });
 }
+
+// ---------- The teacher (shared/teach-ui.js, shared/tutor-ui.js) ----------
+// What the teacher needs to teach the lesson on screen; null anywhere else. A review day has no words of its own,
+// so the teacher revises that week's words. "SpeakUp Classic" is this site's name for its 90 lessons in shared/teach-script.js.
+window.TT_lessonContext = function(){
+  if (state.view !== "lesson") return null;
+  const d = dayByNum(state.currentDay);
+  if (!d) return null;
+  const sources = d.rev ? CURRICULUM.filter(x => x.w === d.w && !x.rev && x.v) : [d];
+  const words = sources.flatMap(x => (x.v || []).slice(0, d.rev ? 4 : 30).map(r => [r[0], r[1]])).slice(0, 30);
+  return { course: "SpeakUp Classic", day: String(d.d), dayNum: d.d, title: d.t, review: !!d.rev, words,
+    dialogue: (d.dl || []).map(r => [r[0], r[1], r[2]]), grammar: d.g ? d.g[0] + ": " + d.g[1] : "" };
+};
+// the presentation ends with "Go to the quiz"
+window.TT_goQuiz = function(){ state.currentTab = "quiz"; render(); window.scrollTo({ top: 0, behavior: "smooth" }); };
+// Where this student is in the course, so the Teacher conversation matches their level.
+window.TT_progressContext = function(){
+  const done = Object.keys(state.progress.completed || {}).map(Number).sort((a, b) => a - b);
+  const recent = done.slice(-3).map(dayByNum).filter(Boolean);
+  const next = CURRICULUM.find(d => !isCompleted(d.d));
+  return { course: "SpeakUp", done: done.length, next: next ? next.t : "",
+    words: recent.flatMap(d => (d.v || []).slice(0, 4).map(r => [r[0], r[1]])).slice(0, 12) };
+};
 
 // ---------- Lesson ----------
 function renderLesson(dayNum){

@@ -63,3 +63,7 @@ Asosiy brend rangi: **SpeakUp Blue `#2F6FED`**. Barcha ranglar bitta faylda, `sh
 | Brand 500 (Coral) | `#FF6B4A` | Progress-barlar, urg'ular, ikkinchi darajali urg'ular |
 | Brand 200 | `#BFD3FF` | Yumshoq to'ldirishlar, qorong'i rejimda asosiy tugma |
 | Brand 50 | `#F7FAFF` | Och rejimda sahifa foni |
+
+## O'qituvchi (AI teacher)
+
+`shared/neural-voice.js`, `teach-script.js`, `teach-ui.js` va `tutor-ui.js` — truck-talk-webapp repozitoriysidagi `shared/` fayllarining nusxalari. Ovoz, dars taqdimotlari va yordamchi `https://www.trucktalk.courses/api/*` serverlariga ulanadi (`index.html`dagi `window.TT_API_BASE`). Bu saytdagi darslar o'sha repoda "SpeakUp Classic" nomi bilan (`scripts/data/speakup-classic/`). Darslar o'zgarsa, o'sha nusxani yangilab, `node scripts/build-voice-phrases.mjs` ni ishga tushiring; o'qituvchi fayllari o'zgarsa, to'rtta faylni qayta nusxalang.

@@ -383,6 +383,7 @@ function mountApp(user, profile, trial){
   // fallback to Google — a Google-only sign-up has no such credential
   // until they add one via window.SU_addPassword (see below).
   const hasPassword = (user.providerData || []).some(p => p.providerId === "password");
+  window.SU_getToken = () => user.getIdToken();   // for the teacher's servers (shared/tutor-ui.js)
   window.SU_user = { uid: user.uid, name: profile.name, email, role: profile.role, teacherId: profile.teacherId || null, trialDaysLeft, unlockFrom, unlockTo, hasPassword };
   // Non-student roles get a voluntary link to the admin dashboard (shown
   // in the host app's own UI, e.g. Settings) — they are never forced
