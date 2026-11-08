@@ -67,6 +67,23 @@
       }
     },
 
+    // SpeakUp-1 (speakup-v1.onrender.com). Homework answers are readable by
+    // the student and their staff, like progress; slide boards are private.
+    "sp1": {
+      "progress": {
+        "$uid": {
+          ".read": "auth != null && (auth.uid === $uid || (root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager')) || (root.child('users').child(auth.uid).child('status').val() === 'approved' && root.child('users').child(auth.uid).child('role').val() === 'teacher' && root.child('users').child($uid).child('teacherId').val() === auth.uid))",
+          ".write": "auth != null && auth.uid === $uid"
+        }
+      },
+      "boards": {
+        "$uid": {
+          ".read": "auth != null && auth.uid === $uid",
+          ".write": "auth != null && auth.uid === $uid"
+        }
+      }
+    },
+
     // Lesson resets. Staff (owner, manager, or the student's own teacher)
     // create a request; the student's app applies it and stamps appliedAt
     // (the only thing a student may write, and only on an existing request).
