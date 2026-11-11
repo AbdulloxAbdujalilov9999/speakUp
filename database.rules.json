@@ -76,7 +76,9 @@
         ".read": "auth != null && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager')",
         "$uid": {
           ".read": "auth != null && (auth.uid === $uid || (root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager')) || (root.child('users').child(auth.uid).child('status').val() === 'approved' && root.child('users').child(auth.uid).child('role').val() === 'teacher' && root.child('users').child($uid).child('teacherId').val() === auth.uid))",
-          ".write": "auth != null && (auth.uid === $uid || (!newData.exists() && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager')))"
+          ".write": "auth != null && (auth.uid === $uid || (!newData.exists() && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager')))",
+          // once the teacher has checked a homework, its answers can't change (a reset deletes them, which is allowed)
+          "hwInputs": { "$n": { "$i": { ".validate": "root.child('sp1').child('reviews').child($uid).child($n).child('checked').val() !== true || newData.val() === data.val()" } } }
         }
       },
       "boards": {
@@ -110,6 +112,14 @@
           "$id": {
             ".write": "auth != null && auth.uid === $uid && data.exists() && !newData.exists()"
           }
+        }
+      },
+      // teacher corrections on a homework: {fix, marks, comment, checked}. Only staff write them;
+      // the student reads their own.
+      "reviews": {
+        "$uid": {
+          ".read": "auth != null && (auth.uid === $uid || (root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager')) || (root.child('users').child(auth.uid).child('status').val() === 'approved' && root.child('users').child(auth.uid).child('role').val() === 'teacher' && root.child('users').child($uid).child('teacherId').val() === auth.uid))",
+          ".write": "auth != null && root.child('users').child(auth.uid).child('status').val() === 'approved' && (root.child('users').child(auth.uid).child('role').val() === 'owner' || root.child('users').child(auth.uid).child('role').val() === 'manager' || (root.child('users').child(auth.uid).child('role').val() === 'teacher' && root.child('users').child($uid).child('teacherId').val() === auth.uid))"
         }
       }
     },
